@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: server-0</span>
-            <span>Data updated: 2026-07-03T23:35:50.328970</span>
-            <span>Page generated: 2026-07-03 23:35:50</span>
-            <span>wandb zip: 5.44 MB</span>
+            <span>Data updated: 2026-07-03T23:40:31.430769</span>
+            <span>Page generated: 2026-07-03 23:40:31</span>
+            <span>wandb zip: 5.5 MB</span>
         </div>
     </div>
 
@@ -129,93 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (3079 lines)</span>
+            <span class="terminal-title">training_latest.log (3003 lines)</span>
         </div>
-        <div id="terminal">  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 12
-save_dir: logs/nft/sd3/geneval_fiber_residual_subspace
-save_freq: 20
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 12
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 3
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:722: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0703 02:02:09.856005 139684657377920 train_nft_sd3.py:728] Waiting 45s before model load (stagger)...
-wandb: Tracking run with wandb version 0.18.7
-wandb: W&amp;B syncing is set to `offline` in this directory.  
-wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
-I0703 02:02:10.037737 140501374685824 train_nft_sd3.py:710] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-dataset: /mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-fiber:
-  adaptive_ref_rms: 0.5
-  beta: 0.8
-  beta_decay: 1.0
-  cosine_stop: 0.995
-  early_stop_eps: 0.0
-  enable: true
-  eval_enable: false
-  mode: structured_rse
-  nft_gamma: 0.0
-  orthogonalize: true
-  refine_iters: 1
-  retract: false
-  rse_beta_sign: 1.0
-  rse_center_strength: 0.5
-  rse_num_seeds: 2
-  rse_pair_history: 4096
-  rse_pair_lambda: 0.5
-  rse_pair_z_floor_group: 0.3
-  rse_reward_resolution: 0.05
-  rse_std: 1.0
-  rse_traj_steps: 2
-  rse_variants_per_seed: 2
-  subspace_center_scale: 0.5
-  subspace_coeff_clip: 6.0
-  subspace_max_ratio: 1.0
-  subspace_mixture: 1.0
-  subspace_sample_std: 1.0
-  subspace_timesteps:
-  - 1000.0
-  subspace_use_center: false
-  timestep: 1000.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-fsdp_optimizer_offload: false
-logdir: logs
+        <div id="terminal">logdir: logs
 mixed_precision: fp16
 n_gpus: 7
 num_checkpoint_limit: 5
@@ -3208,6 +3124,14 @@ Eval:   5%|▌         | 1/20 [01:55&lt;36:29, 115.23s/it]
 Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.15it/s]
 
 Eval:  10%|█         | 2/20 [04:00&lt;36:22, 121.23s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.15it/s]
+
+Eval:  15%|█▌        | 3/20 [06:06&lt;34:57, 123.40s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.15it/s]
+
+Eval:  20%|██        | 4/20 [08:11&lt;33:04, 124.05s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.15it/s]
 </div>
