@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: nd4inep39eeckoc87t380</span>
-            <span>Data updated: 2026-07-07T14:55:35.529213</span>
-            <span>Page generated: 2026-07-08 05:55:35</span>
-            <span>wandb zip: 7.04 MB</span>
+            <span>Data updated: 2026-07-07T15:00:35.241278</span>
+            <span>Page generated: 2026-07-08 06:00:35</span>
+            <span>wandb zip: 7.11 MB</span>
         </div>
     </div>
 
@@ -129,214 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (3360 lines)</span>
+            <span class="terminal-title">training_latest.log (3205 lines)</span>
         </div>
-        <div id="terminal">  test_batch_size: 14
-  train_batch_size: 24
-save_dir: logs/nft/sd3/geneval_fiber_residual_subspace
-save_freq: 20
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 6
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1531: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0707 06:11:17.586540 140344085955200 train_nft_sd3.py:1537] Waiting 0s before model load (stagger)...
-I0707 06:11:17.586699 140344085955200 train_nft_sd3.py:1539] Loading SD3.5 model...
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.54s/it]
-
-Loading pipeline components...:  11%|█         | 1/9 [00:11&lt;01:28, 11.11s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:11&lt;00:33,  4.80s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:11&lt;00:09,  1.83s/it]I0707 06:11:32.262997 139807411479168 train_nft_sd3.py:1539] Loading SD3.5 model...
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:01,  6.52it/s]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:20&lt;00:09,  3.15s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:22&lt;00:05,  2.80s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:22&lt;00:02,  2.10s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:22&lt;00:00,  1.58s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:22&lt;00:00,  2.55s/it]
-
-Loading pipeline components...:  22%|██▏       | 2/9 [00:09&lt;00:38,  5.47s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:11&lt;00:22,  3.81s/it]
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.55s/it]
-
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:22&lt;00:19,  4.83s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:22&lt;00:05,  2.75s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:22&lt;00:02,  2.14s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.56s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:10&lt;00:00,  5.50s/it]
-
-Loading pipeline components...:  11%|█         | 1/9 [00:11&lt;01:28, 11.04s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:11&lt;00:33,  4.79s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:11&lt;00:16,  2.71s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:13&lt;00:11,  2.38s/it]I0707 06:12:02.063671 139909237400192 train_nft_sd3.py:1539] Loading SD3.5 model...
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:23&lt;00:05,  2.94s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  1.87s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.62s/it]
-
-Loading pipeline components...:  11%|█         | 1/9 [00:09&lt;01:17,  9.67s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:09&lt;00:09,  1.89s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:10&lt;00:03,  1.17s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:10&lt;00:01,  1.05it/s]
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  22%|██▏       | 2/9 [00:00&lt;00:00,  8.75it/s]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:00&lt;00:01,  4.02it/s]
-
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:02&lt;00:02,  1.61it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.52s/it]
-
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:21&lt;00:03,  3.51s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  3.05s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.60s/it]
-
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:11&lt;00:09,  3.05s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:12&lt;00:04,  2.24s/it]
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  22%|██▏       | 2/9 [00:00&lt;00:00,  8.63it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.59s/it]
-
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:23&lt;00:04,  4.84s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.59s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.54s/it]
-
-Loading pipeline components...:  33%|███▎      | 3/9 [00:11&lt;00:28,  4.70s/it]I0707 06:12:47.303027 140000370905728 train_nft_sd3.py:1539] Loading SD3.5 model...
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:01,  4.19it/s]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:21&lt;00:32,  6.57s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:22&lt;00:10,  3.66s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:23&lt;00:05,  2.78s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  1.62s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.62s/it]
-
-Loading pipeline components...:  22%|██▏       | 2/9 [00:09&lt;00:40,  5.72s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:10&lt;00:19,  3.31s/it]
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:02,  3.40it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.70s/it]
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:21&lt;00:32,  6.52s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:21&lt;00:04,  2.45s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  1.89s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.64s/it]
-
-Loading pipeline components...:  22%|██▏       | 2/9 [00:10&lt;00:40,  5.84s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:10&lt;00:00,  5.50s/it]
-
-Loading pipeline components...:  33%|███▎      | 3/9 [00:21&lt;00:49,  8.22s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:21&lt;00:25,  5.03s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:22&lt;00:08,  2.83s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:23&lt;00:01,  1.64s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  1.35s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:23&lt;00:00,  2.61s/it]
-I0707 06:13:43.801480 139909237400192 train_nft_sd3.py:1669] ***** Running training *****
-I0707 06:13:43.801592 139909237400192 train_nft_sd3.py:1670]   Num Epochs = 100000
-I0707 06:13:43.801623 139909237400192 train_nft_sd3.py:1671]   Sample batch size per device = 24
-I0707 06:13:43.801645 139909237400192 train_nft_sd3.py:1672]   Train batch size per device = 24
-I0707 06:13:43.801665 139909237400192 train_nft_sd3.py:1673]   Gradient Accumulation steps = 6
-I0707 06:13:43.801683 139909237400192 train_nft_sd3.py:1674] 
-I0707 06:13:43.801701 139909237400192 train_nft_sd3.py:1675]   Total number of samples per epoch = 1152
-I0707 06:13:43.801717 139909237400192 train_nft_sd3.py:1676]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
-I0707 06:13:43.801733 139909237400192 train_nft_sd3.py:1677]   Number of gradient updates per inner epoch = 1
-I0707 06:13:43.801749 139909237400192 train_nft_sd3.py:1678]   Number of inner epochs = 1
-I0707 06:13:43.801992 139909237400192 train_nft_sd3.py:1726] ***** Running training *****
-I0707 06:13:43.806762 140607189955200 train_nft_sd3.py:1669] ***** Running training *****
-I0707 06:13:43.806864 140607189955200 train_nft_sd3.py:1670]   Num Epochs = 100000
-I0707 06:13:43.806897 140607189955200 train_nft_sd3.py:1671]   Sample batch size per device = 24
-I0707 06:13:43.806920 140607189955200 train_nft_sd3.py:1672]   Train batch size per device = 24
-I0707 06:13:43.806959 140607189955200 train_nft_sd3.py:1673]   Gradient Accumulation steps = 6
-I0707 06:13:43.806980 140607189955200 train_nft_sd3.py:1674] 
-I0707 06:13:43.807000 140607189955200 train_nft_sd3.py:1675]   Total number of samples per epoch = 1152
-I0707 06:13:43.807017 140607189955200 train_nft_sd3.py:1676]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
-I0707 06:13:43.807035 140607189955200 train_nft_sd3.py:1677]   Number of gradient updates per inner epoch = 1
-I0707 06:13:43.807052 140607189955200 train_nft_sd3.py:1678]   Number of inner epochs = 1
-I0707 06:13:43.807283 140607189955200 train_nft_sd3.py:1726] ***** Running training *****
-I0707 06:13:43.819080 139938121687680 train_nft_sd3.py:1669] ***** Running training *****
-I0707 06:13:43.819179 139938121687680 train_nft_sd3.py:1670]   Num Epochs = 100000
-I0707 06:13:43.819212 139938121687680 train_nft_sd3.py:1671]   Sample batch size per device = 24
-I0707 06:13:43.819236 139938121687680 train_nft_sd3.py:1672]   Train batch size per device = 24
-I0707 06:13:43.819257 139938121687680 train_nft_sd3.py:1673]   Gradient Accumulation steps = 6
-I0707 06:13:43.819276 139938121687680 train_nft_sd3.py:1674] 
-I0707 06:13:43.819294 139938121687680 train_nft_sd3.py:1675]   Total number of samples per epoch = 1152
-I0707 06:13:43.819310 139938121687680 train_nft_sd3.py:1676]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
-I0707 06:13:43.819339 139938121687680 train_nft_sd3.py:1677]   Number of gradient updates per inner epoch = 1
-I0707 06:13:43.819357 139938121687680 train_nft_sd3.py:1678]   Number of inner epochs = 1
-I0707 06:13:43.819577 139938121687680 train_nft_sd3.py:1726] ***** Running training *****
-I0707 06:13:43.821786 140645038842496 train_nft_sd3.py:1669] ***** Running training *****
-I0707 06:13:43.821887 140645038842496 train_nft_sd3.py:1670]   Num Epochs = 100000
-I0707 06:13:43.821918 140645038842496 train_nft_sd3.py:1671]   Sample batch size per device = 24
-I0707 06:13:43.821959 140645038842496 train_nft_sd3.py:1672]   Train batch size per device = 24
-I0707 06:13:43.821980 140645038842496 train_nft_sd3.py:1673]   Gradient Accumulation steps = 6
-I0707 06:13:43.821999 140645038842496 train_nft_sd3.py:1674] 
-I0707 06:13:43.822018 140645038842496 train_nft_sd3.py:1675]   Total number of samples per epoch = 1152
-I0707 06:13:43.822034 140645038842496 train_nft_sd3.py:1676]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
-I0707 06:13:43.822050 140645038842496 train_nft_sd3.py:1677]   Number of gradient updates per inner epoch = 1
-I0707 06:13:43.822067 140645038842496 train_nft_sd3.py:1678]   Number of inner epochs = 1
-I0707 06:13:43.822283 140645038842496 train_nft_sd3.py:1726] ***** Running training *****
-I0707 06:13:43.831341 140344085955200 train_nft_sd3.py:1669] ***** Running training *****
-I0707 06:13:43.831695 140344085955200 train_nft_sd3.py:1670]   Num Epochs = 100000
-I0707 06:13:43.831781 140344085955200 train_nft_sd3.py:1671]   Sample batch size per device = 24
-I0707 06:13:43.831844 140344085955200 train_nft_sd3.py:1672]   Train batch size per device = 24
-I0707 06:13:43.831895 140344085955200 train_nft_sd3.py:1673]   Gradient Accumulation steps = 6
-I0707 06:13:43.831957 140344085955200 train_nft_sd3.py:1674] 
-I0707 06:13:43.832014 140344085955200 train_nft_sd3.py:1675]   Total number of samples per epoch = 1152
-I0707 06:13:43.832062 140344085955200 train_nft_sd3.py:1676]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
-I0707 06:13:43.832108 140344085955200 train_nft_sd3.py:1677]   Number of gradient updates per inner epoch = 1
-I0707 06:13:43.832158 140344085955200 train_nft_sd3.py:1678]   Number of inner epochs = 1
-I0707 06:13:43.832441 140344085955200 train_nft_sd3.py:1726] ***** Running training *****
-I0707 06:13:43.836275 140000370905728 train_nft_sd3.py:1669] ***** Running training *****
-I0707 06:13:43.836390 140000370905728 train_nft_sd3.py:1670]   Num Epochs = 100000
-I0707 06:13:43.836421 140000370905728 train_nft_sd3.py:1671]   Sample batch size per device = 24
-I0707 06:13:43.836443 140000370905728 train_nft_sd3.py:1672]   Train batch size per device = 24
-I0707 06:13:43.836463 140000370905728 train_nft_sd3.py:1673]   Gradient Accumulation steps = 6
-I0707 06:13:43.836481 140000370905728 train_nft_sd3.py:1674] 
+        <div id="terminal">I0707 06:13:43.836481 140000370905728 train_nft_sd3.py:1674] 
 I0707 06:13:43.836500 140000370905728 train_nft_sd3.py:1675]   Total number of samples per epoch = 1152
 I0707 06:13:43.836516 140000370905728 train_nft_sd3.py:1676]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
 I0707 06:13:43.836532 140000370905728 train_nft_sd3.py:1677]   Number of gradient updates per inner epoch = 1
@@ -3490,7 +3285,57 @@ Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 Waiting for rewards:  17%|█▋        | 1/6 [00:43&lt;03:36, 43.21s/it]
 Waiting for rewards:  33%|███▎      | 2/6 [01:32&lt;03:08, 47.05s/it]
 Waiting for rewards:  50%|█████     | 3/6 [02:20&lt;02:22, 47.50s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [03:10&lt;01:36, 48.35s/it]</div>
+Waiting for rewards:  67%|██████▋   | 4/6 [03:10&lt;01:36, 48.35s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [04:40&lt;01:03, 63.29s/it]
+Waiting for rewards: 100%|██████████| 6/6 [04:55&lt;00:00, 46.94s/it]
+Waiting for rewards: 100%|██████████| 6/6 [04:55&lt;00:00, 49.27s/it]
+I0707 14:55:55.405709 140344085955200 train_nft_sd3.py:2195] Advantages mean: 0.0 train_keep_rate=0.0 explore_only=0.0
+
+Epoch 56.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 56.0: training:  17%|█▋        | 1/6 [00:15&lt;01:17, 15.59s/it]
+
+Epoch 56.0: training:  33%|███▎      | 2/6 [00:29&lt;00:58, 14.52s/it]
+
+Epoch 56.0: training:  50%|█████     | 3/6 [00:43&lt;00:42, 14.17s/it]
+
+Epoch 56.0: training:  67%|██████▋   | 4/6 [00:56&lt;00:27, 14.00s/it]
+
+Epoch 56.0: training:  83%|████████▎ | 5/6 [01:10&lt;00:13, 13.93s/it]
+
+Epoch 56.0: training: 100%|██████████| 6/6 [01:24&lt;00:00, 13.91s/it]
+Epoch 56.0: training: 100%|██████████| 6/6 [01:24&lt;00:00, 14.09s/it]
+
+Epoch 57: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.27it/s]
+
+Epoch 57: sampling:  17%|█▋        | 1/6 [00:04&lt;00:20,  4.09s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 57: sampling:  33%|███▎      | 2/6 [00:08&lt;00:18,  4.56s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.70it/s]
+
+Epoch 57: sampling:  50%|█████     | 3/6 [00:13&lt;00:14,  4.73s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 57: sampling:  67%|██████▋   | 4/6 [00:18&lt;00:09,  4.80s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 57: sampling:  83%|████████▎ | 5/6 [00:23&lt;00:04,  4.83s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 57: sampling: 100%|██████████| 6/6 [00:28&lt;00:00,  4.87s/it]
+Epoch 57: sampling: 100%|██████████| 6/6 [00:28&lt;00:00,  4.77s/it]
+
+Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:31&lt;02:35, 31.18s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:36&lt;03:24, 51.14s/it]</div>
     </div>
 
     <div class="controls">
