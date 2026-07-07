@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: server-0</span>
-            <span>Data updated: 2026-07-07T19:10:16.258872</span>
-            <span>Page generated: 2026-07-07 19:10:16</span>
-            <span>wandb zip: 4.56 MB</span>
+            <span>Data updated: 2026-07-07T19:15:26.426072</span>
+            <span>Page generated: 2026-07-07 19:15:26</span>
+            <span>wandb zip: 4.65 MB</span>
         </div>
     </div>
 
@@ -129,56 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2080 lines)</span>
+            <span class="terminal-title">training_latest.log (2105 lines)</span>
         </div>
         <div id="terminal">
-Epoch 9.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 9.0: training:  17%|█▋        | 1/6 [00:05&lt;00:29,  5.81s/it]
-
-Epoch 9.0: training:  33%|███▎      | 2/6 [00:10&lt;00:20,  5.06s/it]
-
-Epoch 9.0: training:  50%|█████     | 3/6 [00:14&lt;00:14,  4.79s/it]
-
-Epoch 9.0: training:  67%|██████▋   | 4/6 [00:19&lt;00:09,  4.65s/it]
-
-Epoch 9.0: training:  83%|████████▎ | 5/6 [00:23&lt;00:04,  4.57s/it]
-
-Epoch 9.0: training: 100%|██████████| 6/6 [00:28&lt;00:00,  4.55s/it]
-Epoch 9.0: training: 100%|██████████| 6/6 [00:28&lt;00:00,  4.70s/it]
-
-Epoch 10: sampling:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  5.99it/s]
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Eval:   0%|          | 0/20 [00:00&lt;?, ?it/s]/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 40/40 [00:09&lt;00:00,  4.05it/s]
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Eval:   5%|▌         | 1/20 [02:06&lt;39:58, 126.21s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.11it/s]
-
-Eval:  10%|█         | 2/20 [03:51&lt;34:06, 113.71s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.13it/s]
-
-Eval:  15%|█▌        | 3/20 [05:47&lt;32:34, 114.97s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.12it/s]
 
@@ -2210,7 +2163,80 @@ Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  
 Epoch 56: sampling: 100%|██████████| 2/2 [01:03&lt;00:00, 33.67s/it]
 Epoch 56: sampling: 100%|██████████| 2/2 [01:03&lt;00:00, 31.59s/it]
 
-Waiting for rewards:   0%|          | 0/4 [00:00&lt;?, ?it/s]</div>
+Waiting for rewards:   0%|          | 0/4 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 4/4 [00:34&lt;00:00,  8.64s/it]
+Waiting for rewards: 100%|██████████| 4/4 [00:34&lt;00:00,  8.64s/it]
+I0707 04:10:34.982542 140279863665280 train_nft_sd3.py:1880] Advantages mean: 0.3822308717331121 train_keep_rate=0.6666666865348816 explore_only=0.0
+
+Epoch 56.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 56.0: training:  17%|█▋        | 1/6 [00:05&lt;00:27,  5.49s/it]
+
+Epoch 56.0: training:  33%|███▎      | 2/6 [00:10&lt;00:19,  4.96s/it]
+
+Epoch 56.0: training:  50%|█████     | 3/6 [00:14&lt;00:14,  4.77s/it]
+
+Epoch 56.0: training:  67%|██████▋   | 4/6 [00:19&lt;00:09,  4.70s/it]
+
+Epoch 56.0: training:  83%|████████▎ | 5/6 [00:23&lt;00:04,  4.64s/it]
+
+Epoch 56.0: training: 100%|██████████| 6/6 [00:28&lt;00:00,  4.63s/it]
+Epoch 56.0: training: 100%|██████████| 6/6 [00:28&lt;00:00,  4.72s/it]
+
+Epoch 57: sampling:   0%|          | 0/2 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  5.80it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  5.41it/s]
+
+Epoch 57: sampling:  50%|█████     | 1/2 [00:35&lt;00:35, 35.38s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  4.28it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  6.03it/s]
+
+Epoch 57: sampling: 100%|██████████| 2/2 [01:25&lt;00:00, 44.03s/it]
+Epoch 57: sampling: 100%|██████████| 2/2 [01:25&lt;00:00, 42.73s/it]
+
+Waiting for rewards:   0%|          | 0/4 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 4/4 [00:15&lt;00:00,  3.97s/it]
+Waiting for rewards: 100%|██████████| 4/4 [00:15&lt;00:00,  3.97s/it]
+I0707 04:12:45.147463 140279863665280 train_nft_sd3.py:1880] Advantages mean: 1.1395894399511202 train_keep_rate=0.8888888955116272 explore_only=0.0
+
+Epoch 57.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 57.0: training:  17%|█▋        | 1/6 [00:05&lt;00:27,  5.54s/it]
+
+Epoch 57.0: training:  33%|███▎      | 2/6 [00:10&lt;00:19,  4.93s/it]
+
+Epoch 57.0: training:  50%|█████     | 3/6 [00:14&lt;00:14,  4.71s/it]
+
+Epoch 57.0: training:  67%|██████▋   | 4/6 [00:18&lt;00:09,  4.63s/it]
+
+Epoch 57.0: training:  83%|████████▎ | 5/6 [00:23&lt;00:04,  4.55s/it]
+
+Epoch 57.0: training: 100%|██████████| 6/6 [00:28&lt;00:00,  4.59s/it]
+Epoch 57.0: training: 100%|██████████| 6/6 [00:28&lt;00:00,  4.68s/it]
+
+Epoch 58: sampling:   0%|          | 0/2 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  5.99it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  5.45it/s]
+
+Epoch 58: sampling:  50%|█████     | 1/2 [00:23&lt;00:23, 23.66s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  4.74it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  5.53it/s]
+
+Epoch 58: sampling: 100%|██████████| 2/2 [01:07&lt;00:00, 35.77s/it]
+Epoch 58: sampling: 100%|██████████| 2/2 [01:07&lt;00:00, 33.96s/it]
+
+Waiting for rewards:   0%|          | 0/4 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 4/4 [00:24&lt;00:00,  6.21s/it]
+Waiting for rewards: 100%|██████████| 4/4 [00:24&lt;00:00,  6.21s/it]
+</div>
     </div>
 
     <div class="controls">
