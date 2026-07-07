@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: nd4inep39eeckoc87t380</span>
-            <span>Data updated: 2026-07-07T14:50:36.639827</span>
-            <span>Page generated: 2026-07-08 05:50:36</span>
-            <span>wandb zip: 6.98 MB</span>
+            <span>Data updated: 2026-07-07T14:55:35.529213</span>
+            <span>Page generated: 2026-07-08 05:55:35</span>
+            <span>wandb zip: 7.04 MB</span>
         </div>
     </div>
 
@@ -129,65 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (3390 lines)</span>
+            <span class="terminal-title">training_latest.log (3360 lines)</span>
         </div>
-        <div id="terminal">  rse_v25_shrink_saturation_rate: 0.45
-  rse_v25_shrinkage_n0: 8.0
-  rse_v25_sigma_null_floor: 0.05
-  rse_v25_snr_saturation: 1.5
-  rse_v25_snr_signal: 3.0
-  rse_v25_train_max_group_filter: 1.0
-  rse_v25_train_min_alpha_pair: 0.0
-  rse_v41_filter_band: 0.05
-  rse_v41_zc_floor: 0.05
-  rse_variants_per_seed: 2
-  subspace_center_scale: 0.5
-  subspace_coeff_clip: 6.0
-  subspace_max_ratio: 1.0
-  subspace_mixture: 1.0
-  subspace_sample_std: 1.0
-  subspace_timesteps:
-  - 1000.0
-  subspace_use_center: false
-  timestep: 1000.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-fsdp_optimizer_offload: false
-logdir: logs
-mixed_precision: fp16
-n_gpus: 8
-num_checkpoint_limit: 5
-num_epochs: 100000
-per_prompt_stat_tracking: true
-pretrained:
-  model: /mnt/volumes/base-4o-lx-my/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: nft_sd3_geneval_fiber_residual_subspace_2026.07.07_06.11.17
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  global_std: true
-  guidance_scale: 1.0
-  noise_level: 0.7
-  num_batches_per_epoch: 6
-  num_image_per_prompt: 24
-  num_steps: 10
-  same_latent: true
-  sde_window_range: !!python/tuple
-  - 0
-  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
+        <div id="terminal">  test_batch_size: 14
   train_batch_size: 24
 save_dir: logs/nft/sd3/geneval_fiber_residual_subspace
 save_freq: 20
@@ -3521,7 +3465,32 @@ Sampling Progress: 100%|██████████| 10/10 [00:04&lt;00:00,  
 
 Epoch 56: sampling:  17%|█▋        | 1/6 [00:05&lt;00:27,  5.58s/it]
 
-</div>
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.66it/s]
+
+Epoch 56: sampling:  33%|███▎      | 2/6 [00:10&lt;00:20,  5.23s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.72it/s]
+
+Epoch 56: sampling:  50%|█████     | 3/6 [00:15&lt;00:15,  5.08s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.72it/s]
+
+Epoch 56: sampling:  67%|██████▋   | 4/6 [00:20&lt;00:10,  5.03s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.73it/s]
+
+Epoch 56: sampling:  83%|████████▎ | 5/6 [00:25&lt;00:05,  5.02s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.74it/s]
+
+Epoch 56: sampling: 100%|██████████| 6/6 [00:30&lt;00:00,  5.00s/it]
+Epoch 56: sampling: 100%|██████████| 6/6 [00:30&lt;00:00,  5.07s/it]
+
+Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:43&lt;03:36, 43.21s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:32&lt;03:08, 47.05s/it]
+Waiting for rewards:  50%|█████     | 3/6 [02:20&lt;02:22, 47.50s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [03:10&lt;01:36, 48.35s/it]</div>
     </div>
 
     <div class="controls">
