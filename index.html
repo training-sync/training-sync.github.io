@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: nd4inep39eeckoc87t380</span>
-            <span>Data updated: 2026-07-07T14:20:21.245832</span>
-            <span>Page generated: 2026-07-08 05:20:21</span>
-            <span>wandb zip: 6.57 MB</span>
+            <span>Data updated: 2026-07-07T14:25:31.267038</span>
+            <span>Page generated: 2026-07-08 05:25:31</span>
+            <span>wandb zip: 6.64 MB</span>
         </div>
     </div>
 
@@ -129,157 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (3779 lines)</span>
+            <span class="terminal-title">training_latest.log (3682 lines)</span>
         </div>
-        <div id="terminal">  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 6
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-
-/mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:1531: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0707 06:11:17.287016 139791067705984 train_nft_sd3.py:1537] Waiting 105s before model load (stagger)...
-I0707 06:11:17.291511 139938121687680 train_nft_sd3.py:1519] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-dataset: /mnt/volumes/base-4o-lx-my/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 20
-fiber:
-  adaptive_ref_rms: 0.5
-  beta: 0.8
-  beta_decay: 1.0
-  cosine_stop: 0.995
-  early_stop_eps: 0.0
-  enable: true
-  eval_enable: false
-  mode: structured_rse
-  nft_gamma: 0.0
-  orthogonalize: true
-  refine_iters: 1
-  retract: false
-  rse_beta_sign: 1.0
-  rse_center_strength: 0.5
-  rse_clean_seed_candidates: 0
-  rse_clean_seed_metric: max
-  rse_clean_seed_select_enable: false
-  rse_force_all_pairs_train: false
-  rse_hybrid_enable: true
-  rse_hybrid_nft_fraction: 0.0
-  rse_hybrid_null_fraction: 0.0
-  rse_label_mode: tournament
-  rse_multiseed_include_sample_index: true
-  rse_null_probe_fraction: 0.0
-  rse_num_seeds: 12
-  rse_pair_history: 4096
-  rse_pair_lambda: 1.0
-  rse_pair_z_floor_group: 0.3
-  rse_pair_z_min_count: 4
-  rse_pair_z_short_cap: 1.25
-  rse_pair_z_window: 128
-  rse_random_span_clip: 1.0
-  rse_random_span_dim: 2
-  rse_random_span_scale: 0.5
-  rse_reward_deadzone_mode: quantized
-  rse_reward_resolution: 0.05
-  rse_signal_gate_enable: false
-  rse_signal_gate_max_collect_rounds: 1
-  rse_signal_gate_min_keep_rate: 0.0
-  rse_signal_gate_min_nonzero_pairs: 0
-  rse_std: 1.0
-  rse_tournament_all_pairs: true
-  rse_tournament_include_intra_seed: true
-  rse_tournament_include_matched_variants: true
-  rse_traj_steps: 0
-  rse_v25_alpha_gate: 0.3
-  rse_v25_bad_batch_std_boost: 0.0
-  rse_v25_controller_lowpass: 0.5
-  rse_v25_deadzone_sigma: 1.0
-  rse_v25_eff_std_decay: 0.97
-  rse_v25_eff_std_max_step: 0.2
-  rse_v25_ema_beta: 0.9
-  rse_v25_eval_window: 5
-  rse_v25_floor_sigma: 2.0
-  rse_v25_lambda_max: 1.0
-  rse_v25_lambda_min: 1.0
-  rse_v25_lr_decay: 1.0
-  rse_v25_min_delta_sigma: 2.0
-  rse_v25_mu_decay: 0.9
-  rse_v25_mu_min: 0.1
-  rse_v25_mu_saturation_decay: 0.95
-  rse_v25_mu_z: 1.96
-  rse_v25_plateau_alpha_target: 0.35
-  rse_v25_plateau_deadzone_target: 0.65
-  rse_v25_plateau_explore_boost: 0.0
-  rse_v25_plateau_explore_std_max: 1.6
-  rse_v25_plateau_min_gain: 0.015
-  rse_v25_plateau_shrink: 0.08
-  rse_v25_plateau_std_threshold: 2.0
-  rse_v25_plateau_window: 20
-  rse_v25_rse_std_max: 1.6
-  rse_v25_s0_batches: 1
-  rse_v25_shrink_saturation_rate: 0.45
-  rse_v25_shrinkage_n0: 8.0
-  rse_v25_sigma_null_floor: 0.05
-  rse_v25_snr_saturation: 1.5
-  rse_v25_snr_signal: 3.0
-  rse_v25_train_max_group_filter: 1.0
-  rse_v25_train_min_alpha_pair: 0.0
-  rse_v41_filter_band: 0.05
-  rse_v41_zc_floor: 0.05
-  rse_variants_per_seed: 2
-  subspace_center_scale: 0.5
-  subspace_coeff_clip: 6.0
-  subspace_max_ratio: 1.0
-  subspace_mixture: 1.0
-  subspace_sample_std: 1.0
-  subspace_timesteps:
-  - 1000.0
-  subspace_use_center: false
-  timestep: 1000.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-fsdp_optimizer_offload: false
-logdir: logs
-mixed_precision: fp16
-n_gpus: 8
-num_checkpoint_limit: 5
-num_epochs: 100000
-per_prompt_stat_tracking: true
-pretrained:
-  model: /mnt/volumes/base-4o-lx-my/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: nft_sd3_geneval_fiber_residual_subspace_2026.07.07_06.11.17
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  global_std: true
-  guidance_scale: 1.0
-  noise_level: 0.7
-  num_batches_per_epoch: 6
-  num_image_per_prompt: 24
-  num_steps: 10
-  same_latent: true
+        <div id="terminal">  same_latent: true
   sde_window_range: !!python/tuple
   - 0
   - 10
@@ -3909,7 +3761,58 @@ Epoch 51: sampling: 100%|██████████| 6/6 [00:28&lt;00:00,  4
 Epoch 51: sampling: 100%|██████████| 6/6 [00:28&lt;00:00,  4.82s/it]
 
 Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:01&lt;00:07,  1.56s/it]</div>
+Waiting for rewards:  17%|█▋        | 1/6 [00:01&lt;00:07,  1.56s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:11&lt;02:46, 41.51s/it]
+Waiting for rewards:  50%|█████     | 3/6 [01:51&lt;02:02, 40.94s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [02:33&lt;01:22, 41.45s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [03:15&lt;00:41, 41.48s/it]
+Waiting for rewards: 100%|██████████| 6/6 [03:53&lt;00:00, 40.49s/it]
+Waiting for rewards: 100%|██████████| 6/6 [03:53&lt;00:00, 38.94s/it]
+I0707 14:22:59.053168 140344085955200 train_nft_sd3.py:2195] Advantages mean: 0.0 train_keep_rate=0.0 explore_only=0.0
+
+Epoch 51.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 51.0: training:  17%|█▋        | 1/6 [00:14&lt;01:12, 14.46s/it]
+
+Epoch 51.0: training:  33%|███▎      | 2/6 [00:28&lt;00:56, 14.04s/it]
+
+Epoch 51.0: training:  50%|█████     | 3/6 [00:41&lt;00:41, 13.89s/it]
+
+Epoch 51.0: training:  67%|██████▋   | 4/6 [00:55&lt;00:27, 13.82s/it]
+
+Epoch 51.0: training:  83%|████████▎ | 5/6 [01:09&lt;00:13, 13.78s/it]
+
+Epoch 51.0: training: 100%|██████████| 6/6 [01:23&lt;00:00, 13.77s/it]
+Epoch 51.0: training: 100%|██████████| 6/6 [01:23&lt;00:00, 13.85s/it]
+
+Epoch 52: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.27it/s]
+
+Epoch 52: sampling:  17%|█▋        | 1/6 [00:04&lt;00:20,  4.01s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.67it/s]
+
+Epoch 52: sampling:  33%|███▎      | 2/6 [00:09&lt;00:18,  4.62s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.72it/s]
+
+Epoch 52: sampling:  50%|█████     | 3/6 [00:14&lt;00:14,  4.80s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 52: sampling:  67%|██████▋   | 4/6 [00:19&lt;00:09,  4.87s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.72it/s]
+
+Epoch 52: sampling:  83%|████████▎ | 5/6 [00:24&lt;00:04,  4.91s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 52: sampling: 100%|██████████| 6/6 [00:29&lt;00:00,  4.95s/it]
+Epoch 52: sampling: 100%|██████████| 6/6 [00:29&lt;00:00,  4.85s/it]
+
+Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]</div>
     </div>
 
     <div class="controls">
