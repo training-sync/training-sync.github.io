@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: nd4inep39eeckoc87t380</span>
-            <span>Data updated: 2026-07-07T14:00:02.435158</span>
-            <span>Page generated: 2026-07-08 05:00:02</span>
-            <span>wandb zip: 6.27 MB</span>
+            <span>Data updated: 2026-07-07T14:05:29.845417</span>
+            <span>Page generated: 2026-07-08 05:05:29</span>
+            <span>wandb zip: 6.35 MB</span>
         </div>
     </div>
 
@@ -129,84 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (4050 lines)</span>
+            <span class="terminal-title">training_latest.log (4012 lines)</span>
         </div>
-        <div id="terminal">  rse_signal_gate_min_keep_rate: 0.0
-  rse_signal_gate_min_nonzero_pairs: 0
-  rse_std: 1.0
-  rse_tournament_all_pairs: true
-  rse_tournament_include_intra_seed: true
-  rse_tournament_include_matched_variants: true
-  rse_traj_steps: 0
-  rse_v25_alpha_gate: 0.3
-  rse_v25_bad_batch_std_boost: 0.0
-  rse_v25_controller_lowpass: 0.5
-  rse_v25_deadzone_sigma: 1.0
-  rse_v25_eff_std_decay: 0.97
-  rse_v25_eff_std_max_step: 0.2
-  rse_v25_ema_beta: 0.9
-  rse_v25_eval_window: 5
-  rse_v25_floor_sigma: 2.0
-  rse_v25_lambda_max: 1.0
-  rse_v25_lambda_min: 1.0
-  rse_v25_lr_decay: 1.0
-  rse_v25_min_delta_sigma: 2.0
-  rse_v25_mu_decay: 0.9
-  rse_v25_mu_min: 0.1
-  rse_v25_mu_saturation_decay: 0.95
-  rse_v25_mu_z: 1.96
-  rse_v25_plateau_alpha_target: 0.35
-  rse_v25_plateau_deadzone_target: 0.65
-  rse_v25_plateau_explore_boost: 0.0
-  rse_v25_plateau_explore_std_max: 1.6
-  rse_v25_plateau_min_gain: 0.015
-  rse_v25_plateau_shrink: 0.08
-  rse_v25_plateau_std_threshold: 2.0
-  rse_v25_plateau_window: 20
-  rse_v25_rse_std_max: 1.6
-  rse_v25_s0_batches: 1
-  rse_v25_shrink_saturation_rate: 0.45
-  rse_v25_shrinkage_n0: 8.0
-  rse_v25_sigma_null_floor: 0.05
-  rse_v25_snr_saturation: 1.5
-  rse_v25_snr_signal: 3.0
-  rse_v25_train_max_group_filter: 1.0
-  rse_v25_train_min_alpha_pair: 0.0
-  rse_v41_filter_band: 0.05
-  rse_v41_zc_floor: 0.05
-  rse_variants_per_seed: 2
-  subspace_center_scale: 0.5
-  subspace_coeff_clip: 6.0
-  subspace_max_ratio: 1.0
-  subspace_mixture: 1.0
-  subspace_sample_std: 1.0
-  subspace_timesteps:
-  - 1000.0
-  subspace_use_center: false
-  timestep: 1000.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-fsdp_optimizer_offload: false
-logdir: logs
-mixed_precision: fp16
-n_gpus: 8
-num_checkpoint_limit: 5
-num_epochs: 100000
-per_prompt_stat_tracking: true
-pretrained:
-  model: /mnt/volumes/base-4o-lx-my/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: nft_sd3_geneval_fiber_residual_subspace_2026.07.07_06.11.17
-sample:
-  deterministic: true
+        <div id="terminal">  deterministic: true
   eval_guidance_scale: 4.5
   eval_num_steps: 40
   global_std: true
@@ -4180,7 +4105,44 @@ Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 Waiting for rewards:  17%|█▋        | 1/6 [00:02&lt;00:13,  2.75s/it]
 Waiting for rewards:  33%|███▎      | 2/6 [01:25&lt;03:19, 49.83s/it]
 Waiting for rewards:  50%|█████     | 3/6 [02:09&lt;02:21, 47.29s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [02:52&lt;01:31, 45.59s/it]</div>
+Waiting for rewards:  67%|██████▋   | 4/6 [02:52&lt;01:31, 45.59s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [03:34&lt;00:44, 44.06s/it]
+Waiting for rewards: 100%|██████████| 6/6 [04:14&lt;00:00, 42.66s/it]
+Waiting for rewards: 100%|██████████| 6/6 [04:14&lt;00:00, 42.34s/it]
+I0707 14:01:14.847125 140344085955200 train_nft_sd3.py:2195] Advantages mean: 0.0 train_keep_rate=0.0 explore_only=1.0
+
+Epoch 48: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.67it/s]
+
+Epoch 48: sampling:  17%|█▋        | 1/6 [00:04&lt;00:24,  4.95s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.70it/s]
+
+Epoch 48: sampling:  33%|███▎      | 2/6 [00:09&lt;00:19,  4.95s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 48: sampling:  50%|█████     | 3/6 [00:14&lt;00:14,  4.99s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 48: sampling:  67%|██████▋   | 4/6 [00:19&lt;00:09,  4.96s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 48: sampling:  83%|████████▎ | 5/6 [00:24&lt;00:04,  4.95s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.71it/s]
+
+Epoch 48: sampling: 100%|██████████| 6/6 [00:29&lt;00:00,  4.98s/it]
+Epoch 48: sampling: 100%|██████████| 6/6 [00:29&lt;00:00,  4.97s/it]
+
+Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:34&lt;02:53, 34.75s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:18&lt;02:40, 40.05s/it]
+Waiting for rewards:  50%|█████     | 3/6 [02:05&lt;02:09, 43.31s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [02:50&lt;01:27, 43.84s/it]</div>
     </div>
 
     <div class="controls">
