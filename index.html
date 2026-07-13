@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-4nfx2jke-0004</span>
-            <span>Data updated: 2026-07-13T06:35:04.646996</span>
-            <span>Page generated: 2026-07-13 21:35:04</span>
-            <span>wandb zip: 2.33 MB</span>
+            <span>Data updated: 2026-07-13T06:45:45.437432</span>
+            <span>Page generated: 2026-07-13 21:45:45</span>
+            <span>wandb zip: 2.51 MB</span>
         </div>
     </div>
 
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2704 lines)</span>
+            <span class="terminal-title">training_latest.log (2772 lines)</span>
         </div>
         <div id="terminal">W0713 19:02:16.098000 52209 torch/distributed/run.py:792] 
 W0713 19:02:16.098000 52209 torch/distributed/run.py:792] *****************************************
@@ -2835,6 +2835,74 @@ Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  
 Eval:  90%|█████████ | 18/20 [18:41&lt;02:08, 64.05s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:07&lt;00:00,  5.13it/s]
+
+Eval:  95%|█████████▌| 19/20 [19:42&lt;01:03, 63.07s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:06&lt;00:00,  6.39it/s]
+
+Eval: 100%|██████████| 20/20 [20:19&lt;00:00, 55.43s/it]
+Eval: 100%|██████████| 20/20 [20:19&lt;00:00, 60.98s/it]
+I0713 21:35:28.315199 140708765540992 train_nft_sd3.py:2766] Saved checkpoint to logs/nft/sd3/geneval_fanft_v1_s12p2_pair8clean8_rho010_trust010_h200_standard_nft/checkpoints/checkpoint-10
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.85it/s]
+I0713 21:36:20.885040 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=33.0 global_keep_rate=0.896 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 10: online-resample sampling:   6%|▌         | 1/18 [21:16&lt;6:01:42, 1276.65s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.82it/s]
+I0713 21:37:15.226521 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=18.0 global_keep_rate=0.943 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 10: online-resample sampling:  22%|██▏       | 4/18 [22:10&lt;59:47, 256.21s/it]   
+
+Sampling Progress: 100%|██████████| 10/10 [00:04&lt;00:00,  2.47it/s]
+I0713 21:38:09.952528 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=31.0 global_keep_rate=0.979 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 10: online-resample sampling:  39%|███▉      | 7/18 [23:05&lt;23:33, 128.50s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:04&lt;00:00,  2.46it/s]
+I0713 21:39:06.300019 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=20.0 global_keep_rate=0.734 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 10: online-resample sampling:  56%|█████▌    | 10/18 [24:02&lt;10:47, 80.89s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.85it/s]
+I0713 21:40:00.418786 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=23.0 global_keep_rate=0.703 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 10: online-resample sampling:  72%|███████▏  | 13/18 [24:56&lt;04:44, 56.84s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:04&lt;00:00,  2.39it/s]
+I0713 21:40:56.316003 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=35.0 global_keep_rate=0.984 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 10: online-resample sampling:  89%|████████▉ | 16/18 [25:52&lt;01:26, 43.33s/it]
+Epoch 10: online-resample sampling: 100%|██████████| 18/18 [25:52&lt;00:00, 86.23s/it]
+I0713 21:40:56.335783 140708765540992 train_nft_sd3.py:4082] Epoch 10 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=True bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 6/6 [00:00&lt;00:00, 95325.09it/s]
+I0713 21:40:59.736990 140708765540992 train_nft_sd3.py:4545] Advantages mean: 0.5863023224860127 train_keep_rate=1.0 signal_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 10.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 10.0: training:  17%|█▋        | 1/6 [00:14&lt;01:10, 14.14s/it]
+
+Epoch 10.0: training:  33%|███▎      | 2/6 [00:28&lt;00:56, 14.09s/it]
+
+Epoch 10.0: training:  50%|█████     | 3/6 [00:42&lt;00:42, 14.07s/it]
+
+Epoch 10.0: training:  67%|██████▋   | 4/6 [00:56&lt;00:28, 14.05s/it]
+
+Epoch 10.0: training:  83%|████████▎ | 5/6 [01:10&lt;00:14, 14.06s/it]
+
+Epoch 10.0: training: 100%|██████████| 6/6 [01:24&lt;00:00, 14.09s/it]
+Epoch 10.0: training: 100%|██████████| 6/6 [01:24&lt;00:00, 14.08s/it]
+
+Epoch 11: online-resample sampling:   0%|          | 0/18 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.28it/s]
+I0713 21:44:00.345448 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=15.0 global_keep_rate=0.578 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 11: online-resample sampling:   6%|▌         | 1/18 [01:30&lt;25:44, 90.86s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.25it/s]
 </div>
     </div>
 
