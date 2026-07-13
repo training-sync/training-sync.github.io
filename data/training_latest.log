@@ -1,58 +1,4 @@
-I0713 19:04:52.348116 140708765540992 train_nft_sd3.py:3221] 
-I0713 19:04:52.348166 140708765540992 train_nft_sd3.py:3222]   Total number of samples per epoch = 1152
-I0713 19:04:52.348211 140708765540992 train_nft_sd3.py:3223]   Total train batch size (w. parallel, distributed & accumulation) = 1152
-I0713 19:04:52.348267 140708765540992 train_nft_sd3.py:3224]   Number of gradient updates per inner epoch = 1
-I0713 19:04:52.348321 140708765540992 train_nft_sd3.py:3225]   Number of inner epochs = 1
-I0713 19:04:52.348562 140708765540992 train_nft_sd3.py:3273] ***** Running training *****
-I0713 19:04:52.349477 140161734353536 train_nft_sd3.py:3216] ***** Running training *****
-I0713 19:04:52.349591 140161734353536 train_nft_sd3.py:3217]   Num Epochs = 100000
-I0713 19:04:52.349625 140161734353536 train_nft_sd3.py:3218]   Sample batch size per device = 24
-I0713 19:04:52.349649 140161734353536 train_nft_sd3.py:3219]   Train batch size per device = 24
-I0713 19:04:52.349670 140161734353536 train_nft_sd3.py:3220]   Gradient Accumulation steps = 6
-I0713 19:04:52.349689 140161734353536 train_nft_sd3.py:3221] 
-I0713 19:04:52.349707 140161734353536 train_nft_sd3.py:3222]   Total number of samples per epoch = 1152
-I0713 19:04:52.349723 140161734353536 train_nft_sd3.py:3223]   Total train batch size (w. parallel, distributed & accumulation) = 1152
-I0713 19:04:52.349745 140161734353536 train_nft_sd3.py:3224]   Number of gradient updates per inner epoch = 1
-I0713 19:04:52.349763 140161734353536 train_nft_sd3.py:3225]   Number of inner epochs = 1
-I0713 19:04:52.350034 140161734353536 train_nft_sd3.py:3273] ***** Running training *****
 
-Epoch 0: online-resample sampling:   0%|          | 0/18 [00:00<?, ?it/s]/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-I0713 19:04:52.820661 140708765540992 train_nft_sd3.py:2766] Saved checkpoint to logs/nft/sd3/geneval_fanft_v1_s12p2_pair8clean8_rho010_trust010_h200_standard_nft/checkpoints/checkpoint-0
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3671: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
-I0713 19:05:28.724310 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=41.0 global_keep_rate=0.990 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
-
-Epoch 0: online-resample sampling:   6%|▌         | 1/18 [00:36<10:18, 36.36s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.43it/s]
-I0713 19:06:26.692083 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=48.0 global_keep_rate=0.964 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
-
-Epoch 0: online-resample sampling:  22%|██▏       | 4/18 [01:34<05:15, 22.55s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.43it/s]
-I0713 19:07:01.846997 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=32.0 global_keep_rate=0.859 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
-
-Epoch 0: online-resample sampling:  39%|███▉      | 7/18 [02:09<03:04, 16.74s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.43it/s]
-I0713 19:08:49.048270 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=30.0 global_keep_rate=0.911 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
-
-Epoch 0: online-resample sampling:  56%|█████▌    | 10/18 [03:56<03:19, 24.98s/it]
 
 Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.44it/s]
 I0713 19:12:12.246864 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=45.0 global_keep_rate=0.917 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
@@ -2651,3 +2597,42 @@ Epoch 41.0: training: 100%|██████████| 6/6 [01:24<00:00, 14.
 Epoch 42: online-resample sampling:   0%|          | 0/18 [00:00<?, ?it/s]
 
 Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.20it/s]
+I0714 04:47:31.431437 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=8.0 global_keep_rate=0.500 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 42: online-resample sampling:   6%|▌         | 1/18 [01:33<26:35, 93.84s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.27it/s]
+I0714 04:49:45.725745 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=6.0 global_keep_rate=0.667 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 42: online-resample sampling:  22%|██▏       | 4/18 [03:48<12:36, 54.05s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.28it/s]
+I0714 04:51:55.001719 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=9.0 global_keep_rate=0.677 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 42: online-resample sampling:  39%|███▉      | 7/18 [05:57<08:49, 48.17s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.26it/s]
+I0714 04:54:49.123997 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=9.0 global_keep_rate=0.667 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 42: online-resample sampling:  56%|█████▌    | 10/18 [08:51<06:59, 52.45s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.26it/s]
+I0714 04:57:03.790400 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=8.0 global_keep_rate=0.615 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 42: online-resample sampling:  72%|███████▏  | 13/18 [11:06<04:07, 49.56s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.17it/s]
+I0714 04:58:12.525195 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=13.0 global_keep_rate=0.698 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 42: online-resample sampling:  89%|████████▉ | 16/18 [12:14<01:20, 40.14s/it]
+Epoch 42: online-resample sampling: 100%|██████████| 18/18 [12:14<00:00, 40.83s/it]
+I0714 04:58:12.543600 140708765540992 train_nft_sd3.py:4082] Epoch 42 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=True bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 6/6 [00:00<00:00, 88301.14it/s]
+I0714 04:58:13.831048 140708765540992 train_nft_sd3.py:4545] Advantages mean: 0.17861839097495458 train_keep_rate=1.0 signal_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 42.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 42.0: training:  17%|█▋        | 1/6 [00:14<01:11, 14.35s/it]
+
