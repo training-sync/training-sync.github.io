@@ -1,598 +1,3 @@
-bootstrap_eval_reward_avg: null
-bootstrap_eval_reward_geneval: 0.55564
-dataset: /mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-eval_on_reward_record: false
-eval_record_min_delta: 1.0e-08
-eval_record_reward_key: geneval
-eval_record_save_checkpoint: false
-fiber:
-  adaptive_ref_rms: 0.5
-  beta: 0.8
-  beta_decay: 1.0
-  cosine_stop: 0.995
-  early_stop_eps: 0.0
-  enable: true
-  eval_enable: false
-  fanft_autograd_scale: 1024.0
-  fanft_basis_dim: 2
-  fanft_cone_min: 0.5
-  fanft_directional_coeff_clip: 0.0
-  fanft_enable: true
-  fanft_fiber_trust_ratio: 0.1
-  fanft_gradient_batch_size: 8
-  fanft_pair_seeds: 8
-  fanft_radius: 0.1
-  fanft_require_one_update_per_epoch: true
-  fanft_update_norm_match: true
-  mode: structured_rse
-  nft_gamma: 0.0
-  orthogonalize: true
-  refine_iters: 1
-  retract: false
-  rse_beta_sign: 1.0
-  rse_center_strength: 0.5
-  rse_clean_seed_candidates: 0
-  rse_clean_seed_metric: max
-  rse_clean_seed_select_enable: false
-  rse_clean_variant_enable: false
-  rse_coeff_min: null
-  rse_disable_sample_filtering: false
-  rse_force_all_pairs_train: false
-  rse_handoff_alpha_good: 0.25
-  rse_handoff_alpha_low: 0.1
-  rse_handoff_budget_min_fraction: 0.041666666666666664
-  rse_handoff_budget_step: 0.25
-  rse_handoff_clean_min_gain: -0.02
-  rse_handoff_clean_window: 10
-  rse_handoff_cooldown: 3
-  rse_handoff_cost_floor: -0.08
-  rse_handoff_emergency_clean_drop: 0.03
-  rse_handoff_enable: true
-  rse_handoff_groups_per_epoch: 48.0
-  rse_handoff_nft_std_threshold: 0.3
-  rse_handoff_recovery_patience: 3
-  rse_handoff_std_shrink: 0.1
-  rse_handoff_weak_patience: 3
-  rse_hybrid_enable: false
-  rse_hybrid_nft_fraction: 0.0
-  rse_hybrid_null_fraction: 0.0
-  rse_injection_mode: first_velocity
-  rse_label_mode: pair_group
-  rse_late_guard_beta_growth: 2.0
-  rse_late_guard_beta_scale_max: 100.0
-  rse_late_guard_cooldown: 10
-  rse_late_guard_enable: true
-  rse_late_guard_kl_hard: 0.15
-  rse_late_guard_kl_target: 0.08
-  rse_late_guard_lr_factor: 0.5
-  rse_late_guard_max_lr_actions: 2
-  rse_late_guard_min_lr: 1.0e-06
-  rse_matched_min_nonzero_per_block: 2
-  rse_multiseed_include_sample_index: true
-  rse_nft_fallback_consecutive_zeros: 1
-  rse_nft_fallback_enable: true
-  rse_null_probe_fraction: 0.0
-  rse_num_seeds: 12
-  rse_online_resample_enable: true
-  rse_online_resample_max_attempts: 3
-  rse_online_resample_min_keep_rate: 0.25
-  rse_online_resample_min_nonzero_pairs: 2.0
-  rse_pair_history: 4096
-  rse_pair_lambda: 0.5
-  rse_pair_z_floor_group: 0.3
-  rse_pair_z_min_count: 4
-  rse_pair_z_short_cap: 1.25
-  rse_pair_z_window: 128
-  rse_prompt_repair_enable: true
-  rse_prompt_repair_max_attempts: 3
-  rse_prompt_repair_min_keep_rate: 0.25
-  rse_prompt_repair_min_nonzero_pairs: 2.0
-  rse_random_span_clip: 1.0
-  rse_random_span_dim: 2
-  rse_random_span_scale: 0.8
-  rse_reward_deadzone_mode: quantized
-  rse_reward_resolution: 0.05
-  rse_signal_gate_enable: false
-  rse_signal_gate_max_collect_rounds: 1
-  rse_signal_gate_min_keep_rate: 0.0
-  rse_signal_gate_min_nonzero_pairs: 0
-  rse_std: 3.0
-  rse_tournament_all_pairs: false
-  rse_tournament_include_intra_seed: true
-  rse_tournament_include_matched_variants: true
-  rse_traj_steps: 0
-  rse_v25_alpha_gate: 0.25
-  rse_v25_bad_batch_std_boost: 0.0
-  rse_v25_controller_lowpass: 0.5
-  rse_v25_deadzone_sigma: 1.0
-  rse_v25_eff_std_decay: 0.97
-  rse_v25_eff_std_max_step: 0.2
-  rse_v25_ema_beta: 0.9
-  rse_v25_eval_window: 5
-  rse_v25_floor_sigma: 2.0
-  rse_v25_lambda_max: 0.5
-  rse_v25_lambda_min: 0.0
-  rse_v25_lr_decay: 1.0
-  rse_v25_min_delta_sigma: 2.0
-  rse_v25_mu_decay: 0.9
-  rse_v25_mu_min: 0.1
-  rse_v25_mu_saturation_decay: 0.95
-  rse_v25_mu_z: 1.96
-  rse_v25_plateau_alpha_target: 0.35
-  rse_v25_plateau_deadzone_target: 0.65
-  rse_v25_plateau_explore_boost: 0.1
-  rse_v25_plateau_explore_std_max: 3.0
-  rse_v25_plateau_min_gain: 0.015
-  rse_v25_plateau_shrink: 0.08
-  rse_v25_plateau_std_threshold: 2.0
-  rse_v25_plateau_window: 20
-  rse_v25_rse_std_max: 3.0
-  rse_v25_rse_std_min: 0.05
-  rse_v25_s0_batches: 1
-  rse_v25_shrink_saturation_rate: 1.1
-  rse_v25_shrinkage_n0: 8.0
-  rse_v25_sigma_null_floor: 0.05
-  rse_v25_snr_saturation: 1.5
-  rse_v25_snr_signal: 3.0
-  rse_v25_train_max_group_filter: 1.0
-  rse_v25_train_min_alpha_pair: 0.1
-  rse_v41_filter_band: 0.05
-  rse_v41_zc_floor: 0.05
-  rse_variants_per_seed: 2
-  subspace_center_scale: 0.5
-  subspace_coeff_clip: 3.0
-  subspace_max_ratio: 1.0
-  subspace_mixture: 1.0
-  subspace_sample_std: 1.0
-  subspace_timesteps:
-  - 1000.0
-  subspace_use_center: false
-  timestep: 1000.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-fsdp_optimizer_offload: false
-logdir: logs
-mixed_precision: fp16
-num_checkpoint_limit: 5
-num_epochs: 100000
-per_prompt_stat_tracking: true
-pretrained:
-  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: nft_sd3_geneval_fanft_v1_s12p2_pair8clean8_rho010_trust010_h200_standard_nft_2026.07.13_19.02.22
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  global_std: true
-  guidance_scale: 1.0
-  noise_level: 0.7
-  num_batches_per_epoch: 6
-  num_image_per_prompt: 24
-  num_steps: 10
-  same_latent: true
-  sde_window_range: !!python/tuple
-  - 0
-  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 24
-save_dir: logs/nft/sd3/geneval_fanft_v1_s12p2_pair8clean8_rho010_trust010_h200_standard_nft
-save_freq: 10
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 6
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-
-I0713 19:02:22.877902 140161734353536 train_nft_sd3.py:3059] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-bootstrap_eval_reward_avg: null
-bootstrap_eval_reward_geneval: 0.55564
-dataset: /mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-eval_on_reward_record: false
-eval_record_min_delta: 1.0e-08
-eval_record_reward_key: geneval
-eval_record_save_checkpoint: false
-fiber:
-  adaptive_ref_rms: 0.5
-  beta: 0.8
-  beta_decay: 1.0
-  cosine_stop: 0.995
-  early_stop_eps: 0.0
-  enable: true
-  eval_enable: false
-  fanft_autograd_scale: 1024.0
-  fanft_basis_dim: 2
-  fanft_cone_min: 0.5
-  fanft_directional_coeff_clip: 0.0
-  fanft_enable: true
-  fanft_fiber_trust_ratio: 0.1
-  fanft_gradient_batch_size: 8
-  fanft_pair_seeds: 8
-  fanft_radius: 0.1
-  fanft_require_one_update_per_epoch: true
-  fanft_update_norm_match: true
-  mode: structured_rse
-  nft_gamma: 0.0
-  orthogonalize: true
-  refine_iters: 1
-  retract: false
-  rse_beta_sign: 1.0
-  rse_center_strength: 0.5
-  rse_clean_seed_candidates: 0
-  rse_clean_seed_metric: max
-  rse_clean_seed_select_enable: false
-  rse_clean_variant_enable: false
-  rse_coeff_min: null
-  rse_disable_sample_filtering: false
-  rse_force_all_pairs_train: false
-  rse_handoff_alpha_good: 0.25
-  rse_handoff_alpha_low: 0.1
-  rse_handoff_budget_min_fraction: 0.041666666666666664
-  rse_handoff_budget_step: 0.25
-  rse_handoff_clean_min_gain: -0.02
-  rse_handoff_clean_window: 10
-  rse_handoff_cooldown: 3
-  rse_handoff_cost_floor: -0.08
-  rse_handoff_emergency_clean_drop: 0.03
-  rse_handoff_enable: true
-  rse_handoff_groups_per_epoch: 48.0
-  rse_handoff_nft_std_threshold: 0.3
-  rse_handoff_recovery_patience: 3
-  rse_handoff_std_shrink: 0.1
-  rse_handoff_weak_patience: 3
-  rse_hybrid_enable: false
-  rse_hybrid_nft_fraction: 0.0
-  rse_hybrid_null_fraction: 0.0
-  rse_injection_mode: first_velocity
-  rse_label_mode: pair_group
-  rse_late_guard_beta_growth: 2.0
-  rse_late_guard_beta_scale_max: 100.0
-  rse_late_guard_cooldown: 10
-  rse_late_guard_enable: true
-  rse_late_guard_kl_hard: 0.15
-  rse_late_guard_kl_target: 0.08
-  rse_late_guard_lr_factor: 0.5
-  rse_late_guard_max_lr_actions: 2
-  rse_late_guard_min_lr: 1.0e-06
-  rse_matched_min_nonzero_per_block: 2
-  rse_multiseed_include_sample_index: true
-  rse_nft_fallback_consecutive_zeros: 1
-  rse_nft_fallback_enable: true
-  rse_null_probe_fraction: 0.0
-  rse_num_seeds: 12
-  rse_online_resample_enable: true
-  rse_online_resample_max_attempts: 3
-  rse_online_resample_min_keep_rate: 0.25
-  rse_online_resample_min_nonzero_pairs: 2.0
-  rse_pair_history: 4096
-  rse_pair_lambda: 0.5
-  rse_pair_z_floor_group: 0.3
-  rse_pair_z_min_count: 4
-  rse_pair_z_short_cap: 1.25
-  rse_pair_z_window: 128
-  rse_prompt_repair_enable: true
-  rse_prompt_repair_max_attempts: 3
-  rse_prompt_repair_min_keep_rate: 0.25
-  rse_prompt_repair_min_nonzero_pairs: 2.0
-  rse_random_span_clip: 1.0
-  rse_random_span_dim: 2
-  rse_random_span_scale: 0.8
-  rse_reward_deadzone_mode: quantized
-  rse_reward_resolution: 0.05
-  rse_signal_gate_enable: false
-  rse_signal_gate_max_collect_rounds: 1
-  rse_signal_gate_min_keep_rate: 0.0
-  rse_signal_gate_min_nonzero_pairs: 0
-  rse_std: 3.0
-  rse_tournament_all_pairs: false
-  rse_tournament_include_intra_seed: true
-  rse_tournament_include_matched_variants: true
-  rse_traj_steps: 0
-  rse_v25_alpha_gate: 0.25
-  rse_v25_bad_batch_std_boost: 0.0
-  rse_v25_controller_lowpass: 0.5
-  rse_v25_deadzone_sigma: 1.0
-  rse_v25_eff_std_decay: 0.97
-  rse_v25_eff_std_max_step: 0.2
-  rse_v25_ema_beta: 0.9
-  rse_v25_eval_window: 5
-  rse_v25_floor_sigma: 2.0
-  rse_v25_lambda_max: 0.5
-  rse_v25_lambda_min: 0.0
-  rse_v25_lr_decay: 1.0
-  rse_v25_min_delta_sigma: 2.0
-  rse_v25_mu_decay: 0.9
-  rse_v25_mu_min: 0.1
-  rse_v25_mu_saturation_decay: 0.95
-  rse_v25_mu_z: 1.96
-  rse_v25_plateau_alpha_target: 0.35
-  rse_v25_plateau_deadzone_target: 0.65
-  rse_v25_plateau_explore_boost: 0.1
-  rse_v25_plateau_explore_std_max: 3.0
-  rse_v25_plateau_min_gain: 0.015
-  rse_v25_plateau_shrink: 0.08
-  rse_v25_plateau_std_threshold: 2.0
-  rse_v25_plateau_window: 20
-  rse_v25_rse_std_max: 3.0
-  rse_v25_rse_std_min: 0.05
-  rse_v25_s0_batches: 1
-  rse_v25_shrink_saturation_rate: 1.1
-  rse_v25_shrinkage_n0: 8.0
-  rse_v25_sigma_null_floor: 0.05
-  rse_v25_snr_saturation: 1.5
-  rse_v25_snr_signal: 3.0
-  rse_v25_train_max_group_filter: 1.0
-  rse_v25_train_min_alpha_pair: 0.1
-  rse_v41_filter_band: 0.05
-  rse_v41_zc_floor: 0.05
-  rse_variants_per_seed: 2
-  subspace_center_scale: 0.5
-  subspace_coeff_clip: 3.0
-  subspace_max_ratio: 1.0
-  subspace_mixture: 1.0
-  subspace_sample_std: 1.0
-  subspace_timesteps:
-  - 1000.0
-  subspace_use_center: false
-  timestep: 1000.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-fsdp_optimizer_offload: false
-logdir: logs
-mixed_precision: fp16
-num_checkpoint_limit: 5
-num_epochs: 100000
-per_prompt_stat_tracking: true
-pretrained:
-  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: nft_sd3_geneval_fanft_v1_s12p2_pair8clean8_rho010_trust010_h200_standard_nft_2026.07.13_19.02.22
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  global_std: true
-  guidance_scale: 1.0
-  noise_level: 0.7
-  num_batches_per_epoch: 6
-  num_image_per_prompt: 24
-  num_steps: 10
-  same_latent: true
-  sde_window_range: !!python/tuple
-  - 0
-  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 24
-save_dir: logs/nft/sd3/geneval_fanft_v1_s12p2_pair8clean8_rho010_trust010_h200_standard_nft
-save_freq: 10
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 6
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3071: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0713 19:02:22.879322 140610644152960 train_nft_sd3.py:3077] Waiting 30s before model load (stagger)...
-/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:3071: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0713 19:02:22.880667 140161734353536 train_nft_sd3.py:3077] Waiting 75s before model load (stagger)...
-I0713 19:02:22.880939 140685916451456 train_nft_sd3.py:3059] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-bootstrap_eval_reward_avg: null
-bootstrap_eval_reward_geneval: 0.55564
-dataset: /mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-eval_on_reward_record: false
-eval_record_min_delta: 1.0e-08
-eval_record_reward_key: geneval
-eval_record_save_checkpoint: false
-fiber:
-  adaptive_ref_rms: 0.5
-  beta: 0.8
-  beta_decay: 1.0
-  cosine_stop: 0.995
-  early_stop_eps: 0.0
-  enable: true
-  eval_enable: false
-  fanft_autograd_scale: 1024.0
-  fanft_basis_dim: 2
-  fanft_cone_min: 0.5
-  fanft_directional_coeff_clip: 0.0
-  fanft_enable: true
-  fanft_fiber_trust_ratio: 0.1
-  fanft_gradient_batch_size: 8
-  fanft_pair_seeds: 8
-  fanft_radius: 0.1
-  fanft_require_one_update_per_epoch: true
-  fanft_update_norm_match: true
-  mode: structured_rse
-  nft_gamma: 0.0
-  orthogonalize: true
-  refine_iters: 1
-  retract: false
-  rse_beta_sign: 1.0
-  rse_center_strength: 0.5
-  rse_clean_seed_candidates: 0
-  rse_clean_seed_metric: max
-  rse_clean_seed_select_enable: false
-  rse_clean_variant_enable: false
-  rse_coeff_min: null
-  rse_disable_sample_filtering: false
-  rse_force_all_pairs_train: false
-  rse_handoff_alpha_good: 0.25
-  rse_handoff_alpha_low: 0.1
-  rse_handoff_budget_min_fraction: 0.041666666666666664
-  rse_handoff_budget_step: 0.25
-  rse_handoff_clean_min_gain: -0.02
-  rse_handoff_clean_window: 10
-  rse_handoff_cooldown: 3
-  rse_handoff_cost_floor: -0.08
-  rse_handoff_emergency_clean_drop: 0.03
-  rse_handoff_enable: true
-  rse_handoff_groups_per_epoch: 48.0
-  rse_handoff_nft_std_threshold: 0.3
-  rse_handoff_recovery_patience: 3
-  rse_handoff_std_shrink: 0.1
-  rse_handoff_weak_patience: 3
-  rse_hybrid_enable: false
-  rse_hybrid_nft_fraction: 0.0
-  rse_hybrid_null_fraction: 0.0
-  rse_injection_mode: first_velocity
-  rse_label_mode: pair_group
-  rse_late_guard_beta_growth: 2.0
-  rse_late_guard_beta_scale_max: 100.0
-  rse_late_guard_cooldown: 10
-  rse_late_guard_enable: true
-  rse_late_guard_kl_hard: 0.15
-  rse_late_guard_kl_target: 0.08
-  rse_late_guard_lr_factor: 0.5
-  rse_late_guard_max_lr_actions: 2
-  rse_late_guard_min_lr: 1.0e-06
-  rse_matched_min_nonzero_per_block: 2
-  rse_multiseed_include_sample_index: true
-  rse_nft_fallback_consecutive_zeros: 1
-  rse_nft_fallback_enable: true
-  rse_null_probe_fraction: 0.0
-  rse_num_seeds: 12
-  rse_online_resample_enable: true
-  rse_online_resample_max_attempts: 3
-  rse_online_resample_min_keep_rate: 0.25
-  rse_online_resample_min_nonzero_pairs: 2.0
-  rse_pair_history: 4096
-  rse_pair_lambda: 0.5
-  rse_pair_z_floor_group: 0.3
-  rse_pair_z_min_count: 4
-  rse_pair_z_short_cap: 1.25
-  rse_pair_z_window: 128
-  rse_prompt_repair_enable: true
-  rse_prompt_repair_max_attempts: 3
-  rse_prompt_repair_min_keep_rate: 0.25
-  rse_prompt_repair_min_nonzero_pairs: 2.0
-  rse_random_span_clip: 1.0
-  rse_random_span_dim: 2
-  rse_random_span_scale: 0.8
-  rse_reward_deadzone_mode: quantized
-  rse_reward_resolution: 0.05
-  rse_signal_gate_enable: false
-  rse_signal_gate_max_collect_rounds: 1
-  rse_signal_gate_min_keep_rate: 0.0
-  rse_signal_gate_min_nonzero_pairs: 0
-  rse_std: 3.0
-  rse_tournament_all_pairs: false
-  rse_tournament_include_intra_seed: true
-  rse_tournament_include_matched_variants: true
-  rse_traj_steps: 0
-  rse_v25_alpha_gate: 0.25
-  rse_v25_bad_batch_std_boost: 0.0
-  rse_v25_controller_lowpass: 0.5
-  rse_v25_deadzone_sigma: 1.0
-  rse_v25_eff_std_decay: 0.97
-  rse_v25_eff_std_max_step: 0.2
-  rse_v25_ema_beta: 0.9
-  rse_v25_eval_window: 5
-  rse_v25_floor_sigma: 2.0
-  rse_v25_lambda_max: 0.5
-  rse_v25_lambda_min: 0.0
-  rse_v25_lr_decay: 1.0
-  rse_v25_min_delta_sigma: 2.0
-  rse_v25_mu_decay: 0.9
-  rse_v25_mu_min: 0.1
-  rse_v25_mu_saturation_decay: 0.95
-  rse_v25_mu_z: 1.96
-  rse_v25_plateau_alpha_target: 0.35
-  rse_v25_plateau_deadzone_target: 0.65
-  rse_v25_plateau_explore_boost: 0.1
-  rse_v25_plateau_explore_std_max: 3.0
-  rse_v25_plateau_min_gain: 0.015
-  rse_v25_plateau_shrink: 0.08
-  rse_v25_plateau_std_threshold: 2.0
-  rse_v25_plateau_window: 20
-  rse_v25_rse_std_max: 3.0
-  rse_v25_rse_std_min: 0.05
-  rse_v25_s0_batches: 1
-  rse_v25_shrink_saturation_rate: 1.1
-  rse_v25_shrinkage_n0: 8.0
-  rse_v25_sigma_null_floor: 0.05
-  rse_v25_snr_saturation: 1.5
-  rse_v25_snr_signal: 3.0
-  rse_v25_train_max_group_filter: 1.0
-  rse_v25_train_min_alpha_pair: 0.1
-  rse_v41_filter_band: 0.05
-  rse_v41_zc_floor: 0.05
   rse_variants_per_seed: 2
   subspace_center_scale: 0.5
   subspace_coeff_clip: 3.0
@@ -3757,3 +3162,81 @@ I0714 04:13:35.391454 140708765540992 train_nft_sd3.py:4025] Online RSE resample
 Epoch 39: online-resample sampling:  56%|█████▌    | 10/18 [07:52<05:16, 39.54s/it]
 
 Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.28it/s]
+I0714 04:14:48.527932 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=3.0 global_keep_rate=0.500 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 39: online-resample sampling:  72%|███████▏  | 13/18 [09:05<02:48, 33.74s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.26it/s]
+I0714 04:17:22.007568 140708765540992 train_nft_sd3.py:4025] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=8.0 global_keep_rate=0.583 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 39: online-resample sampling:  89%|████████▉ | 16/18 [11:39<01:19, 39.89s/it]
+Epoch 39: online-resample sampling: 100%|██████████| 18/18 [11:39<00:00, 38.84s/it]
+I0714 04:17:22.026988 140708765540992 train_nft_sd3.py:4082] Epoch 39 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=True bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 6/6 [00:00<00:00, 84733.41it/s]
+I0714 04:17:23.314435 140708765540992 train_nft_sd3.py:4545] Advantages mean: 0.25564255518014095 train_keep_rate=1.0 signal_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 39.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 39.0: training:  17%|█▋        | 1/6 [00:14<01:10, 14.05s/it]
+
+Epoch 39.0: training:  33%|███▎      | 2/6 [00:28<00:56, 14.12s/it]
+
+Epoch 39.0: training:  50%|█████     | 3/6 [00:42<00:42, 14.07s/it]
+
+Epoch 39.0: training:  67%|██████▋   | 4/6 [00:56<00:28, 14.06s/it]
+
+Epoch 39.0: training:  83%|████████▎ | 5/6 [01:10<00:14, 14.07s/it]
+
+Epoch 39.0: training: 100%|██████████| 6/6 [01:24<00:00, 14.09s/it]
+Epoch 39.0: training: 100%|██████████| 6/6 [01:24<00:00, 14.08s/it]
+
+Epoch 40: online-resample sampling:   0%|          | 0/18 [00:00<?, ?it/s]
+Eval:   0%|          | 0/20 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 40/40 [00:07<00:00,  5.08it/s]
+
+Eval:   5%|▌         | 1/20 [00:32<10:12, 32.23s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.38it/s]
+
+Eval:  10%|█         | 2/20 [01:05<09:47, 32.66s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:08<00:00,  4.52it/s]
+
+Eval:  15%|█▌        | 3/20 [01:37<09:14, 32.64s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.41it/s]
+
+Eval:  20%|██        | 4/20 [02:14<09:06, 34.16s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:08<00:00,  4.55it/s]
+
+Eval:  25%|██▌       | 5/20 [02:49<08:36, 34.42s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:08<00:00,  4.48it/s]
+
+Eval:  30%|███       | 6/20 [03:22<07:58, 34.19s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.43it/s]
+
+Eval:  35%|███▌      | 7/20 [03:56<07:22, 34.02s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.42it/s]
+
+Eval:  40%|████      | 8/20 [04:29<06:45, 33.80s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.37it/s]
+
+Eval:  45%|████▌     | 9/20 [05:05<06:16, 34.22s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.26it/s]
+
+Eval:  50%|█████     | 10/20 [05:36<05:34, 33.49s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:08<00:00,  4.61it/s]
+
+Eval:  55%|█████▌    | 11/20 [06:11<05:04, 33.87s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:09<00:00,  4.29it/s]
