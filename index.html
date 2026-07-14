@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-4nfx2jke-0004</span>
-            <span>Data updated: 2026-07-13T22:22:48.307916</span>
-            <span>Page generated: 2026-07-14 13:22:48</span>
-            <span>wandb zip: 0.3 MB</span>
+            <span>Data updated: 2026-07-13T22:33:22.598815</span>
+            <span>Page generated: 2026-07-14 13:33:22</span>
+            <span>wandb zip: 0.45 MB</span>
         </div>
     </div>
 
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2138 lines)</span>
+            <span class="terminal-title">training_latest.log (2148 lines)</span>
         </div>
         <div id="terminal">W0714 13:02:01.208000 623422 torch/distributed/run.py:792] 
 W0714 13:02:01.208000 623422 torch/distributed/run.py:792] *****************************************
@@ -2269,6 +2269,16 @@ Epoch 1: online-resample sampling:   0%|          | 0/18 [00:00&lt;?, ?it/s]/mnt
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 
 Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.28it/s]
+I0714 13:26:53.699016 140133897355904 train_nft_sd3.py:4194] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=38.0 global_keep_rate=0.969 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 1: online-resample sampling:   6%|▌         | 1/18 [07:51&lt;2:13:29, 471.15s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.29it/s]
+I0714 13:30:42.176679 140133897355904 train_nft_sd3.py:4194] Online RSE resample attempt 1/3: accepted=True global_nonzero_pairs=33.0 global_keep_rate=0.948 global_bad_blocks=0.0/8.0 good_fraction=1.000 improved_blocks=0/0
+
+Epoch 1: online-resample sampling:  22%|██▏       | 4/18 [11:39&lt;35:12, 150.89s/it]  
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.26it/s]
 </div>
     </div>
 
