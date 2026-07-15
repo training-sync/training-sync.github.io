@@ -1,81 +1,5 @@
 
 
-Sampling Progress: 100%|██████████| 40/40 [00:14<00:00,  2.76it/s]
-
-Eval:  95%|█████████▌| 19/20 [24:20<01:25, 85.78s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:11<00:00,  3.44it/s]
-
-Eval: 100%|██████████| 20/20 [25:12<00:00, 75.75s/it]
-Eval: 100%|██████████| 20/20 [25:12<00:00, 75.65s/it]
-I0716 01:10:28.166850 140198381978240 train_nft_sd3.py:2895] Saved checkpoint to logs/nft/sd3/geneval_fanft_v5_causal_pair4clean16_multiscale010to020_energyconf_trust010_h200_eval10/checkpoints/checkpoint-20
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.64it/s]
-
-Epoch 20: sampling:  17%|█▋        | 1/6 [25:21<2:06:48, 1521.67s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.71it/s]
-
-Epoch 20: sampling:  33%|███▎      | 2/6 [25:26<41:58, 629.51s/it]   
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.73it/s]
-
-Epoch 20: sampling:  50%|█████     | 3/6 [25:31<17:12, 344.33s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.72it/s]
-
-Epoch 20: sampling:  67%|██████▋   | 4/6 [25:36<07:00, 210.37s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.72it/s]
-
-Epoch 20: sampling:  83%|████████▎ | 5/6 [25:41<02:16, 136.27s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.73it/s]
-
-Epoch 20: sampling: 100%|██████████| 6/6 [25:46<00:00, 91.62s/it] 
-Epoch 20: sampling: 100%|██████████| 6/6 [25:46<00:00, 257.75s/it]
-I0716 01:10:58.006982 140198381978240 train_nft_sd3.py:4453] Epoch 20 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:40<03:23, 40.70s/it]
-Waiting for rewards:  33%|███▎      | 2/6 [01:21<02:42, 40.60s/it]
-Waiting for rewards:  50%|█████     | 3/6 [02:23<02:32, 50.69s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [03:44<02:04, 62.42s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [04:26<00:55, 55.23s/it]
-Waiting for rewards: 100%|██████████| 6/6 [04:33<00:00, 38.82s/it]
-Waiting for rewards: 100%|██████████| 6/6 [04:33<00:00, 45.63s/it]
-I0716 01:15:56.616631 140198381978240 train_nft_sd3.py:4551] Epoch 20 reward metrics: {'reward_accuracy': 0.4574652910232544, 'reward_geneval': 0.6684027314186096, 'reward_avg': 0.670500636100769, 'reward_geneval_all': 0.6705005764961243, 'reward_geneval_clean_count': 768.0, 'reward_geneval_rse_count': 384.0, 'reward_geneval_rse': 0.6746962070465088}
-I0716 01:15:57.922245 140198381978240 train_nft_sd3.py:5116] Advantages mean: 0.49321317536606385 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 20.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
-
-Epoch 20.0: training:  17%|█▋        | 1/6 [00:14<01:13, 14.78s/it]
-
-Epoch 20.0: training:  33%|███▎      | 2/6 [00:28<00:56, 14.24s/it]
-
-Epoch 20.0: training:  50%|█████     | 3/6 [00:42<00:42, 14.10s/it]
-
-Epoch 20.0: training:  67%|██████▋   | 4/6 [00:57<00:28, 14.26s/it]
-
-Epoch 20.0: training:  83%|████████▎ | 5/6 [01:11<00:14, 14.18s/it]
-
-Epoch 20.0: training: 100%|██████████| 6/6 [01:25<00:00, 14.17s/it]
-Epoch 20.0: training: 100%|██████████| 6/6 [01:25<00:00, 14.21s/it]
-
-Epoch 21: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.17it/s]
-
-Epoch 21: sampling:  17%|█▋        | 1/6 [00:04<00:20,  4.11s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.71it/s]
-
-Epoch 21: sampling:  33%|███▎      | 2/6 [00:09<00:18,  4.63s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.71it/s]
-
-Epoch 21: sampling:  50%|█████     | 3/6 [00:14<00:14,  4.81s/it]
-
 Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.71it/s]
 
 Epoch 21: sampling:  67%|██████▋   | 4/6 [00:19<00:09,  4.90s/it]
@@ -2706,3 +2630,98 @@ Epoch 63.0: training:  33%|███▎      | 2/6 [00:28<00:56, 14.21s/it]
 
 Epoch 63.0: training:  50%|█████     | 3/6 [00:42<00:42, 14.11s/it]
 
+Epoch 63.0: training:  67%|██████▋   | 4/6 [00:56<00:28, 14.07s/it]
+
+Epoch 63.0: training:  83%|████████▎ | 5/6 [01:10<00:14, 14.03s/it]
+
+Epoch 63.0: training: 100%|██████████| 6/6 [01:24<00:00, 14.13s/it]
+Epoch 63.0: training: 100%|██████████| 6/6 [01:24<00:00, 14.13s/it]
+
+Epoch 64: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.28it/s]
+
+Epoch 64: sampling:  17%|█▋        | 1/6 [00:03<00:19,  4.00s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.66it/s]
+
+Epoch 64: sampling:  33%|███▎      | 2/6 [00:09<00:18,  4.60s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.66it/s]
+
+Epoch 64: sampling:  50%|█████     | 3/6 [00:14<00:14,  4.79s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.65it/s]
+
+Epoch 64: sampling:  67%|██████▋   | 4/6 [00:19<00:09,  4.88s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.71it/s]
+
+Epoch 64: sampling:  83%|████████▎ | 5/6 [00:24<00:04,  4.91s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.70it/s]
+
+Epoch 64: sampling: 100%|██████████| 6/6 [00:28<00:00,  4.93s/it]
+Epoch 64: sampling: 100%|██████████| 6/6 [00:28<00:00,  4.83s/it]
+I0716 07:28:53.446277 140198381978240 train_nft_sd3.py:4453] Epoch 64 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:01<00:09,  1.85s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:23<03:15, 48.91s/it]
+Waiting for rewards:  50%|█████     | 3/6 [02:09<02:21, 47.31s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [02:50<01:29, 44.90s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [03:32<00:43, 43.96s/it]
+Waiting for rewards: 100%|██████████| 6/6 [04:21<00:00, 45.79s/it]
+Waiting for rewards: 100%|██████████| 6/6 [04:21<00:00, 43.66s/it]
+I0716 07:33:15.407564 140198381978240 train_nft_sd3.py:4551] Epoch 64 reward metrics: {'reward_accuracy': 0.6866319179534912, 'reward_geneval': 0.8197699189186096, 'reward_avg': 0.8232060074806213, 'reward_geneval_all': 0.8232060074806213, 'reward_geneval_clean_count': 768.0, 'reward_geneval_rse_count': 384.0, 'reward_geneval_rse': 0.830078125}
+I0716 07:33:16.778187 140198381978240 train_nft_sd3.py:5116] Advantages mean: 0.27502264751453287 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 64.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 64.0: training:  17%|█▋        | 1/6 [00:14<01:14, 14.94s/it]
+
+Epoch 64.0: training:  33%|███▎      | 2/6 [00:28<00:57, 14.42s/it]
+
+Epoch 64.0: training:  50%|█████     | 3/6 [00:43<00:42, 14.30s/it]
+
+Epoch 64.0: training:  67%|██████▋   | 4/6 [00:57<00:28, 14.14s/it]
+
+Epoch 64.0: training:  83%|████████▎ | 5/6 [01:11<00:14, 14.20s/it]
+
+Epoch 64.0: training: 100%|██████████| 6/6 [01:25<00:00, 14.23s/it]
+Epoch 64.0: training: 100%|██████████| 6/6 [01:25<00:00, 14.28s/it]
+
+Epoch 65: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.25it/s]
+
+Epoch 65: sampling:  17%|█▋        | 1/6 [00:04<00:20,  4.02s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.64it/s]
+
+Epoch 65: sampling:  33%|███▎      | 2/6 [00:09<00:19,  4.76s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.70it/s]
+
+Epoch 65: sampling:  50%|█████     | 3/6 [00:14<00:14,  4.89s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.70it/s]
+
+Epoch 65: sampling:  67%|██████▋   | 4/6 [00:19<00:09,  4.95s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.70it/s]
+
+Epoch 65: sampling:  83%|████████▎ | 5/6 [00:24<00:04,  4.98s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.70it/s]
+
+Epoch 65: sampling: 100%|██████████| 6/6 [00:29<00:00,  5.01s/it]
+Epoch 65: sampling: 100%|██████████| 6/6 [00:29<00:00,  4.92s/it]
+I0716 07:35:14.833492 140198381978240 train_nft_sd3.py:4453] Epoch 65 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:10<00:54, 10.88s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:21<03:04, 46.24s/it]
+Waiting for rewards:  50%|█████     | 3/6 [02:02<02:10, 43.60s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [02:46<01:27, 43.71s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [03:30<00:44, 44.00s/it]
