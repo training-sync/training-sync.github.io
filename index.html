@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-4nfx2jke-0004</span>
-            <span>Data updated: 2026-07-16T05:52:41.938079</span>
-            <span>Page generated: 2026-07-16 20:52:42</span>
-            <span>wandb zip: 1.22 MB</span>
+            <span>Data updated: 2026-07-16T06:03:50.130399</span>
+            <span>Page generated: 2026-07-16 21:03:50</span>
+            <span>wandb zip: 1.4 MB</span>
         </div>
     </div>
 
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2039 lines)</span>
+            <span class="terminal-title">training_latest.log (2097 lines)</span>
         </div>
         <div id="terminal">W0716 19:41:06.352000 3016816 torch/distributed/run.py:792] 
 W0716 19:41:06.352000 3016816 torch/distributed/run.py:792] *****************************************
@@ -2169,7 +2169,66 @@ Epoch 9: sampling: 100%|██████████| 6/6 [00:29&lt;00:00,  4.
 I0716 20:50:42.779718 140237050348160 train_nft_sd3.py:4564] Epoch 9 collection: generated_images=1152 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
 
 Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:34&lt;02:52, 34.52s/it]</div>
+Waiting for rewards:  17%|█▋        | 1/6 [00:34&lt;02:52, 34.52s/it]
+Waiting for rewards:  33%|███▎      | 2/6 [01:37&lt;03:25, 51.31s/it]
+Waiting for rewards:  50%|█████     | 3/6 [02:31&lt;02:37, 52.55s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [03:24&lt;01:45, 52.79s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [04:20&lt;00:53, 53.67s/it]
+Waiting for rewards: 100%|██████████| 6/6 [05:11&lt;00:00, 52.95s/it]
+Waiting for rewards: 100%|██████████| 6/6 [05:11&lt;00:00, 51.92s/it]
+I0716 20:55:54.335944 140237050348160 train_nft_sd3.py:4662] Epoch 9 reward metrics: {'reward_accuracy': 0.3246527910232544, 'reward_geneval': 0.6000433564186096, 'reward_avg': 0.5958478450775146, 'reward_geneval_all': 0.5958478450775146, 'reward_geneval_clean_count': 768.0, 'reward_geneval_rse_count': 384.0, 'reward_geneval_rse': 0.5874565839767456}
+I0716 20:55:55.634431 140237050348160 train_nft_sd3.py:5256] Advantages mean: 0.5707134119901686 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 9.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 9.0: training:  17%|█▋        | 1/6 [00:14&lt;01:13, 14.68s/it]
+
+Epoch 9.0: training:  33%|███▎      | 2/6 [00:28&lt;00:57, 14.31s/it]
+
+Epoch 9.0: training:  50%|█████     | 3/6 [00:42&lt;00:42, 14.14s/it]
+
+Epoch 9.0: training:  67%|██████▋   | 4/6 [00:56&lt;00:28, 14.09s/it]
+
+Epoch 9.0: training:  83%|████████▎ | 5/6 [01:10&lt;00:14, 14.04s/it]
+
+Epoch 9.0: training: 100%|██████████| 6/6 [01:24&lt;00:00, 14.08s/it]
+Epoch 9.0: training: 100%|██████████| 6/6 [01:24&lt;00:00, 14.13s/it]
+
+Epoch 10: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+Eval:   0%|          | 0/20 [00:00&lt;?, ?it/s]/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:2770: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+
+Sampling Progress: 100%|██████████| 40/40 [00:14&lt;00:00,  2.74it/s]
+
+Eval:   5%|▌         | 1/20 [01:09&lt;21:52, 69.06s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:14&lt;00:00,  2.74it/s]
+
+Eval:  10%|█         | 2/20 [02:15&lt;20:14, 67.46s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:14&lt;00:00,  2.77it/s]
+
+Eval:  15%|█▌        | 3/20 [03:36&lt;20:54, 73.81s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:14&lt;00:00,  2.77it/s]
+
+Eval:  20%|██        | 4/20 [05:25&lt;23:20, 87.52s/it]
+
+</div>
     </div>
 
     <div class="controls">
