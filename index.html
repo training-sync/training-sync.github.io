@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-tfejbecp-0043</span>
-            <span>Data updated: 2026-07-17T23:44:28.845421</span>
-            <span>Page generated: 2026-07-18 14:44:29</span>
-            <span>wandb zip: 0.43 MB</span>
+            <span>Data updated: 2026-07-17T23:54:57.921098</span>
+            <span>Page generated: 2026-07-18 14:54:58</span>
+            <span>wandb zip: 0.14 MB</span>
         </div>
     </div>
 
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (434 lines)</span>
+            <span class="terminal-title">training_latest.log (341 lines)</span>
         </div>
         <div id="terminal">The following values were not passed to `accelerate launch` and had defaults used instead:
 		More than one GPU was found, enabling multi-GPU training.
@@ -138,13 +138,24 @@
 	`--mixed_precision` was set to a value of `'no'`
 	`--dynamo_backend` was set to a value of `'no'`
 To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:02,  3.14it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:05,  1.59it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:01&lt;00:03,  1.84it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:00&lt;00:03,  1.99it/s]
+
+Loading pipeline components...:  33%|███▎      | 3/9 [00:01&lt;00:02,  2.28it/s]wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]wandb: Tracking run with wandb version 0.18.7
 wandb: W&amp;B syncing is set to `offline` in this directory.  
 wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
 
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]I0718 13:54:47.751768 140470768702080 train_sd3_fiber_grpo.py:436] 
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]I0718 14:47:32.428630 140223422366336 train_sd3_fiber_grpo.py:436] 
 activation_checkpointing: false
 allow_tf32: true
 dataset: /mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
@@ -178,7 +189,7 @@ resolution: 512
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: flow_grpo_geneval_sd3_h200_nft_matched_2026.07.18_13.54.45
+run_name: flow_grpo_geneval_sd3_h200_nft_matched_2026.07.18_14.47.30
 sample:
   batch_size: 8
   eval_guidance_scale: 4.5
@@ -223,140 +234,124 @@ train:
 use_lora: true
 
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:04,  1.87it/s]
 
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:05,  1.50it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:02,  2.92it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:00&lt;00:03,  2.16it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  33%|███▎      | 3/9 [00:01&lt;00:02,  2.37it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:01&lt;00:03,  1.79it/s]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:04&lt;00:03,  1.05it/s]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:04&lt;00:02,  1.26it/s]
+
+Loading pipeline components...:  33%|███▎      | 3/9 [00:04&lt;00:10,  1.79s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:04&lt;00:03,  1.13it/s]
+
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:05&lt;00:02,  1.34it/s]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10&lt;00:00,  5.26s/it]
+
+Loading pipeline components...:  44%|████▍     | 4/9 [00:12&lt;00:22,  4.52s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.56s/it]
+
+Loading pipeline components...:  33%|███▎      | 3/9 [00:12&lt;00:32,  5.49s/it]
+
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:14&lt;00:15,  3.83s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  44%|████▍     | 4/9 [00:15&lt;00:21,  4.35s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:15&lt;00:07,  2.64s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:15&lt;00:11,  2.89s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:15&lt;00:06,  2.01s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:16&lt;00:01,  1.14s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:17&lt;00:00,  8.56s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:17&lt;00:00,  8.69s/it]
+
+Loading pipeline components...:  11%|█         | 1/9 [00:17&lt;02:22, 17.77s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:17&lt;01:02,  8.97s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:17&lt;00:00,  8.60s/it]
+
+Loading pipeline components...:  11%|█         | 1/9 [00:17&lt;02:22, 17.86s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12&lt;00:00,  6.48s/it]
+
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:17&lt;00:08,  4.41s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:17&lt;00:00,  8.66s/it]
+
+Loading pipeline components...:  11%|█         | 1/9 [00:17&lt;02:21, 17.63s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  33%|███▎      | 3/9 [00:18&lt;00:32,  5.37s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:18&lt;00:52,  7.51s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:18&lt;00:17,  3.49s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:18&lt;00:54,  7.79s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:19&lt;00:09,  2.42s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:19&lt;00:26,  4.42s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:19&lt;00:05,  1.85s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:20&lt;01:01,  8.84s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:20&lt;00:29,  4.95s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:20&lt;00:32,  5.40s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  44%|████▍     | 4/9 [00:20&lt;00:15,  3.12s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  44%|████▍     | 4/9 [00:21&lt;00:16,  3.40s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:21&lt;00:05,  1.72s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:21&lt;00:19,  3.83s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:22&lt;00:02,  1.44s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:24&lt;00:09,  4.90s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:22&lt;00:01,  1.12s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:24&lt;00:03,  3.44s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:17&lt;00:00,  8.51s/it]
+
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:22&lt;00:11,  5.57s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:24&lt;00:00,  2.77s/it]
 You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:04,  1.89it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:03,  2.58it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:02,  2.69it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00&lt;00:06,  1.18it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:00&lt;00:03,  2.13it/s]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:01&lt;00:02,  2.41it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:01&lt;00:04,  1.71it/s]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:01&lt;00:02,  2.52it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:03&lt;00:27,  3.39s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:04&lt;00:16,  2.36s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:03&lt;00:11,  1.60s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:04&lt;00:09,  1.51s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:04&lt;00:06,  1.09s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:22&lt;00:04,  4.03s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:26&lt;00:00,  3.50s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:26&lt;00:00,  2.93s/it]
 
-Loading pipeline components...:  44%|████▍     | 4/9 [00:04&lt;00:04,  1.06it/s]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:05&lt;00:03,  1.31it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:05&lt;00:23,  3.36s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:29&lt;00:08,  4.30s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:28&lt;00:06,  6.42s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:29&lt;00:03,  3.05s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:29&lt;00:00,  4.74s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:29&lt;00:00,  3.30s/it]
 
-Loading pipeline components...:  33%|███▎      | 3/9 [00:06&lt;00:12,  2.14s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:06&lt;00:11,  2.32s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:31&lt;00:00,  2.82s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:31&lt;00:00,  3.54s/it]
 
-Loading pipeline components...:  44%|████▍     | 4/9 [00:06&lt;00:07,  1.44s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:06&lt;00:06,  1.60s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:35&lt;00:28,  7.17s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:35&lt;00:29,  7.47s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:35&lt;00:00,  4.53s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:35&lt;00:00,  3.98s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.75s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:36&lt;00:15,  5.04s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:36&lt;00:07,  3.72s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:35&lt;00:00,  6.74s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:35&lt;00:00,  3.99s/it]
 
-Loading pipeline components...:  11%|█         | 1/9 [00:11&lt;01:34, 11.87s/it]
-Loading pipeline components...:  11%|█         | 1/9 [00:11&lt;01:31, 11.46s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:11&lt;00:47,  6.75s/it]
-
-Loading pipeline components...:  33%|███▎      | 3/9 [00:12&lt;00:22,  3.83s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:12&lt;00:35,  5.12s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  22%|██▏       | 2/9 [00:12&lt;00:36,  5.16s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:12&lt;00:07,  1.78s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:12&lt;00:04,  1.35s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:13&lt;00:18,  3.14s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:12&lt;00:17,  2.99s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:12&lt;00:09,  1.94s/it]
-
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:15&lt;00:03,  1.63s/it]
-
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:17&lt;00:18,  4.71s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:17&lt;00:32,  6.45s/it]
-
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:17&lt;00:09,  3.25s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.99s/it]
-
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:17&lt;00:13,  4.67s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:17&lt;00:06,  3.25s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:14&lt;00:00,  7.19s/it]
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:19&lt;00:33,  6.71s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:19&lt;00:18,  4.51s/it]
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:23&lt;00:30,  6.02s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11&lt;00:00,  5.98s/it]
-
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:25&lt;00:22,  5.64s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:25&lt;00:10,  3.47s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:25&lt;00:11,  3.83s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:18&lt;00:00,  9.35s/it]
-
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:25&lt;00:22,  7.50s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:26&lt;00:05,  2.60s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:25&lt;00:02,  2.04s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:26&lt;00:01,  1.96s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:26&lt;00:10,  5.26s/it]
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:26&lt;00:00,  1.48s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:26&lt;00:00,  2.98s/it]
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:28&lt;00:00,  2.09s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:28&lt;00:00,  3.12s/it]
-
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:28&lt;00:05,  5.48s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:28&lt;00:00,  3.15s/it]
-
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:29&lt;00:09,  4.77s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:30&lt;00:03,  3.59s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:30&lt;00:00,  2.69s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:30&lt;00:00,  3.41s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:15&lt;00:00,  8.00s/it]
-
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:31&lt;00:05,  5.94s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:13&lt;00:00,  6.99s/it]
-
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:31&lt;00:37,  9.26s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:31&lt;00:00,  4.30s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:31&lt;00:00,  3.53s/it]
-
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:33&lt;00:20,  6.86s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:33&lt;00:09,  4.72s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:34&lt;00:03,  3.35s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:34&lt;00:00,  2.41s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:34&lt;00:00,  3.84s/it]
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  5.06s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  4.01s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:18&lt;00:00,  9.19s/it]
-
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:36&lt;00:16,  8.28s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  4.38s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:36&lt;00:02,  2.66s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:36&lt;00:02,  2.83s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  2.05s/it]
 Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  4.10s/it]
-I0718 13:55:45.464467 140470768702080 train_sd3_fiber_grpo.py:666] ***** Running training *****
-I0718 13:55:45.464776 140470768702080 train_sd3_fiber_grpo.py:667]   Sample batch size per device = 24
-I0718 13:55:45.464874 140470768702080 train_sd3_fiber_grpo.py:668]   Train batch size per device = 24
-I0718 13:55:45.464948 140470768702080 train_sd3_fiber_grpo.py:669]   Gradient Accumulation steps = 6
-I0718 13:55:45.465013 140470768702080 train_sd3_fiber_grpo.py:672] 
-I0718 13:55:45.465080 140470768702080 train_sd3_fiber_grpo.py:673]   Total number of samples per epoch = 1152
-I0718 13:55:45.465142 140470768702080 train_sd3_fiber_grpo.py:674]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
-I0718 13:55:45.465200 140470768702080 train_sd3_fiber_grpo.py:677]   Number of gradient updates per inner epoch = 1
-I0718 13:55:45.465257 140470768702080 train_sd3_fiber_grpo.py:680]   Number of inner epochs = 1
+
+Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  2.16s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:36&lt;00:00,  4.09s/it]
+I0718 14:48:35.467480 140223422366336 train_sd3_fiber_grpo.py:666] ***** Running training *****
+I0718 14:48:35.467801 140223422366336 train_sd3_fiber_grpo.py:667]   Sample batch size per device = 24
+I0718 14:48:35.467895 140223422366336 train_sd3_fiber_grpo.py:668]   Train batch size per device = 24
+I0718 14:48:35.467963 140223422366336 train_sd3_fiber_grpo.py:669]   Gradient Accumulation steps = 6
+I0718 14:48:35.468024 140223422366336 train_sd3_fiber_grpo.py:672] 
+I0718 14:48:35.468088 140223422366336 train_sd3_fiber_grpo.py:673]   Total number of samples per epoch = 1152
+I0718 14:48:35.468145 140223422366336 train_sd3_fiber_grpo.py:674]   Total train batch size (w. parallel, distributed &amp; accumulation) = 1152
+I0718 14:48:35.468201 140223422366336 train_sd3_fiber_grpo.py:677]   Number of gradient updates per inner epoch = 1
+I0718 14:48:35.468255 140223422366336 train_sd3_fiber_grpo.py:680]   Number of inner epochs = 1
 
 Epoch 0: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
@@ -391,180 +386,93 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 
-Epoch 0: sampling:  17%|█▋        | 1/6 [00:07&lt;00:37,  7.58s/it]
+Epoch 0: sampling:  17%|█▋        | 1/6 [00:07&lt;00:37,  7.46s/it]
 
-Epoch 0: sampling:  33%|███▎      | 2/6 [00:14&lt;00:29,  7.29s/it]
+Epoch 0: sampling:  33%|███▎      | 2/6 [00:14&lt;00:28,  7.18s/it]
 
-Epoch 0: sampling:  50%|█████     | 3/6 [00:22&lt;00:22,  7.38s/it]
+Epoch 0: sampling:  50%|█████     | 3/6 [00:22&lt;00:22,  7.36s/it]
 
 Epoch 0: sampling:  67%|██████▋   | 4/6 [00:29&lt;00:14,  7.44s/it]
 
 Epoch 0: sampling:  83%|████████▎ | 5/6 [00:37&lt;00:07,  7.48s/it]
 
 Epoch 0: sampling: 100%|██████████| 6/6 [00:44&lt;00:00,  7.50s/it]
-Epoch 0: sampling: 100%|██████████| 6/6 [00:44&lt;00:00,  7.47s/it]
+Epoch 0: sampling: 100%|██████████| 6/6 [00:44&lt;00:00,  7.45s/it]
 
 Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:22&lt;01:54, 22.99s/it]
-Waiting for rewards:  33%|███▎      | 2/6 [00:59&lt;02:03, 30.93s/it]
-Waiting for rewards:  50%|█████     | 3/6 [01:31&lt;01:34, 31.46s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [02:03&lt;01:03, 31.84s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [02:36&lt;00:32, 32.04s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:09&lt;00:00, 32.34s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:09&lt;00:00, 31.55s/it]
+Waiting for rewards:  17%|█▋        | 1/6 [00:00&lt;00:02,  2.17it/s]
+Waiting for rewards:  33%|███▎      | 2/6 [00:02&lt;00:06,  1.52s/it]
+Waiting for rewards:  50%|█████     | 3/6 [00:06&lt;00:08,  2.74s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [00:11&lt;00:06,  3.36s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [00:15&lt;00:03,  3.75s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:20&lt;00:00,  4.13s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:20&lt;00:00,  3.42s/it]
 
 Epoch 0.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 
-Epoch 0.0: training:  17%|█▋        | 1/6 [00:16&lt;01:23, 16.78s/it]
+Epoch 0.0: training:  17%|█▋        | 1/6 [00:16&lt;01:23, 16.72s/it]
 
-Epoch 0.0: training:  33%|███▎      | 2/6 [00:31&lt;01:02, 15.65s/it]
+Epoch 0.0: training:  33%|███▎      | 2/6 [00:31&lt;01:02, 15.62s/it]
 
-Epoch 0.0: training:  50%|█████     | 3/6 [00:46&lt;00:45, 15.29s/it]
+Epoch 0.0: training:  50%|█████     | 3/6 [00:46&lt;00:45, 15.27s/it]
 
-Epoch 0.0: training:  67%|██████▋   | 4/6 [01:01&lt;00:30, 15.12s/it]
+Epoch 0.0: training:  67%|██████▋   | 4/6 [01:01&lt;00:30, 15.11s/it]
 
-Epoch 0.0: training:  83%|████████▎ | 5/6 [01:16&lt;00:15, 15.03s/it]
+Epoch 0.0: training:  83%|████████▎ | 5/6 [01:16&lt;00:15, 15.02s/it]
 
-Epoch 0.0: training: 100%|██████████| 6/6 [01:40&lt;00:00, 18.11s/it]
-Epoch 0.0: training: 100%|██████████| 6/6 [01:40&lt;00:00, 16.72s/it]
+Epoch 0.0: training: 100%|██████████| 6/6 [01:40&lt;00:00, 18.06s/it]
+Epoch 0.0: training: 100%|██████████| 6/6 [01:40&lt;00:00, 16.68s/it]
 
 Epoch 1: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 
 Epoch 1: sampling:  17%|█▋        | 1/6 [00:05&lt;00:29,  5.85s/it]
 
-Epoch 1: sampling:  33%|███▎      | 2/6 [00:13&lt;00:27,  6.82s/it]
+Epoch 1: sampling:  33%|███▎      | 2/6 [00:13&lt;00:27,  6.83s/it]
 
 Epoch 1: sampling:  50%|█████     | 3/6 [00:20&lt;00:21,  7.18s/it]
 
 Epoch 1: sampling:  67%|██████▋   | 4/6 [00:28&lt;00:14,  7.34s/it]
 
-Epoch 1: sampling:  83%|████████▎ | 5/6 [00:36&lt;00:07,  7.42s/it]
+Epoch 1: sampling:  83%|████████▎ | 5/6 [00:36&lt;00:07,  7.41s/it]
 
-Epoch 1: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.47s/it]
+Epoch 1: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.46s/it]
 Epoch 1: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.28s/it]
 
 Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:06&lt;00:33,  6.74s/it]
-Waiting for rewards:  33%|███▎      | 2/6 [01:00&lt;02:18, 34.63s/it]
-Waiting for rewards:  50%|█████     | 3/6 [01:33&lt;01:41, 33.74s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [02:05&lt;01:06, 33.22s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [02:38&lt;00:32, 32.90s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:08&lt;00:00, 31.97s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:08&lt;00:00, 31.42s/it]
+Waiting for rewards:  17%|█▋        | 1/6 [00:00&lt;00:02,  2.13it/s]
+Waiting for rewards:  33%|███▎      | 2/6 [00:03&lt;00:07,  1.80s/it]
+Waiting for rewards:  50%|█████     | 3/6 [00:07&lt;00:09,  3.06s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [00:12&lt;00:07,  3.73s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [00:16&lt;00:03,  3.82s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:20&lt;00:00,  3.94s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:20&lt;00:00,  3.44s/it]
 
 Epoch 1.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 
-Epoch 1.0: training:  17%|█▋        | 1/6 [00:15&lt;01:17, 15.45s/it]
+Epoch 1.0: training:  17%|█▋        | 1/6 [00:14&lt;01:14, 14.82s/it]
 
-Epoch 1.0: training:  33%|███▎      | 2/6 [00:30&lt;01:02, 15.50s/it]
+Epoch 1.0: training:  33%|███▎      | 2/6 [00:29&lt;00:59, 14.86s/it]
 
-Epoch 1.0: training:  50%|█████     | 3/6 [00:46&lt;00:46, 15.52s/it]
+Epoch 1.0: training:  50%|█████     | 3/6 [00:44&lt;00:44, 14.88s/it]
 
-Epoch 1.0: training:  67%|██████▋   | 4/6 [01:02&lt;00:31, 15.53s/it]
+Epoch 1.0: training:  67%|██████▋   | 4/6 [00:59&lt;00:29, 14.88s/it]
 
-Epoch 1.0: training:  83%|████████▎ | 5/6 [01:17&lt;00:15, 15.53s/it]
+Epoch 1.0: training:  83%|████████▎ | 5/6 [01:14&lt;00:14, 14.89s/it]
 
-Epoch 1.0: training: 100%|██████████| 6/6 [01:37&lt;00:00, 17.17s/it]
-Epoch 1.0: training: 100%|██████████| 6/6 [01:37&lt;00:00, 16.33s/it]
+Epoch 1.0: training: 100%|██████████| 6/6 [01:38&lt;00:00, 17.98s/it]
+Epoch 1.0: training: 100%|██████████| 6/6 [01:38&lt;00:00, 16.39s/it]
 
 Epoch 2: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 
-Epoch 2: sampling:  17%|█▋        | 1/6 [00:05&lt;00:29,  5.99s/it]
+Epoch 2: sampling:  17%|█▋        | 1/6 [00:05&lt;00:29,  5.97s/it]
 
-Epoch 2: sampling:  33%|███▎      | 2/6 [00:13&lt;00:27,  6.88s/it]
+Epoch 2: sampling:  33%|███▎      | 2/6 [00:13&lt;00:27,  6.89s/it]
 
 Epoch 2: sampling:  50%|█████     | 3/6 [00:21&lt;00:21,  7.20s/it]
 
-Epoch 2: sampling:  67%|██████▋   | 4/6 [00:28&lt;00:14,  7.34s/it]
+Epoch 2: sampling:  67%|██████▋   | 4/6 [00:28&lt;00:14,  7.35s/it]
 
-Epoch 2: sampling:  83%|████████▎ | 5/6 [00:36&lt;00:07,  7.42s/it]
-
-Epoch 2: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.46s/it]
-Epoch 2: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.29s/it]
-
-Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:27&lt;02:17, 27.42s/it]
-Waiting for rewards:  33%|███▎      | 2/6 [00:59&lt;02:00, 30.17s/it]
-Waiting for rewards:  50%|█████     | 3/6 [01:32&lt;01:34, 31.42s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [02:04&lt;01:03, 31.67s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [02:37&lt;00:32, 32.04s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:08&lt;00:00, 31.90s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:08&lt;00:00, 31.47s/it]
-
-Epoch 2.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 2.0: training:  17%|█▋        | 1/6 [00:14&lt;01:13, 14.78s/it]
-
-Epoch 2.0: training:  33%|███▎      | 2/6 [00:29&lt;00:59, 14.82s/it]
-
-Epoch 2.0: training:  50%|█████     | 3/6 [00:44&lt;00:44, 14.84s/it]
-
-Epoch 2.0: training:  67%|██████▋   | 4/6 [00:59&lt;00:29, 14.85s/it]
-
-Epoch 2.0: training:  83%|████████▎ | 5/6 [01:14&lt;00:14, 14.85s/it]
-
-Epoch 2.0: training: 100%|██████████| 6/6 [01:33&lt;00:00, 16.52s/it]
-Epoch 2.0: training: 100%|██████████| 6/6 [01:33&lt;00:00, 15.66s/it]
-
-Epoch 3: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 3: sampling:  17%|█▋        | 1/6 [00:05&lt;00:29,  5.85s/it]
-
-Epoch 3: sampling:  33%|███▎      | 2/6 [00:13&lt;00:27,  6.79s/it]
-
-Epoch 3: sampling:  50%|█████     | 3/6 [00:20&lt;00:21,  7.15s/it]
-
-Epoch 3: sampling:  67%|██████▋   | 4/6 [00:28&lt;00:14,  7.31s/it]
-
-Epoch 3: sampling:  83%|████████▎ | 5/6 [00:35&lt;00:07,  7.40s/it]
-
-Epoch 3: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.45s/it]
-Epoch 3: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.26s/it]
-
-Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:00&lt;00:02,  2.17it/s]
-Waiting for rewards:  33%|███▎      | 2/6 [01:01&lt;02:23, 35.93s/it]
-Waiting for rewards:  50%|█████     | 3/6 [01:31&lt;01:40, 33.54s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [02:03&lt;01:05, 32.90s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [02:37&lt;00:33, 33.00s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:13&lt;00:00, 34.16s/it]
-Waiting for rewards: 100%|██████████| 6/6 [03:13&lt;00:00, 32.24s/it]
-
-Epoch 3.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 3.0: training:  17%|█▋        | 1/6 [00:16&lt;01:20, 16.14s/it]
-
-Epoch 3.0: training:  33%|███▎      | 2/6 [00:32&lt;01:04, 16.16s/it]
-
-Epoch 3.0: training:  50%|█████     | 3/6 [00:48&lt;00:48, 16.16s/it]
-
-Epoch 3.0: training:  67%|██████▋   | 4/6 [01:04&lt;00:32, 16.17s/it]
-
-Epoch 3.0: training:  83%|████████▎ | 5/6 [01:20&lt;00:16, 16.17s/it]
-
-Epoch 3.0: training: 100%|██████████| 6/6 [01:42&lt;00:00, 17.89s/it]
-Epoch 3.0: training: 100%|██████████| 6/6 [01:42&lt;00:00, 17.01s/it]
-
-Epoch 4: sampling:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 4: sampling:  17%|█▋        | 1/6 [00:05&lt;00:29,  5.85s/it]
-
-Epoch 4: sampling:  33%|███▎      | 2/6 [00:13&lt;00:27,  6.81s/it]
-
-Epoch 4: sampling:  50%|█████     | 3/6 [00:20&lt;00:21,  7.17s/it]
-
-Epoch 4: sampling:  67%|██████▋   | 4/6 [00:28&lt;00:14,  7.32s/it]
-
-Epoch 4: sampling:  83%|████████▎ | 5/6 [00:36&lt;00:07,  7.41s/it]
-
-Epoch 4: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.46s/it]
-Epoch 4: sampling: 100%|██████████| 6/6 [00:43&lt;00:00,  7.27s/it]
-
-Waiting for rewards:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:00&lt;00:02,  2.26it/s]
-Waiting for rewards:  33%|███▎      | 2/6 [00:58&lt;02:18, 34.53s/it]
-Waiting for rewards:  50%|█████     | 3/6 [01:29&lt;01:38, 32.94s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [02:02&lt;01:05, 32.70s/it]</div>
+</div>
     </div>
 
     <div class="controls">
