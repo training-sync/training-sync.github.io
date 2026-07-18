@@ -339,3 +339,290 @@ Epoch 2: sampling:  50%|█████     | 3/6 [00:21<00:21,  7.20s/it]
 
 Epoch 2: sampling:  67%|██████▋   | 4/6 [00:28<00:14,  7.35s/it]
 
+Epoch 2: sampling:  83%|████████▎ | 5/6 [00:36<00:07,  7.44s/it]
+
+Epoch 2: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.47s/it]
+Epoch 2: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.29s/it]
+
+Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:00<00:02,  2.02it/s]
+Waiting for rewards:  33%|███▎      | 2/6 [00:02<00:05,  1.40s/it]
+Waiting for rewards:  50%|█████     | 3/6 [00:06<00:08,  2.67s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [00:11<00:06,  3.31s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [00:17<00:04,  4.37s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:21<00:00,  4.32s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:21<00:00,  3.58s/it]
+
+Epoch 2.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 2.0: training:  17%|█▋        | 1/6 [00:15<01:17, 15.40s/it]
+
+Epoch 2.0: training:  33%|███▎      | 2/6 [00:30<01:01, 15.46s/it]
+
+Epoch 2.0: training:  50%|█████     | 3/6 [00:46<00:46, 15.48s/it]
+
+Epoch 2.0: training:  67%|██████▋   | 4/6 [01:01<00:30, 15.49s/it]
+
+Epoch 2.0: training:  83%|████████▎ | 5/6 [01:17<00:15, 15.50s/it]
+
+Epoch 2.0: training: 100%|██████████| 6/6 [01:38<00:00, 17.35s/it]
+Epoch 2.0: training: 100%|██████████| 6/6 [01:38<00:00, 16.39s/it]
+
+Epoch 3: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 3: sampling:  17%|█▋        | 1/6 [00:05<00:29,  5.85s/it]
+
+Epoch 3: sampling:  33%|███▎      | 2/6 [00:13<00:27,  6.79s/it]
+
+Epoch 3: sampling:  50%|█████     | 3/6 [00:20<00:21,  7.14s/it]
+
+Epoch 3: sampling:  67%|██████▋   | 4/6 [00:28<00:14,  7.31s/it]
+
+Epoch 3: sampling:  83%|████████▎ | 5/6 [00:35<00:07,  7.39s/it]
+
+Epoch 3: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.45s/it]
+Epoch 3: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.26s/it]
+
+Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
+Waiting for rewards:  17%|█▋        | 1/6 [00:00<00:02,  2.16it/s]
+Waiting for rewards:  33%|███▎      | 2/6 [00:02<00:05,  1.45s/it]
+Waiting for rewards:  50%|█████     | 3/6 [00:06<00:08,  2.69s/it]
+Waiting for rewards:  67%|██████▋   | 4/6 [00:10<00:06,  3.26s/it]
+Waiting for rewards:  83%|████████▎ | 5/6 [00:15<00:03,  3.79s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:22<00:00,  4.91s/it]
+Waiting for rewards: 100%|██████████| 6/6 [00:22<00:00,  3.79s/it]
+
+Epoch 3.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 3.0: training:  17%|█▋        | 1/6 [00:37<03:05, 37.16s/it]
+
+Epoch 3.0: training:  33%|███▎      | 2/6 [01:16<02:34, 38.69s/it]
+
+Epoch 3.0: training:  33%|███▎      | 2/6 [01:44<03:28, 52.10s/it]
+Traceback (most recent call last):
+  File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 1082, in <module>
+    app.run(main)
+  File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 998, in main
+    _, _, prev_sample_mean_ref, _ = compute_log_prob(transformer, pipeline, sample, j, embeds, pooled_embeds, config)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 221, in compute_log_prob
+    noise_pred = transformer(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
+    return self.get_base_model()(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 396, in forward
+    encoder_hidden_states, hidden_states = block(
+                                           ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention.py", line 213, in forward
+    attn_output, context_attn_output = self.attn(
+                                       ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 605, in forward
+    return self.processor(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 1496, in __call__
+    hidden_states = attn.to_out[0](hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py", line 491, in forward
+    result = self.base_layer(x, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 144.00 MiB. GPU 0 has a total capacity of 139.81 GiB of which 152.38 MiB is free. Process 154606 has 3.57 GiB memory in use. Including non-PyTorch memory, this process has 136.07 GiB memory in use. Of the allocated memory 133.43 GiB is allocated by PyTorch, and 756.52 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 1082, in <module>
+[rank0]:     app.run(main)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
+[rank0]:     _run_main(main, args)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
+[rank0]:     sys.exit(main(argv))
+[rank0]:              ^^^^^^^^^^
+[rank0]:   File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 998, in main
+[rank0]:     _, _, prev_sample_mean_ref, _ = compute_log_prob(transformer, pipeline, sample, j, embeds, pooled_embeds, config)
+[rank0]:                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 221, in compute_log_prob
+[rank0]:     noise_pred = transformer(
+[rank0]:                  ^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 819, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 807, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
+[rank0]:     return self.get_base_model()(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 396, in forward
+[rank0]:     encoder_hidden_states, hidden_states = block(
+[rank0]:                                            ^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention.py", line 213, in forward
+[rank0]:     attn_output, context_attn_output = self.attn(
+[rank0]:                                        ^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 605, in forward
+[rank0]:     return self.processor(
+[rank0]:            ^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 1496, in __call__
+[rank0]:     hidden_states = attn.to_out[0](hidden_states)
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py", line 491, in forward
+[rank0]:     result = self.base_layer(x, *args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank0]:     return F.linear(input, self.weight, self.bias)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 144.00 MiB. GPU 0 has a total capacity of 139.81 GiB of which 152.38 MiB is free. Process 154606 has 3.57 GiB memory in use. Including non-PyTorch memory, this process has 136.07 GiB memory in use. Of the allocated memory 133.43 GiB is allocated by PyTorch, and 756.52 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+W0718 14:59:49.099000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156726 closing signal SIGTERM
+W0718 14:59:49.101000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156727 closing signal SIGTERM
+W0718 14:59:49.103000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156728 closing signal SIGTERM
+W0718 14:59:49.105000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156729 closing signal SIGTERM
+W0718 14:59:49.107000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156730 closing signal SIGTERM
+W0718 14:59:49.109000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156731 closing signal SIGTERM
+W0718 14:59:49.112000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156732 closing signal SIGTERM
+E0718 14:59:49.116000 156643 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 156725) of binary: /usr/bin/python3.12
+Traceback (most recent call last):
+  File "/usr/local/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/accelerate/commands/accelerate_cli.py", line 48, in main
+    args.func(args)
+  File "/usr/local/lib/python3.12/dist-packages/accelerate/commands/launch.py", line 1190, in launch_command
+    multi_gpu_launcher(args)
+  File "/usr/local/lib/python3.12/dist-packages/accelerate/commands/launch.py", line 808, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+scripts/train_sd3_fiber_grpo.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-07-18_14:59:49
+  host      : hx00-tfejbecp-0043
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 156725)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
