@@ -5,24 +5,16 @@ The following values were not passed to `accelerate launch` and had defaults use
 	`--mixed_precision` was set to a value of `'no'`
 	`--dynamo_backend` was set to a value of `'no'`
 To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00<00:02,  3.14it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00<00:05,  1.59it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:01<00:03,  1.84it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:00<00:03,  1.99it/s]
-
-Loading pipeline components...:  33%|███▎      | 3/9 [00:01<00:02,  2.28it/s]wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]wandb: Tracking run with wandb version 0.18.7
 wandb: W&B syncing is set to `offline` in this directory.  
 wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
 
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]I0718 14:47:32.428630 140223422366336 train_sd3_fiber_grpo.py:436] 
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]I0720 09:37:28.215978 139707385115264 train_sd3_fiber_grpo.py:436] 
 activation_checkpointing: false
 allow_tf32: true
 dataset: /mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/dataset/geneval
@@ -56,7 +48,7 @@ resolution: 512
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: flow_grpo_geneval_sd3_h200_nft_matched_2026.07.18_14.47.30
+run_name: flow_grpo_geneval_sd3_h200_nft_matched_2026.07.20_09.37.26
 sample:
   batch_size: 8
   eval_guidance_scale: 4.5
@@ -64,7 +56,7 @@ sample:
   global_std: true
   guidance_scale: 4.5
   noise_level: 0.7
-  num_batches_per_epoch: 6
+  num_batches_per_epoch: 12
   num_image_per_prompt: 24
   num_steps: 10
   same_latent: false
@@ -73,7 +65,7 @@ sample:
   - 10
   sde_window_size: 2
   test_batch_size: 14
-  train_batch_size: 24
+  train_batch_size: 12
 save_dir: logs/geneval/sd3.5-M-flow-grpo-h200-nft-matched
 save_freq: 10
 seed: 42
@@ -83,14 +75,14 @@ train:
   adam_epsilon: 1.0e-08
   adam_weight_decay: 0.0001
   adv_clip_max: 5
-  batch_size: 24
+  batch_size: 12
   beta: 0.0001
   cfg: true
   clip_range: 0.0001
   clip_range_gt: 0.0001
   clip_range_lt: 0.0001
   ema: true
-  gradient_accumulation_steps: 6
+  gradient_accumulation_steps: 12
   learning_rate: 0.0003
   lora_path: null
   max_grad_norm: 1.0
@@ -101,126 +93,139 @@ train:
 use_lora: true
 
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00<00:02,  2.76it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00<00:06,  1.32it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00<00:05,  1.48it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:00<00:01,  3.85it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:00<00:05,  1.43it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:01<00:10,  1.32s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:00<00:01,  3.48it/s]
 
-Loading pipeline components...:  11%|█         | 1/9 [00:00<00:05,  1.50it/s]
-Loading pipeline components...:  11%|█         | 1/9 [00:00<00:02,  2.92it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:00<00:03,  2.16it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  11%|█         | 1/9 [00:01<00:09,  1.14s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:01<00:05,  1.39it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:01<00:05,  1.19it/s]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:01<00:03,  1.75it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:01<00:06,  1.06it/s]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:02<00:07,  1.05s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:02<00:03,  1.66it/s]
 
-Loading pipeline components...:  33%|███▎      | 3/9 [00:01<00:02,  2.37it/s]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:01<00:03,  1.79it/s]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:04<00:03,  1.05it/s]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:04<00:02,  1.26it/s]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:02<00:04,  1.49it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...:  33%|███▎      | 3/9 [00:04<00:10,  1.79s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:04<00:03,  1.13it/s]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:02<00:02,  1.75it/s]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:02<00:01,  2.49it/s]
+Loading pipeline components...:  11%|█         | 1/9 [00:03<00:31,  3.99s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:04<00:16,  2.33s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:04<00:06,  1.38s/it]
 
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:05<00:02,  1.34it/s]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:04<00:08,  1.45s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:07<00:12,  2.45s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:06<00:11,  2.32s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:07<00:06,  1.68s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.26s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:07<00:03,  1.21s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:07<00:03,  1.22s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:08<00:01,  1.04it/s]
 
-Loading pipeline components...:  44%|████▍     | 4/9 [00:12<00:22,  4.52s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.97s/it]
 
-Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.56s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:14<01:00,  8.69s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:15<00:13,  4.66s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:15<00:29,  4.88s/it]
+Loading pipeline components...:  22%|██▏       | 2/9 [00:15<00:58,  8.34s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:15<00:25,  5.15s/it]
 
-Loading pipeline components...:  33%|███▎      | 3/9 [00:12<00:32,  5.49s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:16<00:06,  3.28s/it]
+Loading pipeline components...:  33%|███▎      | 3/9 [00:15<00:28,  4.68s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:15<00:13,  3.42s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:15<00:16,  3.22s/it]
 
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:14<00:15,  3.83s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  7.21s/it]
 
-Loading pipeline components...:  44%|████▍     | 4/9 [00:15<00:21,  4.35s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:15<00:07,  2.64s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:15<00:11,  2.89s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  33%|███▎      | 3/9 [00:16<00:43,  7.27s/it]
+Loading pipeline components...:  44%|████▍     | 4/9 [00:16<00:22,  4.44s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:15<00:06,  2.01s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:16<00:01,  1.14s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:17<00:11,  2.97s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:18<00:03,  3.08s/it]
 
-Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.56s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:18<00:12,  3.06s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:19<00:03,  1.62s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.69s/it]
-
-Loading pipeline components...:  11%|█         | 1/9 [00:17<02:22, 17.77s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:17<01:02,  8.97s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.60s/it]
-
-Loading pipeline components...:  11%|█         | 1/9 [00:17<02:22, 17.86s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.48s/it]
-
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:17<00:08,  4.41s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.66s/it]
-
-Loading pipeline components...:  11%|█         | 1/9 [00:17<02:21, 17.63s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  33%|███▎      | 3/9 [00:18<00:32,  5.37s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:18<00:52,  7.51s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:18<00:17,  3.49s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:18<00:54,  7.79s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:19<00:09,  2.42s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:19<00:26,  4.42s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:19<00:05,  1.85s/it]
-Loading pipeline components...:  22%|██▏       | 2/9 [00:20<01:01,  8.84s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:20<00:29,  4.95s/it]
-Loading pipeline components...:  33%|███▎      | 3/9 [00:20<00:32,  5.40s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:20<00:15,  3.12s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:  44%|████▍     | 4/9 [00:21<00:16,  3.40s/it]
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:21<00:05,  1.72s/it]
-Loading pipeline components...:  44%|████▍     | 4/9 [00:21<00:19,  3.83s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:22<00:02,  1.44s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:24<00:09,  4.90s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:22<00:01,  1.12s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:24<00:03,  3.44s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:19<00:01,  1.28s/it]
 
 Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.51s/it]
 
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:22<00:11,  5.57s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:24<00:00,  2.77s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:21<00:27,  6.91s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:21<00:05,  5.05s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:21<00:09,  4.83s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:22<00:04,  4.03s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:26<00:00,  3.50s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:26<00:00,  2.93s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:21<00:14,  4.73s/it]
 
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:29<00:08,  4.30s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:28<00:06,  6.42s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:29<00:03,  3.05s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:29<00:00,  4.74s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:29<00:00,  3.30s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:22<00:03,  3.56s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...: 100%|██████████| 9/9 [00:31<00:00,  2.82s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:31<00:00,  3.54s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:22<00:06,  3.31s/it]
 
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:35<00:28,  7.17s/it]
-Loading pipeline components...:  56%|█████▌    | 5/9 [00:35<00:29,  7.47s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  4.53s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  3.98s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:22<00:02,  2.51s/it]
 
-Loading pipeline components...:  67%|██████▋   | 6/9 [00:36<00:15,  5.04s/it]
-Loading pipeline components...:  78%|███████▊  | 7/9 [00:36<00:07,  3.72s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  6.74s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  3.99s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.82s/it]
 
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:36<00:02,  2.66s/it]
-Loading pipeline components...:  89%|████████▉ | 8/9 [00:36<00:02,  2.83s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:36<00:00,  2.05s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:36<00:00,  4.10s/it]
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:27<00:19,  6.34s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...: 100%|██████████| 9/9 [00:36<00:00,  2.16s/it]
-Loading pipeline components...: 100%|██████████| 9/9 [00:36<00:00,  4.09s/it]
-I0718 14:48:35.467480 140223422366336 train_sd3_fiber_grpo.py:666] ***** Running training *****
-I0718 14:48:35.467801 140223422366336 train_sd3_fiber_grpo.py:667]   Sample batch size per device = 24
-I0718 14:48:35.467895 140223422366336 train_sd3_fiber_grpo.py:668]   Train batch size per device = 24
-I0718 14:48:35.467963 140223422366336 train_sd3_fiber_grpo.py:669]   Gradient Accumulation steps = 6
-I0718 14:48:35.468024 140223422366336 train_sd3_fiber_grpo.py:672] 
-I0718 14:48:35.468088 140223422366336 train_sd3_fiber_grpo.py:673]   Total number of samples per epoch = 1152
-I0718 14:48:35.468145 140223422366336 train_sd3_fiber_grpo.py:674]   Total train batch size (w. parallel, distributed & accumulation) = 1152
-I0718 14:48:35.468201 140223422366336 train_sd3_fiber_grpo.py:677]   Number of gradient updates per inner epoch = 1
-I0718 14:48:35.468255 140223422366336 train_sd3_fiber_grpo.py:680]   Number of inner epochs = 1
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.02s/it]
 
-Epoch 0: sampling:   0%|          | 0/6 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+Loading pipeline components...:  44%|████▍     | 4/9 [00:28<00:38,  7.69s/it]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:28<00:08,  4.37s/it]
+
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:28<00:03,  3.02s/it]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:28<00:11,  3.73s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:28<00:00,  2.17s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:28<00:00,  3.18s/it]
+
+Loading pipeline components...:  67%|██████▋   | 6/9 [00:29<00:18,  6.01s/it]
+
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:29<00:05,  2.90s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:29<00:02,  2.17s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:29<00:00,  1.66s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:29<00:00,  3.32s/it]
+
+Loading pipeline components...: 100%|██████████| 9/9 [00:30<00:00,  4.06s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:30<00:00,  3.44s/it]
+
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:31<00:09,  4.86s/it]
+Loading pipeline components...:  89%|████████▉ | 8/9 [00:31<00:03,  3.44s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:32<00:00,  2.46s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:32<00:00,  3.58s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.73s/it]
+
+Loading pipeline components...: 100%|██████████| 9/9 [00:34<00:00,  7.04s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:34<00:00,  3.84s/it]
+
+Loading pipeline components...: 100%|██████████| 9/9 [00:34<00:00,  5.29s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:34<00:00,  3.80s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.50s/it]
+
+Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  6.34s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  3.94s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.68s/it]
+
+Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  7.72s/it]
+Loading pipeline components...: 100%|██████████| 9/9 [00:35<00:00,  3.95s/it]
+I0720 09:38:24.705416 139707385115264 train_sd3_fiber_grpo.py:666] ***** Running training *****
+I0720 09:38:24.706050 139707385115264 train_sd3_fiber_grpo.py:667]   Sample batch size per device = 12
+I0720 09:38:24.706153 139707385115264 train_sd3_fiber_grpo.py:668]   Train batch size per device = 12
+I0720 09:38:24.706240 139707385115264 train_sd3_fiber_grpo.py:669]   Gradient Accumulation steps = 12
+I0720 09:38:24.706309 139707385115264 train_sd3_fiber_grpo.py:672] 
+I0720 09:38:24.706376 139707385115264 train_sd3_fiber_grpo.py:673]   Total number of samples per epoch = 1152
+I0720 09:38:24.706435 139707385115264 train_sd3_fiber_grpo.py:674]   Total train batch size (w. parallel, distributed & accumulation) = 1152
+I0720 09:38:24.706491 139707385115264 train_sd3_fiber_grpo.py:677]   Number of gradient updates per inner epoch = 1
+I0720 09:38:24.706560 139707385115264 train_sd3_fiber_grpo.py:680]   Number of inner epochs = 1
+
+Epoch 0: sampling:   0%|          | 0/12 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
@@ -253,376 +258,124 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 
-Epoch 0: sampling:  17%|█▋        | 1/6 [00:07<00:37,  7.46s/it]
+Epoch 0: sampling:   8%|▊         | 1/12 [00:06<01:10,  6.37s/it]
 
-Epoch 0: sampling:  33%|███▎      | 2/6 [00:14<00:28,  7.18s/it]
+Epoch 0: sampling:  17%|█▋        | 2/12 [00:10<00:47,  4.77s/it]
 
-Epoch 0: sampling:  50%|█████     | 3/6 [00:22<00:22,  7.36s/it]
+Epoch 0: sampling:  25%|██▌       | 3/12 [00:13<00:39,  4.40s/it]
 
-Epoch 0: sampling:  67%|██████▋   | 4/6 [00:29<00:14,  7.44s/it]
+Epoch 0: sampling:  33%|███▎      | 4/12 [00:17<00:33,  4.22s/it]
 
-Epoch 0: sampling:  83%|████████▎ | 5/6 [00:37<00:07,  7.48s/it]
+Epoch 0: sampling:  42%|████▏     | 5/12 [00:21<00:28,  4.12s/it]
 
-Epoch 0: sampling: 100%|██████████| 6/6 [00:44<00:00,  7.50s/it]
-Epoch 0: sampling: 100%|██████████| 6/6 [00:44<00:00,  7.45s/it]
+Epoch 0: sampling:  50%|█████     | 6/12 [00:26<00:25,  4.18s/it]
 
-Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:00<00:02,  2.17it/s]
-Waiting for rewards:  33%|███▎      | 2/6 [00:02<00:06,  1.52s/it]
-Waiting for rewards:  50%|█████     | 3/6 [00:06<00:08,  2.74s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [00:11<00:06,  3.36s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [00:15<00:03,  3.75s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:20<00:00,  4.13s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:20<00:00,  3.42s/it]
+Epoch 0: sampling:  58%|█████▊    | 7/12 [00:29<00:20,  4.06s/it]
 
-Epoch 0.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+Epoch 0: sampling:  67%|██████▋   | 8/12 [00:33<00:16,  4.02s/it]
 
-Epoch 0.0: training:  17%|█▋        | 1/6 [00:16<01:23, 16.72s/it]
+Epoch 0: sampling:  75%|███████▌  | 9/12 [00:37<00:11,  4.00s/it]
 
-Epoch 0.0: training:  33%|███▎      | 2/6 [00:31<01:02, 15.62s/it]
+Epoch 0: sampling:  83%|████████▎ | 10/12 [00:41<00:07,  3.98s/it]
 
-Epoch 0.0: training:  50%|█████     | 3/6 [00:46<00:45, 15.27s/it]
+Epoch 0: sampling:  92%|█████████▏| 11/12 [00:45<00:03,  3.97s/it]
 
-Epoch 0.0: training:  67%|██████▋   | 4/6 [01:01<00:30, 15.11s/it]
+Epoch 0: sampling: 100%|██████████| 12/12 [00:49<00:00,  3.96s/it]
+Epoch 0: sampling: 100%|██████████| 12/12 [00:49<00:00,  4.14s/it]
 
-Epoch 0.0: training:  83%|████████▎ | 5/6 [01:16<00:15, 15.02s/it]
+Waiting for rewards:   0%|          | 0/12 [00:00<?, ?it/s]
+Waiting for rewards:   8%|▊         | 1/12 [00:00<00:02,  4.43it/s]
+Waiting for rewards:  33%|███▎      | 4/12 [00:00<00:01,  5.26it/s]
+Waiting for rewards:  42%|████▏     | 5/12 [00:03<00:06,  1.06it/s]
+Waiting for rewards:  50%|█████     | 6/12 [00:06<00:08,  1.35s/it]
+Waiting for rewards:  58%|█████▊    | 7/12 [00:08<00:07,  1.59s/it]
+Waiting for rewards:  67%|██████▋   | 8/12 [00:10<00:07,  1.81s/it]
+Waiting for rewards:  75%|███████▌  | 9/12 [00:12<00:05,  1.90s/it]
+Waiting for rewards:  83%|████████▎ | 10/12 [00:14<00:03,  1.97s/it]
+Waiting for rewards:  92%|█████████▏| 11/12 [00:17<00:02,  2.04s/it]
+Waiting for rewards: 100%|██████████| 12/12 [00:19<00:00,  2.03s/it]
+Waiting for rewards: 100%|██████████| 12/12 [00:19<00:00,  1.59s/it]
 
-Epoch 0.0: training: 100%|██████████| 6/6 [01:40<00:00, 18.06s/it]
-Epoch 0.0: training: 100%|██████████| 6/6 [01:40<00:00, 16.68s/it]
+Epoch 0.0: training:   0%|          | 0/12 [00:00<?, ?it/s]
 
-Epoch 1: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
+Epoch 0.0: training:   8%|▊         | 1/12 [00:09<01:42,  9.33s/it]
 
-Epoch 1: sampling:  17%|█▋        | 1/6 [00:05<00:29,  5.85s/it]
+Epoch 0.0: training:  17%|█▋        | 2/12 [00:17<01:26,  8.63s/it]
 
-Epoch 1: sampling:  33%|███▎      | 2/6 [00:13<00:27,  6.83s/it]
+Epoch 0.0: training:  25%|██▌       | 3/12 [00:25<01:15,  8.41s/it]
 
-Epoch 1: sampling:  50%|█████     | 3/6 [00:20<00:21,  7.18s/it]
+Epoch 0.0: training:  33%|███▎      | 4/12 [00:33<01:06,  8.30s/it]
 
-Epoch 1: sampling:  67%|██████▋   | 4/6 [00:28<00:14,  7.34s/it]
+Epoch 0.0: training:  42%|████▏     | 5/12 [00:41<00:57,  8.24s/it]
 
-Epoch 1: sampling:  83%|████████▎ | 5/6 [00:36<00:07,  7.41s/it]
+Epoch 0.0: training:  50%|█████     | 6/12 [00:50<00:49,  8.21s/it]
 
-Epoch 1: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.46s/it]
-Epoch 1: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.28s/it]
+Epoch 0.0: training:  58%|█████▊    | 7/12 [00:58<00:40,  8.19s/it]
 
-Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:00<00:02,  2.13it/s]
-Waiting for rewards:  33%|███▎      | 2/6 [00:03<00:07,  1.80s/it]
-Waiting for rewards:  50%|█████     | 3/6 [00:07<00:09,  3.06s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [00:12<00:07,  3.73s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [00:16<00:03,  3.82s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:20<00:00,  3.94s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:20<00:00,  3.44s/it]
+Epoch 0.0: training:  67%|██████▋   | 8/12 [01:06<00:32,  8.17s/it]
 
-Epoch 1.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+Epoch 0.0: training:  75%|███████▌  | 9/12 [01:14<00:24,  8.17s/it]
 
-Epoch 1.0: training:  17%|█▋        | 1/6 [00:14<01:14, 14.82s/it]
+Epoch 0.0: training:  83%|████████▎ | 10/12 [01:22<00:16,  8.16s/it]
 
-Epoch 1.0: training:  33%|███▎      | 2/6 [00:29<00:59, 14.86s/it]
+Epoch 0.0: training:  92%|█████████▏| 11/12 [01:30<00:08,  8.16s/it]
 
-Epoch 1.0: training:  50%|█████     | 3/6 [00:44<00:44, 14.88s/it]
+Epoch 0.0: training: 100%|██████████| 12/12 [01:48<00:00, 11.21s/it]
+Epoch 0.0: training: 100%|██████████| 12/12 [01:48<00:00,  9.08s/it]
 
-Epoch 1.0: training:  67%|██████▋   | 4/6 [00:59<00:29, 14.88s/it]
+Epoch 1: sampling:   0%|          | 0/12 [00:00<?, ?it/s]
 
-Epoch 1.0: training:  83%|████████▎ | 5/6 [01:14<00:14, 14.89s/it]
+Epoch 1: sampling:   8%|▊         | 1/12 [00:05<00:58,  5.28s/it]
 
-Epoch 1.0: training: 100%|██████████| 6/6 [01:38<00:00, 17.98s/it]
-Epoch 1.0: training: 100%|██████████| 6/6 [01:38<00:00, 16.39s/it]
+Epoch 1: sampling:  17%|█▋        | 2/12 [00:09<00:45,  4.57s/it]
 
-Epoch 2: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
+Epoch 1: sampling:  25%|██▌       | 3/12 [00:13<00:38,  4.29s/it]
 
-Epoch 2: sampling:  17%|█▋        | 1/6 [00:05<00:29,  5.97s/it]
+Epoch 1: sampling:  33%|███▎      | 4/12 [00:17<00:33,  4.16s/it]
 
-Epoch 2: sampling:  33%|███▎      | 2/6 [00:13<00:27,  6.89s/it]
+Epoch 1: sampling:  42%|████▏     | 5/12 [00:21<00:28,  4.08s/it]
 
-Epoch 2: sampling:  50%|█████     | 3/6 [00:21<00:21,  7.20s/it]
+Epoch 1: sampling:  50%|█████     | 6/12 [00:25<00:24,  4.04s/it]
 
-Epoch 2: sampling:  67%|██████▋   | 4/6 [00:28<00:14,  7.35s/it]
+Epoch 1: sampling:  58%|█████▊    | 7/12 [00:29<00:20,  4.01s/it]
 
-Epoch 2: sampling:  83%|████████▎ | 5/6 [00:36<00:07,  7.44s/it]
+Epoch 1: sampling:  67%|██████▋   | 8/12 [00:33<00:15,  3.99s/it]
 
-Epoch 2: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.47s/it]
-Epoch 2: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.29s/it]
+Epoch 1: sampling:  75%|███████▌  | 9/12 [00:37<00:11,  3.98s/it]
 
-Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:00<00:02,  2.02it/s]
-Waiting for rewards:  33%|███▎      | 2/6 [00:02<00:05,  1.40s/it]
-Waiting for rewards:  50%|█████     | 3/6 [00:06<00:08,  2.67s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [00:11<00:06,  3.31s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [00:17<00:04,  4.37s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:21<00:00,  4.32s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:21<00:00,  3.58s/it]
+Epoch 1: sampling:  83%|████████▎ | 10/12 [00:40<00:07,  3.97s/it]
 
-Epoch 2.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+Epoch 1: sampling:  92%|█████████▏| 11/12 [00:44<00:03,  3.96s/it]
 
-Epoch 2.0: training:  17%|█▋        | 1/6 [00:15<01:17, 15.40s/it]
+Epoch 1: sampling: 100%|██████████| 12/12 [00:48<00:00,  3.95s/it]
+Epoch 1: sampling: 100%|██████████| 12/12 [00:48<00:00,  4.07s/it]
 
-Epoch 2.0: training:  33%|███▎      | 2/6 [00:30<01:01, 15.46s/it]
+Waiting for rewards:   0%|          | 0/12 [00:00<?, ?it/s]
+Waiting for rewards:   8%|▊         | 1/12 [00:00<00:02,  4.43it/s]
+Waiting for rewards:  33%|███▎      | 4/12 [00:00<00:01,  5.35it/s]
+Waiting for rewards:  42%|████▏     | 5/12 [00:06<00:12,  1.76s/it]
+Waiting for rewards:  50%|█████     | 6/12 [00:12<00:17,  2.86s/it]
+Waiting for rewards:  58%|█████▊    | 7/12 [00:19<00:20,  4.07s/it]
+Waiting for rewards:  67%|██████▋   | 8/12 [00:24<00:17,  4.50s/it]
+Waiting for rewards:  75%|███████▌  | 9/12 [00:31<00:15,  5.19s/it]
+Waiting for rewards:  83%|████████▎ | 10/12 [00:38<00:11,  5.66s/it]
+Waiting for rewards:  92%|█████████▏| 11/12 [00:44<00:05,  5.70s/it]
+Waiting for rewards: 100%|██████████| 12/12 [00:51<00:00,  6.28s/it]
+Waiting for rewards: 100%|██████████| 12/12 [00:51<00:00,  4.32s/it]
 
-Epoch 2.0: training:  50%|█████     | 3/6 [00:46<00:46, 15.48s/it]
+Epoch 1.0: training:   0%|          | 0/12 [00:00<?, ?it/s]
 
-Epoch 2.0: training:  67%|██████▋   | 4/6 [01:01<00:30, 15.49s/it]
+Epoch 1.0: training:   8%|▊         | 1/12 [00:10<02:00, 10.93s/it]
 
-Epoch 2.0: training:  83%|████████▎ | 5/6 [01:17<00:15, 15.50s/it]
+Epoch 1.0: training:  17%|█▋        | 2/12 [00:19<01:36,  9.68s/it]
 
-Epoch 2.0: training: 100%|██████████| 6/6 [01:38<00:00, 17.35s/it]
-Epoch 2.0: training: 100%|██████████| 6/6 [01:38<00:00, 16.39s/it]
+Epoch 1.0: training:  25%|██▌       | 3/12 [00:28<01:23,  9.28s/it]
 
-Epoch 3: sampling:   0%|          | 0/6 [00:00<?, ?it/s]
+Epoch 1.0: training:  33%|███▎      | 4/12 [00:37<01:12,  9.09s/it]
 
-Epoch 3: sampling:  17%|█▋        | 1/6 [00:05<00:29,  5.85s/it]
+Epoch 1.0: training:  42%|████▏     | 5/12 [00:46<01:03,  9.00s/it]
 
-Epoch 3: sampling:  33%|███▎      | 2/6 [00:13<00:27,  6.79s/it]
+Epoch 1.0: training:  50%|█████     | 6/12 [00:55<00:53,  8.95s/it]
 
-Epoch 3: sampling:  50%|█████     | 3/6 [00:20<00:21,  7.14s/it]
+Epoch 1.0: training:  58%|█████▊    | 7/12 [01:03<00:44,  8.90s/it]
 
-Epoch 3: sampling:  67%|██████▋   | 4/6 [00:28<00:14,  7.31s/it]
-
-Epoch 3: sampling:  83%|████████▎ | 5/6 [00:35<00:07,  7.39s/it]
-
-Epoch 3: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.45s/it]
-Epoch 3: sampling: 100%|██████████| 6/6 [00:43<00:00,  7.26s/it]
-
-Waiting for rewards:   0%|          | 0/6 [00:00<?, ?it/s]
-Waiting for rewards:  17%|█▋        | 1/6 [00:00<00:02,  2.16it/s]
-Waiting for rewards:  33%|███▎      | 2/6 [00:02<00:05,  1.45s/it]
-Waiting for rewards:  50%|█████     | 3/6 [00:06<00:08,  2.69s/it]
-Waiting for rewards:  67%|██████▋   | 4/6 [00:10<00:06,  3.26s/it]
-Waiting for rewards:  83%|████████▎ | 5/6 [00:15<00:03,  3.79s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:22<00:00,  4.91s/it]
-Waiting for rewards: 100%|██████████| 6/6 [00:22<00:00,  3.79s/it]
-
-Epoch 3.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
-
-Epoch 3.0: training:  17%|█▋        | 1/6 [00:37<03:05, 37.16s/it]
-
-Epoch 3.0: training:  33%|███▎      | 2/6 [01:16<02:34, 38.69s/it]
-
-Epoch 3.0: training:  33%|███▎      | 2/6 [01:44<03:28, 52.10s/it]
-Traceback (most recent call last):
-  File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 1082, in <module>
-    app.run(main)
-  File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
-    _run_main(main, args)
-  File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
-    sys.exit(main(argv))
-             ^^^^^^^^^^
-  File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 998, in main
-    _, _, prev_sample_mean_ref, _ = compute_log_prob(transformer, pipeline, sample, j, embeds, pooled_embeds, config)
-                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 221, in compute_log_prob
-    noise_pred = transformer(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
-    else self._run_ddp_forward(*inputs, **kwargs)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
-    return self.module(*inputs, **kwargs)  # type: ignore[index]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 819, in forward
-    return model_forward(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 807, in __call__
-    return convert_to_fp32(self.model_forward(*args, **kwargs))
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
-    return self.get_base_model()(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 396, in forward
-    encoder_hidden_states, hidden_states = block(
-                                           ^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention.py", line 213, in forward
-    attn_output, context_attn_output = self.attn(
-                                       ^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 605, in forward
-    return self.processor(
-           ^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 1496, in __call__
-    hidden_states = attn.to_out[0](hidden_states)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py", line 491, in forward
-    result = self.base_layer(x, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 125, in forward
-    return F.linear(input, self.weight, self.bias)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 144.00 MiB. GPU 0 has a total capacity of 139.81 GiB of which 152.38 MiB is free. Process 154606 has 3.57 GiB memory in use. Including non-PyTorch memory, this process has 136.07 GiB memory in use. Of the allocated memory 133.43 GiB is allocated by PyTorch, and 756.52 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 1082, in <module>
-[rank0]:     app.run(main)
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
-[rank0]:     _run_main(main, args)
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
-[rank0]:     sys.exit(main(argv))
-[rank0]:              ^^^^^^^^^^
-[rank0]:   File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 998, in main
-[rank0]:     _, _, prev_sample_mean_ref, _ = compute_log_prob(transformer, pipeline, sample, j, embeds, pooled_embeds, config)
-[rank0]:                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_sd3_fiber_grpo.py", line 221, in compute_log_prob
-[rank0]:     noise_pred = transformer(
-[rank0]:                  ^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
-[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
-[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
-[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 819, in forward
-[rank0]:     return model_forward(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/accelerate/utils/operations.py", line 807, in __call__
-[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
-[rank0]:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
-[rank0]:     return func(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
-[rank0]:     return self.get_base_model()(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 396, in forward
-[rank0]:     encoder_hidden_states, hidden_states = block(
-[rank0]:                                            ^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention.py", line 213, in forward
-[rank0]:     attn_output, context_attn_output = self.attn(
-[rank0]:                                        ^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 605, in forward
-[rank0]:     return self.processor(
-[rank0]:            ^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/attention_processor.py", line 1496, in __call__
-[rank0]:     hidden_states = attn.to_out[0](hidden_states)
-[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py", line 491, in forward
-[rank0]:     result = self.base_layer(x, *args, **kwargs)
-[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 125, in forward
-[rank0]:     return F.linear(input, self.weight, self.bias)
-[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 144.00 MiB. GPU 0 has a total capacity of 139.81 GiB of which 152.38 MiB is free. Process 154606 has 3.57 GiB memory in use. Including non-PyTorch memory, this process has 136.07 GiB memory in use. Of the allocated memory 133.43 GiB is allocated by PyTorch, and 756.52 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-W0718 14:59:49.099000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156726 closing signal SIGTERM
-W0718 14:59:49.101000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156727 closing signal SIGTERM
-W0718 14:59:49.103000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156728 closing signal SIGTERM
-W0718 14:59:49.105000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156729 closing signal SIGTERM
-W0718 14:59:49.107000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156730 closing signal SIGTERM
-W0718 14:59:49.109000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156731 closing signal SIGTERM
-W0718 14:59:49.112000 156643 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 156732 closing signal SIGTERM
-E0718 14:59:49.116000 156643 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 156725) of binary: /usr/bin/python3.12
-Traceback (most recent call last):
-  File "/usr/local/bin/accelerate", line 8, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/accelerate/commands/accelerate_cli.py", line 48, in main
-    args.func(args)
-  File "/usr/local/lib/python3.12/dist-packages/accelerate/commands/launch.py", line 1190, in launch_command
-    multi_gpu_launcher(args)
-  File "/usr/local/lib/python3.12/dist-packages/accelerate/commands/launch.py", line 808, in multi_gpu_launcher
-    distrib_run.run(args)
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
-    elastic_launch(
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts/train_sd3_fiber_grpo.py FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2026-07-18_14:59:49
-  host      : hx00-tfejbecp-0043
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 156725)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
