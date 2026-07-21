@@ -1,229 +1,4 @@
 
-
-Eval:  30%|███       | 6/20 [01:43<04:00, 17.21s/it]
-
-Eval:  35%|███▌      | 7/20 [02:00<03:40, 17.00s/it]
-
-Eval:  40%|████      | 8/20 [02:16<03:23, 16.93s/it]
-
-Eval:  45%|████▌     | 9/20 [02:34<03:07, 17.09s/it]
-
-Eval:  50%|█████     | 10/20 [02:51<02:50, 17.07s/it]
-
-Eval:  55%|█████▌    | 11/20 [03:08<02:33, 17.11s/it]
-
-Eval:  60%|██████    | 12/20 [03:25<02:15, 16.92s/it]
-
-Eval:  65%|██████▌   | 13/20 [03:41<01:58, 16.92s/it]
-
-Eval:  70%|███████   | 14/20 [03:58<01:41, 16.90s/it]
-
-Eval:  75%|███████▌  | 15/20 [04:15<01:23, 16.78s/it]
-
-Eval:  80%|████████  | 16/20 [04:31<01:06, 16.70s/it]
-
-Eval:  85%|████████▌ | 17/20 [04:48<00:49, 16.63s/it]
-
-Eval:  90%|█████████ | 18/20 [05:05<00:33, 16.81s/it]
-
-Eval:  95%|█████████▌| 19/20 [05:22<00:16, 16.83s/it]
-
-Eval: 100%|██████████| 20/20 [05:39<00:00, 16.94s/it]
-Eval: 100%|██████████| 20/20 [05:39<00:00, 16.98s/it]
-W0721 17:34:44.499781 139971328303744 accelerator.py:3099] Deleting 1 checkpoints to make room for new checkpoint.
-I0721 17:34:45.307168 139971328303744 accelerator.py:3111] Saving current state to logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15
-I0721 17:34:58.577068 139971328303744 checkpointing.py:106] Model weights saved in logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15/model.safetensors
-I0721 17:34:58.807729 139971328303744 checkpointing.py:113] Optimizer state saved in logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15/optimizer.bin
-I0721 17:34:58.808220 139971328303744 checkpointing.py:137] Sampler state for dataloader 0 saved in logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15/sampler.bin
-I0721 17:34:58.808370 139971328303744 checkpointing.py:137] Sampler state for dataloader 1 saved in logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15/sampler_1.bin
-I0721 17:34:58.810618 139971328303744 checkpointing.py:144] Gradient scaler state saved in logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15/scaler.pt
-I0721 17:34:58.817896 139971328303744 checkpointing.py:164] Random states saved in logs/flow_grpo_sd35m_geneval_half576_h200x8_2026.07.21_10.34.52/checkpoints/checkpoint_15/random_states_0.pkl
-
-Epoch 160: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 160: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
-
-Epoch 160: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.79s/it]
-
-Epoch 160: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.93s/it]
-
-Epoch 160: sampling:  50%|█████     | 4/8 [00:11<00:12,  3.00s/it]
-
-Epoch 160: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.03s/it]
-
-Epoch 160: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.05s/it]
-
-Epoch 160: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
-
-Epoch 160: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.08s/it]
-Epoch 160: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.00s/it]
-
-Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
-Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  6.15it/s]
-Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:01,  2.77it/s]
-Waiting for rewards:  50%|█████     | 4/8 [00:02<00:02,  1.35it/s]
-Waiting for rewards:  62%|██████▎   | 5/8 [00:04<00:03,  1.00s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [00:05<00:02,  1.13s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [00:06<00:01,  1.23s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:08<00:00,  1.35s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:08<00:00,  1.06s/it]
-
-Epoch 160.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 160.0: training:  12%|█▎        | 1/8 [00:06<00:47,  6.81s/it]
-
-Epoch 160.0: training:  25%|██▌       | 2/8 [00:13<00:40,  6.82s/it]
-
-Epoch 160.0: training:  38%|███▊      | 3/8 [00:20<00:34,  6.82s/it]
-
-Epoch 160.0: training:  50%|█████     | 4/8 [00:27<00:27,  6.95s/it]
-
-Epoch 160.0: training:  62%|██████▎   | 5/8 [00:34<00:20,  6.90s/it]
-
-Epoch 160.0: training:  75%|███████▌  | 6/8 [00:41<00:13,  6.89s/it]
-
-Epoch 160.0: training:  88%|████████▊ | 7/8 [00:48<00:06,  6.88s/it]
-
-Epoch 160.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.93s/it]
-Epoch 160.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.90s/it]
-
-Epoch 161: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 161: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
-
-Epoch 161: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.78s/it]
-
-Epoch 161: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.93s/it]
-
-Epoch 161: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
-
-Epoch 161: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.04s/it]
-
-Epoch 161: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.07s/it]
-
-Epoch 161: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.07s/it]
-
-Epoch 161: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.08s/it]
-Epoch 161: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.01s/it]
-
-Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
-Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.52it/s]
-Waiting for rewards:  38%|███▊      | 3/8 [00:00<00:01,  3.10it/s]
-Waiting for rewards:  50%|█████     | 4/8 [00:03<00:03,  1.02it/s]
-Waiting for rewards:  62%|██████▎   | 5/8 [00:04<00:03,  1.17s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [00:06<00:02,  1.34s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [00:08<00:01,  1.44s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:10<00:00,  1.72s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:10<00:00,  1.30s/it]
-
-Epoch 161.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 161.0: training:  12%|█▎        | 1/8 [00:06<00:47,  6.80s/it]
-
-Epoch 161.0: training:  25%|██▌       | 2/8 [00:13<00:40,  6.82s/it]
-
-Epoch 161.0: training:  38%|███▊      | 3/8 [00:20<00:34,  6.83s/it]
-
-Epoch 161.0: training:  50%|█████     | 4/8 [00:27<00:27,  6.92s/it]
-
-Epoch 161.0: training:  62%|██████▎   | 5/8 [00:34<00:20,  6.88s/it]
-
-Epoch 161.0: training:  75%|███████▌  | 6/8 [00:41<00:13,  6.88s/it]
-
-Epoch 161.0: training:  88%|████████▊ | 7/8 [00:48<00:06,  6.87s/it]
-
-Epoch 161.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.94s/it]
-Epoch 161.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.89s/it]
-
-Epoch 162: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 162: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
-
-Epoch 162: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.77s/it]
-
-Epoch 162: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.91s/it]
-
-Epoch 162: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.98s/it]
-
-Epoch 162: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.02s/it]
-
-Epoch 162: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.04s/it]
-
-Epoch 162: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
-
-Epoch 162: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.08s/it]
-Epoch 162: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.00s/it]
-
-Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
-Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.45it/s]
-Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:01,  2.58it/s]
-Waiting for rewards:  50%|█████     | 4/8 [00:03<00:03,  1.03it/s]
-Waiting for rewards:  62%|██████▎   | 5/8 [00:04<00:03,  1.17s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [00:06<00:02,  1.40s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [00:08<00:01,  1.57s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:10<00:00,  1.61s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:10<00:00,  1.29s/it]
-
-Epoch 162.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 162.0: training:  12%|█▎        | 1/8 [00:06<00:42,  6.12s/it]
-
-Epoch 162.0: training:  25%|██▌       | 2/8 [00:12<00:36,  6.14s/it]
-
-Epoch 162.0: training:  38%|███▊      | 3/8 [00:18<00:30,  6.15s/it]
-
-Epoch 162.0: training:  50%|█████     | 4/8 [00:27<00:28,  7.23s/it]
-
-Epoch 162.0: training:  62%|██████▎   | 5/8 [00:33<00:20,  6.84s/it]
-
-Epoch 162.0: training:  75%|███████▌  | 6/8 [00:39<00:13,  6.62s/it]
-
-Epoch 162.0: training:  88%|████████▊ | 7/8 [00:45<00:06,  6.48s/it]
-
-Epoch 162.0: training: 100%|██████████| 8/8 [00:54<00:00,  7.25s/it]
-Epoch 162.0: training: 100%|██████████| 8/8 [00:54<00:00,  6.84s/it]
-
-Epoch 163: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 163: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
-
-Epoch 163: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.77s/it]
-
-Epoch 163: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.92s/it]
-
-Epoch 163: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
-
-Epoch 163: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.03s/it]
-
-Epoch 163: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.05s/it]
-
-Epoch 163: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
-
-Epoch 163: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.08s/it]
-Epoch 163: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.00s/it]
-
-Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
-Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.53it/s]
-Waiting for rewards:  38%|███▊      | 3/8 [00:03<00:06,  1.24s/it]
-Waiting for rewards:  50%|█████     | 4/8 [00:05<00:05,  1.43s/it]
-Waiting for rewards:  62%|██████▎   | 5/8 [00:07<00:04,  1.57s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [00:09<00:03,  1.72s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [00:12<00:02,  2.37s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:14<00:00,  2.13s/it]
-Waiting for rewards: 100%|██████████| 8/8 [00:14<00:00,  1.81s/it]
-
-Epoch 163.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
-
-Epoch 163.0: training:  12%|█▎        | 1/8 [00:05<00:38,  5.48s/it]
-
-Epoch 163.0: training:  25%|██▌       | 2/8 [00:10<00:33,  5.50s/it]
-
-Epoch 163.0: training:  38%|███▊      | 3/8 [00:16<00:27,  5.50s/it]
-
-Epoch 163.0: training:  50%|█████     | 4/8 [00:22<00:22,  5.59s/it]
-
-Epoch 163.0: training:  62%|██████▎   | 5/8 [00:27<00:16,  5.57s/it]
-
 Epoch 163.0: training:  75%|███████▌  | 6/8 [00:33<00:11,  5.56s/it]
 
 Epoch 163.0: training:  88%|████████▊ | 7/8 [00:38<00:05,  5.55s/it]
@@ -2508,4 +2283,357 @@ Epoch 192: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.03s/it]
 Epoch 192: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.05s/it]
 
 Epoch 192: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.07s/it]
+
+Epoch 192: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.08s/it]
+Epoch 192: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.01s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.48it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:01,  2.61it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:02<00:03,  1.16it/s]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:05<00:04,  1.37s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:06<00:02,  1.48s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:09<00:01,  1.82s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:11<00:00,  1.90s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:11<00:00,  1.45s/it]
+
+Epoch 192.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 192.0: training:  12%|█▎        | 1/8 [00:06<00:42,  6.13s/it]
+
+Epoch 192.0: training:  25%|██▌       | 2/8 [00:12<00:36,  6.15s/it]
+
+Epoch 192.0: training:  38%|███▊      | 3/8 [00:18<00:30,  6.15s/it]
+
+Epoch 192.0: training:  50%|█████     | 4/8 [00:24<00:24,  6.24s/it]
+
+Epoch 192.0: training:  62%|██████▎   | 5/8 [00:30<00:18,  6.21s/it]
+
+Epoch 192.0: training:  75%|███████▌  | 6/8 [00:37<00:12,  6.20s/it]
+
+Epoch 192.0: training:  88%|████████▊ | 7/8 [00:43<00:06,  6.19s/it]
+
+Epoch 192.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.25s/it]
+Epoch 192.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.21s/it]
+
+Epoch 193: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 193: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 193: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.77s/it]
+
+Epoch 193: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.91s/it]
+
+Epoch 193: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.98s/it]
+
+Epoch 193: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.02s/it]
+
+Epoch 193: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.06s/it]
+
+Epoch 193: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.07s/it]
+
+Epoch 193: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.08s/it]
+Epoch 193: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.00s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.57it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  2.29it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:03<00:03,  1.10it/s]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:05<00:04,  1.52s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:07<00:03,  1.54s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:08<00:01,  1.56s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:11<00:00,  1.98s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:11<00:00,  1.49s/it]
+
+Epoch 193.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 193.0: training:  12%|█▎        | 1/8 [00:05<00:38,  5.47s/it]
+
+Epoch 193.0: training:  25%|██▌       | 2/8 [00:10<00:32,  5.49s/it]
+
+Epoch 193.0: training:  38%|███▊      | 3/8 [00:16<00:27,  5.50s/it]
+
+Epoch 193.0: training:  50%|█████     | 4/8 [00:24<00:26,  6.60s/it]
+
+Epoch 193.0: training:  62%|██████▎   | 5/8 [00:30<00:18,  6.20s/it]
+
+Epoch 193.0: training:  75%|███████▌  | 6/8 [00:35<00:11,  5.98s/it]
+
+Epoch 193.0: training:  88%|████████▊ | 7/8 [00:41<00:05,  5.83s/it]
+
+Epoch 193.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.62s/it]
+Epoch 193.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.21s/it]
+
+Epoch 194: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 194: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 194: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.78s/it]
+
+Epoch 194: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.92s/it]
+
+Epoch 194: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
+
+Epoch 194: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.02s/it]
+
+Epoch 194: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.04s/it]
+
+Epoch 194: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
+
+Epoch 194: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.06s/it]
+Epoch 194: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.00s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.48it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  2.07it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:03<00:03,  1.12it/s]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:04<00:03,  1.17s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:06<00:02,  1.37s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:08<00:01,  1.42s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:11<00:00,  1.89s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:11<00:00,  1.38s/it]
+
+Epoch 194.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 194.0: training:  12%|█▎        | 1/8 [00:06<00:42,  6.12s/it]
+
+Epoch 194.0: training:  25%|██▌       | 2/8 [00:12<00:36,  6.14s/it]
+
+Epoch 194.0: training:  38%|███▊      | 3/8 [00:18<00:30,  6.15s/it]
+
+Epoch 194.0: training:  50%|█████     | 4/8 [00:24<00:25,  6.26s/it]
+
+Epoch 194.0: training:  62%|██████▎   | 5/8 [00:31<00:18,  6.22s/it]
+
+Epoch 194.0: training:  75%|███████▌  | 6/8 [00:37<00:12,  6.21s/it]
+
+Epoch 194.0: training:  88%|████████▊ | 7/8 [00:43<00:06,  6.20s/it]
+
+Epoch 194.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.26s/it]
+Epoch 194.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.22s/it]
+
+Epoch 195: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 195: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 195: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.77s/it]
+
+Epoch 195: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.92s/it]
+
+Epoch 195: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
+
+Epoch 195: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.04s/it]
+
+Epoch 195: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.05s/it]
+
+Epoch 195: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
+
+Epoch 195: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.08s/it]
+Epoch 195: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.00s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.55it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  1.96it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:04<00:05,  1.32s/it]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:07<00:05,  1.80s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:08<00:03,  1.79s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:10<00:01,  1.72s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:12<00:00,  1.76s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:12<00:00,  1.53s/it]
+
+Epoch 195.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 195.0: training:  12%|█▎        | 1/8 [00:06<00:47,  6.79s/it]
+
+Epoch 195.0: training:  25%|██▌       | 2/8 [00:13<00:40,  6.81s/it]
+
+Epoch 195.0: training:  38%|███▊      | 3/8 [00:20<00:34,  6.82s/it]
+
+Epoch 195.0: training:  50%|█████     | 4/8 [00:27<00:27,  6.94s/it]
+
+Epoch 195.0: training:  62%|██████▎   | 5/8 [00:34<00:20,  6.91s/it]
+
+Epoch 195.0: training:  75%|███████▌  | 6/8 [00:41<00:13,  6.90s/it]
+
+Epoch 195.0: training:  88%|████████▊ | 7/8 [00:48<00:06,  6.88s/it]
+
+Epoch 195.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.93s/it]
+Epoch 195.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.90s/it]
+
+Epoch 196: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 196: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 196: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.77s/it]
+
+Epoch 196: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.92s/it]
+
+Epoch 196: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
+
+Epoch 196: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.03s/it]
+
+Epoch 196: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.05s/it]
+
+Epoch 196: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
+
+Epoch 196: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.07s/it]
+Epoch 196: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.00s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.48it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  2.48it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:02<00:03,  1.26it/s]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:04<00:03,  1.06s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:05<00:02,  1.26s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:07<00:01,  1.45s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:09<00:00,  1.52s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:09<00:00,  1.19s/it]
+
+Epoch 196.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 196.0: training:  12%|█▎        | 1/8 [00:06<00:47,  6.80s/it]
+
+Epoch 196.0: training:  25%|██▌       | 2/8 [00:13<00:40,  6.82s/it]
+
+Epoch 196.0: training:  38%|███▊      | 3/8 [00:20<00:34,  6.83s/it]
+
+Epoch 196.0: training:  50%|█████     | 4/8 [00:27<00:27,  6.91s/it]
+
+Epoch 196.0: training:  62%|██████▎   | 5/8 [00:34<00:20,  6.88s/it]
+
+Epoch 196.0: training:  75%|███████▌  | 6/8 [00:41<00:13,  6.87s/it]
+
+Epoch 196.0: training:  88%|████████▊ | 7/8 [00:48<00:06,  6.87s/it]
+
+Epoch 196.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.93s/it]
+Epoch 196.0: training: 100%|██████████| 8/8 [00:55<00:00,  6.89s/it]
+
+Epoch 197: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 197: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 197: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.78s/it]
+
+Epoch 197: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.91s/it]
+
+Epoch 197: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.98s/it]
+
+Epoch 197: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.02s/it]
+
+Epoch 197: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.04s/it]
+
+Epoch 197: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
+
+Epoch 197: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.08s/it]
+Epoch 197: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.00s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.57it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  1.74it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:03<00:04,  1.00s/it]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:05<00:03,  1.21s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:06<00:02,  1.33s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:08<00:01,  1.51s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:10<00:00,  1.52s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:10<00:00,  1.26s/it]
+
+Epoch 197.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 197.0: training:  12%|█▎        | 1/8 [00:05<00:38,  5.49s/it]
+
+Epoch 197.0: training:  25%|██▌       | 2/8 [00:11<00:33,  5.52s/it]
+
+Epoch 197.0: training:  38%|███▊      | 3/8 [00:16<00:27,  5.51s/it]
+
+Epoch 197.0: training:  50%|█████     | 4/8 [00:24<00:26,  6.56s/it]
+
+Epoch 197.0: training:  62%|██████▎   | 5/8 [00:30<00:18,  6.18s/it]
+
+Epoch 197.0: training:  75%|███████▌  | 6/8 [00:35<00:11,  5.96s/it]
+
+Epoch 197.0: training:  88%|████████▊ | 7/8 [00:41<00:05,  5.82s/it]
+
+Epoch 197.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.59s/it]
+Epoch 197.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.19s/it]
+
+Epoch 198: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 198: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 198: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.78s/it]
+
+Epoch 198: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.92s/it]
+
+Epoch 198: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
+
+Epoch 198: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.03s/it]
+
+Epoch 198: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.02s/it]
+
+Epoch 198: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.04s/it]
+
+Epoch 198: sampling: 100%|██████████| 8/8 [00:23<00:00,  3.06s/it]
+Epoch 198: sampling: 100%|██████████| 8/8 [00:23<00:00,  2.99s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.52it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  2.32it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:04<00:06,  1.56s/it]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:06<00:04,  1.65s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:08<00:03,  1.62s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:09<00:01,  1.59s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:14<00:00,  2.64s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:14<00:00,  1.85s/it]
+
+Epoch 198.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 198.0: training:  12%|█▎        | 1/8 [00:06<00:42,  6.12s/it]
+
+Epoch 198.0: training:  25%|██▌       | 2/8 [00:12<00:36,  6.14s/it]
+
+Epoch 198.0: training:  38%|███▊      | 3/8 [00:18<00:30,  6.14s/it]
+
+Epoch 198.0: training:  50%|█████     | 4/8 [00:24<00:24,  6.24s/it]
+
+Epoch 198.0: training:  62%|██████▎   | 5/8 [00:30<00:18,  6.21s/it]
+
+Epoch 198.0: training:  75%|███████▌  | 6/8 [00:37<00:12,  6.20s/it]
+
+Epoch 198.0: training:  88%|████████▊ | 7/8 [00:43<00:06,  6.19s/it]
+
+Epoch 198.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.26s/it]
+Epoch 198.0: training: 100%|██████████| 8/8 [00:49<00:00,  6.21s/it]
+
+Epoch 199: sampling:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 199: sampling:  12%|█▎        | 1/8 [00:02<00:16,  2.40s/it]
+
+Epoch 199: sampling:  25%|██▌       | 2/8 [00:05<00:16,  2.79s/it]
+
+Epoch 199: sampling:  38%|███▊      | 3/8 [00:08<00:14,  2.93s/it]
+
+Epoch 199: sampling:  50%|█████     | 4/8 [00:11<00:11,  2.99s/it]
+
+Epoch 199: sampling:  62%|██████▎   | 5/8 [00:14<00:09,  3.03s/it]
+
+Epoch 199: sampling:  75%|███████▌  | 6/8 [00:17<00:06,  3.05s/it]
+
+Epoch 199: sampling:  88%|████████▊ | 7/8 [00:20<00:03,  3.06s/it]
+
+Epoch 199: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.07s/it]
+Epoch 199: sampling: 100%|██████████| 8/8 [00:24<00:00,  3.00s/it]
+
+Waiting for rewards:   0%|          | 0/8 [00:00<?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:00<00:01,  5.53it/s]
+Waiting for rewards:  38%|███▊      | 3/8 [00:01<00:02,  2.01it/s]
+Waiting for rewards:  50%|█████     | 4/8 [00:02<00:03,  1.17it/s]
+Waiting for rewards:  62%|██████▎   | 5/8 [00:05<00:03,  1.33s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [00:06<00:02,  1.40s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [00:08<00:01,  1.42s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:09<00:00,  1.50s/it]
+Waiting for rewards: 100%|██████████| 8/8 [00:09<00:00,  1.24s/it]
+
+Epoch 199.0: training:   0%|          | 0/8 [00:00<?, ?it/s]
+
+Epoch 199.0: training:  12%|█▎        | 1/8 [00:06<00:42,  6.12s/it]
 
