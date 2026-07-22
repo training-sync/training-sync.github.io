@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-n24pr7fz-0005</span>
-            <span>Data updated: 2026-07-22T12:07:20.594357</span>
-            <span>Page generated: 2026-07-23 03:07:20</span>
-            <span>wandb zip: 17.52 MB</span>
+            <span>Data updated: 2026-07-22T12:19:46.449525</span>
+            <span>Page generated: 2026-07-23 03:19:46</span>
+            <span>wandb zip: 17.79 MB</span>
         </div>
     </div>
 
@@ -129,271 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2470 lines)</span>
+            <span class="terminal-title">training_latest.log (2469 lines)</span>
         </div>
         <div id="terminal">
-
-Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  6.78it/s]
-
-Epoch 80: sampling:  62%|██████▎   | 5/8 [48:22&lt;12:36, 252.28s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  6.75it/s]
-
-Epoch 80: sampling:  75%|███████▌  | 6/8 [48:23&lt;05:34, 167.12s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  6.75it/s]
-
-Epoch 80: sampling:  88%|████████▊ | 7/8 [48:25&lt;01:53, 113.07s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:01&lt;00:00,  6.73it/s]
-
-Epoch 80: sampling: 100%|██████████| 8/8 [48:27&lt;00:00, 77.64s/it] 
-Epoch 80: sampling: 100%|██████████| 8/8 [48:27&lt;00:00, 363.44s/it]
-I0722 08:18:18.914186 139639510090368 train_nft_sd3.py:4564] Epoch 80 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
-Waiting for rewards:  25%|██▌       | 2/8 [00:29&lt;01:28, 14.69s/it]
-Waiting for rewards:  38%|███▊      | 3/8 [00:40&lt;01:06, 13.32s/it]
-Waiting for rewards:  50%|█████     | 4/8 [00:42&lt;00:35,  8.91s/it]
-Waiting for rewards:  62%|██████▎   | 5/8 [00:53&lt;00:29,  9.85s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [00:55&lt;00:14,  7.03s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [01:06&lt;00:08,  8.47s/it]
-Waiting for rewards: 100%|██████████| 8/8 [01:08&lt;00:00,  6.21s/it]
-Waiting for rewards: 100%|██████████| 8/8 [01:08&lt;00:00,  8.50s/it]
-I0722 08:24:16.379397 139639510090368 train_nft_sd3.py:4662] Epoch 80 reward metrics: {'reward_accuracy': 0.4045138955116272, 'reward_geneval': 0.6341145634651184, 'reward_avg': 0.6341145634651184, 'reward_geneval_all': 0.6341145634651184, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
-I0722 08:24:16.979312 139639510090368 train_nft_sd3.py:5256] Advantages mean: 0.46043490483857946 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 80.0: training:   0%|          | 0/18 [00:00&lt;?, ?it/s]
-
-Epoch 80.0: training:   6%|▌         | 1/18 [00:06&lt;01:51,  6.55s/it]
-
-Epoch 80.0: training:  11%|█         | 2/18 [00:13&lt;01:46,  6.65s/it]
-
-Epoch 80.0: training:  17%|█▋        | 3/18 [00:19&lt;01:40,  6.68s/it]
-
-Epoch 80.0: training:  22%|██▏       | 4/18 [00:26&lt;01:33,  6.71s/it]
-
-Epoch 80.0: training:  28%|██▊       | 5/18 [00:33&lt;01:27,  6.72s/it]
-
-Epoch 80.0: training:  33%|███▎      | 6/18 [00:40&lt;01:20,  6.71s/it]
-
-Epoch 80.0: training:  39%|███▉      | 7/18 [00:46&lt;01:13,  6.70s/it]
-
-Epoch 80.0: training:  44%|████▍     | 8/18 [00:53&lt;01:07,  6.80s/it]
-
-Epoch 80.0: training:  50%|█████     | 9/18 [00:59&lt;00:58,  6.49s/it]
-
-Epoch 80.0: training:  56%|█████▌    | 10/18 [01:06&lt;00:51,  6.49s/it]
-
-Epoch 80.0: training:  61%|██████    | 11/18 [01:12&lt;00:45,  6.52s/it]
-
-Epoch 80.0: training:  67%|██████▋   | 12/18 [01:19&lt;00:39,  6.57s/it]
-
-Epoch 80.0: training:  72%|███████▏  | 13/18 [01:26&lt;00:33,  6.62s/it]
-
-Epoch 80.0: training:  78%|███████▊  | 14/18 [01:32&lt;00:26,  6.65s/it]
-
-Epoch 80.0: training:  83%|████████▎ | 15/18 [01:39&lt;00:19,  6.65s/it]
-
-Epoch 80.0: training:  89%|████████▉ | 16/18 [01:46&lt;00:13,  6.73s/it]
-
-Epoch 80.0: training:  94%|█████████▍| 17/18 [01:52&lt;00:06,  6.65s/it]
-
-Epoch 80.0: training: 100%|██████████| 18/18 [01:59&lt;00:00,  6.65s/it]
-Epoch 80.0: training: 100%|██████████| 18/18 [01:59&lt;00:00,  6.64s/it]
-
-Epoch 81: sampling:   0%|          | 0/8 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.86it/s]
-
-Epoch 81: sampling:  12%|█▎        | 1/8 [00:02&lt;00:19,  2.75s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.68it/s]
-
-Epoch 81: sampling:  25%|██▌       | 2/8 [00:05&lt;00:18,  3.04s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.64it/s]
-
-Epoch 81: sampling:  38%|███▊      | 3/8 [00:09&lt;00:15,  3.14s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.62it/s]
-
-Epoch 81: sampling:  50%|█████     | 4/8 [00:12&lt;00:12,  3.17s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
-
-Epoch 81: sampling:  62%|██████▎   | 5/8 [00:15&lt;00:09,  3.18s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
-
-Epoch 81: sampling:  75%|███████▌  | 6/8 [00:18&lt;00:06,  3.19s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.69it/s]
-
-Epoch 81: sampling:  88%|████████▊ | 7/8 [00:22&lt;00:03,  3.21s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.63it/s]
-
-Epoch 81: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.23s/it]
-Epoch 81: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.17s/it]
-I0722 08:26:42.368835 139639510090368 train_nft_sd3.py:4564] Epoch 81 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
-Waiting for rewards:  12%|█▎        | 1/8 [00:04&lt;00:32,  4.63s/it]
-Waiting for rewards:  25%|██▌       | 2/8 [00:48&lt;02:45, 27.60s/it]
-Waiting for rewards:  38%|███▊      | 3/8 [01:00&lt;01:41, 20.35s/it]
-Waiting for rewards:  50%|█████     | 4/8 [01:11&lt;01:07, 16.88s/it]
-Waiting for rewards:  62%|██████▎   | 5/8 [01:22&lt;00:44, 14.86s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [01:34&lt;00:27, 13.74s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [01:45&lt;00:12, 12.88s/it]
-Waiting for rewards: 100%|██████████| 8/8 [01:56&lt;00:00, 12.23s/it]
-Waiting for rewards: 100%|██████████| 8/8 [01:56&lt;00:00, 14.55s/it]
-I0722 08:28:38.810739 139639510090368 train_nft_sd3.py:4662] Epoch 81 reward metrics: {'reward_accuracy': 0.2638888955116272, 'reward_geneval': 0.5614873170852661, 'reward_avg': 0.5614872574806213, 'reward_geneval_all': 0.5614873170852661, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
-I0722 08:28:39.402560 139639510090368 train_nft_sd3.py:5256] Advantages mean: 0.5047479048714473 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 81.0: training:   0%|          | 0/18 [00:00&lt;?, ?it/s]
-
-Epoch 81.0: training:   6%|▌         | 1/18 [00:06&lt;01:53,  6.67s/it]
-
-Epoch 81.0: training:  11%|█         | 2/18 [00:13&lt;01:47,  6.69s/it]
-
-Epoch 81.0: training:  17%|█▋        | 3/18 [00:20&lt;01:40,  6.72s/it]
-
-Epoch 81.0: training:  22%|██▏       | 4/18 [00:26&lt;01:33,  6.69s/it]
-
-Epoch 81.0: training:  28%|██▊       | 5/18 [00:33&lt;01:27,  6.73s/it]
-
-Epoch 81.0: training:  33%|███▎      | 6/18 [00:40&lt;01:20,  6.73s/it]
-
-Epoch 81.0: training:  39%|███▉      | 7/18 [00:47&lt;01:14,  6.74s/it]
-
-Epoch 81.0: training:  44%|████▍     | 8/18 [00:54&lt;01:08,  6.82s/it]
-
-Epoch 81.0: training:  50%|█████     | 9/18 [00:59&lt;00:58,  6.52s/it]
-
-Epoch 81.0: training:  56%|█████▌    | 10/18 [01:06&lt;00:52,  6.59s/it]
-
-Epoch 81.0: training:  61%|██████    | 11/18 [01:13&lt;00:46,  6.64s/it]
-
-Epoch 81.0: training:  67%|██████▋   | 12/18 [01:20&lt;00:40,  6.67s/it]
-
-Epoch 81.0: training:  72%|███████▏  | 13/18 [01:26&lt;00:33,  6.69s/it]
-
-Epoch 81.0: training:  78%|███████▊  | 14/18 [01:33&lt;00:26,  6.74s/it]
-
-Epoch 81.0: training:  83%|████████▎ | 15/18 [01:40&lt;00:20,  6.72s/it]
-
-Epoch 81.0: training:  89%|████████▉ | 16/18 [01:47&lt;00:13,  6.78s/it]
-
-Epoch 81.0: training:  94%|█████████▍| 17/18 [01:54&lt;00:06,  6.78s/it]
-
-Epoch 81.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.74s/it]
-Epoch 81.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.71s/it]
-
-Epoch 82: sampling:   0%|          | 0/8 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.88it/s]
-
-Epoch 82: sampling:  12%|█▎        | 1/8 [00:02&lt;00:19,  2.74s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
-
-Epoch 82: sampling:  25%|██▌       | 2/8 [00:05&lt;00:18,  3.01s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.73it/s]
-
-Epoch 82: sampling:  38%|███▊      | 3/8 [00:09&lt;00:15,  3.10s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.72it/s]
-
-Epoch 82: sampling:  50%|█████     | 4/8 [00:12&lt;00:12,  3.14s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.68it/s]
-
-Epoch 82: sampling:  62%|██████▎   | 5/8 [00:15&lt;00:09,  3.18s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.72it/s]
-
-Epoch 82: sampling:  75%|███████▌  | 6/8 [00:18&lt;00:06,  3.18s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.69it/s]
-
-Epoch 82: sampling:  88%|████████▊ | 7/8 [00:22&lt;00:03,  3.20s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.66it/s]
-
-Epoch 82: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.21s/it]
-Epoch 82: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.16s/it]
-I0722 08:31:05.797560 139639510090368 train_nft_sd3.py:4564] Epoch 82 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
-Waiting for rewards:  25%|██▌       | 2/8 [00:55&lt;02:45, 27.55s/it]
-Waiting for rewards:  38%|███▊      | 3/8 [01:06&lt;01:44, 20.81s/it]
-Waiting for rewards:  50%|█████     | 4/8 [01:16&lt;01:07, 16.84s/it]
-Waiting for rewards:  62%|██████▎   | 5/8 [01:27&lt;00:44, 14.76s/it]
-Waiting for rewards:  75%|███████▌  | 6/8 [01:38&lt;00:26, 13.41s/it]
-Waiting for rewards:  88%|████████▊ | 7/8 [01:48&lt;00:12, 12.56s/it]
-Waiting for rewards: 100%|██████████| 8/8 [02:00&lt;00:00, 12.13s/it]
-Waiting for rewards: 100%|██████████| 8/8 [02:00&lt;00:00, 15.02s/it]
-I0722 08:33:05.970336 139639510090368 train_nft_sd3.py:4662] Epoch 82 reward metrics: {'reward_accuracy': 0.4635416567325592, 'reward_geneval': 0.6556713581085205, 'reward_avg': 0.6556712985038757, 'reward_geneval_all': 0.6556713581085205, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
-I0722 08:33:06.578815 139639510090368 train_nft_sd3.py:5256] Advantages mean: 0.5805530784777994 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 82.0: training:   0%|          | 0/18 [00:00&lt;?, ?it/s]
-
-Epoch 82.0: training:   6%|▌         | 1/18 [00:06&lt;01:52,  6.62s/it]
-
-Epoch 82.0: training:  11%|█         | 2/18 [00:13&lt;01:46,  6.65s/it]
-
-Epoch 82.0: training:  17%|█▋        | 3/18 [00:20&lt;01:40,  6.69s/it]
-
-Epoch 82.0: training:  22%|██▏       | 4/18 [00:26&lt;01:33,  6.71s/it]
-
-Epoch 82.0: training:  28%|██▊       | 5/18 [00:33&lt;01:27,  6.73s/it]
-
-Epoch 82.0: training:  33%|███▎      | 6/18 [00:40&lt;01:21,  6.76s/it]
-
-Epoch 82.0: training:  39%|███▉      | 7/18 [00:47&lt;01:14,  6.74s/it]
-
-Epoch 82.0: training:  44%|████▍     | 8/18 [00:54&lt;01:08,  6.83s/it]
-
-Epoch 82.0: training:  50%|█████     | 9/18 [00:59&lt;00:58,  6.53s/it]
-
-Epoch 82.0: training:  56%|█████▌    | 10/18 [01:06&lt;00:52,  6.56s/it]
-
-Epoch 82.0: training:  61%|██████    | 11/18 [01:13&lt;00:46,  6.58s/it]
-
-Epoch 82.0: training:  67%|██████▋   | 12/18 [01:19&lt;00:39,  6.61s/it]
-
-Epoch 82.0: training:  72%|███████▏  | 13/18 [01:26&lt;00:33,  6.64s/it]
-
-Epoch 82.0: training:  78%|███████▊  | 14/18 [01:33&lt;00:26,  6.65s/it]
-
-Epoch 82.0: training:  83%|████████▎ | 15/18 [01:40&lt;00:20,  6.69s/it]
-
-Epoch 82.0: training:  89%|████████▉ | 16/18 [01:46&lt;00:13,  6.73s/it]
-
-Epoch 82.0: training:  94%|█████████▍| 17/18 [01:53&lt;00:06,  6.73s/it]
-
-Epoch 82.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.69s/it]
-Epoch 82.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.68s/it]
-
-Epoch 83: sampling:   0%|          | 0/8 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.86it/s]
-
-Epoch 83: sampling:  12%|█▎        | 1/8 [00:02&lt;00:19,  2.74s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.63it/s]
-
-Epoch 83: sampling:  25%|██▌       | 2/8 [00:05&lt;00:18,  3.03s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.67it/s]
-
-Epoch 83: sampling:  38%|███▊      | 3/8 [00:09&lt;00:15,  3.11s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.66it/s]
-
-Epoch 83: sampling:  50%|█████     | 4/8 [00:12&lt;00:12,  3.15s/it]
 
 Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.63it/s]
 
@@ -2600,7 +2338,268 @@ Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
 Waiting for rewards:  12%|█▎        | 1/8 [00:04&lt;00:32,  4.66s/it]
 Waiting for rewards:  25%|██▌       | 2/8 [00:59&lt;03:23, 33.94s/it]
 Waiting for rewards:  38%|███▊      | 3/8 [01:09&lt;01:56, 23.30s/it]
-Waiting for rewards:  50%|█████     | 4/8 [01:21&lt;01:14, 18.65s/it]</div>
+Waiting for rewards:  50%|█████     | 4/8 [01:21&lt;01:14, 18.65s/it]
+Waiting for rewards:  62%|██████▎   | 5/8 [01:32&lt;00:47, 15.90s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [01:45&lt;00:29, 14.85s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [01:55&lt;00:13, 13.44s/it]
+Waiting for rewards: 100%|██████████| 8/8 [02:06&lt;00:00, 12.77s/it]
+Waiting for rewards: 100%|██████████| 8/8 [02:06&lt;00:00, 15.87s/it]
+I0722 12:05:10.505156 139639510090368 train_nft_sd3.py:4662] Epoch 106 reward metrics: {'reward_accuracy': 0.2430555522441864, 'reward_geneval': 0.5604745745658875, 'reward_avg': 0.5604745149612427, 'reward_geneval_all': 0.5604745745658875, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0722 12:05:11.102719 139639510090368 train_nft_sd3.py:5256] Advantages mean: 0.8139486979258023 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 106.0: training:   0%|          | 0/18 [00:00&lt;?, ?it/s]
+
+Epoch 106.0: training:   6%|▌         | 1/18 [00:06&lt;01:51,  6.57s/it]
+
+Epoch 106.0: training:  11%|█         | 2/18 [00:13&lt;01:47,  6.71s/it]
+
+Epoch 106.0: training:  17%|█▋        | 3/18 [00:20&lt;01:41,  6.75s/it]
+
+Epoch 106.0: training:  22%|██▏       | 4/18 [00:26&lt;01:34,  6.74s/it]
+
+Epoch 106.0: training:  28%|██▊       | 5/18 [00:33&lt;01:27,  6.77s/it]
+
+Epoch 106.0: training:  33%|███▎      | 6/18 [00:40&lt;01:21,  6.78s/it]
+
+Epoch 106.0: training:  39%|███▉      | 7/18 [00:47&lt;01:14,  6.76s/it]
+
+Epoch 106.0: training:  44%|████▍     | 8/18 [00:54&lt;01:08,  6.85s/it]
+
+Epoch 106.0: training:  50%|█████     | 9/18 [01:00&lt;00:58,  6.55s/it]
+
+Epoch 106.0: training:  56%|█████▌    | 10/18 [01:06&lt;00:52,  6.61s/it]
+
+Epoch 106.0: training:  61%|██████    | 11/18 [01:13&lt;00:46,  6.61s/it]
+
+Epoch 106.0: training:  67%|██████▋   | 12/18 [01:20&lt;00:39,  6.64s/it]
+
+Epoch 106.0: training:  72%|███████▏  | 13/18 [01:26&lt;00:33,  6.66s/it]
+
+Epoch 106.0: training:  78%|███████▊  | 14/18 [01:33&lt;00:26,  6.67s/it]
+
+Epoch 106.0: training:  83%|████████▎ | 15/18 [01:40&lt;00:20,  6.68s/it]
+
+Epoch 106.0: training:  89%|████████▉ | 16/18 [01:47&lt;00:13,  6.76s/it]
+
+Epoch 106.0: training:  94%|█████████▍| 17/18 [01:53&lt;00:06,  6.74s/it]
+
+Epoch 106.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.71s/it]
+Epoch 106.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.70s/it]
+
+Epoch 107: sampling:   0%|          | 0/8 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.84it/s]
+
+Epoch 107: sampling:  12%|█▎        | 1/8 [00:02&lt;00:19,  2.77s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.64it/s]
+
+Epoch 107: sampling:  25%|██▌       | 2/8 [00:05&lt;00:18,  3.03s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.68it/s]
+
+Epoch 107: sampling:  38%|███▊      | 3/8 [00:09&lt;00:15,  3.12s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.67it/s]
+
+Epoch 107: sampling:  50%|█████     | 4/8 [00:12&lt;00:12,  3.16s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.58it/s]
+
+Epoch 107: sampling:  62%|██████▎   | 5/8 [00:15&lt;00:09,  3.20s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.65it/s]
+
+Epoch 107: sampling:  75%|███████▌  | 6/8 [00:18&lt;00:06,  3.21s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.74it/s]
+
+Epoch 107: sampling:  88%|████████▊ | 7/8 [00:22&lt;00:03,  3.20s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.65it/s]
+
+Epoch 107: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.22s/it]
+Epoch 107: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.17s/it]
+I0722 12:07:37.454555 139639510090368 train_nft_sd3.py:4564] Epoch 107 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:11&lt;01:23, 11.96s/it]
+Waiting for rewards:  25%|██▌       | 2/8 [00:59&lt;03:18, 33.09s/it]
+Waiting for rewards:  38%|███▊      | 3/8 [01:11&lt;01:57, 23.43s/it]
+Waiting for rewards:  50%|█████     | 4/8 [01:23&lt;01:14, 18.64s/it]
+Waiting for rewards:  62%|██████▎   | 5/8 [01:34&lt;00:48, 16.06s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [01:46&lt;00:29, 14.52s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [01:56&lt;00:13, 13.28s/it]
+Waiting for rewards: 100%|██████████| 8/8 [02:07&lt;00:00, 12.55s/it]
+Waiting for rewards: 100%|██████████| 8/8 [02:07&lt;00:00, 15.97s/it]
+I0722 12:09:45.272965 139639510090368 train_nft_sd3.py:4662] Epoch 107 reward metrics: {'reward_accuracy': 0.4461805522441864, 'reward_geneval': 0.6877893805503845, 'reward_avg': 0.6877893805503845, 'reward_geneval_all': 0.6877893805503845, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0722 12:09:45.868857 139639510090368 train_nft_sd3.py:5256] Advantages mean: 0.648386587977908 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 107.0: training:   0%|          | 0/18 [00:00&lt;?, ?it/s]
+
+Epoch 107.0: training:   6%|▌         | 1/18 [00:06&lt;01:52,  6.64s/it]
+
+Epoch 107.0: training:  11%|█         | 2/18 [00:13&lt;01:47,  6.72s/it]
+
+Epoch 107.0: training:  17%|█▋        | 3/18 [00:20&lt;01:41,  6.77s/it]
+
+Epoch 107.0: training:  22%|██▏       | 4/18 [00:26&lt;01:34,  6.76s/it]
+
+Epoch 107.0: training:  28%|██▊       | 5/18 [00:33&lt;01:27,  6.76s/it]
+
+Epoch 107.0: training:  33%|███▎      | 6/18 [00:40&lt;01:21,  6.75s/it]
+
+Epoch 107.0: training:  39%|███▉      | 7/18 [00:47&lt;01:14,  6.75s/it]
+
+Epoch 107.0: training:  44%|████▍     | 8/18 [00:54&lt;01:08,  6.81s/it]
+
+Epoch 107.0: training:  50%|█████     | 9/18 [01:00&lt;00:58,  6.53s/it]
+
+Epoch 107.0: training:  56%|█████▌    | 10/18 [01:06&lt;00:52,  6.56s/it]
+
+Epoch 107.0: training:  61%|██████    | 11/18 [01:13&lt;00:46,  6.59s/it]
+
+Epoch 107.0: training:  67%|██████▋   | 12/18 [01:20&lt;00:39,  6.64s/it]
+
+Epoch 107.0: training:  72%|███████▏  | 13/18 [01:26&lt;00:33,  6.65s/it]
+
+Epoch 107.0: training:  78%|███████▊  | 14/18 [01:33&lt;00:26,  6.66s/it]
+
+Epoch 107.0: training:  83%|████████▎ | 15/18 [01:40&lt;00:19,  6.65s/it]
+
+Epoch 107.0: training:  89%|████████▉ | 16/18 [01:46&lt;00:13,  6.72s/it]
+
+Epoch 107.0: training:  94%|█████████▍| 17/18 [01:53&lt;00:06,  6.74s/it]
+
+Epoch 107.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.67s/it]
+Epoch 107.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.68s/it]
+
+Epoch 108: sampling:   0%|          | 0/8 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.86it/s]
+
+Epoch 108: sampling:  12%|█▎        | 1/8 [00:02&lt;00:19,  2.75s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.63it/s]
+
+Epoch 108: sampling:  25%|██▌       | 2/8 [00:06&lt;00:18,  3.05s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
+
+Epoch 108: sampling:  38%|███▊      | 3/8 [00:09&lt;00:15,  3.11s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.65it/s]
+
+Epoch 108: sampling:  50%|█████     | 4/8 [00:12&lt;00:12,  3.17s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
+
+Epoch 108: sampling:  62%|██████▎   | 5/8 [00:15&lt;00:09,  3.18s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.69it/s]
+
+Epoch 108: sampling:  75%|███████▌  | 6/8 [00:18&lt;00:06,  3.20s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.62it/s]
+
+Epoch 108: sampling:  88%|████████▊ | 7/8 [00:22&lt;00:03,  3.22s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
+
+Epoch 108: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.21s/it]
+Epoch 108: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.17s/it]
+I0722 12:12:11.900540 139639510090368 train_nft_sd3.py:4564] Epoch 108 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:04&lt;00:31,  4.49s/it]
+Waiting for rewards:  25%|██▌       | 2/8 [00:51&lt;02:56, 29.37s/it]
+Waiting for rewards:  38%|███▊      | 3/8 [01:02&lt;01:45, 21.16s/it]
+Waiting for rewards:  50%|█████     | 4/8 [01:13&lt;01:09, 17.27s/it]
+Waiting for rewards:  62%|██████▎   | 5/8 [01:26&lt;00:46, 15.53s/it]
+Waiting for rewards:  75%|███████▌  | 6/8 [01:38&lt;00:28, 14.21s/it]
+Waiting for rewards:  88%|████████▊ | 7/8 [01:49&lt;00:13, 13.19s/it]
+Waiting for rewards: 100%|██████████| 8/8 [02:00&lt;00:00, 12.76s/it]
+Waiting for rewards: 100%|██████████| 8/8 [02:00&lt;00:00, 15.12s/it]
+I0722 12:14:12.925795 139639510090368 train_nft_sd3.py:4662] Epoch 108 reward metrics: {'reward_accuracy': 0.3350694477558136, 'reward_geneval': 0.6002604365348816, 'reward_avg': 0.6002604365348816, 'reward_geneval_all': 0.6002604365348816, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0722 12:14:13.539210 139639510090368 train_nft_sd3.py:5256] Advantages mean: 0.780198859985854 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 108.0: training:   0%|          | 0/18 [00:00&lt;?, ?it/s]
+
+Epoch 108.0: training:   6%|▌         | 1/18 [00:06&lt;01:52,  6.60s/it]
+
+Epoch 108.0: training:  11%|█         | 2/18 [00:13&lt;01:47,  6.70s/it]
+
+Epoch 108.0: training:  17%|█▋        | 3/18 [00:20&lt;01:40,  6.70s/it]
+
+Epoch 108.0: training:  22%|██▏       | 4/18 [00:26&lt;01:33,  6.71s/it]
+
+Epoch 108.0: training:  28%|██▊       | 5/18 [00:33&lt;01:27,  6.74s/it]
+
+Epoch 108.0: training:  33%|███▎      | 6/18 [00:40&lt;01:20,  6.73s/it]
+
+Epoch 108.0: training:  39%|███▉      | 7/18 [00:47&lt;01:14,  6.73s/it]
+
+Epoch 108.0: training:  44%|████▍     | 8/18 [00:54&lt;01:08,  6.81s/it]
+
+Epoch 108.0: training:  50%|█████     | 9/18 [00:59&lt;00:58,  6.49s/it]
+
+Epoch 108.0: training:  56%|█████▌    | 10/18 [01:06&lt;00:52,  6.57s/it]
+
+Epoch 108.0: training:  61%|██████    | 11/18 [01:13&lt;00:46,  6.65s/it]
+
+Epoch 108.0: training:  67%|██████▋   | 12/18 [01:20&lt;00:40,  6.68s/it]
+
+Epoch 108.0: training:  72%|███████▏  | 13/18 [01:26&lt;00:33,  6.70s/it]
+
+Epoch 108.0: training:  78%|███████▊  | 14/18 [01:33&lt;00:26,  6.70s/it]
+
+Epoch 108.0: training:  83%|████████▎ | 15/18 [01:40&lt;00:20,  6.71s/it]
+
+Epoch 108.0: training:  89%|████████▉ | 16/18 [01:47&lt;00:13,  6.78s/it]
+
+Epoch 108.0: training:  94%|█████████▍| 17/18 [01:53&lt;00:06,  6.71s/it]
+
+Epoch 108.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.71s/it]
+Epoch 108.0: training: 100%|██████████| 18/18 [02:00&lt;00:00,  6.70s/it]
+
+Epoch 109: sampling:   0%|          | 0/8 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.86it/s]
+
+Epoch 109: sampling:  12%|█▎        | 1/8 [00:02&lt;00:19,  2.75s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.64it/s]
+
+Epoch 109: sampling:  25%|██▌       | 2/8 [00:05&lt;00:18,  3.03s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
+
+Epoch 109: sampling:  38%|███▊      | 3/8 [00:09&lt;00:15,  3.10s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.70it/s]
+
+Epoch 109: sampling:  50%|█████     | 4/8 [00:12&lt;00:12,  3.16s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.61it/s]
+
+Epoch 109: sampling:  62%|██████▎   | 5/8 [00:15&lt;00:09,  3.19s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.72it/s]
+
+Epoch 109: sampling:  75%|███████▌  | 6/8 [00:18&lt;00:06,  3.18s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.65it/s]
+
+Epoch 109: sampling:  88%|████████▊ | 7/8 [00:22&lt;00:03,  3.21s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.69it/s]
+
+Epoch 109: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.20s/it]
+Epoch 109: sampling: 100%|██████████| 8/8 [00:25&lt;00:00,  3.16s/it]
+I0722 12:16:39.787326 139639510090368 train_nft_sd3.py:4564] Epoch 109 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/8 [00:00&lt;?, ?it/s]
+Waiting for rewards:  12%|█▎        | 1/8 [00:04&lt;00:34,  4.88s/it]</div>
     </div>
 
     <div class="controls">
