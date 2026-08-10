@@ -1,261 +1,5 @@
 
 
-Epoch 0.0: training:  41%|████████▌            | 13/32 [01:21<01:59,  6.30s/it]
-
-Epoch 0.0: training:  44%|█████████▏           | 14/32 [01:27<01:52,  6.26s/it]
-
-Epoch 0.0: training:  47%|█████████▊           | 15/32 [01:33<01:46,  6.26s/it]
-
-Epoch 0.0: training:  50%|██████████▌          | 16/32 [01:40<01:40,  6.28s/it]
-
-Epoch 0.0: training:  53%|███████████▏         | 17/32 [01:46<01:34,  6.27s/it]
-
-Epoch 0.0: training:  56%|███████████▊         | 18/32 [01:52<01:28,  6.29s/it]
-
-Epoch 0.0: training:  59%|████████████▍        | 19/32 [01:59<01:22,  6.36s/it]
-
-Epoch 0.0: training:  62%|█████████████▏       | 20/32 [02:05<01:16,  6.33s/it]
-
-Epoch 0.0: training:  66%|█████████████▊       | 21/32 [02:11<01:09,  6.30s/it]
-
-Epoch 0.0: training:  69%|██████████████▍      | 22/32 [02:18<01:02,  6.30s/it]
-
-Epoch 0.0: training:  72%|███████████████      | 23/32 [02:24<00:56,  6.27s/it]
-
-Epoch 0.0: training:  75%|███████████████▊     | 24/32 [02:30<00:50,  6.31s/it]
-
-Epoch 0.0: training:  78%|████████████████▍    | 25/32 [02:36<00:44,  6.29s/it]
-
-Epoch 0.0: training:  81%|█████████████████    | 26/32 [02:43<00:37,  6.26s/it]
-
-Epoch 0.0: training:  84%|█████████████████▋   | 27/32 [02:49<00:31,  6.24s/it]
-
-Epoch 0.0: training:  88%|██████████████████▍  | 28/32 [02:55<00:25,  6.29s/it]
-
-Epoch 0.0: training:  91%|███████████████████  | 29/32 [03:01<00:18,  6.27s/it]
-
-Epoch 0.0: training:  94%|███████████████████▋ | 30/32 [03:08<00:12,  6.26s/it]
-
-Epoch 0.0: training:  97%|████████████████████▎| 31/32 [03:14<00:06,  6.30s/it]
-
-Epoch 0.0: training: 100%|█████████████████████| 32/32 [03:21<00:00,  6.39s/it]
-Epoch 0.0: training: 100%|█████████████████████| 32/32 [03:21<00:00,  6.29s/it]
-
-Epoch 1: sampling:   0%|                                 | 0/4 [00:00<?, ?it/s]/mnt/volumes/base-ov-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/scripts/train_nft_sd3.py:4747: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:03<00:00,  2.62it/s]
-
-Epoch 1: sampling:  25%|██████▎                  | 1/4 [00:05<00:16,  5.36s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.18it/s]
-
-Epoch 1: sampling:  50%|████████████▌            | 2/4 [00:11<00:11,  5.82s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.18it/s]
-
-Epoch 1: sampling:  75%|██████████████████▊      | 3/4 [00:17<00:05,  5.96s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.28it/s]
-
-Epoch 1: sampling: 100%|█████████████████████████| 4/4 [00:23<00:00,  6.11s/it]
-Epoch 1: sampling: 100%|█████████████████████████| 4/4 [00:23<00:00,  5.99s/it]
-I0810 10:19:30.859832 140662214103680 train_nft_sd3.py:5248] Epoch 1 collection: generated_images=1024 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|                               | 0/4 [00:00<?, ?it/s]
-Waiting for rewards: 100%|███████████████████████| 4/4 [00:04<00:00,  1.05s/it]
-Waiting for rewards: 100%|███████████████████████| 4/4 [00:04<00:00,  1.05s/it]
-I0810 10:19:35.070398 140662214103680 train_nft_sd3.py:5349] Epoch 1 reward metrics: {'reward_pickscore': 0.7787640690803528, 'reward_avg': 0.7787640690803528}
-I0810 10:19:36.320041 140662214103680 train_nft_sd3.py:6070] Advantages mean: 0.365873703937567 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 1.0: training:   0%|                              | 0/32 [00:00<?, ?it/s]
-
-Epoch 1.0: training:   3%|▋                     | 1/32 [00:06<03:11,  6.16s/it]
-
-Epoch 1.0: training:   6%|█▍                    | 2/32 [00:12<03:04,  6.14s/it]
-
-Epoch 1.0: training:   9%|██                    | 3/32 [00:18<02:58,  6.17s/it]
-
-Epoch 1.0: training:  12%|██▊                   | 4/32 [00:24<02:52,  6.18s/it]
-
-Epoch 1.0: training:  16%|███▍                  | 5/32 [00:30<02:47,  6.20s/it]
-
-Epoch 1.0: training:  19%|████▏                 | 6/32 [00:37<02:41,  6.23s/it]
-
-Epoch 1.0: training:  22%|████▊                 | 7/32 [00:43<02:35,  6.24s/it]
-
-Epoch 1.0: training:  25%|█████▌                | 8/32 [00:49<02:29,  6.21s/it]
-
-Epoch 1.0: training:  28%|██████▏               | 9/32 [00:55<02:22,  6.20s/it]
-
-Epoch 1.0: training:  31%|██████▌              | 10/32 [01:02<02:17,  6.24s/it]
-
-Epoch 1.0: training:  34%|███████▏             | 11/32 [01:08<02:10,  6.22s/it]
-
-Epoch 1.0: training:  38%|███████▉             | 12/32 [01:14<02:04,  6.20s/it]
-
-Epoch 1.0: training:  41%|████████▌            | 13/32 [01:20<01:57,  6.19s/it]
-
-Epoch 1.0: training:  44%|█████████▏           | 14/32 [01:26<01:51,  6.20s/it]
-
-Epoch 1.0: training:  47%|█████████▊           | 15/32 [01:33<01:45,  6.23s/it]
-
-Epoch 1.0: training:  50%|██████████▌          | 16/32 [01:39<01:39,  6.21s/it]
-
-Epoch 1.0: training:  53%|███████████▏         | 17/32 [01:45<01:32,  6.20s/it]
-
-Epoch 1.0: training:  56%|███████████▊         | 18/32 [01:51<01:26,  6.19s/it]
-
-Epoch 1.0: training:  59%|████████████▍        | 19/32 [01:57<01:20,  6.20s/it]
-
-Epoch 1.0: training:  62%|█████████████▏       | 20/32 [02:04<01:14,  6.24s/it]
-
-Epoch 1.0: training:  66%|█████████████▊       | 21/32 [02:10<01:08,  6.23s/it]
-
-Epoch 1.0: training:  69%|██████████████▍      | 22/32 [02:16<01:02,  6.23s/it]
-
-Epoch 1.0: training:  72%|███████████████      | 23/32 [02:22<00:56,  6.23s/it]
-
-Epoch 1.0: training:  75%|███████████████▊     | 24/32 [02:29<00:49,  6.23s/it]
-
-Epoch 1.0: training:  78%|████████████████▍    | 25/32 [02:35<00:43,  6.24s/it]
-
-Epoch 1.0: training:  81%|█████████████████    | 26/32 [02:41<00:37,  6.23s/it]
-
-Epoch 1.0: training:  84%|█████████████████▋   | 27/32 [02:48<00:31,  6.33s/it]
-
-Epoch 1.0: training:  88%|██████████████████▍  | 28/32 [02:54<00:25,  6.31s/it]
-
-Epoch 1.0: training:  91%|███████████████████  | 29/32 [03:00<00:18,  6.31s/it]
-
-Epoch 1.0: training:  94%|███████████████████▋ | 30/32 [03:06<00:12,  6.27s/it]
-
-Epoch 1.0: training:  97%|████████████████████▎| 31/32 [03:13<00:06,  6.26s/it]
-
-Epoch 1.0: training: 100%|█████████████████████| 32/32 [03:19<00:00,  6.37s/it]
-Epoch 1.0: training: 100%|█████████████████████| 32/32 [03:19<00:00,  6.24s/it]
-
-Epoch 2: sampling:   0%|                                 | 0/4 [00:00<?, ?it/s]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:03<00:00,  2.62it/s]
-
-Epoch 2: sampling:  25%|██████▎                  | 1/4 [00:05<00:16,  5.36s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.18it/s]
-
-Epoch 2: sampling:  50%|████████████▌            | 2/4 [00:11<00:11,  5.83s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.18it/s]
-
-Epoch 2: sampling:  75%|██████████████████▊      | 3/4 [00:17<00:05,  5.97s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.27it/s]
-
-Epoch 2: sampling: 100%|█████████████████████████| 4/4 [00:23<00:00,  6.11s/it]
-Epoch 2: sampling: 100%|█████████████████████████| 4/4 [00:23<00:00,  5.99s/it]
-I0810 10:23:23.061119 140662214103680 train_nft_sd3.py:5248] Epoch 2 collection: generated_images=1024 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|                               | 0/4 [00:00<?, ?it/s]
-Waiting for rewards: 100%|███████████████████████| 4/4 [00:04<00:00,  1.02s/it]
-Waiting for rewards: 100%|███████████████████████| 4/4 [00:04<00:00,  1.02s/it]
-I0810 10:23:27.147959 140662214103680 train_nft_sd3.py:5349] Epoch 2 reward metrics: {'reward_pickscore': 0.7978902459144592, 'reward_avg': 0.797890305519104}
-I0810 10:23:28.418160 140662214103680 train_nft_sd3.py:6070] Advantages mean: 0.3045931614301566 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 2.0: training:   0%|                              | 0/32 [00:00<?, ?it/s]
-
-Epoch 2.0: training:   3%|▋                     | 1/32 [00:06<03:13,  6.25s/it]
-
-Epoch 2.0: training:   6%|█▍                    | 2/32 [00:12<03:06,  6.22s/it]
-
-Epoch 2.0: training:   9%|██                    | 3/32 [00:18<03:00,  6.21s/it]
-
-Epoch 2.0: training:  12%|██▊                   | 4/32 [00:24<02:54,  6.22s/it]
-
-Epoch 2.0: training:  16%|███▍                  | 5/32 [00:31<02:49,  6.28s/it]
-
-Epoch 2.0: training:  19%|████▏                 | 6/32 [00:37<02:43,  6.29s/it]
-
-Epoch 2.0: training:  22%|████▊                 | 7/32 [00:43<02:36,  6.26s/it]
-
-Epoch 2.0: training:  25%|█████▌                | 8/32 [00:50<02:32,  6.37s/it]
-
-Epoch 2.0: training:  28%|██████▏               | 9/32 [00:56<02:26,  6.35s/it]
-
-Epoch 2.0: training:  31%|██████▌              | 10/32 [01:03<02:20,  6.41s/it]
-
-Epoch 2.0: training:  34%|███████▏             | 11/32 [01:09<02:13,  6.34s/it]
-
-Epoch 2.0: training:  38%|███████▉             | 12/32 [01:15<02:06,  6.33s/it]
-
-Epoch 2.0: training:  41%|████████▌            | 13/32 [01:21<01:59,  6.28s/it]
-
-Epoch 2.0: training:  44%|█████████▏           | 14/32 [01:28<01:52,  6.25s/it]
-
-Epoch 2.0: training:  47%|█████████▊           | 15/32 [01:34<01:46,  6.24s/it]
-
-Epoch 2.0: training:  50%|██████████▌          | 16/32 [01:40<01:40,  6.28s/it]
-
-Epoch 2.0: training:  53%|███████████▏         | 17/32 [01:46<01:33,  6.24s/it]
-
-Epoch 2.0: training:  56%|███████████▊         | 18/32 [01:53<01:27,  6.27s/it]
-
-Epoch 2.0: training:  59%|████████████▍        | 19/32 [01:59<01:22,  6.31s/it]
-
-Epoch 2.0: training:  62%|█████████████▏       | 20/32 [02:05<01:16,  6.35s/it]
-
-Epoch 2.0: training:  66%|█████████████▊       | 21/32 [02:12<01:09,  6.35s/it]
-
-Epoch 2.0: training:  69%|██████████████▍      | 22/32 [02:18<01:03,  6.35s/it]
-
-Epoch 2.0: training:  72%|███████████████      | 23/32 [02:25<00:57,  6.43s/it]
-
-Epoch 2.0: training:  75%|███████████████▊     | 24/32 [02:31<00:51,  6.40s/it]
-
-Epoch 2.0: training:  78%|████████████████▍    | 25/32 [02:37<00:44,  6.37s/it]
-
-Epoch 2.0: training:  81%|█████████████████    | 26/32 [02:44<00:38,  6.40s/it]
-
-Epoch 2.0: training:  84%|█████████████████▋   | 27/32 [02:50<00:32,  6.40s/it]
-
-Epoch 2.0: training:  88%|██████████████████▍  | 28/32 [02:57<00:25,  6.45s/it]
-
-Epoch 2.0: training:  91%|███████████████████  | 29/32 [03:03<00:19,  6.41s/it]
-
-Epoch 2.0: training:  94%|███████████████████▋ | 30/32 [03:10<00:12,  6.39s/it]
-
-Epoch 2.0: training:  97%|████████████████████▎| 31/32 [03:16<00:06,  6.40s/it]
-
-Epoch 2.0: training: 100%|█████████████████████| 32/32 [03:22<00:00,  6.43s/it]
-Epoch 2.0: training: 100%|█████████████████████| 32/32 [03:22<00:00,  6.34s/it]
-
-Epoch 3: sampling:   0%|                                 | 0/4 [00:00<?, ?it/s]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:03<00:00,  2.61it/s]
-
-Epoch 3: sampling:  25%|██████▎                  | 1/4 [00:05<00:16,  5.37s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.16it/s]
-
-Epoch 3: sampling:  50%|████████████▌            | 2/4 [00:11<00:11,  5.85s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.18it/s]
-
-Epoch 3: sampling:  75%|██████████████████▊      | 3/4 [00:17<00:05,  5.98s/it]
-
-Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.28it/s]
-
-Epoch 3: sampling: 100%|█████████████████████████| 4/4 [00:24<00:00,  6.13s/it]
-Epoch 3: sampling: 100%|█████████████████████████| 4/4 [00:24<00:00,  6.01s/it]
-I0810 10:27:18.626374 140662214103680 train_nft_sd3.py:5248] Epoch 3 collection: generated_images=1024 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|                               | 0/4 [00:00<?, ?it/s]
-Waiting for rewards: 100%|███████████████████████| 4/4 [00:03<00:00,  1.01it/s]
-Waiting for rewards: 100%|███████████████████████| 4/4 [00:03<00:00,  1.01it/s]
-I0810 10:27:22.786898 140662214103680 train_nft_sd3.py:5349] Epoch 3 reward metrics: {'reward_pickscore': 0.8158246278762817, 'reward_avg': 0.8158246278762817}
-I0810 10:27:24.002731 140662214103680 train_nft_sd3.py:6070] Advantages mean: 0.2729506490053257 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 3.0: training:   0%|                              | 0/32 [00:00<?, ?it/s]
-
 Epoch 3.0: training:   3%|▋                     | 1/32 [00:06<03:18,  6.42s/it]
 
 Epoch 3.0: training:   6%|█▍                    | 2/32 [00:12<03:13,  6.45s/it]
@@ -1168,3 +912,244 @@ Sampling Progress: 100%|██████████████████�
 Epoch 10: sampling:  75%|██████████████████      | 3/4 [06:07<01:24, 84.39s/it]
 
 Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.17it/s]
+
+Epoch 10: sampling: 100%|████████████████████████| 4/4 [06:14<00:00, 53.50s/it]
+Epoch 10: sampling: 100%|████████████████████████| 4/4 [06:14<00:00, 93.52s/it]
+I0810 11:00:18.571314 140662214103680 train_nft_sd3.py:5248] Epoch 10 collection: generated_images=1024 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|                               | 0/4 [00:00<?, ?it/s]
+Waiting for rewards: 100%|███████████████████████| 4/4 [00:02<00:00,  1.51it/s]
+Waiting for rewards: 100%|███████████████████████| 4/4 [00:02<00:00,  1.51it/s]
+I0810 11:00:22.226338 140662214103680 train_nft_sd3.py:5349] Epoch 10 reward metrics: {'reward_pickscore': 0.8411267399787903, 'reward_avg': 0.8411267399787903}
+I0810 11:00:23.456764 140662214103680 train_nft_sd3.py:6070] Advantages mean: 0.17033865380729396 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 10.0: training:   0%|                             | 0/32 [00:00<?, ?it/s]
+
+Epoch 10.0: training:   3%|▋                    | 1/32 [00:06<03:10,  6.14s/it]
+
+Epoch 10.0: training:   6%|█▎                   | 2/32 [00:12<03:03,  6.12s/it]
+
+Epoch 10.0: training:   9%|█▉                   | 3/32 [00:18<02:59,  6.17s/it]
+
+Epoch 10.0: training:  12%|██▋                  | 4/32 [00:24<02:52,  6.17s/it]
+
+Epoch 10.0: training:  16%|███▎                 | 5/32 [00:30<02:46,  6.17s/it]
+
+Epoch 10.0: training:  19%|███▉                 | 6/32 [00:36<02:40,  6.17s/it]
+
+Epoch 10.0: training:  22%|████▌                | 7/32 [00:43<02:34,  6.18s/it]
+
+Epoch 10.0: training:  25%|█████▎               | 8/32 [00:49<02:29,  6.23s/it]
+
+Epoch 10.0: training:  28%|█████▉               | 9/32 [00:55<02:23,  6.23s/it]
+
+Epoch 10.0: training:  31%|██████▎             | 10/32 [01:01<02:17,  6.23s/it]
+
+Epoch 10.0: training:  34%|██████▉             | 11/32 [01:08<02:10,  6.20s/it]
+
+Epoch 10.0: training:  38%|███████▌            | 12/32 [01:14<02:04,  6.23s/it]
+
+Epoch 10.0: training:  41%|████████▏           | 13/32 [01:20<01:59,  6.27s/it]
+
+Epoch 10.0: training:  44%|████████▊           | 14/32 [01:26<01:52,  6.25s/it]
+
+Epoch 10.0: training:  47%|█████████▍          | 15/32 [01:33<01:46,  6.29s/it]
+
+Epoch 10.0: training:  50%|██████████          | 16/32 [01:39<01:40,  6.29s/it]
+
+Epoch 10.0: training:  53%|██████████▋         | 17/32 [01:45<01:34,  6.30s/it]
+
+Epoch 10.0: training:  56%|███████████▎        | 18/32 [01:52<01:27,  6.28s/it]
+
+Epoch 10.0: training:  59%|███████████▉        | 19/32 [01:58<01:21,  6.30s/it]
+
+Epoch 10.0: training:  62%|████████████▌       | 20/32 [02:04<01:15,  6.30s/it]
+
+Epoch 10.0: training:  66%|█████████████▏      | 21/32 [02:11<01:08,  6.27s/it]
+
+Epoch 10.0: training:  69%|█████████████▊      | 22/32 [02:17<01:02,  6.27s/it]
+
+Epoch 10.0: training:  72%|██████████████▍     | 23/32 [02:23<00:56,  6.25s/it]
+
+Epoch 10.0: training:  75%|███████████████     | 24/32 [02:29<00:50,  6.29s/it]
+
+Epoch 10.0: training:  78%|███████████████▋    | 25/32 [02:36<00:43,  6.28s/it]
+
+Epoch 10.0: training:  81%|████████████████▎   | 26/32 [02:42<00:37,  6.28s/it]
+
+Epoch 10.0: training:  84%|████████████████▉   | 27/32 [02:48<00:31,  6.31s/it]
+
+Epoch 10.0: training:  88%|█████████████████▌  | 28/32 [02:55<00:25,  6.36s/it]
+
+Epoch 10.0: training:  91%|██████████████████▏ | 29/32 [03:01<00:19,  6.42s/it]
+
+Epoch 10.0: training:  94%|██████████████████▊ | 30/32 [03:08<00:12,  6.42s/it]
+
+Epoch 10.0: training:  97%|███████████████████▍| 31/32 [03:14<00:06,  6.40s/it]
+
+Epoch 10.0: training: 100%|████████████████████| 32/32 [03:21<00:00,  6.39s/it]
+Epoch 10.0: training: 100%|████████████████████| 32/32 [03:21<00:00,  6.28s/it]
+
+Epoch 11: sampling:   0%|                                | 0/4 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:03<00:00,  2.62it/s]
+
+Epoch 11: sampling:  25%|██████                  | 1/4 [00:05<00:16,  5.36s/it]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.25it/s]
+
+Epoch 11: sampling:  50%|████████████            | 2/4 [00:11<00:11,  5.82s/it]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.17it/s]
+
+Epoch 11: sampling:  75%|██████████████████      | 3/4 [00:17<00:05,  5.97s/it]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.27it/s]
+
+Epoch 11: sampling: 100%|████████████████████████| 4/4 [00:24<00:00,  6.13s/it]
+Epoch 11: sampling: 100%|████████████████████████| 4/4 [00:24<00:00,  6.00s/it]
+I0810 11:04:11.572227 140662214103680 train_nft_sd3.py:5248] Epoch 11 collection: generated_images=1024 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|                               | 0/4 [00:00<?, ?it/s]
+Waiting for rewards: 100%|███████████████████████| 4/4 [00:04<00:00,  1.03s/it]
+Waiting for rewards: 100%|███████████████████████| 4/4 [00:04<00:00,  1.03s/it]
+I0810 11:04:15.759173 140662214103680 train_nft_sd3.py:5349] Epoch 11 reward metrics: {'reward_pickscore': 0.8327010869979858, 'reward_avg': 0.8327010869979858}
+I0810 11:04:17.003349 140662214103680 train_nft_sd3.py:6070] Advantages mean: 0.2740511337955056 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 11.0: training:   0%|                             | 0/32 [00:00<?, ?it/s]
+
+Epoch 11.0: training:   3%|▋                    | 1/32 [00:06<03:10,  6.13s/it]
+
+Epoch 11.0: training:   6%|█▎                   | 2/32 [00:12<03:05,  6.19s/it]
+
+Epoch 11.0: training:   9%|█▉                   | 3/32 [00:18<03:00,  6.21s/it]
+
+Epoch 11.0: training:  12%|██▋                  | 4/32 [00:24<02:54,  6.21s/it]
+
+Epoch 11.0: training:  16%|███▎                 | 5/32 [00:31<02:48,  6.25s/it]
+
+Epoch 11.0: training:  19%|███▉                 | 6/32 [00:37<02:41,  6.22s/it]
+
+Epoch 11.0: training:  22%|████▌                | 7/32 [00:43<02:35,  6.20s/it]
+
+Epoch 11.0: training:  25%|█████▎               | 8/32 [00:50<02:31,  6.33s/it]
+
+Epoch 11.0: training:  28%|█████▉               | 9/32 [00:56<02:28,  6.44s/it]
+
+Epoch 11.0: training:  31%|██████▎             | 10/32 [01:03<02:22,  6.46s/it]
+
+Epoch 11.0: training:  34%|██████▉             | 11/32 [01:09<02:13,  6.38s/it]
+
+Epoch 11.0: training:  38%|███████▌            | 12/32 [01:15<02:07,  6.40s/it]
+
+Epoch 11.0: training:  41%|████████▏           | 13/32 [01:22<02:00,  6.35s/it]
+
+Epoch 11.0: training:  44%|████████▊           | 14/32 [01:28<01:53,  6.30s/it]
+
+Epoch 11.0: training:  47%|█████████▍          | 15/32 [01:34<01:46,  6.27s/it]
+
+Epoch 11.0: training:  50%|██████████          | 16/32 [01:40<01:40,  6.25s/it]
+
+Epoch 11.0: training:  53%|██████████▋         | 17/32 [01:46<01:33,  6.22s/it]
+
+Epoch 11.0: training:  56%|███████████▎        | 18/32 [01:53<01:26,  6.20s/it]
+
+Epoch 11.0: training:  59%|███████████▉        | 19/32 [01:59<01:20,  6.21s/it]
+
+Epoch 11.0: training:  62%|████████████▌       | 20/32 [02:05<01:14,  6.25s/it]
+
+Epoch 11.0: training:  66%|█████████████▏      | 21/32 [02:11<01:08,  6.23s/it]
+
+Epoch 11.0: training:  69%|█████████████▊      | 22/32 [02:18<01:02,  6.26s/it]
+
+Epoch 11.0: training:  72%|██████████████▍     | 23/32 [02:24<00:56,  6.29s/it]
+
+Epoch 11.0: training:  75%|███████████████     | 24/32 [02:30<00:50,  6.28s/it]
+
+Epoch 11.0: training:  78%|███████████████▋    | 25/32 [02:36<00:43,  6.25s/it]
+
+Epoch 11.0: training:  81%|████████████████▎   | 26/32 [02:43<00:37,  6.31s/it]
+
+Epoch 11.0: training:  84%|████████████████▉   | 27/32 [02:49<00:31,  6.28s/it]
+
+Epoch 11.0: training:  88%|█████████████████▌  | 28/32 [02:55<00:25,  6.26s/it]
+
+Epoch 11.0: training:  91%|██████████████████▏ | 29/32 [03:01<00:18,  6.24s/it]
+
+Epoch 11.0: training:  94%|██████████████████▊ | 30/32 [03:08<00:12,  6.23s/it]
+
+Epoch 11.0: training:  97%|███████████████████▍| 31/32 [03:14<00:06,  6.21s/it]
+
+Epoch 11.0: training: 100%|████████████████████| 32/32 [03:20<00:00,  6.25s/it]
+Epoch 11.0: training: 100%|████████████████████| 32/32 [03:20<00:00,  6.27s/it]
+
+Epoch 12: sampling:   0%|                                | 0/4 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:03<00:00,  2.62it/s]
+
+Epoch 12: sampling:  25%|██████                  | 1/4 [00:05<00:16,  5.36s/it]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.15it/s]
+
+Epoch 12: sampling:  50%|████████████            | 2/4 [00:11<00:11,  5.84s/it]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.28it/s]
+
+Epoch 12: sampling:  75%|██████████████████      | 3/4 [00:17<00:05,  5.97s/it]
+
+Sampling Progress: 100%|███████████████████████| 10/10 [00:04<00:00,  2.26it/s]
+
+Epoch 12: sampling: 100%|████████████████████████| 4/4 [00:24<00:00,  6.13s/it]
+Epoch 12: sampling: 100%|████████████████████████| 4/4 [00:24<00:00,  6.01s/it]
+I0810 11:08:04.715824 140662214103680 train_nft_sd3.py:5248] Epoch 12 collection: generated_images=1024 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|                               | 0/4 [00:00<?, ?it/s]
+Waiting for rewards: 100%|███████████████████████| 4/4 [00:03<00:00,  1.02it/s]
+Waiting for rewards: 100%|███████████████████████| 4/4 [00:03<00:00,  1.02it/s]
+I0810 11:08:08.904595 140662214103680 train_nft_sd3.py:5349] Epoch 12 reward metrics: {'reward_pickscore': 0.8321583271026611, 'reward_avg': 0.8321583867073059}
+I0810 11:08:10.272866 140662214103680 train_nft_sd3.py:6070] Advantages mean: 0.34926563842174857 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 12.0: training:   0%|                             | 0/32 [00:00<?, ?it/s]
+
+Epoch 12.0: training:   3%|▋                    | 1/32 [00:06<03:12,  6.21s/it]
+
+Epoch 12.0: training:   6%|█▎                   | 2/32 [00:12<03:08,  6.30s/it]
+
+Epoch 12.0: training:   9%|█▉                   | 3/32 [00:18<03:01,  6.25s/it]
+
+Epoch 12.0: training:  12%|██▋                  | 4/32 [00:24<02:54,  6.23s/it]
+
+Epoch 12.0: training:  16%|███▎                 | 5/32 [00:31<02:49,  6.27s/it]
+
+Epoch 12.0: training:  19%|███▉                 | 6/32 [00:37<02:42,  6.27s/it]
+
+Epoch 12.0: training:  22%|████▌                | 7/32 [00:44<02:39,  6.36s/it]
+
+Epoch 12.0: training:  25%|█████▎               | 8/32 [00:50<02:31,  6.33s/it]
+
+Epoch 12.0: training:  28%|█████▉               | 9/32 [00:56<02:24,  6.29s/it]
+
+Epoch 12.0: training:  31%|██████▎             | 10/32 [01:02<02:17,  6.25s/it]
+
+Epoch 12.0: training:  34%|██████▉             | 11/32 [01:08<02:11,  6.24s/it]
+
+Epoch 12.0: training:  38%|███████▌            | 12/32 [01:15<02:05,  6.25s/it]
+
+Epoch 12.0: training:  41%|████████▏           | 13/32 [01:21<01:59,  6.30s/it]
+
+Epoch 12.0: training:  44%|████████▊           | 14/32 [01:27<01:52,  6.27s/it]
+
+Epoch 12.0: training:  47%|█████████▍          | 15/32 [01:34<01:47,  6.33s/it]
+
+Epoch 12.0: training:  50%|██████████          | 16/32 [01:40<01:40,  6.29s/it]
+
+Epoch 12.0: training:  53%|██████████▋         | 17/32 [01:46<01:34,  6.27s/it]
+
+Epoch 12.0: training:  56%|███████████▎        | 18/32 [01:52<01:27,  6.24s/it]
+
+Epoch 12.0: training:  59%|███████████▉        | 19/32 [01:59<01:21,  6.26s/it]
+
+Epoch 12.0: training:  62%|████████████▌       | 20/32 [02:05<01:15,  6.29s/it]
+
+Epoch 12.0: training:  66%|█████████████▏      | 21/32 [02:11<01:08,  6.27s/it]
+
