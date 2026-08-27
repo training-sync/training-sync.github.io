@@ -2,196 +2,8 @@
 *****************************************
 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
 *****************************************
-I0827 04:14:02.094712 140026022851200 train_nft_sd3.py:4071] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-bootstrap_eval_reward_geneval: null
-dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 1
-external_eval_enable: false
-fiber:
-  enable: true
-  eval_enable: false
-  fanft_autograd_scale: 1024.0
-  fanft_axis_source: cfg_residual
-  fanft_basis_dim: 2
-  fanft_cfg_exploration_enable: true
-  fanft_cone_min: 0.5
-  fanft_confidence_mode: signal_energy
-  fanft_deterministic_design: true
-  fanft_direct_confidence_shrink_enable: false
-  fanft_direct_gradient_enable: true
-  fanft_directional_coeff_clip: 0.0
-  fanft_enable: true
-  fanft_estimator_mode: paired_fd
-  fanft_expected_global_images: 576
-  fanft_expected_global_prompts: 24
-  fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
-  fanft_fiber_trust_ratio: 0.1
-  fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
-  fanft_global_credit_enable: true
-  fanft_gradient_batch_size: 8
-  fanft_kl_control_enable: false
-  fanft_main_advantage_mode: standard_nft
-  fanft_measurement_only: false
-  fanft_pair_seeds: 4
-  fanft_pair_topology: same_state_symmetric
-  fanft_pairs_per_base_state: 1
-  fanft_post_projection_crossfit_enable: false
-  fanft_probe_budget_adapt_enable: false
-  fanft_probe_seeds: 0
-  fanft_radius: 0.1
-  fanft_radius_scales:
-  - 1.0
-  - 1.0
-  - 2.0
-  - 2.0
-  fanft_require_one_update_per_epoch: true
-  fanft_update_norm_match: true
-  mode: structured_rse
-  nft_gamma: 0.0
-  retract: false
-  rse_center_strength: 0.0
-  rse_clean_variant_enable: false
-  rse_coeff_min: null
-  rse_coeff_positive_only: false
-  rse_coeff_positive_uniform: false
-  rse_disable_sample_filtering: true
-  rse_force_all_pairs_train: true
-  rse_freeze_std_controller: true
-  rse_group_stratified_span: true
-  rse_handoff_enable: false
-  rse_hybrid_enable: false
-  rse_hybrid_nft_fraction: 0.0
-  rse_hybrid_null_fraction: 0.0
-  rse_injection_mode: first_velocity
-  rse_late_guard_enable: false
-  rse_late_std_adapt_enable: false
-  rse_nft_fallback_enable: false
-  rse_nft_fallback_partial_enable: false
-  rse_null_probe_fraction: 0.0
-  rse_num_seeds: 12
-  rse_online_resample_enable: false
-  rse_pairwise_span_directions: false
-  rse_prompt_repair_enable: false
-  rse_random_span_clip: 1.0
-  rse_random_span_dim: 1
-  rse_random_span_scale: 0.0
-  rse_reward_deadzone_mode: quantized
-  rse_reward_resolution: 0.05
-  rse_signal_gate_enable: false
-  rse_signal_scale_enable: false
-  rse_std: 1.0
-  rse_stratified_coefficients: false
-  rse_traj_steps: 0
-  rse_variants_per_seed: 2
-  rse_velocity_max_ratio: 0.0
-  rse_velocity_scale_mode: velocity_ratio
-  subspace_coeff_clip: 1.0
-  subspace_max_ratio: 1.0
-  trust_theta: 0.0
-  use_base_teacher: false
-  use_geodesic: false
-  warmup_epochs: 0
-flagship:
-  cone_guard: correct_prompt
-  epochs: 200
-  eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
-  hardware_profile: h200_8gpu
-  images_per_epoch: 576
-  images_per_prompt: 24
-  parent: fanft_v56r1
-  prompts_per_epoch: 24
-  registry_id: cfg-in-diffusion-rl-flagship-v1
-  residual_anchor: cfg_residual
-  reward_id: geneval
-  rollout_guidance_scale: 1.0
-fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
-mixed_precision: fp16
-num_checkpoint_limit: 5
-num_epochs: 2
-per_prompt_stat_tracking: true
-pretrained:
-  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 256
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 2
-  eval_seed: 1000042
-  generator_include_sample_index: true
-  global_std: true
-  guidance_scale: 1.0
-  noise_level: 0.7
-  num_batches_per_epoch: 3
-  num_image_per_prompt: 24
-  num_steps: 2
-  prompt_reference_num_replicas: 8
-  rollout_seed_epoch_stride: 10000
-  same_latent: true
-  sample_keyed_training_rng: true
-  sde_window_range: !!python/tuple
-  - 0
-  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 24
-  training_noise_antithetic: true
-  training_noise_views: 2
-  vae_slicing: false
-  world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
-save_freq: 1
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 3
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  stochastic_stability_contract: true
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-wandb_reward_scales:
-  avg: 1.0
-  geneval: 1.0
-
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.096087 140026022851200 train_nft_sd3.py:4090] Waiting 10s before model load (stagger)...
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-I0827 04:14:02.561154 140688253862528 train_nft_sd3.py:4071] 
+I0827 04:31:28.023571 140046171255424 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -220,10 +32,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -292,7 +104,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -303,7 +115,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -317,7 +129,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -345,7 +157,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -378,8 +190,8 @@ wandb_reward_scales:
 
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.562049 140688253862528 train_nft_sd3.py:4090] Waiting 5s before model load (stagger)...
-I0827 04:14:02.681605 140388229485184 train_nft_sd3.py:4071] 
+I0827 04:31:28.024631 140046171255424 train_nft_sd3.py:4090] Waiting 30s before model load (stagger)...
+I0827 04:31:28.029515 140146486284928 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -408,10 +220,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -480,7 +292,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -491,7 +303,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -505,7 +317,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -533,7 +345,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -566,8 +378,8 @@ wandb_reward_scales:
 
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.682687 140388229485184 train_nft_sd3.py:4090] Waiting 15s before model load (stagger)...
-I0827 04:14:02.702539 139887902024320 train_nft_sd3.py:4071] 
+I0827 04:31:28.030533 140146486284928 train_nft_sd3.py:4090] Waiting 10s before model load (stagger)...
+I0827 04:31:28.078720 139970802954880 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -596,10 +408,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -668,7 +480,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -679,7 +491,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -693,7 +505,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -721,7 +533,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -752,7 +564,10 @@ wandb_reward_scales:
   avg: 1.0
   geneval: 1.0
 
-I0827 04:14:02.703104 140478054056576 train_nft_sd3.py:4071] 
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0827 04:31:28.079826 139970802954880 train_nft_sd3.py:4090] Waiting 25s before model load (stagger)...
+I0827 04:31:28.393279 139770210112128 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -781,10 +596,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -853,7 +668,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -864,7 +679,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -878,7 +693,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -906,7 +721,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -939,11 +754,8 @@ wandb_reward_scales:
 
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.704156 139887902024320 train_nft_sd3.py:4090] Waiting 25s before model load (stagger)...
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.704426 140478054056576 train_nft_sd3.py:4090] Waiting 30s before model load (stagger)...
-I0827 04:14:02.707397 140294823580288 train_nft_sd3.py:4071] 
+I0827 04:31:28.394294 139770210112128 train_nft_sd3.py:4090] Waiting 15s before model load (stagger)...
+I0827 04:31:28.397763 139718910947968 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -972,10 +784,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -1044,7 +856,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -1055,7 +867,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -1069,7 +881,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -1097,7 +909,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -1130,8 +942,8 @@ wandb_reward_scales:
 
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.708452 140294823580288 train_nft_sd3.py:4090] Waiting 35s before model load (stagger)...
-I0827 04:14:02.708577 140268260057728 train_nft_sd3.py:4071] 
+I0827 04:31:28.398742 139718910947968 train_nft_sd3.py:4090] Waiting 5s before model load (stagger)...
+I0827 04:31:28.421252 140311974732416 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -1160,10 +972,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -1232,7 +1044,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -1243,7 +1055,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -1257,7 +1069,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -1285,7 +1097,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -1318,12 +1130,200 @@ wandb_reward_scales:
 
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.709540 140268260057728 train_nft_sd3.py:4090] Waiting 20s before model load (stagger)...
+I0827 04:31:28.424304 140311974732416 train_nft_sd3.py:4090] Waiting 20s before model load (stagger)...
+I0827 04:31:28.426105 140114413634176 train_nft_sd3.py:4071] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 1
+external_eval_enable: false
+fiber:
+  enable: true
+  eval_enable: false
+  fanft_autograd_scale: 1024.0
+  fanft_axis_source: cfg_residual
+  fanft_basis_dim: 2
+  fanft_cfg_exploration_enable: true
+  fanft_cone_min: 0.5
+  fanft_confidence_mode: signal_energy
+  fanft_deterministic_design: true
+  fanft_direct_confidence_shrink_enable: false
+  fanft_direct_gradient_enable: true
+  fanft_directional_coeff_clip: 0.0
+  fanft_enable: true
+  fanft_estimator_mode: paired_fd
+  fanft_expected_global_images: 576
+  fanft_expected_global_prompts: 24
+  fanft_expected_optimizer_updates: 1
+  fanft_fiber_projection_mode: none
+  fanft_fiber_trust_ratio: 0.1
+  fanft_fold_balanced_design: true
+  fanft_force_confidence: null
+  fanft_global_credit_enable: true
+  fanft_gradient_batch_size: 8
+  fanft_kl_control_enable: false
+  fanft_main_advantage_mode: standard_nft
+  fanft_measurement_only: false
+  fanft_pair_seeds: 4
+  fanft_pair_topology: same_state_symmetric
+  fanft_pairs_per_base_state: 1
+  fanft_post_projection_crossfit_enable: false
+  fanft_probe_budget_adapt_enable: false
+  fanft_probe_seeds: 0
+  fanft_radius: 0.1
+  fanft_radius_scales:
+  - 1.0
+  - 1.0
+  - 2.0
+  - 2.0
+  fanft_require_one_update_per_epoch: true
+  fanft_update_norm_match: true
+  mode: structured_rse
+  nft_gamma: 0.0
+  retract: false
+  rse_center_strength: 0.0
+  rse_clean_variant_enable: false
+  rse_coeff_min: null
+  rse_coeff_positive_only: false
+  rse_coeff_positive_uniform: false
+  rse_disable_sample_filtering: true
+  rse_force_all_pairs_train: true
+  rse_freeze_std_controller: true
+  rse_group_stratified_span: true
+  rse_handoff_enable: false
+  rse_hybrid_enable: false
+  rse_hybrid_nft_fraction: 0.0
+  rse_hybrid_null_fraction: 0.0
+  rse_injection_mode: first_velocity
+  rse_late_guard_enable: false
+  rse_late_std_adapt_enable: false
+  rse_nft_fallback_enable: false
+  rse_nft_fallback_partial_enable: false
+  rse_null_probe_fraction: 0.0
+  rse_num_seeds: 12
+  rse_online_resample_enable: false
+  rse_pairwise_span_directions: false
+  rse_prompt_repair_enable: false
+  rse_random_span_clip: 1.0
+  rse_random_span_dim: 1
+  rse_random_span_scale: 0.0
+  rse_reward_deadzone_mode: quantized
+  rse_reward_resolution: 0.05
+  rse_signal_gate_enable: false
+  rse_signal_scale_enable: false
+  rse_std: 1.0
+  rse_stratified_coefficients: false
+  rse_traj_steps: 0
+  rse_variants_per_seed: 2
+  rse_velocity_max_ratio: 0.0
+  rse_velocity_scale_mode: velocity_ratio
+  subspace_coeff_clip: 1.0
+  subspace_max_ratio: 1.0
+  trust_theta: 0.0
+  use_base_teacher: false
+  use_geodesic: false
+  warmup_epochs: 0
+flagship:
+  cone_guard: correct_prompt
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: fanft_no_projection
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: fanft_v56r1
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: cfg_residual
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 2
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 256
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.28
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 2
+  eval_seed: 1000042
+  generator_include_sample_index: true
+  global_std: true
+  guidance_scale: 1.0
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 2
+  prompt_reference_num_replicas: 8
+  rollout_seed_epoch_stride: 10000
+  same_latent: true
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: true
+  training_noise_views: 2
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
+save_freq: 1
+seed: 42
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  stochastic_stability_contract: true
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0827 04:31:28.427149 140114413634176 train_nft_sd3.py:4090] Waiting 35s before model load (stagger)...
 wandb: Tracking run with wandb version 0.18.7
 wandb: W&B syncing is set to `offline` in this directory.  
 wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
 wandb: WARNING URL not available in offline run
-I0827 04:14:02.921847 139647252234880 train_nft_sd3.py:4071] 
+I0827 04:31:28.794947 140382459024000 train_nft_sd3.py:4071] 
 activation_checkpointing: false
 allow_tf32: true
 base_model: sd3
@@ -1352,10 +1352,10 @@ fiber:
   fanft_expected_global_images: 576
   fanft_expected_global_prompts: 24
   fanft_expected_optimizer_updates: 1
-  fanft_fiber_projection_mode: orthogonal
+  fanft_fiber_projection_mode: none
   fanft_fiber_trust_ratio: 0.1
   fanft_fold_balanced_design: true
-  fanft_force_confidence: 1.0
+  fanft_force_confidence: null
   fanft_global_credit_enable: true
   fanft_gradient_batch_size: 8
   fanft_kl_control_enable: false
@@ -1424,7 +1424,7 @@ flagship:
   cone_guard: correct_prompt
   epochs: 200
   eval_guidance_scale: 4.5
-  experiment_arm: fanft_no_reliability
+  experiment_arm: fanft_no_projection
   hardware_profile: h200_8gpu
   images_per_epoch: 576
   images_per_prompt: 24
@@ -1435,7 +1435,7 @@ flagship:
   reward_id: geneval
   rollout_guidance_scale: 1.0
 fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_projection/seed-42
 mixed_precision: fp16
 num_checkpoint_limit: 5
 num_epochs: 2
@@ -1449,7 +1449,7 @@ resolution: 256
 resume_from: ''
 reward_fn:
   geneval: 1.0
-run_name: cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02
+run_name: cfgrole_geneval_fanft_no_projection_h200_8gpu_2026.08.27_04.31.27
 sample:
   deterministic: true
   eval_guidance_scale: 4.5
@@ -1477,7 +1477,7 @@ sample:
   training_noise_views: 2
   vae_slicing: false
   world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42
 save_freq: 1
 seed: 42
 train:
@@ -1510,191 +1510,191 @@ wandb_reward_scales:
 
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4083: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler(enabled=enable_amp)
-I0827 04:14:02.923609 139647252234880 train_nft_sd3.py:4090] Waiting 0s before model load (stagger)...
-I0827 04:14:02.923764 139647252234880 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:02.923913 139647252234880 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-I0827 04:14:07.562204 140688253862528 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:07.562419 140688253862528 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+I0827 04:31:28.795881 140382459024000 train_nft_sd3.py:4090] Waiting 0s before model load (stagger)...
+I0827 04:31:28.796043 140382459024000 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:28.796178 140382459024000 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+I0827 04:31:33.398905 139718910947968 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:33.399692 139718910947968 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]I0827 04:14:12.096253 140026022851200 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:12.096506 140026022851200 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]I0827 04:31:38.030709 140146486284928 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:38.030986 140146486284928 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.00s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.98s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.99s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.11s/it]I0827 04:14:17.682872 140388229485184 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:17.683295 140388229485184 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.03s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.04s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.06s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.09s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.09s/it]
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.09s/it]I0827 04:14:22.709716 140268260057728 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:22.710107 140268260057728 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.16s/it]I0827 04:31:43.394454 139770210112128 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:43.394821 139770210112128 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.03s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.04s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.66it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.57it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.20s/it]I0827 04:14:27.704330 139887902024320 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:27.704780 139887902024320 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.08s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.10s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 44.47it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 44.43it/s]
-I0827 04:14:32.704591 140478054056576 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:32.705228 140478054056576 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.76s/it]
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.57s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.60s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]I0827 04:14:37.708626 140294823580288 train_nft_sd3.py:4092] Loading SD3.5 model...
-I0827 04:14:37.709011 140294823580288 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.67it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.63it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.42s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.34s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.35s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.15s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.16s/it]
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 51.52it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 51.47it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.19s/it]I0827 04:31:48.424476 140311974732416 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:48.426309 140311974732416 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.15s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.16s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]I0827 04:31:53.079992 139970802954880 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:53.080386 139970802954880 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
 Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.25s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.18s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.19s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.20s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.21s/it]
 
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 47.80it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 47.71it/s]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.35s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.33s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.34s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]I0827 04:31:58.024798 140046171255424 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:31:58.025645 140046171255424 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.79s/it]
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 43.41it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 43.37it/s]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.12s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.07s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+I0827 04:32:03.427300 140114413634176 train_nft_sd3.py:4092] Loading SD3.5 model...
+I0827 04:32:03.428478 140114413634176 train_nft_sd3.py:4111] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.26it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.23it/s]
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.79s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.51s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.70s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.43s/it]
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.84it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.80it/s]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.21s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.25s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.71s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.00s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.11s/it]
 
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.85it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.81it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 47.08it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 47.04it/s]
 
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 50.65it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 50.61it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 50.93it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 50.89it/s]
 
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.62it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.58it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.54it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.50it/s]
 
 Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 51.15it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 51.11it/s]
-I0827 04:15:12.692744 140268260057728 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.692870 140268260057728 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.692914 140268260057728 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.692952 140268260057728 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.692979 140268260057728 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.693002 140268260057728 train_nft_sd3.py:4368] 
-I0827 04:15:12.693026 140268260057728 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.693049 140268260057728 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.693071 140268260057728 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.693094 140268260057728 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.693352 140268260057728 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.699485 140294823580288 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.699597 140294823580288 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.699635 140294823580288 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.699661 140294823580288 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.699683 140294823580288 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.699701 140294823580288 train_nft_sd3.py:4368] 
-I0827 04:15:12.699720 140294823580288 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.699738 140294823580288 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.699756 140294823580288 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.699774 140294823580288 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.700009 140294823580288 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.749324 139647252234880 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.749618 139647252234880 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.749708 139647252234880 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.749777 139647252234880 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.749838 139647252234880 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.749892 139647252234880 train_nft_sd3.py:4368] 
-I0827 04:15:12.749952 139647252234880 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.750001 139647252234880 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.750051 139647252234880 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.750102 139647252234880 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.750323 139647252234880 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.752168 140388229485184 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.752271 140388229485184 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.752308 140388229485184 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.752334 140388229485184 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.752357 140388229485184 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.752376 140388229485184 train_nft_sd3.py:4368] 
-I0827 04:15:12.752396 140388229485184 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.752414 140388229485184 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.752432 140388229485184 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.752451 140388229485184 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.752672 140388229485184 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.758028 140478054056576 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.758139 140478054056576 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.758091 139887902024320 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.758173 140478054056576 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.758199 140478054056576 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.758198 139887902024320 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.758221 140478054056576 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.758233 139887902024320 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.758239 140478054056576 train_nft_sd3.py:4368] 
-I0827 04:15:12.758258 140478054056576 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.758260 139887902024320 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.758275 140478054056576 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.758283 139887902024320 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.758294 140478054056576 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.758304 139887902024320 train_nft_sd3.py:4368] 
-I0827 04:15:12.758311 140478054056576 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.758326 139887902024320 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.758346 139887902024320 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.758365 139887902024320 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.758385 139887902024320 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.758571 140478054056576 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.758608 139887902024320 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.764861 140026022851200 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.764969 140026022851200 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.765007 140026022851200 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.765034 140026022851200 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.765056 140026022851200 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.765076 140026022851200 train_nft_sd3.py:4368] 
-I0827 04:15:12.765096 140026022851200 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.765114 140026022851200 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.765131 140026022851200 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.765148 140026022851200 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.765368 140026022851200 train_nft_sd3.py:4451] ***** Running training *****
-I0827 04:15:12.796522 140688253862528 train_nft_sd3.py:4363] ***** Running training *****
-I0827 04:15:12.796625 140688253862528 train_nft_sd3.py:4364]   Num Epochs = 2
-I0827 04:15:12.796661 140688253862528 train_nft_sd3.py:4365]   Sample batch size per device = 24
-I0827 04:15:12.796686 140688253862528 train_nft_sd3.py:4366]   Train batch size per device = 24
-I0827 04:15:12.796709 140688253862528 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
-I0827 04:15:12.796727 140688253862528 train_nft_sd3.py:4368] 
-I0827 04:15:12.796747 140688253862528 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
-I0827 04:15:12.796766 140688253862528 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0827 04:15:12.796785 140688253862528 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
-I0827 04:15:12.796804 140688253862528 train_nft_sd3.py:4372]   Number of inner epochs = 1
-I0827 04:15:12.797039 140688253862528 train_nft_sd3.py:4451] ***** Running training *****
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.80it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.76it/s]
+I0827 04:32:41.538673 140114413634176 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.538788 140114413634176 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.538822 140114413634176 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.538850 140114413634176 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.538871 140114413634176 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.538890 140114413634176 train_nft_sd3.py:4368] 
+I0827 04:32:41.538910 140114413634176 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.538934 140114413634176 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.538953 140114413634176 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.538972 140114413634176 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.539201 140114413634176 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.577346 140046171255424 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.577470 140046171255424 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.577506 140046171255424 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.577534 140046171255424 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.577557 140046171255424 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.577577 140046171255424 train_nft_sd3.py:4368] 
+I0827 04:32:41.577597 140046171255424 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.577615 140046171255424 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.577634 140046171255424 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.577654 140046171255424 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.577925 140046171255424 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.622740 139970802954880 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.623327 139970802954880 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.623484 139970802954880 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.623592 139970802954880 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.623630 139970802954880 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.623674 139970802954880 train_nft_sd3.py:4368] 
+I0827 04:32:41.623737 139970802954880 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.623765 139970802954880 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.623815 139970802954880 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.624137 139970802954880 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.625187 139970802954880 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.643955 140382459024000 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.644253 140382459024000 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.644351 140382459024000 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.644441 140382459024000 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.644517 140382459024000 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.644574 140382459024000 train_nft_sd3.py:4368] 
+I0827 04:32:41.644627 140382459024000 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.644676 140382459024000 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.644726 140382459024000 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.644777 140382459024000 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.645003 140382459024000 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.654957 140146486284928 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.655068 140146486284928 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.655105 140146486284928 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.655132 140146486284928 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.655155 140146486284928 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.655175 140146486284928 train_nft_sd3.py:4368] 
+I0827 04:32:41.655196 140146486284928 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.655214 140146486284928 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.655234 140146486284928 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.655252 140146486284928 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.655505 140146486284928 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.657649 139770210112128 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.657807 139770210112128 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.657845 139770210112128 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.657871 139770210112128 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.657894 139770210112128 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.657912 139770210112128 train_nft_sd3.py:4368] 
+I0827 04:32:41.657936 139770210112128 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.657955 139770210112128 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.657974 139770210112128 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.657991 139770210112128 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.658296 139770210112128 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.678905 140311974732416 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.679017 140311974732416 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.679054 140311974732416 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.679083 140311974732416 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.679107 140311974732416 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.679125 140311974732416 train_nft_sd3.py:4368] 
+I0827 04:32:41.679145 140311974732416 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.679164 140311974732416 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.679184 140311974732416 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.679203 140311974732416 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.679439 140311974732416 train_nft_sd3.py:4451] ***** Running training *****
+I0827 04:32:41.682435 139718910947968 train_nft_sd3.py:4363] ***** Running training *****
+I0827 04:32:41.682548 139718910947968 train_nft_sd3.py:4364]   Num Epochs = 2
+I0827 04:32:41.682583 139718910947968 train_nft_sd3.py:4365]   Sample batch size per device = 24
+I0827 04:32:41.682607 139718910947968 train_nft_sd3.py:4366]   Train batch size per device = 24
+I0827 04:32:41.682629 139718910947968 train_nft_sd3.py:4367]   Gradient Accumulation steps = 3
+I0827 04:32:41.682647 139718910947968 train_nft_sd3.py:4368] 
+I0827 04:32:41.682666 139718910947968 train_nft_sd3.py:4369]   Total number of samples per epoch = 576
+I0827 04:32:41.682685 139718910947968 train_nft_sd3.py:4370]   Total train batch size (w. parallel, distributed & accumulation) = 576
+I0827 04:32:41.682703 139718910947968 train_nft_sd3.py:4371]   Number of gradient updates per inner epoch = 1
+I0827 04:32:41.682721 139718910947968 train_nft_sd3.py:4372]   Number of inner epochs = 1
+I0827 04:32:41.682976 139718910947968 train_nft_sd3.py:4451] ***** Running training *****
 
 Epoch 0: sampling:   0%|          | 0/3 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5125: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
@@ -1710,31 +1710,31 @@ Epoch 0: sampling:   0%|          | 0/3 [00:00<?, ?it/s]/mnt/volumes/machedge-al
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5125: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-I0827 04:15:13.233109 139647252234880 train_nft_sd3.py:3393] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42/checkpoints/checkpoint-0
+I0827 04:32:42.232950 140382459024000 train_nft_sd3.py:3393] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_projection/seed-42/checkpoints/checkpoint-0
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5125: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  9.71it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  9.69it/s]
 
-Epoch 0: sampling:  33%|███▎      | 1/3 [00:01<00:02,  1.14s/it]
+Epoch 0: sampling:  33%|███▎      | 1/3 [00:01<00:02,  1.29s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.18it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.47it/s]
 
-Epoch 0: sampling:  67%|██████▋   | 2/3 [00:01<00:00,  1.11it/s]
+Epoch 0: sampling:  67%|██████▋   | 2/3 [00:02<00:00,  1.04it/s]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.38it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.47it/s]
 
-Epoch 0: sampling: 100%|██████████| 3/3 [00:02<00:00,  1.18it/s]
-Epoch 0: sampling: 100%|██████████| 3/3 [00:02<00:00,  1.13it/s]
-I0827 04:15:15.481578 139647252234880 train_nft_sd3.py:5651] Epoch 0 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+Epoch 0: sampling: 100%|██████████| 3/3 [00:02<00:00,  1.14it/s]
+Epoch 0: sampling: 100%|██████████| 3/3 [00:02<00:00,  1.07it/s]
+I0827 04:32:44.501696 140382459024000 train_nft_sd3.py:5651] Epoch 0 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
 
 Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.73s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:07<00:03,  3.84s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:11<00:00,  3.80s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:11<00:00,  3.80s/it]
-I0827 04:15:27.569653 139647252234880 train_nft_sd3.py:5761] Epoch 0 reward metrics: {'reward_accuracy': 0.0, 'reward_geneval': 0.0468750037252903, 'reward_avg': 0.0451388880610466, 'reward_geneval_all': 0.0451388880610466, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.0416666679084301}
-I0827 04:15:28.227973 139647252234880 train_nft_sd3.py:6509] Advantages mean: 0.0 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.74s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:07<00:03,  3.80s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:11<00:00,  3.78s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:11<00:00,  3.78s/it]
+I0827 04:32:56.440777 140382459024000 train_nft_sd3.py:5761] Epoch 0 reward metrics: {'reward_accuracy': 0.0, 'reward_geneval': 0.0468750037252903, 'reward_avg': 0.0451388880610466, 'reward_geneval_all': 0.0451388880610466, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.0416666679084301}
+I0827 04:32:57.096462 140382459024000 train_nft_sd3.py:6509] Advantages mean: 0.0 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3512: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3512: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
@@ -1750,6 +1750,18 @@ I0827 04:15:28.227973 139647252234880 train_nft_sd3.py:6509] Advantages mean: 0.
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3512: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3512: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 
 Epoch 0.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
@@ -1757,25 +1769,13 @@ Epoch 0.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6981: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 
-Epoch 0.0: training:  33%|███▎      | 1/3 [00:02<00:04,  2.16s/it]
+Epoch 0.0: training:  33%|███▎      | 1/3 [00:02<00:04,  2.13s/it]
 
-Epoch 0.0: training:  67%|██████▋   | 2/3 [00:04<00:02,  2.04s/it]
+Epoch 0.0: training:  67%|██████▋   | 2/3 [00:04<00:02,  2.03s/it]
 
-Epoch 0.0: training: 100%|██████████| 3/3 [00:06<00:00,  2.08s/it]
-Epoch 0.0: training: 100%|██████████| 3/3 [00:06<00:00,  2.08s/it]
+Epoch 0.0: training: 100%|██████████| 3/3 [00:06<00:00,  2.06s/it]
+Epoch 0.0: training: 100%|██████████| 3/3 [00:06<00:00,  2.06s/it]
 
 Epoch 1: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
 Eval:   0%|          | 0/20 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3156: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
@@ -1795,1082 +1795,40 @@ Eval:   0%|          | 0/20 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wan
 /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3156: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.54it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.63it/s]
 
-Eval:   5%|▌         | 1/20 [00:16<05:05, 16.08s/it]
+Eval:   5%|▌         | 1/20 [00:15<04:48, 15.20s/it]
 
 Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.67it/s]
 
-Eval:  10%|█         | 2/20 [00:32<04:49, 16.11s/it]
+Eval:  10%|█         | 2/20 [00:18<02:26,  8.16s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.66it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.70it/s]
 
-Eval:  15%|█▌        | 3/20 [00:47<04:30, 15.94s/it]
+Eval:  15%|█▌        | 3/20 [00:34<03:17, 11.62s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.65it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.67it/s]
 
-Eval:  20%|██        | 4/20 [01:04<04:16, 16.04s/it]
+Eval:  20%|██        | 4/20 [00:50<03:34, 13.41s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.66it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.70it/s]
 
-Eval:  25%|██▌       | 5/20 [01:20<04:04, 16.28s/it]
+Eval:  25%|██▌       | 5/20 [01:06<03:37, 14.53s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.61it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.70it/s]
 
-Eval:  30%|███       | 6/20 [01:36<03:44, 16.04s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.66it/s]
-
-Eval:  35%|███▌      | 7/20 [01:39<02:33, 11.81s/it]
+Eval:  30%|███       | 6/20 [01:22<03:27, 14.82s/it]
 
 Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.69it/s]
 
-Eval:  40%|████      | 8/20 [01:55<02:37, 13.16s/it]
+Eval:  35%|███▌      | 7/20 [01:25<02:22, 10.95s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.67it/s]
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.71it/s]
 
-Eval:  45%|████▌     | 9/20 [02:11<02:33, 13.96s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]
-
-Eval:  50%|█████     | 10/20 [02:27<02:26, 14.63s/it]
+Eval:  40%|████      | 8/20 [01:41<02:31, 12.59s/it]
 
 Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]
 
-Eval:  55%|█████▌    | 11/20 [02:43<02:15, 15.08s/it]
+Eval:  45%|████▌     | 9/20 [01:44<01:44,  9.54s/it]
 
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.65it/s]
-
-Eval:  60%|██████    | 12/20 [02:59<02:01, 15.23s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.69it/s]
-
-Eval:  65%|██████▌   | 13/20 [03:14<01:47, 15.43s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]
-
-Eval:  70%|███████   | 14/20 [03:31<01:33, 15.62s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]
-
-Eval:  75%|███████▌  | 15/20 [03:47<01:18, 15.80s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]
-
-Eval:  80%|████████  | 16/20 [04:03<01:03, 15.85s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.67it/s]
-
-Eval:  85%|████████▌ | 17/20 [04:19<00:47, 15.87s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.67it/s]
-
-Eval:  90%|█████████ | 18/20 [04:35<00:31, 15.91s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]
-
-Eval:  95%|█████████▌| 19/20 [04:51<00:15, 15.93s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  9.28it/s]
-
-Eval: 100%|██████████| 20/20 [05:03<00:00, 14.96s/it]
-Eval: 100%|██████████| 20/20 [05:03<00:00, 15.19s/it]
-I0827 04:20:39.211612 139647252234880 train_nft_sd3.py:3275] Saved structured eval samples to /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42/eval_samples/epoch-1-g450.json
-I0827 04:20:40.068057 139647252234880 train_nft_sd3.py:3393] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42/checkpoints/checkpoint-1
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5125: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.60it/s]
-
-Epoch 1: sampling:  33%|███▎      | 1/3 [05:05<10:11, 305.54s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.48it/s]
-
-Epoch 1: sampling:  67%|██████▋   | 2/3 [05:06<02:06, 126.27s/it]
-
-Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  8.38it/s]
-
-Epoch 1: sampling: 100%|██████████| 3/3 [05:07<00:00, 68.98s/it] 
-Epoch 1: sampling: 100%|██████████| 3/3 [05:07<00:00, 102.38s/it]
-I0827 04:20:42.304733 139647252234880 train_nft_sd3.py:5651] Epoch 1 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:04<00:09,  4.90s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:08<00:04,  4.26s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:10<00:00,  3.23s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:10<00:00,  3.58s/it]
-I0827 04:21:16.142518 139647252234880 train_nft_sd3.py:5761] Epoch 1 reward metrics: {'reward_accuracy': 0.0, 'reward_geneval': 0.02842882089316845, 'reward_avg': 0.0282118059694767, 'reward_geneval_all': 0.0282118059694767, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.02777777798473835}
-I0827 04:21:16.815370 139647252234880 train_nft_sd3.py:6509] Advantages mean: 0.0 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 1.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
-
-Epoch 1.0: training:  33%|███▎      | 1/3 [00:01<00:03,  1.95s/it]
-
-Epoch 1.0: training:  67%|██████▋   | 2/3 [00:03<00:01,  1.95s/it]
-
-Epoch 1.0: training: 100%|██████████| 3/3 [00:05<00:00,  2.01s/it]
-Epoch 1.0: training: 100%|██████████| 3/3 [00:05<00:00,  1.99s/it]
-I0827 04:21:24.028826 139647252234880 train_nft_sd3.py:3393] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/contract-smoke/geneval/fanft_no_reliability/seed-42/checkpoints/checkpoint-final-epoch-2-step-2
-wandb:                                                                                
-wandb: 
-wandb: Run history:
-wandb:                             budget/collection_seconds ▁█
-wandb:    budget/collection_transformer_forward_calls_global ▁█
-wandb:    budget/collection_transformer_forward_items_global ▁█
-wandb:                           budget/decoded_images_epoch ▁▁
-wandb:                              budget/epoch_gpu_seconds ▁█
-wandb:                             budget/epoch_wall_seconds ▁█
-wandb:                              budget/gpu_seconds_total ▁█
-wandb:                                   budget/images_epoch ▁▁
-wandb:                          budget/images_per_gpu_second █▁
-wandb:                                   budget/images_total ▁█
-wandb:                        budget/optimizer_updates_epoch ▁▁
-wandb:                        budget/optimizer_updates_total ▁█
-wandb:                       budget/peak_allocated_bytes_max ▁█
-wandb:                           budget/reward_queries_epoch ▁▁
-wandb:                budget/reward_server_gpu_seconds_epoch ▁█
-wandb:               budget/reward_server_gpu_seconds_median ▁█
-wandb:                    budget/reward_server_request_count ▁▁
-wandb:                      budget/rollout_gpu_seconds_epoch █▁
-wandb:                         budget/rollout_guidance_scale ▁▁
-wandb:                     budget/training_gpu_seconds_epoch █▁
-wandb:                               budget/training_seconds █▁
-wandb:      budget/training_transformer_forward_calls_global ▁▁
-wandb:      budget/training_transformer_forward_items_global ▁▁
-wandb:               budget/transformer_forward_calls_global ▁█
-wandb:               budget/transformer_forward_items_global ▁█
-wandb:                               effective_learning_rate ▁▁
-wandb:                                                 epoch ▁▁▁▁█████
-wandb:                                 eval_checkpoint_epoch ▁
-wandb:                           eval_padded_duplicate_count ▁
-wandb:                                  eval_reward_accuracy ▁
-wandb:                       eval_reward_accuracy_window_std ▁
-wandb:                                       eval_reward_avg ▁
-wandb:                            eval_reward_avg_window_std ▁
-wandb:                                   eval_reward_geneval ▁
-wandb:                        eval_reward_geneval_window_std ▁
-wandb:                           eval_reward_strict_accuracy ▁
-wandb:                eval_reward_strict_accuracy_window_std ▁
-wandb:                              eval_unique_sample_count ▁
-wandb:                  fanft/action_behavior_drift_abs_mean ▁█
-wandb:           fanft/action_behavior_drift_over_sigma_mean ▁█
-wandb:       fanft/action_behavior_projection_rel_drift_mean ▁█
-wandb:                           fanft/action_coeff_abs_mean ▁▁
-wandb:                          fanft/anova_contrast_to_main ▁▁
-wandb:                         fanft/anova_contrast_variance ▁▁
-wandb:                             fanft/anova_main_variance █▁
-wandb:                                 fanft/axis_gradient_0 ▁▁
-wandb:                                 fanft/axis_gradient_1 ▁▁
-wandb:                              fanft/axis_gradient_norm ▁▁
-wandb:                      fanft/base_preserving_clean_main ▁▁
-wandb:                             fanft/budget_clean_images ▁▁
-wandb:                               fanft/budget_pair_count ▁▁
-wandb:                              fanft/budget_pair_images ▁▁
-wandb:                             fanft/budget_sample_count ▁▁
-wandb:                               fanft/budget_seed_units ▁▁
-wandb:                                  fanft/clean_kl_count ▁▁
-wandb:                                    fanft/clean_kl_div ▁█
-wandb:                                    fanft/clean_kl_sum ▁█
-wandb:                                fanft/clean_reward_std █▁
-wandb:                                      fanft/confidence ▁▁
-wandb:                               fanft/confidence_legacy ▁▁
-wandb:                   fanft/confidence_mode_signal_energy ▁▁
-wandb:                                fanft/consensus_enable ▁▁
-wandb:                   fanft/crossfit_average_noise_energy ▁▁
-wandb:                                    fanft/crossfit_cos ▁▁
-wandb:               fanft/crossfit_fold_disagreement_energy ▁▁
-wandb:                         fanft/crossfit_norm_agreement ▁▁
-wandb:                          fanft/crossfit_signal_energy ▁▁
-wandb:                     fanft/crossfit_signal_reliability ▁▁
-wandb:                        fanft/crossfit_signal_to_noise ▁▁
-wandb:                        fanft/current_epoch_confidence ▁▁
-wandb:                                   fanft/deadzone_rate ▁▁
-wandb:                           fanft/delta_reward_abs_mean ▁▁
-wandb:                                fanft/delta_reward_std ▁▁
-wandb:            fanft/direct_confidence_after_quality_gate ▁▁
-wandb:                       fanft/direct_confidence_control ▁▁
-wandb:                     fanft/direct_confidence_effective ▁▁
-wandb:                 fanft/direct_confidence_ema_reference ▁▁
-wandb:                        fanft/direct_confidence_forced ▁▁
-wandb:              fanft/direct_confidence_pre_quality_gate ▁▁
-wandb:                   fanft/direct_confidence_probe_count ▁▁
-wandb:                           fanft/direct_confidence_raw ▁▁
-wandb:            fanft/direct_confidence_sample_reliability ▁▁
-wandb:                        fanft/direct_pair_quality_cost ▁█
-wandb:                     fanft/direct_quality_gate_enabled ▁▁
-wandb:                      fanft/direct_quality_gate_passed ▁▁
-wandb:                        fanft/direct_quality_threshold ▁▁
-wandb:                  fanft/direction_coordinate_mean_norm █▁
-wandb:                        fanft/direction_isotropy_error ▁█
-wandb:                        fanft/direction_moment_eig_max ▁▁
-wandb:                        fanft/direction_moment_eig_min ▁▁
-wandb:                 fanft/directional_derivative_abs_mean ▁▁
-wandb:                             fanft/estimator_paired_fd ▁▁
-wandb:                                      fanft/fiber_loss ▁▁
-wandb:                             fanft/fiber_raw_grad_norm ▁▁
-wandb:                 fanft/fold_a_direction_isotropy_error ▁█
-wandb:                      fanft/fold_a_direction_mean_norm █▁
-wandb:                                fanft/fold_a_grad_norm ▁▁
-wandb:                               fanft/fold_a_pair_count ▁▁▁▁
-wandb:                              fanft/fold_a_radius_mean ▁▁
-wandb:                               fanft/fold_a_radius_std ▁▁
-wandb:                 fanft/fold_b_direction_isotropy_error ▁█
-wandb:                      fanft/fold_b_direction_mean_norm █▁
-wandb:                                fanft/fold_b_grad_norm ▁▁
-wandb:                               fanft/fold_b_pair_count ▁▁▁▁
-wandb:                              fanft/fold_b_radius_mean ▁▁
-wandb:                               fanft/fold_b_radius_std ▁▁
-wandb:                              fanft/fold_count_balance ▁▁
-wandb:               fanft/fold_direction_isotropy_error_max ▁█
-wandb:                            fanft/global_credit_enable ▁▁
-wandb:                               fanft/gradient_cfg_free ▁▁
-wandb:               fanft/gradient_estimator_independent_es ▁▁
-wandb:                        fanft/gradient_parameter_count ▁▁
-wandb:                   fanft/heldout_discovery_only_update ▁▁
-wandb:                            fanft/heldout_gradient_cos ▁▁
-wandb:                 fanft/heldout_gradient_norm_agreement ▁▁
-wandb:                             fanft/heldout_reliability ▁▁
-wandb:                       fanft/heldout_validation_enable ▁▁
-wandb:                                  fanft/kl_weight_mean ▁▁
-wandb:               fanft/main_advantage_clean_standard_nft ▁▁
-wandb:                        fanft/main_advantage_seed_unit ▁▁
-wandb:                     fanft/main_advantage_standard_nft ▁▁
-wandb:                                fanft/main_anchor_loss █▁
-wandb:                         fanft/main_clean_adv_abs_mean █▁
-wandb:                     fanft/main_clean_adv_nonzero_rate ▁▁
-wandb:                         fanft/main_label_sample_count ▁▁
-wandb:                           fanft/main_label_unit_count ▁▁
-wandb:                        fanft/main_preference_abs_loss ▁█
-wandb:                            fanft/main_preference_loss █▁
-wandb:                 fanft/main_preference_weight_abs_mean █▁
-wandb:                         fanft/main_probe_adv_abs_mean █▁
-wandb:                     fanft/main_probe_adv_nonzero_rate ▁▁
-wandb:                     fanft/main_prompt_reward_std_mean █▁
-wandb:                          fanft/main_signal_scale_loss ▁▁
-wandb:                          fanft/main_unit_adv_abs_mean █▁
-wandb:                      fanft/main_unit_adv_nonzero_rate ▁▁
-wandb:                               fanft/main_unit_adv_std █▁
-wandb:                           fanft/main_unit_reward_mean █▁
-wandb:                            fanft/main_unit_reward_std █▁
-wandb:                                 fanft/main_weight_ess ▁▁
-wandb:                                 fanft/main_weight_max ▁▁
-wandb:                                fanft/main_weight_mean ▁▁
-wandb:                           fanft/main_weight_sum_ratio ▁▁
-wandb:                       fanft/main_zero_std_prompt_rate ▁▁
-wandb:                              fanft/novel_crossfit_cos ▁▁
-wandb:                       fanft/novel_disagreement_energy ▁▁
-wandb:                           fanft/novel_energy_fraction ▁▁
-wandb:                        fanft/novel_energy_gate_passed ▁▁
-wandb:                          fanft/novel_energy_threshold ▁▁
-wandb:                               fanft/novel_fold_a_norm ▁▁
-wandb:                               fanft/novel_fold_b_norm ▁▁
-wandb:                               fanft/novel_reliability ▁▁
-wandb:                             fanft/novel_signal_energy ▁▁
-wandb:                           fanft/novel_signal_to_noise ▁▁
-wandb:                        fanft/pair_midpoint_reward_std █▁
-wandb:                         fanft/pair_minus_sample_count ▁▁
-wandb:                             fanft/pair_minus_win_rate ▁▁
-wandb:                          fanft/pair_plus_sample_count ▁▁
-wandb:                              fanft/pair_plus_win_rate ▁▁
-wandb:                               fanft/pair_quality_cost ▁█
-wandb:                             fanft/pair_sign_imbalance ▁▁
-wandb:                                   fanft/pair_tie_rate ▁▁
-wandb:                fanft/post_projection_crossfit_applied ▁▁
-wandb:              fanft/post_projection_crossfit_requested ▁▁
-wandb:                              fanft/probe_clean_kl_gap █▁
-wandb:                                  fanft/probe_kl_count ▁▁
-wandb:                                    fanft/probe_kl_div ▁█
-wandb:                                    fanft/probe_kl_sum ▁█
-wandb:                      fanft/prompt_derivative_abs_mean ▁▁
-wandb:                       fanft/prompt_derivative_abs_std ▁▁
-wandb:      fanft/prompt_direction_coordinate_mean_norm_mean ▁█
-wandb:                   fanft/prompt_direction_eig_max_mean ▁▁
-wandb:                   fanft/prompt_direction_eig_min_mean ▁▁
-wandb:             fanft/prompt_direction_isotropy_error_max ▁█
-wandb:            fanft/prompt_direction_isotropy_error_mean ▁█
-wandb:                         fanft/prompt_reachability_max ▁▁
-wandb:                        fanft/prompt_reachability_mean ▁▁
-wandb:                         fanft/prompt_reachability_min ▁▁
-wandb:                         fanft/prompt_reachability_std ▁▁
-wandb:                fanft/proposal_discovery_gradient_norm ▁▁
-wandb:               fanft/proposal_discovery_validation_cos ▁▁
-wandb:    fanft/proposal_discovery_validation_norm_agreement ▁▁
-wandb:                      fanft/proposal_positive_transfer ▁▁
-wandb:                    fanft/proposal_transfer_confidence ▁▁
-wandb:        fanft/proposal_validation_gain_along_discovery ▁▁
-wandb:               fanft/proposal_validation_gradient_norm ▁▁
-wandb:                               fanft/radius_1_deadzone ▁▁
-wandb:                         fanft/radius_1_delta_abs_mean ▁▁
-wandb:                    fanft/radius_1_derivative_abs_mean ▁▁
-wandb:                             fanft/radius_1_pair_count ▁▁
-wandb:                           fanft/radius_1_reachability ▁▁
-wandb:                               fanft/radius_2_deadzone ▁▁
-wandb:                         fanft/radius_2_delta_abs_mean ▁▁
-wandb:                    fanft/radius_2_derivative_abs_mean ▁▁
-wandb:                             fanft/radius_2_pair_count ▁▁
-wandb:                           fanft/radius_2_reachability ▁▁
-wandb:                              fanft/radius_scale_count ▁▁
-wandb:                              fanft/reachability_alpha ▁▁
-wandb:                                       fanft/sigma_max █▁
-wandb:                                      fanft/sigma_mean ▁█
-wandb:                                       fanft/sigma_min █▁
-wandb:                             fanft/sigma_positive_rate ▁▁
-wandb:                                 fanft/train_keep_rate ▁▁
-wandb:                fanft/trust_applied_fiber_energy_total ▁▁
-wandb:                       fanft/trust_applied_fiber_ratio ▁▁
-wandb:                        fanft/trust_cumulative_base_kl ▁█
-wandb:                  fanft/trust_cumulative_base_kl_delta ▁█
-wandb:                         fanft/trust_local_old_deviate ▁█
-wandb:                 fanft/trust_local_to_cumulative_ratio ▁█
-wandb:                               fanft/trust_update_norm █▁
-wandb:                         fanft/trust_update_norm_delta █▁
-wandb:                                fanft_main_weight_mean ▁▁
-wandb:                               fiber/branch_step_index ▁▁▁▁▁▁
-wandb:                                 fiber/center_strength ▁▁▁▁▁▁
-wandb:                            fiber/clean_variant_enable ▁▁▁▁▁▁
-wandb:                              fiber/clean_variant_rate ▁▁▁▁▁▁
-wandb:                                 fiber/coeff_clamp_hit ▁▁▁▁▁▁
-wandb:                                      fiber/coeff_clip ▁▁▁▁▁▁
-wandb:                                       fiber/coeff_max ▁▂▁▄██
-wandb:                                      fiber/coeff_mean ▁▁▁▁▁▁
-wandb:                                       fiber/coeff_min ▁▁▁▁▁▁
-wandb:                             fiber/coeff_positive_only ▁▁▁▁▁▁
-wandb:                          fiber/coeff_positive_uniform ▁▁▁▁▁▁
-wandb:                                       fiber/coeff_std ▂▂▁▄▅█
-wandb:                                         fiber/eff_std ▁▁▁▁▁▁
-wandb:                 fiber/fanft_action_symmetry_max_error ▁▁▁▁▁▁
-wandb:               fiber/fanft_axis_source_policy_residual ▁▁▁▁▁▁
-wandb:                     fiber/fanft_axis_source_reward_es ▁▁▁▁▁▁
-wandb:                 fiber/fanft_base_state_duplicate_rate ▁▁▁▁▁▁
-wandb:          fiber/fanft_base_state_min_relative_distance ▃▃▂▁█▃
-wandb:                                 fiber/fanft_basis_dim ▁▁▁▁▁▁
-wandb:                        fiber/fanft_cfg_coordinate_min ▁▁▁▁▁█
-wandb:                    fiber/fanft_cfg_exploration_enable ▁▁▁▁▁▁
-wandb:                   fiber/fanft_cfg_exploration_removed ▁▁▁▁▁▁
-wandb:               fiber/fanft_cfg_used_as_constraint_only ▁▁▁▁▁▁
-wandb:                     fiber/fanft_clean_action_max_norm ▁▁▁▁▁▁
-wandb:                          fiber/fanft_clean_seed_count ▁▁▁▁▁▁
-wandb:                            fiber/fanft_cone_clip_rate ███▆▆▁
-wandb:                                  fiber/fanft_cone_min ▁▁▁▁▁▁
-wandb:                      fiber/fanft_deterministic_design ▁▁▁▁▁▁
-wandb:                  fiber/fanft_direction_norm_error_max ▁▁▁▁█▁
-wandb:                      fiber/fanft_discovery_pair_count ▁▁▁▁▁▁
-wandb:                                    fiber/fanft_enable ▁▁▁▁▁▁
-wandb:                  fiber/fanft_estimator_independent_es ▁▁▁▁▁▁
-wandb:                      fiber/fanft_fold_balanced_design ▁▁▁▁▁▁
-wandb:                 fiber/fanft_heldout_validation_enable ▁▁▁▁▁▁
-wandb:                 fiber/fanft_pair_base_state_max_error ▁▁▁▁▁▁
-wandb:                  fiber/fanft_pair_direction_max_error ▁▁▁▁▁▁
-wandb:                           fiber/fanft_pair_seed_count ▁▁▁▁▁▁
-wandb:                      fiber/fanft_pairs_per_base_state ▁▁▁▁▁▁
-wandb:                fiber/fanft_policy_cfg_cosine_abs_mean ▁▁▁▁▁▁
-wandb:                    fiber/fanft_policy_cfg_cosine_mean ▁▁▁▁▁▁
-wandb:                     fiber/fanft_policy_reference_base ▁▁▁▁▁▁
-wandb:             fiber/fanft_policy_residual_fallback_rate ▁▁▁▁▁▁
-wandb:                 fiber/fanft_policy_residual_norm_mean ▁▁▁▁▁▁
-wandb:        fiber/fanft_policy_residual_relative_norm_mean ▁▁▁▁▁▁
-wandb:                fiber/fanft_policy_residual_valid_rate ▁▁▁▁▁▁
-wandb:               fiber/fanft_primary_cfg_cosine_abs_mean ▁▁▁▁▁▁
-wandb:                   fiber/fanft_primary_cfg_cosine_mean ▁▁▁▁▁▁
-wandb:                          fiber/fanft_probe_seed_count ▁▁▁▁▁▁
-wandb:                     fiber/fanft_radius_effective_mean ▂▃▁▄▅█
-wandb:                          fiber/fanft_radius_requested ▁▁▁▁▁▁
-wandb:                          fiber/fanft_radius_scale_max ▁▁▁▁▁▁
-wandb:                          fiber/fanft_radius_scale_min ▁▁▁▁▁▁
-wandb:                       fiber/fanft_relative_radius_max ▁▂▁▄██
-wandb:                       fiber/fanft_relative_radius_min ▆▅▁█▅█
-wandb:             fiber/fanft_reward_es_axis_norm_error_max ▁▁▁▁▁▁
-wandb:         fiber/fanft_reward_es_behavior_cosine_abs_max ▁▁▁▁▁▁
-wandb:              fiber/fanft_selected_cfg_axis_valid_rate ▁▁▁▁▁▁
-wandb:          fiber/fanft_selected_cfg_own_cosine_abs_mean ▁▁▁▁▁▁
-wandb:              fiber/fanft_selected_cfg_own_cosine_mean ▁▁▁▁▁▁
-wandb:            fiber/fanft_selected_cfg_own_fallback_rate ▁▁▁▁▁▁
-wandb:       fiber/fanft_selected_cfg_random_axis_valid_rate ▁▁▁▁▁▁
-wandb:                         fiber/fanft_selected_cfg_span ▁▁▁▁▁▁
-wandb:                fiber/fanft_shared_prompt_basis_enable ▁▁▁▁▁▁
-wandb: fiber/fanft_shared_prompt_basis_orthogonality_abs_max ▁▁▁▁▁▁
-wandb:     fiber/fanft_shared_prompt_cross_state_cosine_mean ▁▁▁▁▁▁
-wandb:         fiber/fanft_shared_prompt_hash_collision_rate ▁▁▁▁▁▁
-wandb:                       fiber/fanft_sigma_positive_rate ▁▁▁▁▁▁
-wandb:      fiber/fanft_topology_independent_state_symmetric ▁▁▁▁▁▁
-wandb:             fiber/fanft_topology_same_state_one_sided ▁▁▁▁▁▁
-wandb:             fiber/fanft_topology_same_state_symmetric ▁▁▁▁▁▁
-wandb:                   fiber/fanft_unique_pair_base_states ▁▁▁▁▁▁
-wandb:                     fiber/fanft_validation_pair_count ▁▁▁▁▁▁
-wandb:           fiber/fanft_wrong_prompt_residual_norm_mean ▁▁▁▁▁▁
-wandb:         fiber/fanft_wrong_prompt_transverse_norm_mean ▁▁▁▁▁▁
-wandb:             fiber/first_state_displacement_proxy_mean ▂▃▁▄▅█
-wandb:                        fiber/first_velocity_injection ▁▁▁▁▁▁
-wandb:                            fiber/fixed_residual_reuse ▁▁▁▁▁▁
-wandb:                           fiber/group_stratified_span ▁▁▁▁▁▁
-wandb:                                   fiber/hybrid_enable ▁▁▁▁▁▁
-wandb:                                 fiber/hybrid_nft_rate ▁▁▁▁▁▁
-wandb:                                fiber/hybrid_null_rate ▁▁▁▁▁▁
-wandb:                                 fiber/hybrid_rse_rate ▁▁▁▁▁▁
-wandb:                                fiber/latent_norm_mean █▁▆▃▅▂
-wandb:                              fiber/longitudinal_ratio █▄▄▁▄▃
-wandb:                                            fiber/mode ▁▁▁▁▁▁
-wandb:                                              fiber/mu ▁▁▁▁▁▁
-wandb:                                     fiber/mu_abs_mean ▁▁▁▁▁▁
-wandb:                             fiber/null_probe_fraction ▁▁▁▁▁▁
-wandb:                                 fiber/null_probe_rate ▁▁▁▁▁▁
-wandb:                        fiber/pairwise_span_directions ▁▁▁▁▁▁
-wandb:                      fiber/random_span_axis_norm_mean █▁▇▃▇▃
-wandb:                                fiber/random_span_clip ▁▁▁▁▁▁
-wandb:                 fiber/random_span_component_norm_mean ▃█▇▂▂▁
-wandb:                                 fiber/random_span_dim ▁▁▁▁▁▁
-wandb:                        fiber/random_span_mix_abs_mean ▁▁▁▁▁▁
-wandb:                               fiber/random_span_scale ▁▁▁▁▁▁
-wandb:                          fiber/raw_residual_norm_mean ▃▁▂▅▁█
-wandb:                                         fiber/retract ▁▁▁▁▁▁
-wandb:                                         fiber/rse_std ▁▁▁▁▁▁
-wandb:                                          fiber/rse_v2 ▁▁▁▁▁▁
-wandb:                                fiber/seeds_per_prompt ▁▁▁▁▁▁
-wandb:                 fiber/shell_direction_radial_abs_mean ▁▁▁▁▁▁
-wandb:                         fiber/shell_displacement_mean ▁▁▁▁▁▁
-wandb:                           fiber/shell_injection_decay ▁▁▁▁▁▁
-wandb:                           fiber/shell_injection_iters ▁▁▁▁▁▁
-wandb:                           fiber/shell_norm_ratio_mean ▁▁▁▁▁▁
-wandb:                       fiber/shell_strength_multiplier ▁▁▁▁▁▁
-wandb:                         fiber/shell_tangent_norm_mean ▁▁▁▁▁▁
-wandb:                        fiber/shell_tangent_valid_rate ▁▁▁▁▁▁
-wandb:                         fiber/stratified_coefficients ▁▁▁▁▁▁
-wandb:                                          fiber/t_star ▁▁▁▁▁▁
-wandb:                                 fiber/tangent_rms_dim ▃▁▂▅▁█
-wandb:                                   fiber/theta_abs_max ▁▁▁▁▁▁
-wandb:                                  fiber/theta_abs_mean ▁▁▁▁▁▁
-wandb:                 fiber/theta_direction_radial_abs_mean ▁▁▁▁▁▁
-wandb:                                 fiber/theta_injection ▁▁▁▁▁▁
-wandb:                                       fiber/theta_max ▁▁▁▁▁▁
-wandb:                           fiber/theta_norm_ratio_mean ▁▁▁▁▁▁
-wandb:                         fiber/theta_tangent_norm_mean ▁▁▁▁▁▁
-wandb:                   fiber/transverse_residual_norm_mean ▃▁▂▅▁█
-wandb:                               fiber/variants_per_seed ▁▁▁▁▁▁
-wandb:                           fiber/velocity_cap_hit_rate ▁▁▁▁▁▁
-wandb:                          fiber/velocity_coeff_abs_max ▁▂▁▄██
-wandb:                         fiber/velocity_coeff_abs_mean ▂▃▁▄▅█
-wandb:                              fiber/velocity_max_ratio ▁▁▁▁▁▁
-wandb:                      fiber/velocity_perturb_ratio_max ▁▂▁▄██
-wandb:                     fiber/velocity_perturb_ratio_mean ▂▃▁▄▅█
-wandb:                     fiber/velocity_scale_cfg_residual ▁▁▁▁▁▁
-wandb:                         fiber/velocity_scale_cfg_span ▁▁▁▁▁▁
-wandb:                               grad/applied_fiber_norm ▁▁
-wandb:                       grad/applied_fiber_to_main_norm ▁▁
-wandb:                                     grad/clip_applied ▁▁
-wandb:                                    grad/combined_norm █▁
-wandb:                                grad/combined_raw_norm █▁
-wandb:                             grad/combined_to_main_cos █▁
-wandb:                         grad/fiber_confidence_applied ▁▁
-wandb:                        grad/fiber_confidence_combined ▁▁
-wandb:                     grad/fiber_confidence_gate_passed ▁▁
-wandb:                  grad/fiber_confidence_gate_threshold ▁▁
-wandb:                       grad/fiber_confidence_hard_gate ▁▁
-wandb:                       grad/fiber_confidence_requested ▁▁
-wandb:                           grad/fiber_conflict_removed ▁▁
-wandb:                          grad/fiber_final_gate_passed ▁▁
-wandb:                      grad/fiber_parallel_removed_norm ▁▁
-wandb:                grad/fiber_preprojection_gate_required ▁▁
-wandb:                      grad/fiber_projection_orthogonal ▁▁
-wandb:                                   grad/fiber_raw_norm ▁▁
-wandb:                                  grad/fiber_safe_norm ▁▁
-wandb:                           grad/fiber_safe_to_main_cos ▁▁
-wandb:                                      grad/fiber_scale ▁▁
-wandb:                        grad/fiber_scaled_up_to_target ▁▁
-wandb:                                grad/fiber_to_main_cos ▁▁
-wandb:                          grad/fiber_trust_target_mode ▁▁
-wandb:                          grad/fiber_trust_target_norm █▁
-wandb:                   grad/fiber_trust_target_utilization ▁▁
-wandb:                                        grad/main_norm █▁
-wandb:                                 grad/norm_match_scale ▁▁
-wandb:                                    grad/pre_clip_norm █▁
-wandb:                                 gradient_update_times ▁▁
-wandb:                                            group_size ▁▁
-wandb:                                           inner_epoch ▁▁
-wandb:                                           kl_beta_eff ▁▁
-wandb:                                                kl_div ▁█
-wandb:                                           kl_div_loss ▁█
-wandb:                                        loss_mask_rate ▁▁
-wandb:                                        mean_reward_10 █▁
-wandb:                                       mean_reward_100 █▁
-wandb:                                        mean_reward_25 █▁
-wandb:                                        mean_reward_50 █▁
-wandb:                                        mean_reward_75 █▁
-wandb:                                           old_deviate ▁█
-wandb:                                       old_deviate_max ▁█
-wandb:                                            old_kl_div ▁█
-wandb:                        optimizer/relative_update_norm █▁
-wandb:                                 optimizer/update_norm █▁
-wandb:                                        optimizer_step ▁▁▁▁▁▁▁▁▁▁▁▅▅▅▅▅▅▅▅▅▅▅▅▅▅███
-wandb:                                           policy_loss █▁
-wandb:                                  policy_loss_unscaled █▁
-wandb:                                       reward_accuracy ▁▁
-wandb:                                            reward_avg █▁
-wandb:                                        reward_geneval █▁
-wandb:                                    reward_geneval_all █▁
-wandb:                            reward_geneval_clean_count ▁▁
-wandb:                                    reward_geneval_rse █▁
-wandb:                              reward_geneval_rse_count ▁▁
-wandb:                                       reward_std_mean █▁
-wandb:                    rse_collection/all_blocks_accepted ▁▁
-wandb:                      rse_collection/attempts_executed ▁▁
-wandb:                   rse_collection/bad_blocks_remaining ▁▁
-wandb:                      rse_collection/base_images_epoch ▁▁
-wandb:                 rse_collection/generated_images_epoch ▁▁
-wandb:                 rse_collection/generated_images_total ▁█
-wandb:             rse_collection/insensitive_prompt_entries ▁▁
-wandb:              rse_collection/insensitive_prompts_epoch ▁▁
-wandb:              rse_collection/prompt_replacements_epoch ▁▁
-wandb:                rse_collection/sampling_overhead_ratio ▁▁
-wandb:                              rse_signal_scale_applied ▁▁
-wandb:                    sampling/logical_batches_per_epoch ▁▁
-wandb:                         sampling/logical_rollout_seed ▁█
-wandb:                  sampling/prompt_multiset_fingerprint ▁█
-wandb:        sampling/prompt_training_rng_joint_fingerprint ▁█
-wandb:                       sampling/reference_num_replicas ▁▁
-wandb:                           sampling/training_rng_keyed ▁▁
-wandb:            sampling/training_rng_multiset_fingerprint █▁
-wandb:                     sampling/training_rng_unique_rate ▁▁
-wandb:                         sampling/virtual_batch_factor ▁▁
-wandb:             sampling/world_invariant_rollout_contract ▁▁
-wandb:                sampling/world_invariant_seed_contract ▁▁
-wandb:                 sampling/world_invariant_training_rng ▁▁
-wandb:                                   sampling/world_size ▁▁
-wandb:                                                  step ▁█
-wandb:                                            total_loss █▁
-wandb:                           train/adv_weighted_abs_mean █▁
-wandb:                               train/adv_weighted_mean █▁
-wandb:                       train/adv_weighted_nonzero_rate ▁▁
-wandb:                                train/adv_weighted_std █▁
-wandb:                 train/category/color_attr/clean_count ▁█
-wandb:                 train/category/color_attr/probe_count ▁█
-wandb:          train/category/color_attr/probe_reachability ▁▁
-wandb:                train/category/color_attr/prompt_count ▁█
-wandb:                  train/category/color_attr/reward_all ▁▁
-wandb:                train/category/color_attr/reward_clean ▁▁
-wandb:        train/category/color_attr/zero_std_prompt_rate ▁▁
-wandb:                     train/category/colors/clean_count █▁
-wandb:                     train/category/colors/probe_count █▁
-wandb:              train/category/colors/probe_reachability ▁▁
-wandb:                    train/category/colors/prompt_count █▁
-wandb:                      train/category/colors/reward_all ▁▁
-wandb:                    train/category/colors/reward_clean ▁▁
-wandb:            train/category/colors/zero_std_prompt_rate ▁▁
-wandb:                   train/category/counting/clean_count █▁
-wandb:                   train/category/counting/probe_count █▁
-wandb:            train/category/counting/probe_reachability ▁▁
-wandb:                  train/category/counting/prompt_count █▁
-wandb:                    train/category/counting/reward_all █▁
-wandb:                  train/category/counting/reward_clean █▁
-wandb:          train/category/counting/zero_std_prompt_rate ▁█
-wandb:                   train/category/position/clean_count ▁█
-wandb:                   train/category/position/probe_count ▁█
-wandb:            train/category/position/probe_reachability ▁▁
-wandb:                  train/category/position/prompt_count ▁█
-wandb:                    train/category/position/reward_all ▁█
-wandb:                  train/category/position/reward_clean ▁█
-wandb:          train/category/position/zero_std_prompt_rate █▁
-wandb:                 train/category/two_object/clean_count █▁
-wandb:                 train/category/two_object/probe_count █▁
-wandb:          train/category/two_object/probe_reachability ▁▁
-wandb:                train/category/two_object/prompt_count █▁
-wandb:                  train/category/two_object/reward_all ▁▁
-wandb:                train/category/two_object/reward_clean ▁▁
-wandb:        train/category/two_object/zero_std_prompt_rate ▁▁
-wandb:                                 train/main_weight_ess ▁▁
-wandb:                                    trained_prompt_num ▁█
-wandb:                     training/effective_timestep_views ▁▁
-wandb:                             training/noise_antithetic ▁▁
-wandb:                                  training/noise_views ▁▁
-wandb:                     training/old_policy_decay_applied ▁█
-wandb:                  training/old_policy_ema_decay_config ▁▁
-wandb:                        training/old_policy_new_weight █▁
-wandb:              training/old_policy_post_update_gap_norm ▁█
-wandb:               training/old_policy_pre_update_gap_norm █▁
-wandb:           training/old_policy_pre_update_relative_gap █▁
-wandb:                                unweighted_policy_loss █▁
-wandb:                                               x0_norm █▁
-wandb:                                           x0_norm_max ▁█
-wandb:                                        zero_std_ratio ▁▁
-wandb: 
-wandb: Run summary:
-wandb:                             budget/collection_seconds 341.65489
-wandb:    budget/collection_transformer_forward_calls_global 416
-wandb:    budget/collection_transformer_forward_items_global 10592
-wandb:                           budget/decoded_images_epoch 576
-wandb:                              budget/epoch_gpu_seconds 2786.10589
-wandb:                             budget/epoch_wall_seconds 348.26324
-wandb:                              budget/gpu_seconds_total 2964.57085
-wandb:                                   budget/images_epoch 576
-wandb:                          budget/images_per_gpu_second 0.20674
-wandb:                                   budget/images_total 1152
-wandb:                        budget/optimizer_updates_epoch 1
-wandb:                        budget/optimizer_updates_total 2
-wandb:                       budget/peak_allocated_bytes_max 46256545792.0
-wandb:                           budget/reward_queries_epoch 576
-wandb:                budget/reward_server_gpu_seconds_epoch 76.46235
-wandb:               budget/reward_server_gpu_seconds_median 1.96248
-wandb:                    budget/reward_server_request_count 24
-wandb:                      budget/rollout_gpu_seconds_epoch 12.44304
-wandb:                         budget/rollout_guidance_scale 1
-wandb:                     budget/training_gpu_seconds_epoch 52.85611
-wandb:                               budget/training_seconds 6.60835
-wandb:      budget/training_transformer_forward_calls_global 304
-wandb:      budget/training_transformer_forward_items_global 7104
-wandb:               budget/transformer_forward_calls_global 720
-wandb:               budget/transformer_forward_items_global 17696
-wandb:                               effective_learning_rate 0.0003
-wandb:                                                 epoch 1
-wandb:                                 eval_checkpoint_epoch 1
-wandb:                           eval_padded_duplicate_count 4
-wandb:                                  eval_reward_accuracy 0.00407
-wandb:                       eval_reward_accuracy_window_std 0
-wandb:                                       eval_reward_avg 0.1395
-wandb:                            eval_reward_avg_window_std 0
-wandb:                                   eval_reward_geneval 0.1395
-wandb:                        eval_reward_geneval_window_std 0
-wandb:                           eval_reward_strict_accuracy 0.00407
-wandb:                eval_reward_strict_accuracy_window_std 0
-wandb:                              eval_unique_sample_count 2212
-wandb:                  fanft/action_behavior_drift_abs_mean 0.00832
-wandb:           fanft/action_behavior_drift_over_sigma_mean 0.00049
-wandb:       fanft/action_behavior_projection_rel_drift_mean 5e-05
-wandb:                           fanft/action_coeff_abs_mean 0
-wandb:                          fanft/anova_contrast_to_main 0
-wandb:                         fanft/anova_contrast_variance 0
-wandb:                             fanft/anova_main_variance 0.00859
-wandb:                                 fanft/axis_gradient_0 0
-wandb:                                 fanft/axis_gradient_1 0
-wandb:                              fanft/axis_gradient_norm 0
-wandb:                      fanft/base_preserving_clean_main 0
-wandb:                             fanft/budget_clean_images 384
-wandb:                               fanft/budget_pair_count 96
-wandb:                              fanft/budget_pair_images 192
-wandb:                             fanft/budget_sample_count 576
-wandb:                               fanft/budget_seed_units 480
-wandb:                                  fanft/clean_kl_count 16
-wandb:                                    fanft/clean_kl_div 0.00226
-wandb:                                    fanft/clean_kl_sum 0.03608
-wandb:                                fanft/clean_reward_std 0.09281
-wandb:                                      fanft/confidence 0
-wandb:                               fanft/confidence_legacy 0
-wandb:                   fanft/confidence_mode_signal_energy 1
-wandb:                                fanft/consensus_enable 0
-wandb:                   fanft/crossfit_average_noise_energy 0
-wandb:                                    fanft/crossfit_cos 0
-wandb:               fanft/crossfit_fold_disagreement_energy 0
-wandb:                         fanft/crossfit_norm_agreement 0
-wandb:                          fanft/crossfit_signal_energy 0
-wandb:                     fanft/crossfit_signal_reliability 0
-wandb:                        fanft/crossfit_signal_to_noise 0
-wandb:                        fanft/current_epoch_confidence 0
-wandb:                                   fanft/deadzone_rate 1
-wandb:                           fanft/delta_reward_abs_mean 0
-wandb:                                fanft/delta_reward_std 0
-wandb:            fanft/direct_confidence_after_quality_gate 1
-wandb:                       fanft/direct_confidence_control 0
-wandb:                     fanft/direct_confidence_effective 1
-wandb:                 fanft/direct_confidence_ema_reference 0
-wandb:                        fanft/direct_confidence_forced 1
-wandb:              fanft/direct_confidence_pre_quality_gate 0
-wandb:                   fanft/direct_confidence_probe_count 4
-wandb:                           fanft/direct_confidence_raw 0
-wandb:            fanft/direct_confidence_sample_reliability 1
-wandb:                        fanft/direct_pair_quality_cost -0.00065
-wandb:                     fanft/direct_quality_gate_enabled 0
-wandb:                      fanft/direct_quality_gate_passed 1
-wandb:                        fanft/direct_quality_threshold 0
-wandb:                  fanft/direction_coordinate_mean_norm 0.34894
-wandb:                        fanft/direction_isotropy_error 0.0
-wandb:                        fanft/direction_moment_eig_max 0.5
-wandb:                        fanft/direction_moment_eig_min 0.5
-wandb:                 fanft/directional_derivative_abs_mean 0
-wandb:                             fanft/estimator_paired_fd 1
-wandb:                                      fanft/fiber_loss 0
-wandb:                             fanft/fiber_raw_grad_norm 0
-wandb:                 fanft/fold_a_direction_isotropy_error 0.0
-wandb:                      fanft/fold_a_direction_mean_norm 0.37769
-wandb:                                fanft/fold_a_grad_norm 0
-wandb:                               fanft/fold_a_pair_count 48
-wandb:                              fanft/fold_a_radius_mean 1.5
-wandb:                               fanft/fold_a_radius_std 0.5
-wandb:                 fanft/fold_b_direction_isotropy_error 0.0
-wandb:                      fanft/fold_b_direction_mean_norm 0.37769
-wandb:                                fanft/fold_b_grad_norm 0
-wandb:                               fanft/fold_b_pair_count 48
-wandb:                              fanft/fold_b_radius_mean 1.5
-wandb:                               fanft/fold_b_radius_std 0.5
-wandb:                              fanft/fold_count_balance 1
-wandb:               fanft/fold_direction_isotropy_error_max 0.0
-wandb:                            fanft/global_credit_enable 1
-wandb:                               fanft/gradient_cfg_free 0
-wandb:               fanft/gradient_estimator_independent_es 0
-wandb:                        fanft/gradient_parameter_count 18776064.0
-wandb:                   fanft/heldout_discovery_only_update 0
-wandb:                            fanft/heldout_gradient_cos 0
-wandb:                 fanft/heldout_gradient_norm_agreement 0
-wandb:                             fanft/heldout_reliability 0
-wandb:                       fanft/heldout_validation_enable 0
-wandb:                                  fanft/kl_weight_mean 1
-wandb:               fanft/main_advantage_clean_standard_nft 0
-wandb:                        fanft/main_advantage_seed_unit 0
-wandb:                     fanft/main_advantage_standard_nft 1
-wandb:                                fanft/main_anchor_loss 1.49052
-wandb:                         fanft/main_clean_adv_abs_mean 0.01112
-wandb:                     fanft/main_clean_adv_nonzero_rate 0.04167
-wandb:                         fanft/main_label_sample_count 576
-wandb:                           fanft/main_label_unit_count 576
-wandb:                        fanft/main_preference_abs_loss 0.0
-wandb:                            fanft/main_preference_loss -0.0
-wandb:                 fanft/main_preference_weight_abs_mean 0.0009
-wandb:                         fanft/main_probe_adv_abs_mean 0.00468
-wandb:                     fanft/main_probe_adv_nonzero_rate 0.04167
-wandb:                     fanft/main_prompt_reward_std_mean 0.00227
-wandb:                          fanft/main_signal_scale_loss 1
-wandb:                          fanft/main_unit_adv_abs_mean 0.00898
-wandb:                      fanft/main_unit_adv_nonzero_rate 0.04167
-wandb:                               fanft/main_unit_adv_std 0.11002
-wandb:                           fanft/main_unit_reward_mean 0.0283
-wandb:                            fanft/main_unit_reward_std 0.09268
-wandb:                                 fanft/main_weight_ess 576
-wandb:                                 fanft/main_weight_max 1
-wandb:                                fanft/main_weight_mean 1
-wandb:                           fanft/main_weight_sum_ratio 1
-wandb:                       fanft/main_zero_std_prompt_rate 0.95833
-wandb:                              fanft/novel_crossfit_cos 0
-wandb:                       fanft/novel_disagreement_energy 0
-wandb:                           fanft/novel_energy_fraction 0
-wandb:                        fanft/novel_energy_gate_passed 1
-wandb:                          fanft/novel_energy_threshold 0
-wandb:                               fanft/novel_fold_a_norm 0
-wandb:                               fanft/novel_fold_b_norm 0
-wandb:                               fanft/novel_reliability 1
-wandb:                             fanft/novel_signal_energy 0
-wandb:                           fanft/novel_signal_to_noise 0
-wandb:                        fanft/pair_midpoint_reward_std 0.09213
-wandb:                         fanft/pair_minus_sample_count 96
-wandb:                             fanft/pair_minus_win_rate 0
-wandb:                          fanft/pair_plus_sample_count 96
-wandb:                              fanft/pair_plus_win_rate 0
-wandb:                               fanft/pair_quality_cost -0.00065
-wandb:                             fanft/pair_sign_imbalance 0
-wandb:                                   fanft/pair_tie_rate 1
-wandb:                fanft/post_projection_crossfit_applied 0
-wandb:              fanft/post_projection_crossfit_requested 0
-wandb:                              fanft/probe_clean_kl_gap -0.00075
-wandb:                                  fanft/probe_kl_count 8
-wandb:                                    fanft/probe_kl_div 0.0015
-wandb:                                    fanft/probe_kl_sum 0.012
-wandb:                      fanft/prompt_derivative_abs_mean 0
-wandb:                       fanft/prompt_derivative_abs_std 0
-wandb:      fanft/prompt_direction_coordinate_mean_norm_mean 0.65328
-wandb:                   fanft/prompt_direction_eig_max_mean 0.5
-wandb:                   fanft/prompt_direction_eig_min_mean 0.5
-wandb:             fanft/prompt_direction_isotropy_error_max 0.0
-wandb:            fanft/prompt_direction_isotropy_error_mean 0.0
-wandb:                         fanft/prompt_reachability_max 0
-wandb:                        fanft/prompt_reachability_mean 0
-wandb:                         fanft/prompt_reachability_min 0
-wandb:                         fanft/prompt_reachability_std 0
-wandb:                fanft/proposal_discovery_gradient_norm 0
-wandb:               fanft/proposal_discovery_validation_cos 0
-wandb:    fanft/proposal_discovery_validation_norm_agreement 0
-wandb:                      fanft/proposal_positive_transfer 0
-wandb:                    fanft/proposal_transfer_confidence 0
-wandb:        fanft/proposal_validation_gain_along_discovery 0
-wandb:               fanft/proposal_validation_gradient_norm 0
-wandb:                               fanft/radius_1_deadzone 1
-wandb:                         fanft/radius_1_delta_abs_mean 0
-wandb:                    fanft/radius_1_derivative_abs_mean 0
-wandb:                             fanft/radius_1_pair_count 48
-wandb:                           fanft/radius_1_reachability 0
-wandb:                               fanft/radius_2_deadzone 1
-wandb:                         fanft/radius_2_delta_abs_mean 0
-wandb:                    fanft/radius_2_derivative_abs_mean 0
-wandb:                             fanft/radius_2_pair_count 48
-wandb:                           fanft/radius_2_reachability 0
-wandb:                              fanft/radius_scale_count 2
-wandb:                              fanft/reachability_alpha 0
-wandb:                                       fanft/sigma_max 35.96994
-wandb:                                      fanft/sigma_mean 20.36188
-wandb:                                       fanft/sigma_min 6.18446
-wandb:                             fanft/sigma_positive_rate 1
-wandb:                                 fanft/train_keep_rate 1
-wandb:                fanft/trust_applied_fiber_energy_total 0
-wandb:                       fanft/trust_applied_fiber_ratio 0
-wandb:                        fanft/trust_cumulative_base_kl 0.002
-wandb:                  fanft/trust_cumulative_base_kl_delta 0.002
-wandb:                         fanft/trust_local_old_deviate 0.0
-wandb:                 fanft/trust_local_to_cumulative_ratio 0.00075
-wandb:                               fanft/trust_update_norm 0.75403
-wandb:                         fanft/trust_update_norm_delta -0.12659
-wandb:                                fanft_main_weight_mean 1
-wandb:                               fiber/branch_step_index 0
-wandb:                                 fiber/center_strength 0
-wandb:                            fiber/clean_variant_enable 0
-wandb:                              fiber/clean_variant_rate 0.66667
-wandb:                                 fiber/coeff_clamp_hit 0
-wandb:                                      fiber/coeff_clip 1
-wandb:                                       fiber/coeff_max 0.2
-wandb:                                      fiber/coeff_mean 0
-wandb:                                       fiber/coeff_min -1
-wandb:                             fiber/coeff_positive_only 0
-wandb:                          fiber/coeff_positive_uniform 0
-wandb:                                       fiber/coeff_std 0.09129
-wandb:                                         fiber/eff_std 1
-wandb:                 fiber/fanft_action_symmetry_max_error 0
-wandb:               fiber/fanft_axis_source_policy_residual 0
-wandb:                     fiber/fanft_axis_source_reward_es 0
-wandb:                 fiber/fanft_base_state_duplicate_rate 0
-wandb:          fiber/fanft_base_state_min_relative_distance 1.40463
-wandb:                                 fiber/fanft_basis_dim 2
-wandb:                        fiber/fanft_cfg_coordinate_min 0.54517
-wandb:                    fiber/fanft_cfg_exploration_enable 1
-wandb:                   fiber/fanft_cfg_exploration_removed 0
-wandb:               fiber/fanft_cfg_used_as_constraint_only 0
-wandb:                     fiber/fanft_clean_action_max_norm 0
-wandb:                          fiber/fanft_clean_seed_count 16
-wandb:                            fiber/fanft_cone_clip_rate 0
-wandb:                                  fiber/fanft_cone_min 0.5
-wandb:                      fiber/fanft_deterministic_design 1
-wandb:                  fiber/fanft_direction_norm_error_max 0
-wandb:                      fiber/fanft_discovery_pair_count 0
-wandb:                                    fiber/fanft_enable 1
-wandb:                  fiber/fanft_estimator_independent_es 0
-wandb:                      fiber/fanft_fold_balanced_design 1
-wandb:                 fiber/fanft_heldout_validation_enable 0
-wandb:                 fiber/fanft_pair_base_state_max_error 0
-wandb:                  fiber/fanft_pair_direction_max_error 0
-wandb:                           fiber/fanft_pair_seed_count 4
-wandb:                      fiber/fanft_pairs_per_base_state 1
-wandb:                fiber/fanft_policy_cfg_cosine_abs_mean 0
-wandb:                    fiber/fanft_policy_cfg_cosine_mean 0
-wandb:                     fiber/fanft_policy_reference_base 0
-wandb:             fiber/fanft_policy_residual_fallback_rate 0
-wandb:                 fiber/fanft_policy_residual_norm_mean 0
-wandb:        fiber/fanft_policy_residual_relative_norm_mean 0
-wandb:                fiber/fanft_policy_residual_valid_rate 0
-wandb:               fiber/fanft_primary_cfg_cosine_abs_mean 1
-wandb:                   fiber/fanft_primary_cfg_cosine_mean 1
-wandb:                          fiber/fanft_probe_seed_count 4
-wandb:                     fiber/fanft_radius_effective_mean 0.15
-wandb:                          fiber/fanft_radius_requested 0.1
-wandb:                          fiber/fanft_radius_scale_max 2
-wandb:                          fiber/fanft_radius_scale_min 1
-wandb:                       fiber/fanft_relative_radius_max 0.2
-wandb:                       fiber/fanft_relative_radius_min 0.1
-wandb:             fiber/fanft_reward_es_axis_norm_error_max 0
-wandb:         fiber/fanft_reward_es_behavior_cosine_abs_max 0
-wandb:              fiber/fanft_selected_cfg_axis_valid_rate 0
-wandb:          fiber/fanft_selected_cfg_own_cosine_abs_mean 0
-wandb:              fiber/fanft_selected_cfg_own_cosine_mean 0
-wandb:            fiber/fanft_selected_cfg_own_fallback_rate 0
-wandb:       fiber/fanft_selected_cfg_random_axis_valid_rate 0
-wandb:                         fiber/fanft_selected_cfg_span 0
-wandb:                fiber/fanft_shared_prompt_basis_enable 0
-wandb: fiber/fanft_shared_prompt_basis_orthogonality_abs_max 0
-wandb:     fiber/fanft_shared_prompt_cross_state_cosine_mean 0
-wandb:         fiber/fanft_shared_prompt_hash_collision_rate 0
-wandb:                       fiber/fanft_sigma_positive_rate 1
-wandb:      fiber/fanft_topology_independent_state_symmetric 0
-wandb:             fiber/fanft_topology_same_state_one_sided 0
-wandb:             fiber/fanft_topology_same_state_symmetric 1
-wandb:                   fiber/fanft_unique_pair_base_states 4
-wandb:                     fiber/fanft_validation_pair_count 0
-wandb:           fiber/fanft_wrong_prompt_residual_norm_mean 0
-wandb:         fiber/fanft_wrong_prompt_transverse_norm_mean 0
-wandb:             fiber/first_state_displacement_proxy_mean 24.21581
-wandb:                        fiber/first_velocity_injection 1
-wandb:                            fiber/fixed_residual_reuse 0
-wandb:                           fiber/group_stratified_span 1
-wandb:                                   fiber/hybrid_enable 0
-wandb:                                 fiber/hybrid_nft_rate 0
-wandb:                                fiber/hybrid_null_rate 0
-wandb:                                 fiber/hybrid_rse_rate 1
-wandb:                                fiber/latent_norm_mean 127.84149
-wandb:                              fiber/longitudinal_ratio 0.09946
-wandb:                                            fiber/mode 4
-wandb:                                              fiber/mu 0
-wandb:                                     fiber/mu_abs_mean 0
-wandb:                             fiber/null_probe_fraction 0
-wandb:                                 fiber/null_probe_rate 0
-wandb:                        fiber/pairwise_span_directions 0
-wandb:                      fiber/random_span_axis_norm_mean 126.70786
-wandb:                                fiber/random_span_clip 1
-wandb:                 fiber/random_span_component_norm_mean 0.62829
-wandb:                                 fiber/random_span_dim 1
-wandb:                        fiber/random_span_mix_abs_mean 0
-wandb:                               fiber/random_span_scale 0
-wandb:                          fiber/raw_residual_norm_mean 57.54213
-wandb:                                         fiber/retract 0
-wandb:                                         fiber/rse_std 1
-wandb:                                          fiber/rse_v2 1
-wandb:                                fiber/seeds_per_prompt 12
-wandb:                 fiber/shell_direction_radial_abs_mean 0
-wandb:                         fiber/shell_displacement_mean 0
-wandb:                           fiber/shell_injection_decay 1
-wandb:                           fiber/shell_injection_iters 1
-wandb:                           fiber/shell_norm_ratio_mean 1
-wandb:                       fiber/shell_strength_multiplier 1
-wandb:                         fiber/shell_tangent_norm_mean 0
-wandb:                        fiber/shell_tangent_valid_rate 1
-wandb:                         fiber/stratified_coefficients 0
-wandb:                                          fiber/t_star 1
-wandb:                                 fiber/tangent_rms_dim 0.44675
-wandb:                                   fiber/theta_abs_max 0
-wandb:                                  fiber/theta_abs_mean 0
-wandb:                 fiber/theta_direction_radial_abs_mean 0
-wandb:                                 fiber/theta_injection 0
-wandb:                                       fiber/theta_max 0
-wandb:                           fiber/theta_norm_ratio_mean 1
-wandb:                         fiber/theta_tangent_norm_mean 0
-wandb:                   fiber/transverse_residual_norm_mean 57.18431
-wandb:                               fiber/variants_per_seed 2
-wandb:                           fiber/velocity_cap_hit_rate 0
-wandb:                          fiber/velocity_coeff_abs_max 0.2
-wandb:                         fiber/velocity_coeff_abs_mean 0.15
-wandb:                              fiber/velocity_max_ratio 0
-wandb:                      fiber/velocity_perturb_ratio_max 0.2
-wandb:                     fiber/velocity_perturb_ratio_mean 0.15
-wandb:                     fiber/velocity_scale_cfg_residual 0
-wandb:                         fiber/velocity_scale_cfg_span 0
-wandb:                               grad/applied_fiber_norm 0
-wandb:                       grad/applied_fiber_to_main_norm 0
-wandb:                                     grad/clip_applied 0
-wandb:                                    grad/combined_norm 0.00709
-wandb:                                grad/combined_raw_norm 0.00709
-wandb:                             grad/combined_to_main_cos 1
-wandb:                         grad/fiber_confidence_applied 1
-wandb:                        grad/fiber_confidence_combined 1
-wandb:                     grad/fiber_confidence_gate_passed 1
-wandb:                  grad/fiber_confidence_gate_threshold 0
-wandb:                       grad/fiber_confidence_hard_gate 0
-wandb:                       grad/fiber_confidence_requested 1
-wandb:                           grad/fiber_conflict_removed 0
-wandb:                          grad/fiber_final_gate_passed 1
-wandb:                      grad/fiber_parallel_removed_norm 0
-wandb:                grad/fiber_preprojection_gate_required 0
-wandb:                      grad/fiber_projection_orthogonal 1
-wandb:                                   grad/fiber_raw_norm 0
-wandb:                                  grad/fiber_safe_norm 0
-wandb:                           grad/fiber_safe_to_main_cos 0
-wandb:                                      grad/fiber_scale 1
-wandb:                        grad/fiber_scaled_up_to_target 0
-wandb:                                grad/fiber_to_main_cos 0
-wandb:                          grad/fiber_trust_target_mode 0
-wandb:                          grad/fiber_trust_target_norm 0.00071
-wandb:                   grad/fiber_trust_target_utilization 0
-wandb:                                        grad/main_norm 0.00709
-wandb:                                 grad/norm_match_scale 1
-wandb:                                    grad/pre_clip_norm 0.00709
-wandb:                                 gradient_update_times 1
-wandb:                                            group_size 24
-wandb:                                           inner_epoch 0
-wandb:                                           kl_beta_eff 0.0001
-wandb:                                                kl_div 0.002
-wandb:                                           kl_div_loss 0.002
-wandb:                                        loss_mask_rate 1
-wandb:                                        mean_reward_10 0.02821
-wandb:                                       mean_reward_100 0.02821
-wandb:                                        mean_reward_25 0.02821
-wandb:                                        mean_reward_50 0.02821
-wandb:                                        mean_reward_75 0.02821
-wandb:                                           old_deviate 0.0
-wandb:                                       old_deviate_max 0.00011
-wandb:                                            old_kl_div 0.002
-wandb:                        optimizer/relative_update_norm 0.00787
-wandb:                                 optimizer/update_norm 0.75403
-wandb:                                        optimizer_step 2
-wandb:                                           policy_loss 1.49052
-wandb:                                  policy_loss_unscaled 1.49052
-wandb:                                       reward_accuracy 0
-wandb:                                            reward_avg 0.02821
-wandb:                                        reward_geneval 0.02843
-wandb:                                    reward_geneval_all 0.02821
-wandb:                            reward_geneval_clean_count 384
-wandb:                                    reward_geneval_rse 0.02778
-wandb:                              reward_geneval_rse_count 192
-wandb:                                       reward_std_mean 0.00208
-wandb:                    rse_collection/all_blocks_accepted 0
-wandb:                      rse_collection/attempts_executed 1
-wandb:                   rse_collection/bad_blocks_remaining 0
-wandb:                      rse_collection/base_images_epoch 576
-wandb:                 rse_collection/generated_images_epoch 576
-wandb:                 rse_collection/generated_images_total 1152
-wandb:             rse_collection/insensitive_prompt_entries 0
-wandb:              rse_collection/insensitive_prompts_epoch 0
-wandb:              rse_collection/prompt_replacements_epoch 0
-wandb:                rse_collection/sampling_overhead_ratio 1
-wandb:                              rse_signal_scale_applied 1
-wandb:                    sampling/logical_batches_per_epoch 3
-wandb:                         sampling/logical_rollout_seed 10000
-wandb:                  sampling/prompt_multiset_fingerprint 1410603986.0
-wandb:        sampling/prompt_training_rng_joint_fingerprint 1906891224.0
-wandb:                       sampling/reference_num_replicas 8
-wandb:                           sampling/training_rng_keyed 1
-wandb:            sampling/training_rng_multiset_fingerprint 78240232.0
-wandb:                     sampling/training_rng_unique_rate 1
-wandb:                         sampling/virtual_batch_factor 1
-wandb:             sampling/world_invariant_rollout_contract 1
-wandb:                sampling/world_invariant_seed_contract 1
-wandb:                 sampling/world_invariant_training_rng 1
-wandb:                                   sampling/world_size 8
-wandb:                                                  step 1
-wandb:                                            total_loss 1.49052
-wandb:                           train/adv_weighted_abs_mean 0.00898
-wandb:                               train/adv_weighted_mean -0.0
-wandb:                       train/adv_weighted_nonzero_rate 0.04167
-wandb:                                train/adv_weighted_std 0.11002
-wandb:                 train/category/color_attr/clean_count 64
-wandb:                 train/category/color_attr/probe_count 16
-wandb:          train/category/color_attr/probe_reachability 0
-wandb:                train/category/color_attr/prompt_count 4
-wandb:                  train/category/color_attr/reward_all 0
-wandb:                train/category/color_attr/reward_clean 0
-wandb:        train/category/color_attr/zero_std_prompt_rate 1
-wandb:                     train/category/colors/clean_count 32
-wandb:                     train/category/colors/probe_count 8
-wandb:              train/category/colors/probe_reachability 0
-wandb:                    train/category/colors/prompt_count 2
-wandb:                      train/category/colors/reward_all 0
-wandb:                    train/category/colors/reward_clean 0
-wandb:            train/category/colors/zero_std_prompt_rate 1
-wandb:                   train/category/counting/clean_count 64
-wandb:                   train/category/counting/probe_count 16
-wandb:            train/category/counting/probe_reachability 0
-wandb:                  train/category/counting/prompt_count 4
-wandb:                    train/category/counting/reward_all 0
-wandb:                  train/category/counting/reward_clean 0
-wandb:          train/category/counting/zero_std_prompt_rate 1
-wandb:                   train/category/position/clean_count 192
-wandb:                   train/category/position/probe_count 48
-wandb:            train/category/position/probe_reachability 0
-wandb:                  train/category/position/prompt_count 12
-wandb:                    train/category/position/reward_all 0.00087
-wandb:                  train/category/position/reward_clean 0.0013
-wandb:          train/category/position/zero_std_prompt_rate 0.91667
-wandb:                 train/category/two_object/clean_count 32
-wandb:                 train/category/two_object/probe_count 8
-wandb:          train/category/two_object/probe_reachability 0
-wandb:                train/category/two_object/prompt_count 2
-wandb:                  train/category/two_object/reward_all 0.33333
-wandb:                train/category/two_object/reward_clean 0.33333
-wandb:        train/category/two_object/zero_std_prompt_rate 1
-wandb:                                 train/main_weight_ess 576
-wandb:                                    trained_prompt_num 48
-wandb:                     training/effective_timestep_views 4
-wandb:                             training/noise_antithetic 1
-wandb:                                  training/noise_views 2
-wandb:                     training/old_policy_decay_applied 0.002
-wandb:                  training/old_policy_ema_decay_config -1
-wandb:                        training/old_policy_new_weight 0.998
-wandb:              training/old_policy_post_update_gap_norm 0.00151
-wandb:               training/old_policy_pre_update_gap_norm 0.75454
-wandb:           training/old_policy_pre_update_relative_gap 0.00788
-wandb:                                unweighted_policy_loss 0.2981
-wandb:                                               x0_norm 0.69293
-wandb:                                           x0_norm_max 9.48291
-wandb:                                        zero_std_ratio 0.95833
-wandb: 
-wandb: You can sync this run to the cloud by running:
-wandb: wandb sync /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42/cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02/wandb/offline-run-20260827_041402-hkym9f8x
-wandb: Find logs at: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/contract-smoke/geneval/fanft_no_reliability/seed-42/cfgrole_geneval_fanft_no_reliability_h200_8gpu_2026.08.27_04.14.02/wandb/offline-run-20260827_041402-hkym9f8x/logs
+Sampling Progress: 100%|██████████| 2/2 [00:00<00:00,  7.70it/s]
