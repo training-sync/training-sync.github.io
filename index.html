@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-29T05:30:37.509871+08:00</span>
-            <span>Page generated: 2026-08-29 05:30:37</span>
-            <span>wandb zip: 0.01 MB</span>
+            <span>Data updated: 2026-08-29T05:35:55.636598+08:00</span>
+            <span>Page generated: 2026-08-29 05:35:55</span>
+            <span>wandb zip: 0.05 MB</span>
         </div>
     </div>
 
@@ -129,129 +129,1062 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (121 lines)</span>
+            <span class="terminal-title">training_latest.log (1054 lines)</span>
         </div>
         <div id="terminal">
 *****************************************
 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
 *****************************************
+I0828 14:33:35.912919 140198642754176 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.35
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:35.914071 140198642754176 train_nft_sd3.py:4104] Waiting 20s before model load (stagger)...
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+I0828 14:33:36.325212 139729139847808 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:36.326339 139729139847808 train_nft_sd3.py:4104] Waiting 35s before model load (stagger)...
+I0828 14:33:36.518923 140683643609728 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:36.519987 140683643609728 train_nft_sd3.py:4104] Waiting 30s before model load (stagger)...
+I0828 14:33:36.680421 140646352654976 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:36.683374 140646352654976 train_nft_sd3.py:4104] Waiting 25s before model load (stagger)...
+I0828 14:33:36.685354 140238316323456 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:36.688086 140238316323456 train_nft_sd3.py:4104] Waiting 5s before model load (stagger)...
+I0828 14:33:36.709696 140571864552064 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:36.712620 140571864552064 train_nft_sd3.py:4104] Waiting 10s before model load (stagger)...
+I0828 14:33:36.722724 140102885925504 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:36.723595 140102885925504 train_nft_sd3.py:4104] Waiting 15s before model load (stagger)...
+wandb: Tracking run with wandb version 0.18.7
+wandb: W&amp;B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: WARNING URL not available in offline run
+I0828 14:33:37.004422 139947494670976 train_nft_sd3.py:4085] 
+activation_checkpointing: false
+allow_tf32: true
+base_model: sd3
+beta: 1.0
+bootstrap_eval_reward_geneval: null
+dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
+debug: false
+decay_type: 1
+eval_freq: 10
+external_eval_enable: false
+flagship:
+  cone_guard: 'off'
+  epochs: 200
+  eval_guidance_scale: 4.5
+  experiment_arm: nft_official_1view
+  hardware_profile: h200_8gpu
+  images_per_epoch: 576
+  images_per_prompt: 24
+  parent: official_nft
+  prompts_per_epoch: 24
+  registry_id: cfg-in-diffusion-rl-flagship-v1
+  residual_anchor: 'off'
+  reward_id: geneval
+  rollout_guidance_scale: 1.0
+fsdp_optimizer_offload: false
+logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_official_1view/seed-2025
+mixed_precision: fp16
+num_checkpoint_limit: 5
+num_epochs: 200
+per_prompt_stat_tracking: true
+pretrained:
+  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
+  revision: main
+prompt_fn: geneval
+prompt_fn_kwargs: {}
+resolution: 512
+resume_from: ''
+reward_fn:
+  geneval: 1.0
+run_name: cfgrole_geneval_nft_official_1view_h200_8gpu_2026.08.28_14.33.36
+sample:
+  deterministic: true
+  eval_guidance_scale: 4.5
+  eval_num_steps: 40
+  generator_include_sample_index: false
+  global_std: true
+  guidance_scale: 1.0
+  legacy_global_sample_shuffle: true
+  noise_level: 0.7
+  num_batches_per_epoch: 3
+  num_image_per_prompt: 24
+  num_steps: 10
+  prompt_reference_num_replicas: 8
+  same_latent: false
+  sample_keyed_training_rng: true
+  sde_window_range: !!python/tuple
+  - 0
+  - 10
+  sde_window_size: 2
+  solver: dpm2
+  test_batch_size: 14
+  train_batch_size: 24
+  training_noise_antithetic: false
+  training_noise_views: 1
+  vae_slicing: false
+  world_size_alignment_contract: true
+save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025
+save_freq: 10
+seed: 2025
+train:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.0001
+  adv_clip_max: 5
+  adv_mode: all
+  batch_size: 24
+  beta: 0.0001
+  cfg: true
+  clip_range: 0.0001
+  clip_range_gt: 0.0001
+  clip_range_lt: 0.0001
+  ema: false
+  gradient_accumulation_steps: 3
+  learning_rate: 0.0003
+  lora_path: null
+  max_grad_norm: 1.0
+  num_inner_epochs: 1
+  timestep_fraction: 1.0
+  timestep_shift: 3.0
+  use_8bit_adam: false
+use_lora: true
+wandb_reward_scales:
+  avg: 1.0
+  geneval: 1.0
+
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=enable_amp)
+I0828 14:33:37.006710 139947494670976 train_nft_sd3.py:4104] Waiting 0s before model load (stagger)...
+I0828 14:33:37.006886 139947494670976 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:33:37.007112 139947494670976 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+I0828 14:33:41.688266 140238316323456 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:33:41.689589 140238316323456 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:01&lt;00:01,  1.96s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03&lt;00:00,  1.93s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03&lt;00:00,  1.93s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01&lt;00:01,  1.94s/it]I0828 14:33:46.712803 140571864552064 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:33:46.713177 140571864552064 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03&lt;00:00,  1.97s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03&lt;00:00,  1.96s/it]
 You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.09s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.02s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.03s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.13s/it]I0828 14:33:51.723757 140102885925504 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:33:51.724119 140102885925504 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
-Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.09s/it]
 Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.05s/it]
 Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.06s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]I0828 14:33:55.914258 140198642754176 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:33:55.914642 140198642754176 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.16s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.07s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.08s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 64.95it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 64.79it/s]
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.18s/it]I0828 14:34:01.683562 140646352654976 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:34:01.684069 140646352654976 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.10s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.11s/it]
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 27.23it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 27.21it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 46.47it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 46.43it/s]
+I0828 14:34:06.520149 140683643609728 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:34:06.520542 140683643609728 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
 
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.12s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.06s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.07s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.99s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05&lt;00:00,  2.67s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05&lt;00:00,  2.72s/it]
 
-Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+I0828 14:34:11.326530 139729139847808 train_nft_sd3.py:4106] Loading SD3.5 model...
+I0828 14:34:11.326940 139729139847808 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.42s/it]
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 47.80it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 47.76it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 47.20it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 47.16it/s]
 
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.27s/it]
-Pre-encode eval prompts:   0%|          | 0/5 [00:00&lt;?, ?it/s]
-Pre-encode eval prompts:  40%|████      | 2/5 [00:00&lt;00:00, 12.43it/s]
-Pre-encode eval prompts:  80%|████████  | 4/5 [00:00&lt;00:00, 13.17it/s]
-Pre-encode eval prompts: 100%|██████████| 5/5 [00:00&lt;00:00, 13.73it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.16s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.18s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 47.68it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 47.64it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.65s/it]
-Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:05&lt;00:00,  2.55s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:05&lt;00:00,  2.56s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 33.98it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 33.95it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.39s/it]
-Eval:   0%|          | 0/5 [00:00&lt;?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.43s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.43s/it]
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]
-
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.40s/it]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.35s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.34s/it]
 Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.35s/it]
 
-Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.39it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.34it/s]
-
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 51.25it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 51.21it/s]
 
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.21it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.18it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.70s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.44s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.48s/it]
 
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.86it/s]
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+Loading checkpoint shards:   0%|          | 0/2 [00:00&lt;?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02&lt;00:02,  2.59s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.46s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04&lt;00:00,  2.48s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
 
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.05it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.01it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 38.07it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 38.04it/s]
 
 Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 51.94it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 51.89it/s]
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 51.37it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 51.33it/s]
 
-Eval:  20%|██        | 1/5 [00:55&lt;03:42, 55.71s/it]
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 50.82it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 50.78it/s]
 
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+Loading pipeline components...:   0%|          | 0/9 [00:00&lt;?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.57it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00&lt;00:00, 48.53it/s]
+I0828 14:34:49.565265 139729139847808 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.565380 139729139847808 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.565417 139729139847808 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.565446 139729139847808 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.565471 139729139847808 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.565493 139729139847808 train_nft_sd3.py:4378] 
+I0828 14:34:49.565514 139729139847808 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.565533 139729139847808 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.565552 139729139847808 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.565571 139729139847808 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.565798 139729139847808 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.598749 140198642754176 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.598854 140198642754176 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.598887 140198642754176 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.598911 140198642754176 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.598943 140198642754176 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.598962 140198642754176 train_nft_sd3.py:4378] 
+I0828 14:34:49.598981 140198642754176 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.598999 140198642754176 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.599019 140198642754176 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.599037 140198642754176 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.599261 140198642754176 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.603283 140683643609728 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.603403 140683643609728 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.603435 140683643609728 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.603460 140683643609728 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.603482 140683643609728 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.603502 140683643609728 train_nft_sd3.py:4378] 
+I0828 14:34:49.603522 140683643609728 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.603540 140683643609728 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.603559 140683643609728 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.603577 140683643609728 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.603816 140683643609728 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.638393 140102885925504 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.638504 140102885925504 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.638542 140102885925504 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.638574 140102885925504 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.638599 140102885925504 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.638620 140102885925504 train_nft_sd3.py:4378] 
+I0828 14:34:49.638640 140102885925504 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.638659 140102885925504 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.638678 140102885925504 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.638696 140102885925504 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.638943 140102885925504 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.649477 139947494670976 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.649801 139947494670976 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.649905 139947494670976 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.649990 139947494670976 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.650059 139947494670976 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.650123 139947494670976 train_nft_sd3.py:4378] 
+I0828 14:34:49.650187 139947494670976 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.650245 139947494670976 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.650301 139947494670976 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.650357 139947494670976 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.650600 139947494670976 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.669049 140646352654976 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.669313 140646352654976 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.669350 140646352654976 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.669376 140646352654976 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.669400 140646352654976 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.669419 140646352654976 train_nft_sd3.py:4378] 
+I0828 14:34:49.669440 140646352654976 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.669460 140646352654976 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.669481 140646352654976 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.669499 140646352654976 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.669974 140646352654976 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.716711 140238316323456 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.716826 140238316323456 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.716861 140238316323456 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.716887 140238316323456 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.716910 140238316323456 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.716938 140238316323456 train_nft_sd3.py:4378] 
+I0828 14:34:49.716958 140238316323456 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.716976 140238316323456 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.716995 140238316323456 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.717014 140238316323456 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.717250 140238316323456 train_nft_sd3.py:4461] ***** Running training *****
+I0828 14:34:49.725234 140571864552064 train_nft_sd3.py:4373] ***** Running training *****
+I0828 14:34:49.725342 140571864552064 train_nft_sd3.py:4374]   Num Epochs = 200
+I0828 14:34:49.725375 140571864552064 train_nft_sd3.py:4375]   Sample batch size per device = 24
+I0828 14:34:49.725401 140571864552064 train_nft_sd3.py:4376]   Train batch size per device = 24
+I0828 14:34:49.725424 140571864552064 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
+I0828 14:34:49.725443 140571864552064 train_nft_sd3.py:4378] 
+I0828 14:34:49.725463 140571864552064 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
+I0828 14:34:49.725481 140571864552064 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed &amp; accumulation) = 576
+I0828 14:34:49.725499 140571864552064 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
+I0828 14:34:49.725518 140571864552064 train_nft_sd3.py:4382]   Number of inner epochs = 1
+I0828 14:34:49.725759 140571864552064 train_nft_sd3.py:4461] ***** Running training *****
 
-Eval:  40%|████      | 2/5 [01:27&lt;02:04, 41.59s/it]
+Epoch 0: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+I0828 14:34:50.215674 139947494670976 train_nft_sd3.py:3407] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_official_1view/seed-2025/checkpoints/checkpoint-0
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
 
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.89it/s]
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.31it/s]
 
-Eval:  60%|██████    | 3/5 [01:58&lt;01:13, 36.86s/it]
+Epoch 0: sampling:  33%|███▎      | 1/3 [00:04&lt;00:08,  4.01s/it]
 
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.89it/s]
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.88it/s]
+
+Epoch 0: sampling:  67%|██████▋   | 2/3 [00:07&lt;00:03,  3.86s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  2.84it/s]
+
+Epoch 0: sampling: 100%|██████████| 3/3 [00:12&lt;00:00,  4.04s/it]
+Epoch 0: sampling: 100%|██████████| 3/3 [00:12&lt;00:00,  4.00s/it]
+I0828 14:35:02.206907 139947494670976 train_nft_sd3.py:5661] Epoch 0 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:06&lt;00:13,  6.97s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:14&lt;00:07,  7.36s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:22&lt;00:00,  7.56s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:22&lt;00:00,  7.47s/it]
+I0828 14:35:25.418089 139947494670976 train_nft_sd3.py:5771] Epoch 0 reward metrics: {'reward_accuracy': 0.1006944477558136, 'reward_geneval': 0.3385416567325592, 'reward_avg': 0.3385416865348816, 'reward_geneval_all': 0.3385416567325592, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0828 14:35:26.055204 139947494670976 train_nft_sd3.py:6519] Advantages mean: 0.5448786025516761 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+
+Epoch 0.0: training:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:6991: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
+
+Epoch 0.0: training:  33%|███▎      | 1/3 [00:12&lt;00:25, 12.99s/it]
+
 </div>
     </div>
 
