@@ -1,3 +1,16 @@
 [eval] rank=0 waiting 0s before model load
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.61s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.16s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.23s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 109.54it/s]
+[OCR] rank 2 using remote endpoint http://127.0.0.1:18400 (batch_size=16, image_format=PNG)
+[probe] stage=0 mode=cfg_raw invalid_directions=0
+[probe] stage=0 mode=cfg_transverse invalid_directions=0
+[probe] stage=0 mode=random_transverse invalid_directions=0
+[probe] stage=0 mode=wrong_prompt_transverse invalid_directions=0
+[probe] stage=0 mode=cfg_longitudinal invalid_directions=0
