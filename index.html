@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-29T16:26:19.950503+08:00</span>
-            <span>Page generated: 2026-08-29 16:26:20</span>
-            <span>wandb zip: 1.51 MB</span>
+            <span>Data updated: 2026-08-29T16:31:39.210182+08:00</span>
+            <span>Page generated: 2026-08-29 16:31:39</span>
+            <span>wandb zip: 1.62 MB</span>
         </div>
     </div>
 
@@ -129,101 +129,11 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (4959 lines)</span>
+            <span class="terminal-title">training_latest.log (4999 lines)</span>
         </div>
         <div id="terminal">... (earlier logs truncated) ...
 
-run(main)
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
-[rank4]:     _run_main(main, args)
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
-[rank4]:     sys.exit(main(argv))
-[rank4]:              ^^^^^^^^^^
-[rank4]:   File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py", line 6995, in main
-[rank4]:     old_prediction = transformer_ddp(
-[rank4]:                      ^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank4]:     return self._call_impl(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank4]:     return forward_call(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
-[rank4]:     else self._run_ddp_forward(*inputs, **kwargs)
-[rank4]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
-[rank4]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank4]:     return self._call_impl(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1845, in _call_impl
-[rank4]:     return inner()
-[rank4]:            ^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1793, in inner
-[rank4]:     result = forward_call(*args, **kwargs)
-[rank4]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
-[rank4]:     return self.get_base_model()(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank4]:     return self._call_impl(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank4]:     return forward_call(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 374, in forward
-[rank4]:     temb = self.time_text_embed(timestep, pooled_projections)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank4]:     return self._call_impl(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank4]:     return forward_call(*args, **kwargs)
-[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank4]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/embeddings.py", line 1611, in forward
-[rank4]:     conditioning = timesteps_emb + pooled_projections
-[rank4]:                    ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
-[rank4]: RuntimeError: The size of tensor a (24) must match the size of tensor b (48) at non-singleton dimension 0
-[rank3]: Traceback (most recent call last):
-[rank3]:   File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py", line 7848, in &lt;module&gt;
-[rank3]:     app.run(main)
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
-[rank3]:     _run_main(main, args)
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
-[rank3]:     sys.exit(main(argv))
-[rank3]:              ^^^^^^^^^^
-[rank3]:   File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py", line 6995, in main
-[rank3]:     old_prediction = transformer_ddp(
-[rank3]:                      ^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank3]:     return self._call_impl(*args, **kwargs)
-[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank3]:     return forward_call(*args, **kwargs)
-[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
-[rank3]:     else self._run_ddp_forward(*inputs, **kwargs)
-[rank3]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
-[rank3]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
-[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank3]:     return self._call_impl(*args, **kwargs)
-[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1845, in _call_impl
-[rank3]:     return inner()
-[rank3]:            ^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1793, in inner
-[rank3]:     result = forward_call(*args, **kwargs)
-[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
-[rank3]:     return self.get_base_model()(*args, **kwargs)
-[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank3]:     return self._call_impl(*args, **kwargs)
-[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+b/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
 [rank3]:     return forward_call(*args, **kwargs)
 [rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 [rank3]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 374, in forward
@@ -3820,6 +3730,117 @@ Epoch 24.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 
 Epoch 24.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
 
 Epoch 25: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 25: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.85s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 25: sampling:  67%|██████▋   | 2/3 [00:13&lt;00:06,  6.81s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 25: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  7.17s/it]
+Epoch 25: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  6.98s/it]
+I0829 01:26:23.568854 140515848389248 train_nft_sd3.py:5661] Epoch 25 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:09,  4.84s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.49s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:19&lt;00:00,  6.81s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:19&lt;00:00,  6.56s/it]
+I0829 01:26:44.142923 140515848389248 train_nft_sd3.py:5771] Epoch 25 reward metrics: {'reward_accuracy': 0.3333333432674408, 'reward_geneval': 0.5619213581085205, 'reward_avg': 0.5619212985038757, 'reward_geneval_all': 0.5619213581085205, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0829 01:26:44.779728 140515848389248 train_nft_sd3.py:6519] Advantages mean: 0.46625948563176395 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0829 01:26:44.780270 140515848389248 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 25.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 25.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.97s/it]
+
+Epoch 25.0: training:  33%|███▎      | 2/6 [00:25&lt;00:51, 13.00s/it]
+
+Epoch 25.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.01s/it]
+
+Epoch 25.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.01s/it]
+
+Epoch 25.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.02s/it]
+
+Epoch 25.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.05s/it]
+Epoch 25.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
+
+Epoch 26: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 26: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.87s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 26: sampling:  67%|██████▋   | 2/3 [00:13&lt;00:06,  6.83s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 26: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  7.18s/it]
+Epoch 26: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  6.99s/it]
+I0829 01:28:24.545915 140515848389248 train_nft_sd3.py:5661] Epoch 26 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:09,  4.79s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:11&lt;00:06,  6.03s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.53s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.27s/it]
+I0829 01:28:43.499902 140515848389248 train_nft_sd3.py:5771] Epoch 26 reward metrics: {'reward_accuracy': 0.3802083432674408, 'reward_geneval': 0.6067708134651184, 'reward_avg': 0.6067708134651184, 'reward_geneval_all': 0.6067708134651184, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0829 01:28:44.146375 140515848389248 train_nft_sd3.py:6519] Advantages mean: 0.4349947964828118 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0829 01:28:44.146764 140515848389248 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 26.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 26.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.98s/it]
+
+Epoch 26.0: training:  33%|███▎      | 2/6 [00:26&lt;00:52, 13.01s/it]
+
+Epoch 26.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.02s/it]
+
+Epoch 26.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.02s/it]
+
+Epoch 26.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.03s/it]
+
+Epoch 26.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.06s/it]
+Epoch 26.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.04s/it]
+
+Epoch 27: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 27: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.85s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 27: sampling:  67%|██████▋   | 2/3 [00:13&lt;00:06,  6.83s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 27: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  7.16s/it]
+Epoch 27: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  6.97s/it]
+I0829 01:30:23.941040 140515848389248 train_nft_sd3.py:5661] Epoch 27 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:08,  4.50s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.28s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:20&lt;00:00,  7.09s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:20&lt;00:00,  6.69s/it]
+I0829 01:30:44.603827 140515848389248 train_nft_sd3.py:5771] Epoch 27 reward metrics: {'reward_accuracy': 0.4704861044883728, 'reward_geneval': 0.6838831305503845, 'reward_avg': 0.6838831305503845, 'reward_geneval_all': 0.6838831305503845, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0829 01:30:45.237025 140515848389248 train_nft_sd3.py:6519] Advantages mean: 0.396764892609914 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0829 01:30:45.237391 140515848389248 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 27.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 27.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.99s/it]
+
+Epoch 27.0: training:  33%|███▎      | 2/6 [00:26&lt;00:52, 13.01s/it]
+
+Epoch 27.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.02s/it]
 
 </div>
     </div>
