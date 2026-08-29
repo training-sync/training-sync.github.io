@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-29T16:36:59.236564+08:00</span>
-            <span>Page generated: 2026-08-29 16:36:59</span>
-            <span>wandb zip: 1.73 MB</span>
+            <span>Data updated: 2026-08-29T16:42:19.567132+08:00</span>
+            <span>Page generated: 2026-08-29 16:42:19</span>
+            <span>wandb zip: 1.84 MB</span>
         </div>
     </div>
 
@@ -133,23 +133,7 @@
         </div>
         <div id="terminal">... (earlier logs truncated) ...
 
-~~~~~~~~~~~
-[rank6]: RuntimeError: The size of tensor a (24) must match the size of tensor b (48) at non-singleton dimension 0
-[rank5]: Traceback (most recent call last):
-[rank5]:   File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py", line 7848, in &lt;module&gt;
-[rank5]:     app.run(main)
-[rank5]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 410, in run
-[rank5]:     _run_main(main, args)
-[rank5]:   File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 355, in _run_main
-[rank5]:     sys.exit(main(argv))
-[rank5]:              ^^^^^^^^^^
-[rank5]:   File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py", line 6995, in main
-[rank5]:     old_prediction = transformer_ddp(
-[rank5]:                      ^^^^^^^^^^^^^^^^
-[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank5]:     return self._call_impl(*args, **kwargs)
-[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+st-packages/torch/nn/modules/module.py", line 1750, in _call_impl
 [rank5]:     return forward_call(*args, **kwargs)
 [rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 [rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
@@ -3867,6 +3851,46 @@ Eval:   0%|          | 0/20 [00:00&lt;?, ?it/s]
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 
 Eval:   5%|▌         | 1/20 [00:32&lt;10:20, 32.64s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  10%|█         | 2/20 [01:05&lt;09:49, 32.77s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  15%|█▌        | 3/20 [01:38&lt;09:19, 32.89s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  20%|██        | 4/20 [02:11&lt;08:44, 32.78s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  25%|██▌       | 5/20 [02:43&lt;08:10, 32.68s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  30%|███       | 6/20 [03:16&lt;07:36, 32.61s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  35%|███▌      | 7/20 [03:48&lt;07:03, 32.61s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  40%|████      | 8/20 [04:21&lt;06:31, 32.61s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  45%|████▌     | 9/20 [04:53&lt;05:58, 32.62s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  50%|█████     | 10/20 [05:26&lt;05:26, 32.60s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  55%|█████▌    | 11/20 [05:59&lt;04:53, 32.65s/it]
 
 </div>
     </div>

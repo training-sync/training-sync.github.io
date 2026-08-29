@@ -1,43 +1,3 @@
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 24
-  training_noise_antithetic: false
-  training_noise_views: 1
-  vae_slicing: false
-  world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_cfg45_1view/seed-42
-save_freq: 10
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 3
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-wandb_reward_scales:
-  avg: 1.0
-  geneval: 1.0
-
-I0828 23:59:06.653919 140688665539200 train_nft_sd3.py:4085] 
-activation_checkpointing: false
-allow_tf32: true
 base_model: sd3
 beta: 1.0
 bootstrap_eval_reward_geneval: null
@@ -4996,4 +4956,44 @@ Eval:   0%|          | 0/20 [00:00<?, ?it/s]
 Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
 
 Eval:   5%|▌         | 1/20 [00:32<10:20, 32.64s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  10%|█         | 2/20 [01:05<09:49, 32.77s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  15%|█▌        | 3/20 [01:38<09:19, 32.89s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  20%|██        | 4/20 [02:11<08:44, 32.78s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  25%|██▌       | 5/20 [02:43<08:10, 32.68s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  30%|███       | 6/20 [03:16<07:36, 32.61s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  35%|███▌      | 7/20 [03:48<07:03, 32.61s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  40%|████      | 8/20 [04:21<06:31, 32.61s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  45%|████▌     | 9/20 [04:53<05:58, 32.62s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  50%|█████     | 10/20 [05:26<05:26, 32.60s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.88it/s]
+
+Eval:  55%|█████▌    | 11/20 [05:59<04:53, 32.65s/it]
 
