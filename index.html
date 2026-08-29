@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-29T16:10:21.717652+08:00</span>
-            <span>Page generated: 2026-08-29 16:10:21</span>
-            <span>wandb zip: 1.18 MB</span>
+            <span>Data updated: 2026-08-29T16:15:40.896744+08:00</span>
+            <span>Page generated: 2026-08-29 16:15:41</span>
+            <span>wandb zip: 1.29 MB</span>
         </div>
     </div>
 
@@ -129,29 +129,11 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (4709 lines)</span>
+            <span class="terminal-title">training_latest.log (4749 lines)</span>
         </div>
         <div id="terminal">... (earlier logs truncated) ...
 
-d
-[rank1]:     return self.get_base_model()(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank1]:     return self._call_impl(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank1]:     return forward_call(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/transformers/transformer_sd3.py", line 374, in forward
-[rank1]:     temb = self.time_text_embed(timestep, pooled_projections)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank1]:     return self._call_impl(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank1]:     return forward_call(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/embeddings.py", line 1611, in forward
+l/lib/python3.12/dist-packages/diffusers/models/embeddings.py", line 1611, in forward
 [rank1]:     conditioning = timesteps_emb + pooled_projections
 [rank1]:                    ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
 [rank1]: RuntimeError: The size of tensor a (24) must match the size of tensor b (48) at non-singleton dimension 0
@@ -3757,6 +3739,46 @@ Eval:  35%|███▌      | 7/20 [03:50&lt;07:07, 32.85s/it]
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 
 Eval:  40%|████      | 8/20 [04:22&lt;06:34, 32.86s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  45%|████▌     | 9/20 [04:55&lt;06:01, 32.87s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  50%|█████     | 10/20 [05:28&lt;05:28, 32.80s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  55%|█████▌    | 11/20 [06:01&lt;04:55, 32.83s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  60%|██████    | 12/20 [06:34&lt;04:22, 32.79s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  65%|██████▌   | 13/20 [07:06&lt;03:49, 32.76s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  70%|███████   | 14/20 [07:39&lt;03:16, 32.73s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  75%|███████▌  | 15/20 [08:12&lt;02:43, 32.70s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  80%|████████  | 16/20 [08:44&lt;02:10, 32.75s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  85%|████████▌ | 17/20 [09:17&lt;01:38, 32.76s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  90%|█████████ | 18/20 [09:50&lt;01:05, 32.83s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 </div>
