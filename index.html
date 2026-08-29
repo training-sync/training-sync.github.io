@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-29T17:09:03.711813+08:00</span>
-            <span>Page generated: 2026-08-29 17:09:03</span>
-            <span>wandb zip: 2.39 MB</span>
+            <span>Data updated: 2026-08-29T17:14:24.958174+08:00</span>
+            <span>Page generated: 2026-08-29 17:14:25</span>
+            <span>wandb zip: 2.5 MB</span>
         </div>
     </div>
 
@@ -129,50 +129,11 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (4647 lines)</span>
+            <span class="terminal-title">training_latest.log (4284 lines)</span>
         </div>
         <div id="terminal">... (earlier logs truncated) ...
 
-gchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-external_eval_enable: false
-flagship:
-  cone_guard: 'off'
-  epochs: 200
-  eval_guidance_scale: 4.5
-  experiment_arm: nft_cfg45_1view
-  hardware_profile: h200_8gpu
-  images_per_epoch: 576
-  images_per_prompt: 24
-  parent: official_nft
-  prompts_per_epoch: 24
-  registry_id: cfg-in-diffusion-rl-flagship-v1
-  residual_anchor: 'off'
-  reward_id: geneval
-  rollout_guidance_scale: 4.5
-fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_cfg45_1view/seed-42
-mixed_precision: fp16
-num_checkpoint_limit: 5
-num_epochs: 200
-per_prompt_stat_tracking: true
-pretrained:
-  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: ''
-reward_fn:
-  geneval: 1.0
-run_name: cfgrole_geneval_nft_cfg45_1view_h200_8gpu_2026.08.29_00.07.28
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  generator_include_sample_index: false
+le_index: false
   global_std: true
   guidance_scale: 4.5
   legacy_global_sample_shuffle: true
@@ -3700,6 +3661,46 @@ Eval:  10%|█         | 2/20 [01:05&lt;09:49, 32.74s/it]
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 
 Eval:  15%|█▌        | 3/20 [01:38&lt;09:15, 32.70s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  20%|██        | 4/20 [02:10&lt;08:42, 32.68s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  25%|██▌       | 5/20 [02:43&lt;08:09, 32.65s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  30%|███       | 6/20 [03:16&lt;07:37, 32.66s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  35%|███▌      | 7/20 [03:48&lt;07:03, 32.60s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  40%|████      | 8/20 [04:20&lt;06:30, 32.54s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  45%|████▌     | 9/20 [04:53&lt;05:59, 32.64s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  50%|█████     | 10/20 [05:26&lt;05:25, 32.55s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  55%|█████▌    | 11/20 [05:58&lt;04:53, 32.60s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  60%|██████    | 12/20 [06:31&lt;04:20, 32.58s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  65%|██████▌   | 13/20 [07:03&lt;03:47, 32.54s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 </div>
