@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-29T16:05:03.420093+08:00</span>
-            <span>Page generated: 2026-08-29 16:05:03</span>
-            <span>wandb zip: 1.07 MB</span>
+            <span>Data updated: 2026-08-29T16:10:21.717652+08:00</span>
+            <span>Page generated: 2026-08-29 16:10:21</span>
+            <span>wandb zip: 1.18 MB</span>
         </div>
     </div>
 
@@ -129,31 +129,11 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (4666 lines)</span>
+            <span class="terminal-title">training_latest.log (4709 lines)</span>
         </div>
         <div id="terminal">... (earlier logs truncated) ...
 
-1]:     return self._call_impl(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1750, in _call_impl
-[rank1]:     return forward_call(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1643, in forward
-[rank1]:     else self._run_ddp_forward(*inputs, **kwargs)
-[rank1]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
-[rank1]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
-[rank1]:     return self._call_impl(*args, **kwargs)
-[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1845, in _call_impl
-[rank1]:     return inner()
-[rank1]:            ^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1793, in inner
-[rank1]:     result = forward_call(*args, **kwargs)
-[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[rank1]:   File "/usr/local/lib/python3.12/dist-packages/peft/peft_model.py", line 563, in forward
+d
 [rank1]:     return self.get_base_model()(*args, **kwargs)
 [rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 [rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
@@ -3736,6 +3716,49 @@ Epoch 19.0: training:  33%|███▎      | 2/6 [00:26&lt;00:52, 13.01s/it]
 
 Epoch 19.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.01s/it]
 
+Epoch 19.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.02s/it]
+
+Epoch 19.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.02s/it]
+
+Epoch 19.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.05s/it]
+Epoch 19.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
+
+Epoch 20: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Eval:   0%|          | 0/20 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:   5%|▌         | 1/20 [00:32&lt;10:24, 32.89s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  10%|█         | 2/20 [01:05&lt;09:51, 32.85s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  15%|█▌        | 3/20 [01:38&lt;09:19, 32.89s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  20%|██        | 4/20 [02:11&lt;08:46, 32.92s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  25%|██▌       | 5/20 [02:44&lt;08:12, 32.80s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  30%|███       | 6/20 [03:17&lt;07:39, 32.85s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  35%|███▌      | 7/20 [03:50&lt;07:07, 32.85s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  40%|████      | 8/20 [04:22&lt;06:34, 32.86s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 </div>
     </div>
 
