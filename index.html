@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-08-30T20:43:59.713675+08:00</span>
-            <span>Page generated: 2026-08-30 20:44:00</span>
-            <span>wandb zip: 6.31 MB</span>
+            <span>Data updated: 2026-08-30T20:49:26.585593+08:00</span>
+            <span>Page generated: 2026-08-30 20:49:26</span>
+            <span>wandb zip: 6.44 MB</span>
         </div>
     </div>
 
@@ -129,99 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2425 lines)</span>
+            <span class="terminal-title">training_latest.log (2428 lines)</span>
         </div>
         <div id="terminal">
-
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
-
-Eval:  80%|████████  | 16/20 [08:34&lt;02:08, 32.15s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.89it/s]
-
-Eval:  85%|████████▌ | 17/20 [09:07&lt;01:36, 32.20s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
-
-Eval:  90%|█████████ | 18/20 [09:39&lt;01:04, 32.24s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
-
-Eval:  95%|█████████▌| 19/20 [10:11&lt;00:32, 32.23s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:11&lt;00:00,  3.60it/s]
-
-Eval: 100%|██████████| 20/20 [10:36&lt;00:00, 30.13s/it]
-Eval: 100%|██████████| 20/20 [10:36&lt;00:00, 31.85s/it]
-I0830 03:13:03.460096 140685612638848 train_nft_sd3.py:3289] Saved structured eval samples to /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_cfg45_1view/seed-2025/eval_samples/epoch-50-g450.json
-I0830 03:13:04.976889 140685612638848 train_nft_sd3.py:3407] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_cfg45_1view/seed-2025/checkpoints/checkpoint-50
-
-Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.76it/s]
-
-Epoch 50: sampling:  33%|███▎      | 1/3 [10:44&lt;21:28, 644.46s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.48it/s]
-
-Epoch 50: sampling:  67%|██████▋   | 2/3 [10:52&lt;04:29, 269.81s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
-
-Epoch 50: sampling: 100%|██████████| 3/3 [10:59&lt;00:00, 150.08s/it]
-Epoch 50: sampling: 100%|██████████| 3/3 [10:59&lt;00:00, 219.87s/it]
-I0830 03:13:26.414797 140685612638848 train_nft_sd3.py:5661] Epoch 50 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:08,  4.15s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:11&lt;00:05,  5.75s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.37s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.04s/it]
-I0830 03:13:45.664071 140685612638848 train_nft_sd3.py:5771] Epoch 50 reward metrics: {'reward_accuracy': 0.5052083134651184, 'reward_geneval': 0.7288773059844971, 'reward_avg': 0.7288773655891418, 'reward_geneval_all': 0.7288773059844971, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/flow_grpo/stat_tracking.py:15: RuntimeWarning: invalid value encountered in multiply
-  advantages = np.empty_like(rewards)*0.0
-I0830 03:13:46.350170 140685612638848 train_nft_sd3.py:6519] Advantages mean: 0.4186684811952928 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-I0830 03:13:46.350546 140685612638848 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
-
-Epoch 50.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 50.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.97s/it]
-
-Epoch 50.0: training:  33%|███▎      | 2/6 [00:25&lt;00:51, 12.99s/it]
-
-Epoch 50.0: training:  50%|█████     | 3/6 [00:38&lt;00:39, 13.00s/it]
-
-Epoch 50.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.01s/it]
-
-Epoch 50.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.01s/it]
-
-Epoch 50.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.04s/it]
-Epoch 50.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.02s/it]
-
-Epoch 51: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
-
-Epoch 51: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.85s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.48it/s]
-
-Epoch 51: sampling:  67%|██████▋   | 2/3 [00:13&lt;00:06,  6.80s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
-
-Epoch 51: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  7.16s/it]
-Epoch 51: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  6.97s/it]
-I0830 03:15:26.059478 140685612638848 train_nft_sd3.py:5661] Epoch 51 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:09,  4.99s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:11&lt;00:05,  5.68s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.28s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.05s/it]
-I0830 03:15:44.354525 140685612638848 train_nft_sd3.py:5771] Epoch 51 reward metrics: {'reward_accuracy': 0.5243055820465088, 'reward_geneval': 0.7135416865348816, 'reward_avg': 0.7135416865348816, 'reward_geneval_all': 0.7135416865348816, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
-I0830 03:15:44.996805 140685612638848 train_nft_sd3.py:6519] Advantages mean: 0.5799524680475078 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-I0830 03:15:44.997183 140685612638848 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
-
-Epoch 51.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
 
 Epoch 51.0: training:  17%|█▋        | 1/6 [00:13&lt;01:05, 13.14s/it]
 
@@ -2556,6 +2466,99 @@ Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  
 Eval:  75%|███████▌  | 15/20 [08:01&lt;02:40, 32.06s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.89it/s]
+
+Eval:  80%|████████  | 16/20 [08:33&lt;02:08, 32.03s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  85%|████████▌ | 17/20 [09:06&lt;01:36, 32.13s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
+
+Eval:  90%|█████████ | 18/20 [09:38&lt;01:04, 32.06s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.89it/s]
+
+Eval:  95%|█████████▌| 19/20 [10:09&lt;00:32, 32.01s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:11&lt;00:00,  3.61it/s]
+
+Eval: 100%|██████████| 20/20 [10:35&lt;00:00, 29.96s/it]
+Eval: 100%|██████████| 20/20 [10:35&lt;00:00, 31.76s/it]
+I0830 05:45:44.661743 140685612638848 train_nft_sd3.py:3289] Saved structured eval samples to /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/geneval/nft_cfg45_1view/seed-2025/eval_samples/epoch-100-g450.json
+I0830 05:45:45.750351 140685612638848 train_nft_sd3.py:3407] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/nft_cfg45_1view/seed-2025/checkpoints/checkpoint-100
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 100: sampling:  33%|███▎      | 1/3 [10:42&lt;21:24, 642.24s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.48it/s]
+
+Epoch 100: sampling:  67%|██████▋   | 2/3 [10:49&lt;04:28, 268.88s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.48it/s]
+
+Epoch 100: sampling: 100%|██████████| 3/3 [10:57&lt;00:00, 149.55s/it]
+Epoch 100: sampling: 100%|██████████| 3/3 [10:57&lt;00:00, 219.11s/it]
+I0830 05:46:07.106926 140685612638848 train_nft_sd3.py:5661] Epoch 100 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:08,  4.16s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:11&lt;00:05,  5.87s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:17&lt;00:00,  6.12s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:17&lt;00:00,  5.88s/it]
+I0830 05:46:25.308484 140685612638848 train_nft_sd3.py:5771] Epoch 100 reward metrics: {'reward_accuracy': 0.5798611044883728, 'reward_geneval': 0.7971643805503845, 'reward_avg': 0.7971643805503845, 'reward_geneval_all': 0.7971643805503845, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0830 05:46:25.973101 140685612638848 train_nft_sd3.py:6519] Advantages mean: 0.5060457711663497 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0830 05:46:25.973466 140685612638848 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 100.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 100.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.96s/it]
+
+Epoch 100.0: training:  33%|███▎      | 2/6 [00:25&lt;00:51, 12.98s/it]
+
+Epoch 100.0: training:  50%|█████     | 3/6 [00:38&lt;00:38, 12.99s/it]
+
+Epoch 100.0: training:  67%|██████▋   | 4/6 [00:51&lt;00:25, 13.00s/it]
+
+Epoch 100.0: training:  83%|████████▎ | 5/6 [01:04&lt;00:13, 13.00s/it]
+
+Epoch 100.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
+Epoch 100.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.01s/it]
+
+Epoch 101: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 101: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.85s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.48it/s]
+
+Epoch 101: sampling:  67%|██████▋   | 2/3 [00:13&lt;00:06,  6.81s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.47it/s]
+
+Epoch 101: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  7.15s/it]
+Epoch 101: sampling: 100%|██████████| 3/3 [00:20&lt;00:00,  6.96s/it]
+I0830 05:48:05.579147 140685612638848 train_nft_sd3.py:5661] Epoch 101 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:04&lt;00:08,  4.30s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:11&lt;00:05,  5.99s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.30s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:18&lt;00:00,  6.05s/it]
+I0830 05:48:23.988242 140685612638848 train_nft_sd3.py:5771] Epoch 101 reward metrics: {'reward_accuracy': 0.703125, 'reward_geneval': 0.8026620149612427, 'reward_avg': 0.8026620745658875, 'reward_geneval_all': 0.8026620149612427, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0830 05:48:24.629947 140685612638848 train_nft_sd3.py:6519] Advantages mean: 0.25689325260769263 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0830 05:48:24.630344 140685612638848 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 101.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 101.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.96s/it]
+
+Epoch 101.0: training:  33%|███▎      | 2/6 [00:25&lt;00:51, 12.98s/it]
+
+Epoch 101.0: training:  50%|█████     | 3/6 [00:38&lt;00:38, 12.99s/it]
+
 </div>
     </div>
 
