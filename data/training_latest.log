@@ -1,320 +1,4 @@
-  training_noise_views: 1
-  vae_slicing: false
-  world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/hpsv2/nft_cfg45_1view/seed-123
-save_freq: 10
-seed: 123
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 3
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-wandb_reward_scales:
-  avg: 100.0
-  hpsv2: 100.0
 
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4097: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0903 05:44:37.187756 139934705488512 train_nft_sd3.py:4104] Waiting 0s before model load (stagger)...
-I0903 05:44:37.187934 139934705488512 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:44:37.188152 139934705488512 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-I0903 05:44:40.810869 139716753519232 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:44:40.811236 139716753519232 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]I0903 05:44:46.840784 140175787487872 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:44:46.841122 140175787487872 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.90s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.90s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.04s/it]I0903 05:44:51.885791 140589791228544 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:44:51.886296 140589791228544 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.94s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.95s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]I0903 05:44:56.909861 140537710174848 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:44:56.912209 140537710174848 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.33s/it]
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.28s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.29s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 31.77it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 31.73it/s]
-I0903 05:45:01.849322 140118618997376 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:45:01.849749 140118618997376 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.24s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.19s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.20s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 33.96it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 33.94it/s]
-I0903 05:45:06.597194 140076082832000 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:45:06.597525 140076082832000 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.65s/it]
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.43s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.47s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-I0903 05:45:11.902848 139892695437952 train_nft_sd3.py:4106] Loading SD3.5 model...
-I0903 05:45:11.903719 139892695437952 train_nft_sd3.py:4125] Loading local SD3.5 single-file model /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium/sd3.5_medium.safetensors with components from /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3-medium-diffusers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.32s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.29s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.30s/it]
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 60.45it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 60.39it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.19s/it]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 59.20it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 59.14it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.15s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.15s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.09s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.15s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.29s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 33.17it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 33.15it/s]
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 29.68it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 29.66it/s]
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 51.01it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 50.96it/s]
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.57it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.53it/s]
-I0903 05:45:49.080069 139892695437952 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.080298 139892695437952 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.080334 139892695437952 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.080360 139892695437952 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.080384 139892695437952 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.080403 139892695437952 train_nft_sd3.py:4378] 
-I0903 05:45:49.080422 139892695437952 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.080441 139892695437952 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.080460 139892695437952 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.080480 139892695437952 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.080883 139892695437952 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.190940 140076082832000 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.191215 140076082832000 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.191252 140076082832000 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.191278 140076082832000 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.191302 140076082832000 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.191321 140076082832000 train_nft_sd3.py:4378] 
-I0903 05:45:49.191342 140076082832000 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.191362 140076082832000 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.191382 140076082832000 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.191401 140076082832000 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.191854 140076082832000 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.194369 139934705488512 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.194954 139934705488512 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.195050 139934705488512 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.195119 139934705488512 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.195177 139934705488512 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.195230 139934705488512 train_nft_sd3.py:4378] 
-I0903 05:45:49.195282 139934705488512 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.195335 139934705488512 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.195387 139934705488512 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.195443 139934705488512 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.196105 139934705488512 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.199646 140589791228544 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.199884 140589791228544 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.199920 140589791228544 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.199759 140118618997376 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.199953 140589791228544 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.199976 140589791228544 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.199995 140589791228544 train_nft_sd3.py:4378] 
-I0903 05:45:49.199992 140118618997376 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.200016 140589791228544 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.200028 140118618997376 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.200036 140589791228544 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.200056 140589791228544 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.200054 140118618997376 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.200074 140118618997376 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.200075 140589791228544 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.200093 140118618997376 train_nft_sd3.py:4378] 
-I0903 05:45:49.200112 140118618997376 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.200131 140118618997376 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.200150 140118618997376 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.200169 140118618997376 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.200520 140589791228544 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.200587 140118618997376 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.205466 139716753519232 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.205707 139716753519232 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.205746 139716753519232 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.205773 139716753519232 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.205798 139716753519232 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.205818 139716753519232 train_nft_sd3.py:4378] 
-I0903 05:45:49.205838 139716753519232 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.205859 139716753519232 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.205879 139716753519232 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.205898 139716753519232 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.206353 139716753519232 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.214680 140175787487872 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.214916 140175787487872 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.214962 140175787487872 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.214989 140175787487872 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.215011 140175787487872 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.215031 140175787487872 train_nft_sd3.py:4378] 
-I0903 05:45:49.215050 140175787487872 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.215070 140175787487872 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.215090 140175787487872 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.215109 140175787487872 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.214970 140537710174848 train_nft_sd3.py:4373] ***** Running training *****
-I0903 05:45:49.215203 140537710174848 train_nft_sd3.py:4374]   Num Epochs = 200
-I0903 05:45:49.215239 140537710174848 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0903 05:45:49.215265 140537710174848 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0903 05:45:49.215288 140537710174848 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0903 05:45:49.215306 140537710174848 train_nft_sd3.py:4378] 
-I0903 05:45:49.215325 140537710174848 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0903 05:45:49.215345 140537710174848 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0903 05:45:49.215363 140537710174848 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0903 05:45:49.215382 140537710174848 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0903 05:45:49.215542 140175787487872 train_nft_sd3.py:4461] ***** Running training *****
-I0903 05:45:49.215798 140537710174848 train_nft_sd3.py:4461] ***** Running training *****
-
-Epoch 0: sampling:   0%|          | 0/3 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-I0903 05:45:49.695152 139934705488512 train_nft_sd3.py:3407] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/hpsv2/nft_cfg45_1view/seed-123/checkpoints/checkpoint-0
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 10/10 [00:05<00:00,  1.75it/s]
-
-Epoch 0: sampling:  33%|███▎      | 1/3 [00:06<00:13,  6.72s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.53it/s]
-
-Epoch 0: sampling:  67%|██████▋   | 2/3 [00:13<00:06,  6.78s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.61it/s]
-
-Epoch 0: sampling: 100%|██████████| 3/3 [00:20<00:00,  6.83s/it]
-Epoch 0: sampling: 100%|██████████| 3/3 [00:20<00:00,  6.81s/it]
-I0903 05:46:10.284864 139934705488512 train_nft_sd3.py:5661] Epoch 0 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 13.48it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 13.46it/s]
-I0903 05:46:11.278249 139934705488512 train_nft_sd3.py:5771] Epoch 0 reward metrics: {'reward_hpsv2': 28.669926524162292, 'reward_avg': 28.669926524162292}
-I0903 05:46:11.944228 139934705488512 train_nft_sd3.py:6519] Advantages mean: 0.43698190734574766 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-I0903 05:46:11.944487 139934705488512 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Epoch 0.0: training:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Epoch 0.0: training:  17%|█▋        | 1/6 [00:13<01:05, 13.02s/it]
-
-Epoch 0.0: training:  33%|███▎      | 2/6 [00:26<00:52, 13.01s/it]
-
-Epoch 0.0: training:  50%|█████     | 3/6 [00:39<00:39, 13.02s/it]
-
-Epoch 0.0: training:  67%|██████▋   | 4/6 [00:52<00:26, 13.02s/it]
-
-Epoch 0.0: training:  83%|████████▎ | 5/6 [01:05<00:13, 13.01s/it]
-
-Epoch 0.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.09s/it]
-Epoch 0.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.05s/it]
-
-Epoch 1: sampling:   0%|          | 0/3 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 10/10 [00:05<00:00,  1.77it/s]
-
-Epoch 1: sampling:  33%|███▎      | 1/3 [00:05<00:11,  5.86s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.61it/s]
-
-Epoch 1: sampling:  67%|██████▋   | 2/3 [00:12<00:06,  6.51s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.60it/s]
-
-Epoch 1: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.79s/it]
-Epoch 1: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.65s/it]
-I0903 05:47:50.919749 139934705488512 train_nft_sd3.py:5661] Epoch 1 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 11.78it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 11.77it/s]
-I0903 05:47:51.411536 139934705488512 train_nft_sd3.py:5771] Epoch 1 reward metrics: {'reward_hpsv2': 29.56676483154297, 'reward_avg': 29.56676185131073}
-I0903 05:47:52.130014 139934705488512 train_nft_sd3.py:6519] Advantages mean: 0.4290356675545757 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-I0903 05:47:52.130361 139934705488512 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
-
-Epoch 1.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
-
-Epoch 1.0: training:  17%|█▋        | 1/6 [00:13<01:05, 13.06s/it]
 
 Epoch 1.0: training:  33%|███▎      | 2/6 [00:26<00:52, 13.06s/it]
 
@@ -2577,4 +2261,135 @@ Epoch 50: sampling:  33%|███▎      | 1/3 [04:38<09:17, 278.87s/it]
 Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.60it/s]
 
 Epoch 50: sampling:  67%|██████▋   | 2/3 [04:45<01:58, 118.91s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.61it/s]
+
+Epoch 50: sampling: 100%|██████████| 3/3 [04:52<00:00, 67.76s/it] 
+Epoch 50: sampling: 100%|██████████| 3/3 [04:52<00:00, 97.57s/it]
+I0903 07:32:13.177127 139934705488512 train_nft_sd3.py:5661] Epoch 50 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00,  6.63it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00,  6.63it/s]
+I0903 07:32:14.128857 139934705488512 train_nft_sd3.py:5771] Epoch 50 reward metrics: {'reward_hpsv2': 16.269657015800476, 'reward_avg': 16.269657015800476}
+I0903 07:32:14.822674 139934705488512 train_nft_sd3.py:6519] Advantages mean: 0.3868622683034183 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0903 07:32:14.823014 139934705488512 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 50.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 50.0: training:  17%|█▋        | 1/6 [00:12<01:04, 12.97s/it]
+
+Epoch 50.0: training:  33%|███▎      | 2/6 [00:25<00:51, 12.99s/it]
+
+Epoch 50.0: training:  50%|█████     | 3/6 [00:38<00:39, 13.00s/it]
+
+Epoch 50.0: training:  67%|██████▋   | 4/6 [00:52<00:26, 13.01s/it]
+
+Epoch 50.0: training:  83%|████████▎ | 5/6 [01:05<00:13, 13.01s/it]
+
+Epoch 50.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.05s/it]
+Epoch 50.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.02s/it]
+
+Epoch 51: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05<00:00,  1.77it/s]
+
+Epoch 51: sampling:  33%|███▎      | 1/3 [00:05<00:11,  5.85s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.58it/s]
+
+Epoch 51: sampling:  67%|██████▋   | 2/3 [00:12<00:06,  6.55s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.61it/s]
+
+Epoch 51: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.78s/it]
+Epoch 51: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.65s/it]
+I0903 07:33:53.548412 139934705488512 train_nft_sd3.py:5661] Epoch 51 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 11.03it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 11.02it/s]
+I0903 07:33:53.977372 139934705488512 train_nft_sd3.py:5771] Epoch 51 reward metrics: {'reward_hpsv2': 15.875755250453949, 'reward_avg': 15.875755250453949}
+I0903 07:33:54.626866 139934705488512 train_nft_sd3.py:6519] Advantages mean: 0.2504106550984667 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0903 07:33:54.627192 139934705488512 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 51.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 51.0: training:  17%|█▋        | 1/6 [00:12<01:04, 12.96s/it]
+
+Epoch 51.0: training:  33%|███▎      | 2/6 [00:25<00:52, 13.01s/it]
+
+Epoch 51.0: training:  50%|█████     | 3/6 [00:39<00:39, 13.02s/it]
+
+Epoch 51.0: training:  67%|██████▋   | 4/6 [00:52<00:26, 13.02s/it]
+
+Epoch 51.0: training:  83%|████████▎ | 5/6 [01:05<00:13, 13.01s/it]
+
+Epoch 51.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.04s/it]
+Epoch 51.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.02s/it]
+
+Epoch 52: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05<00:00,  1.77it/s]
+
+Epoch 52: sampling:  33%|███▎      | 1/3 [00:05<00:11,  5.86s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.60it/s]
+
+Epoch 52: sampling:  67%|██████▋   | 2/3 [00:12<00:06,  6.49s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.60it/s]
+
+Epoch 52: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.78s/it]
+Epoch 52: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.64s/it]
+I0903 07:35:33.327971 139934705488512 train_nft_sd3.py:5661] Epoch 52 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 10.23it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 10.22it/s]
+I0903 07:35:33.790412 139934705488512 train_nft_sd3.py:5771] Epoch 52 reward metrics: {'reward_hpsv2': 15.7666876912117, 'reward_avg': 15.76668918132782}
+I0903 07:35:34.462806 139934705488512 train_nft_sd3.py:6519] Advantages mean: 0.39942128010746303 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0903 07:35:34.463121 139934705488512 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 52.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 52.0: training:  17%|█▋        | 1/6 [00:12<01:04, 12.96s/it]
+
+Epoch 52.0: training:  33%|███▎      | 2/6 [00:25<00:51, 13.00s/it]
+
+Epoch 52.0: training:  50%|█████     | 3/6 [00:39<00:39, 13.01s/it]
+
+Epoch 52.0: training:  67%|██████▋   | 4/6 [00:52<00:26, 13.01s/it]
+
+Epoch 52.0: training:  83%|████████▎ | 5/6 [01:05<00:13, 13.01s/it]
+
+Epoch 52.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.04s/it]
+Epoch 52.0: training: 100%|██████████| 6/6 [01:18<00:00, 13.02s/it]
+
+Epoch 53: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05<00:00,  1.77it/s]
+
+Epoch 53: sampling:  33%|███▎      | 1/3 [00:05<00:11,  5.85s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.58it/s]
+
+Epoch 53: sampling:  67%|██████▋   | 2/3 [00:12<00:06,  6.53s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06<00:00,  1.60it/s]
+
+Epoch 53: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.77s/it]
+Epoch 53: sampling: 100%|██████████| 3/3 [00:19<00:00,  6.64s/it]
+I0903 07:37:13.165175 139934705488512 train_nft_sd3.py:5661] Epoch 53 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 10.77it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:00<00:00, 10.76it/s]
+I0903 07:37:13.615396 139934705488512 train_nft_sd3.py:5771] Epoch 53 reward metrics: {'reward_hpsv2': 16.746598482131958, 'reward_avg': 16.746598482131958}
+I0903 07:37:14.270767 139934705488512 train_nft_sd3.py:6519] Advantages mean: 0.5109792964121318 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0903 07:37:14.271090 139934705488512 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 53.0: training:   0%|          | 0/6 [00:00<?, ?it/s]
+
+Epoch 53.0: training:  17%|█▋        | 1/6 [00:12<01:04, 12.97s/it]
 
