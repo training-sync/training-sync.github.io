@@ -1,129 +1,4 @@
-I0910 09:38:37.146142 140014373974656 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0910 09:38:37.146157 140457314546304 train_nft_sd3.py:4375]   Sample batch size per device = 24
-I0910 09:38:37.146162 140014373974656 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0910 09:38:37.146182 140014373974656 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0910 09:38:37.146184 140457314546304 train_nft_sd3.py:4376]   Train batch size per device = 24
-I0910 09:38:37.146202 140014373974656 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0910 09:38:37.146208 140457314546304 train_nft_sd3.py:4377]   Gradient Accumulation steps = 3
-I0910 09:38:37.146227 140457314546304 train_nft_sd3.py:4378] 
-I0910 09:38:37.146247 140457314546304 train_nft_sd3.py:4379]   Total number of samples per epoch = 576
-I0910 09:38:37.146267 140457314546304 train_nft_sd3.py:4380]   Total train batch size (w. parallel, distributed & accumulation) = 576
-I0910 09:38:37.146286 140457314546304 train_nft_sd3.py:4381]   Number of gradient updates per inner epoch = 1
-I0910 09:38:37.146304 140457314546304 train_nft_sd3.py:4382]   Number of inner epochs = 1
-I0910 09:38:37.146608 140014373974656 train_nft_sd3.py:4461] ***** Running training *****
-I0910 09:38:37.146712 140457314546304 train_nft_sd3.py:4461] ***** Running training *****
 
-Epoch 0: sampling:   0%|          | 0/3 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-I0910 09:38:37.562128 140156979888768 train_nft_sd3.py:3407] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/geneval/fanft_measurement_only/seed-42/checkpoints/checkpoint-0
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.41it/s]
-
-Epoch 0: sampling:  33%|███▎      | 1/3 [00:04<00:08,  4.33s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.87it/s]
-
-Epoch 0: sampling:  67%|██████▋   | 2/3 [00:08<00:04,  4.49s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.86it/s]
-
-Epoch 0: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.59s/it]
-Epoch 0: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.55s/it]
-I0910 09:38:50.825553 140156979888768 train_nft_sd3.py:5661] Epoch 0 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:06<00:13,  6.64s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:14<00:07,  7.13s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:21<00:00,  7.35s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:21<00:00,  7.24s/it]
-I0910 09:39:13.408779 140156979888768 train_nft_sd3.py:5771] Epoch 0 reward metrics: {'reward_accuracy': 0.1666666716337204, 'reward_geneval': 0.4231770932674408, 'reward_avg': 0.421875, 'reward_geneval_all': 0.421875, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.4192708432674408}
-I0910 09:39:14.062181 140156979888768 train_nft_sd3.py:6519] Advantages mean: 0.48425111261841686 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3526: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Epoch 0.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
-
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:7046: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Epoch 0.0: training:  33%|███▎      | 1/3 [00:26<00:52, 26.04s/it]
-
-Epoch 0.0: training:  67%|██████▋   | 2/3 [00:52<00:26, 26.13s/it]
-
-Epoch 0.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.26s/it]
-Epoch 0.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.21s/it]
-
-Epoch 1: sampling:   0%|          | 0/3 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:5135: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=enable_amp, dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
-
-Epoch 1: sampling:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.85it/s]
-
-Epoch 1: sampling:  67%|██████▋   | 2/3 [00:08<00:04,  4.34s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.85it/s]
-
-Epoch 1: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.52s/it]
-Epoch 1: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.42s/it]
-I0910 09:40:47.054010 140156979888768 train_nft_sd3.py:5661] Epoch 1 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:05<00:11,  5.51s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:12<00:06,  6.45s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:20<00:00,  6.98s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:20<00:00,  6.74s/it]
-I0910 09:41:08.662357 140156979888768 train_nft_sd3.py:5771] Epoch 1 reward metrics: {'reward_accuracy': 0.1909722238779068, 'reward_geneval': 0.4494358003139496, 'reward_avg': 0.44632527232170105, 'reward_geneval_all': 0.44632524251937866, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.4401041567325592}
-I0910 09:41:09.341598 140156979888768 train_nft_sd3.py:6519] Advantages mean: 0.6213204606836408 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 1.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
-
-Epoch 1.0: training:  33%|███▎      | 1/3 [00:26<00:52, 26.01s/it]
-
-Epoch 1.0: training:  67%|██████▋   | 2/3 [00:52<00:26, 26.02s/it]
 
 Epoch 1.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.11s/it]
 Epoch 1.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.08s/it]
@@ -2245,3 +2120,95 @@ Epoch 52.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
 
 Epoch 52.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.99s/it]
 
+Epoch 52.0: training:  67%|██████▋   | 2/3 [00:52<00:26, 26.01s/it]
+
+Epoch 52.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.08s/it]
+Epoch 52.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.06s/it]
+
+Epoch 53: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 53: sampling:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.82it/s]
+
+Epoch 53: sampling:  67%|██████▋   | 2/3 [00:08<00:04,  4.37s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.82it/s]
+
+Epoch 53: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.56s/it]
+Epoch 53: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.45s/it]
+I0910 12:08:38.659389 140156979888768 train_nft_sd3.py:5661] Epoch 53 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:00<00:01,  1.01it/s]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:08<00:04,  4.98s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:11<00:00,  3.83s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:11<00:00,  3.74s/it]
+I0910 12:09:15.880077 140156979888768 train_nft_sd3.py:5771] Epoch 53 reward metrics: {'reward_accuracy': 0.7118055820465088, 'reward_geneval': 0.8435330390930176, 'reward_avg': 0.8356481790542603, 'reward_geneval_all': 0.8356481790542603, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.8198785185813904}
+I0910 12:09:16.521801 140156979888768 train_nft_sd3.py:6519] Advantages mean: 0.13733620821395504 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 53.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Epoch 53.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.97s/it]
+
+Epoch 53.0: training:  67%|██████▋   | 2/3 [00:51<00:25, 26.00s/it]
+
+Epoch 53.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.09s/it]
+Epoch 53.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.06s/it]
+
+Epoch 54: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 54: sampling:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.82it/s]
+
+Epoch 54: sampling:  67%|██████▋   | 2/3 [00:08<00:04,  4.37s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.81it/s]
+
+Epoch 54: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.56s/it]
+Epoch 54: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.46s/it]
+I0910 12:10:49.077522 140156979888768 train_nft_sd3.py:5661] Epoch 54 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.91s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:08<00:04,  4.55s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  5.13s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  4.91s/it]
+I0910 12:11:27.373158 140156979888768 train_nft_sd3.py:5771] Epoch 54 reward metrics: {'reward_accuracy': 0.8732638955116272, 'reward_geneval': 0.930555522441864, 'reward_avg': 0.9280961155891418, 'reward_geneval_all': 0.9280961155891418, 'reward_geneval_clean_count': 384.0, 'reward_geneval_rse_count': 192.0, 'reward_geneval_rse': 0.9231770634651184}
+I0910 12:11:28.178806 140156979888768 train_nft_sd3.py:6519] Advantages mean: 0.23625277247945675 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 54.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Epoch 54.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.98s/it]
+
+Epoch 54.0: training:  67%|██████▋   | 2/3 [00:52<00:26, 26.00s/it]
+
+Epoch 54.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.10s/it]
+Epoch 54.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.07s/it]
+
+Epoch 55: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 55: sampling:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.81it/s]
+
+Epoch 55: sampling:  67%|██████▋   | 2/3 [00:08<00:04,  4.41s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.80it/s]
+
+Epoch 55: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.60s/it]
+Epoch 55: sampling: 100%|██████████| 3/3 [00:13<00:00,  4.49s/it]
+I0910 12:13:00.823835 140156979888768 train_nft_sd3.py:5661] Epoch 55 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.74s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:08<00:04,  4.60s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:13<00:00,  4.70s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:13<00:00,  4.59s/it]
