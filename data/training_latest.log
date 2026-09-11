@@ -2771,3 +2771,97 @@ I0911 08:12:16.935724 139663232844416 train_nft_sd3.py:6519] Advantages mean: 0.
 
 Epoch 29.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
 
+Epoch 29.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.98s/it]
+
+Epoch 29.0: training:  67%|██████▋   | 2/3 [00:51<00:25, 25.99s/it]
+
+Epoch 29.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.09s/it]
+Epoch 29.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.06s/it]
+
+Epoch 30: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+Eval:   0%|          | 0/10 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  10%|█         | 1/10 [00:16<02:28, 16.45s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  20%|██        | 2/10 [00:32<02:11, 16.38s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  30%|███       | 3/10 [00:49<01:54, 16.37s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  40%|████      | 4/10 [01:05<01:38, 16.43s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  50%|█████     | 5/10 [01:22<01:21, 16.40s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  60%|██████    | 6/10 [01:38<01:05, 16.39s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  70%|███████   | 7/10 [01:54<00:49, 16.40s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  80%|████████  | 8/10 [02:11<00:32, 16.41s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:13<00:00,  2.89it/s]
+
+Eval:  90%|█████████ | 9/10 [02:27<00:16, 16.44s/it]
+
+Sampling Progress: 100%|██████████| 40/40 [00:02<00:00, 14.64it/s]
+
+Eval: 100%|██████████| 10/10 [02:30<00:00, 12.34s/it]
+Eval: 100%|██████████| 10/10 [02:30<00:00, 15.09s/it]
+I0911 08:16:07.200175 139663232844416 train_nft_sd3.py:3289] Saved structured eval samples to /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/formal/ocr/fanft_1d_cfg/seed-42/eval_samples/epoch-30-g450.json
+I0911 08:16:07.982021 139663232844416 train_nft_sd3.py:3407] Saved checkpoint to /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/formal/ocr/fanft_1d_cfg/seed-42/checkpoints/checkpoint-30
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 30: sampling:  33%|███▎      | 1/3 [02:35<05:11, 155.65s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.07it/s]
+
+Epoch 30: sampling:  67%|██████▋   | 2/3 [02:39<01:06, 66.64s/it] 
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  3.05it/s]
+
+Epoch 30: sampling: 100%|██████████| 3/3 [02:44<00:00, 38.20s/it]
+Epoch 30: sampling: 100%|██████████| 3/3 [02:44<00:00, 54.78s/it]
+I0911 08:16:20.411082 139663232844416 train_nft_sd3.py:5661] Epoch 30 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:01<00:00,  1.63it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:01<00:00,  1.63it/s]
+I0911 08:16:22.828721 139663232844416 train_nft_sd3.py:5771] Epoch 30 reward metrics: {'reward_ocr': 0.9359775185585022, 'reward_avg': 0.935977578163147}
+/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/flow_grpo/stat_tracking.py:15: RuntimeWarning: invalid value encountered in multiply
+  advantages = np.empty_like(rewards)*0.0
+I0911 08:16:23.592437 139663232844416 train_nft_sd3.py:6519] Advantages mean: 0.7652780176463152 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 30.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Epoch 30.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.95s/it]
+
+Epoch 30.0: training:  67%|██████▋   | 2/3 [00:52<00:26, 26.02s/it]
+
+Epoch 30.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.07s/it]
+Epoch 30.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.05s/it]
+
+Epoch 31: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 31: sampling:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.97it/s]
+
+Epoch 31: sampling:  67%|██████▋   | 2/3 [00:08<00:04,  4.10s/it]
+
