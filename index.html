@@ -118,9 +118,9 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: h200-8zcjdsm6-0005</span>
-            <span>Data updated: 2026-09-11T18:33:09.126043+08:00</span>
-            <span>Page generated: 2026-09-11 18:33:09</span>
-            <span>wandb zip: 3.01 MB</span>
+            <span>Data updated: 2026-09-11T18:38:31.975465+08:00</span>
+            <span>Page generated: 2026-09-11 18:38:32</span>
+            <span>wandb zip: 3.13 MB</span>
         </div>
     </div>
 
@@ -129,118 +129,9 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (2760 lines)</span>
+            <span class="terminal-title">training_latest.log (2784 lines)</span>
         </div>
         <div id="terminal">
-
-Epoch 7.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.01s/it]
-
-Epoch 7.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.02s/it]
-
-Epoch 7.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.05s/it]
-Epoch 7.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
-
-Epoch 8: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
-
-Epoch 8: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.86s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.62it/s]
-
-Epoch 8: sampling:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.39s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.64it/s]
-
-Epoch 8: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.52s/it]
-Epoch 8: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.43s/it]
-I0911 01:32:46.117654 140670303949440 train_nft_sd3.py:5661] Epoch 8 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:02&lt;00:00,  1.08it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:02&lt;00:00,  1.08it/s]
-I0911 01:32:49.198141 140670303949440 train_nft_sd3.py:5771] Epoch 8 reward metrics: {'reward_ocr': 0.22413714230060577, 'reward_avg': 0.22413715720176697}
-I0911 01:32:49.946266 140670303949440 train_nft_sd3.py:6519] Advantages mean: 0.5222398369927036 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-I0911 01:32:49.946728 140670303949440 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
-
-Epoch 8.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 8.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.97s/it]
-
-Epoch 8.0: training:  33%|███▎      | 2/6 [00:25&lt;00:52, 13.00s/it]
-
-Epoch 8.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.01s/it]
-
-Epoch 8.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.02s/it]
-
-Epoch 8.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.02s/it]
-
-Epoch 8.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.05s/it]
-Epoch 8.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
-
-Epoch 9: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-
-Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
-
-Epoch 9: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.86s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.65it/s]
-
-Epoch 9: sampling:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.32s/it]
-
-Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.64it/s]
-
-Epoch 9: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.48s/it]
-Epoch 9: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.39s/it]
-I0911 01:34:27.838446 140670303949440 train_nft_sd3.py:5661] Epoch 9 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
-
-Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:02&lt;00:00,  1.16it/s]
-Waiting for rewards: 100%|██████████| 3/3 [00:02&lt;00:00,  1.16it/s]
-I0911 01:34:30.704575 140670303949440 train_nft_sd3.py:5771] Epoch 9 reward metrics: {'reward_ocr': 0.17095446586608887, 'reward_avg': 0.17095446586608887}
-I0911 01:34:31.428441 140670303949440 train_nft_sd3.py:6519] Advantages mean: 0.6621556350631934 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-I0911 01:34:31.428763 140670303949440 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
-
-Epoch 9.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
-
-Epoch 9.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.98s/it]
-
-Epoch 9.0: training:  33%|███▎      | 2/6 [00:26&lt;00:52, 13.01s/it]
-
-Epoch 9.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.01s/it]
-
-Epoch 9.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.02s/it]
-
-Epoch 9.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.03s/it]
-
-Epoch 9.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.05s/it]
-Epoch 9.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
-
-Epoch 10: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
-Eval:   0%|          | 0/10 [00:00&lt;?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:3170: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
-
-Eval:  10%|█         | 1/10 [00:17&lt;02:34, 17.18s/it]
-
-Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
-
-Eval:  20%|██        | 2/10 [00:34&lt;02:17, 17.13s/it]
 
 Sampling Progress: 100%|██████████| 40/40 [00:13&lt;00:00,  2.88it/s]
 
@@ -2890,6 +2781,139 @@ Epoch 74: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
 Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
 
 Epoch 74: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.86s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.63it/s]
+
+Epoch 74: sampling:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.38s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.63it/s]
+
+Epoch 74: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.54s/it]
+Epoch 74: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.44s/it]
+I0911 03:33:01.804345 140670303949440 train_nft_sd3.py:5661] Epoch 74 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.04s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.04s/it]
+I0911 03:33:05.128272 140670303949440 train_nft_sd3.py:5771] Epoch 74 reward metrics: {'reward_ocr': 0.11709906160831451, 'reward_avg': 0.11709906160831451}
+I0911 03:33:05.893145 140670303949440 train_nft_sd3.py:6519] Advantages mean: 0.6285774409841011 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0911 03:33:05.893635 140670303949440 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 74.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 74.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.99s/it]
+
+Epoch 74.0: training:  33%|███▎      | 2/6 [00:26&lt;00:52, 13.01s/it]
+
+Epoch 74.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.02s/it]
+
+Epoch 74.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.03s/it]
+
+Epoch 74.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.03s/it]
+
+Epoch 74.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.06s/it]
+Epoch 74.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.04s/it]
+
+Epoch 75: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02&lt;00:00,  3.41it/s]
+
+Epoch 75: sampling:  33%|███▎      | 1/3 [00:03&lt;00:06,  3.11s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.19it/s]
+
+Epoch 75: sampling:  67%|██████▋   | 2/3 [00:06&lt;00:03,  3.44s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03&lt;00:00,  3.01it/s]
+
+Epoch 75: sampling: 100%|██████████| 3/3 [00:10&lt;00:00,  3.67s/it]
+Epoch 75: sampling: 100%|██████████| 3/3 [00:10&lt;00:00,  3.58s/it]
+I0911 03:34:35.386778 140670303949440 train_nft_sd3.py:5661] Epoch 75 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:00&lt;00:00,  2.96it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.30s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.10s/it]
+I0911 03:34:38.756288 140670303949440 train_nft_sd3.py:5771] Epoch 75 reward metrics: {'reward_ocr': 0.05970580875873566, 'reward_avg': 0.05970580130815506}
+I0911 03:34:39.470175 140670303949440 train_nft_sd3.py:6519] Advantages mean: 0.7255760151138063 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 75.0: training:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Epoch 75.0: training:  33%|███▎      | 1/3 [00:12&lt;00:25, 12.96s/it]
+
+Epoch 75.0: training:  67%|██████▋   | 2/3 [00:25&lt;00:12, 12.99s/it]
+
+Epoch 75.0: training: 100%|██████████| 3/3 [00:39&lt;00:00, 13.05s/it]
+Epoch 75.0: training: 100%|██████████| 3/3 [00:39&lt;00:00, 13.03s/it]
+
+Epoch 76: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 76: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.85s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.64it/s]
+
+Epoch 76: sampling:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.34s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.61it/s]
+
+Epoch 76: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.55s/it]
+Epoch 76: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.44s/it]
+I0911 03:35:38.367323 140670303949440 train_nft_sd3.py:5661] Epoch 76 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.10s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.10s/it]
+I0911 03:35:41.765786 140670303949440 train_nft_sd3.py:5771] Epoch 76 reward metrics: {'reward_ocr': 0.11136126518249512, 'reward_avg': 0.11136125028133392}
+I0911 03:35:42.478532 140670303949440 train_nft_sd3.py:6519] Advantages mean: 0.6986582237687222 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0911 03:35:42.478875 140670303949440 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 76.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 76.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.97s/it]
+
+Epoch 76.0: training:  33%|███▎      | 2/6 [00:25&lt;00:51, 13.00s/it]
+
+Epoch 76.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.01s/it]
+
+Epoch 76.0: training:  67%|██████▋   | 4/6 [00:52&lt;00:26, 13.02s/it]
+
+Epoch 76.0: training:  83%|████████▎ | 5/6 [01:05&lt;00:13, 13.02s/it]
+
+Epoch 76.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.05s/it]
+Epoch 76.0: training: 100%|██████████| 6/6 [01:18&lt;00:00, 13.03s/it]
+
+Epoch 77: sampling:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:05&lt;00:00,  1.77it/s]
+
+Epoch 77: sampling:  33%|███▎      | 1/3 [00:05&lt;00:11,  5.86s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.63it/s]
+
+Epoch 77: sampling:  67%|██████▋   | 2/3 [00:12&lt;00:06,  6.37s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:06&lt;00:00,  1.63it/s]
+
+Epoch 77: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.53s/it]
+Epoch 77: sampling: 100%|██████████| 3/3 [00:19&lt;00:00,  6.44s/it]
+I0911 03:37:20.468474 140670303949440 train_nft_sd3.py:5661] Epoch 77 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00&lt;?, ?it/s]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.08s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:03&lt;00:00,  1.08s/it]
+I0911 03:37:23.914626 140670303949440 train_nft_sd3.py:5771] Epoch 77 reward metrics: {'reward_ocr': 0.10562963783740997, 'reward_avg': 0.10562962293624878}
+I0911 03:37:24.632830 140670303949440 train_nft_sd3.py:6519] Advantages mean: 0.8037791873763976 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+I0911 03:37:24.633158 140670303949440 train_nft_sd3.py:6564] CFG training memory split: physical_micro_batch=12 gradient_accumulation_steps=6 effective_batch=72
+
+Epoch 77.0: training:   0%|          | 0/6 [00:00&lt;?, ?it/s]
+
+Epoch 77.0: training:  17%|█▋        | 1/6 [00:12&lt;01:04, 12.98s/it]
+
+Epoch 77.0: training:  33%|███▎      | 2/6 [00:25&lt;00:51, 13.00s/it]
+
+Epoch 77.0: training:  50%|█████     | 3/6 [00:39&lt;00:39, 13.01s/it]
 
 </div>
     </div>
