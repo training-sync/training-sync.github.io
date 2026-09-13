@@ -1,70 +1,16 @@
-
-*****************************************
-Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-*****************************************
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.01s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  2.00s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  2.00s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.98s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.93s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.93s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.28s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.21s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.22s/it]
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 31.88it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 31.85it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.10s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.04s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.05s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.68it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.64it/s]
-
-Pre-encode eval prompts:   0%|          | 0/4 [00:00<?, ?it/s]
-Pre-encode eval prompts:  50%|█████     | 2/4 [00:00<00:00, 11.43it/s]
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.24s/it]
-Pre-encode eval prompts: 100%|██████████| 4/4 [00:00<00:00, 12.52it/s]
-Pre-encode eval prompts: 100%|██████████| 4/4 [00:00<00:00, 12.34it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.12s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.13s/it]
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.23s/it]
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 49.02it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 48.97it/s]
-
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.18s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.19s/it]
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
-Eval:   0%|          | 0/4 [00:00<?, ?it/s]/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/eval_geneval_checkpoint.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with torch_autocast(enabled=(config.mixed_precision in ["fp16", "bf16"]), dtype=mixed_precision_dtype):
-
-Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]
-
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 52.94it/s]
-Loading pipeline components...: 100%|██████████| 9/9 [00:00<00:00, 52.89it/s]
-
-Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.17s/it]
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/analyze_cfg_role_e3.py", line 726, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/analyze_cfg_role_e3.py", line 670, in main
+    report = analyze(
+             ^^^^^^^^
+  File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/analyze_cfg_role_e3.py", line 577, in analyze
+    predictor: reward_level_statistics(fanft_rows, predictor)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/analyze_cfg_role_e3.py", line 523, in reward_level_statistics
+    "mae": _mean(abs(row["error"]) for row in loo_errors),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/analyze_cfg_role_e3.py", line 39, in _mean
+    raise ValueError("cannot average an empty value set")
+ValueError: cannot average an empty value set
