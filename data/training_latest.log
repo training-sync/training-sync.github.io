@@ -1,283 +1,3 @@
-
-Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
-Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  4.00s/it]
-Waiting for rewards:  67%|██████▋   | 2/3 [00:08<00:04,  4.54s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  4.91s/it]
-Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  4.76s/it]
-I0913 23:00:54.132681 140716845499008 train_nft_sd3.py:5771] Epoch 54 reward metrics: {'reward_accuracy': 0.890625, 'reward_geneval': 0.9363426566123962, 'reward_avg': 0.9363425970077515, 'reward_geneval_all': 0.9363426566123962, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
-I0913 23:00:54.767622 140716845499008 train_nft_sd3.py:6519] Advantages mean: 0.21772098049141006 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
-
-Epoch 54.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
-
-Epoch 54.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.97s/it]
-
-Epoch 54.0: training:  67%|██████▋   | 2/3 [00:51<00:26, 26.00s/it]
-
-W0913 23:02:40.624000 44884 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 44958 closing signal SIGTERM
-W0913 23:02:40.626000 44884 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 44959 closing signal SIGTERM
-W0913 23:02:40.629000 44884 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 44960 closing signal SIGTERM
-W0913 23:02:40.631000 44884 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 44961 closing signal SIGTERM
-W0913 23:02:40.634000 44884 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 44962 closing signal SIGTERM
-W0913 23:02:40.636000 44884 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 44963 closing signal SIGTERM
-E0913 23:02:42.846000 44884 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 44956) of binary: /usr/bin/python3
-Traceback (most recent call last):
-  File "<frozen runpy>", line 198, in _run_module_as_main
-  File "<frozen runpy>", line 88, in _run_code
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 922, in <module>
-    main()
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
-    return f(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
-    run(args)
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
-    elastic_launch(
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts/train_nft_sd3.py FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2026-09-13_23:02:40
-  host      : h200-8zcjdsm6-0005
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 44956)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
-
-*****************************************
-Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-*****************************************
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-I0914 01:18:11.662113 140268969661056 train_nft_sd3.py:4086] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-bootstrap_eval_reward_geneval: null
-dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-external_eval_enable: false
-flagship:
-  cone_guard: 'off'
-  epochs: 200
-  eval_guidance_scale: 4.5
-  experiment_arm: nft_antithetic2
-  hardware_profile: h200_8gpu
-  images_per_epoch: 576
-  images_per_prompt: 24
-  parent: official_nft
-  prompts_per_epoch: 24
-  registry_id: cfg-in-diffusion-rl-flagship-v1
-  residual_anchor: 'off'
-  reward_id: geneval
-  rollout_guidance_scale: 1.0
-fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/compute-matched/geneval/nft_antithetic2/seed-42
-mixed_precision: fp16
-num_checkpoint_limit: 5
-num_epochs: 200
-per_prompt_stat_tracking: true
-pretrained:
-  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/compute-matched/geneval/nft_antithetic2/seed-42/checkpoints/checkpoint-50
-reward_fn:
-  geneval: 1.0
-run_name: cfgrole_geneval_nft_antithetic2_h200_8gpu_2026.09.14_01.18.11
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  generator_include_sample_index: false
-  global_std: true
-  guidance_scale: 1.0
-  legacy_global_sample_shuffle: true
-  noise_level: 0.7
-  num_batches_per_epoch: 3
-  num_image_per_prompt: 24
-  num_steps: 10
-  prompt_reference_num_replicas: 8
-  same_latent: false
-  sample_keyed_training_rng: true
-  sde_window_range: !!python/tuple
-  - 0
-  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 24
-  training_noise_antithetic: true
-  training_noise_views: 2
-  vae_slicing: false
-  world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/compute-matched/geneval/nft_antithetic2/seed-42
-save_freq: 10
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 3
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-wandb_reward_scales:
-  avg: 1.0
-  geneval: 1.0
-
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4098: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0914 01:18:11.663071 140268969661056 train_nft_sd3.py:4105] Waiting 10s before model load (stagger)...
-I0914 01:18:11.791793 139764458914432 train_nft_sd3.py:4086] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-bootstrap_eval_reward_geneval: null
-dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-external_eval_enable: false
-flagship:
-  cone_guard: 'off'
-  epochs: 200
-  eval_guidance_scale: 4.5
-  experiment_arm: nft_antithetic2
-  hardware_profile: h200_8gpu
-  images_per_epoch: 576
-  images_per_prompt: 24
-  parent: official_nft
-  prompts_per_epoch: 24
-  registry_id: cfg-in-diffusion-rl-flagship-v1
-  residual_anchor: 'off'
-  reward_id: geneval
-  rollout_guidance_scale: 1.0
-fsdp_optimizer_offload: false
-logdir: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/+log/cfg-role-flagship-20260826/runs/compute-matched/geneval/nft_antithetic2/seed-42
-mixed_precision: fp16
-num_checkpoint_limit: 5
-num_epochs: 200
-per_prompt_stat_tracking: true
-pretrained:
-  model: /lpai/dataset/wangchenfeng-data-2/26-07-08-1/wangchenfeng/model/diffusion/stabilityai__stable-diffusion-3_5-medium
-  revision: main
-prompt_fn: geneval
-prompt_fn_kwargs: {}
-resolution: 512
-resume_from: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/compute-matched/geneval/nft_antithetic2/seed-42/checkpoints/checkpoint-50
-reward_fn:
-  geneval: 1.0
-run_name: cfgrole_geneval_nft_antithetic2_h200_8gpu_2026.09.14_01.18.11
-sample:
-  deterministic: true
-  eval_guidance_scale: 4.5
-  eval_num_steps: 40
-  generator_include_sample_index: false
-  global_std: true
-  guidance_scale: 1.0
-  legacy_global_sample_shuffle: true
-  noise_level: 0.7
-  num_batches_per_epoch: 3
-  num_image_per_prompt: 24
-  num_steps: 10
-  prompt_reference_num_replicas: 8
-  same_latent: false
-  sample_keyed_training_rng: true
-  sde_window_range: !!python/tuple
-  - 0
-  - 10
-  sde_window_size: 2
-  solver: dpm2
-  test_batch_size: 14
-  train_batch_size: 24
-  training_noise_antithetic: true
-  training_noise_views: 2
-  vae_slicing: false
-  world_size_alignment_contract: true
-save_dir: /lpai/output/checkpoint/flow_grpo_fiber_integrated/cfg-role-flagship-20260826/compute-matched/geneval/nft_antithetic2/seed-42
-save_freq: 10
-seed: 42
-train:
-  adam_beta1: 0.9
-  adam_beta2: 0.999
-  adam_epsilon: 1.0e-08
-  adam_weight_decay: 0.0001
-  adv_clip_max: 5
-  adv_mode: all
-  batch_size: 24
-  beta: 0.0001
-  cfg: true
-  clip_range: 0.0001
-  clip_range_gt: 0.0001
-  clip_range_lt: 0.0001
-  ema: false
-  gradient_accumulation_steps: 3
-  learning_rate: 0.0003
-  lora_path: null
-  max_grad_norm: 1.0
-  num_inner_epochs: 1
-  timestep_fraction: 1.0
-  timestep_shift: 3.0
-  use_8bit_adam: false
-use_lora: true
-wandb_reward_scales:
-  avg: 1.0
-  geneval: 1.0
-
-/mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/scripts/train_nft_sd3.py:4098: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = GradScaler(enabled=enable_amp)
-I0914 01:18:11.793313 139764458914432 train_nft_sd3.py:4105] Waiting 25s before model load (stagger)...
-I0914 01:18:11.811285 140503036310144 train_nft_sd3.py:4086] 
-activation_checkpointing: false
-allow_tf32: true
-base_model: sd3
-beta: 1.0
-bootstrap_eval_reward_geneval: null
-dataset: /mnt/volumes/machedge-ali-sh-mix/wangchenfeng/projects/diffusion/6-trial/flow_grpo_fiber_integrated/fanft-v56r1-cfg-role-flagship-20260826-handoff-r2/dataset/geneval
-debug: false
-decay_type: 1
-eval_freq: 10
-external_eval_enable: false
-flagship:
-  cone_guard: 'off'
-  epochs: 200
-  eval_guidance_scale: 4.5
-  experiment_arm: nft_antithetic2
-  hardware_profile: h200_8gpu
-  images_per_epoch: 576
-  images_per_prompt: 24
-  parent: official_nft
   prompts_per_epoch: 24
   registry_id: cfg-in-diffusion-rl-flagship-v1
   residual_anchor: 'off'
@@ -2968,3 +2688,103 @@ I0914 03:27:30.108114 139800530047616 train_nft_sd3.py:5653] Epoch 93 collection
 
 Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
 Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:09<00:04,  4.83s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  5.04s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  4.88s/it]
+I0914 03:27:45.141689 139800530047616 train_nft_sd3.py:5763] Epoch 93 reward metrics: {'reward_accuracy': 0.8993055820465088, 'reward_geneval': 0.9466145634651184, 'reward_avg': 0.9466145634651184, 'reward_geneval_all': 0.9466145634651184, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0914 03:27:45.779442 139800530047616 train_nft_sd3.py:6511] Advantages mean: 0.1455115409034455 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 93.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Epoch 93.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.97s/it]
+
+Epoch 93.0: training:  67%|██████▋   | 2/3 [00:51<00:25, 26.00s/it]
+
+Epoch 93.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.05s/it]
+Epoch 93.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.04s/it]
+
+Epoch 94: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 94: sampling:  33%|███▎      | 1/3 [00:03<00:06,  3.10s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.84it/s]
+
+Epoch 94: sampling:  67%|██████▋   | 2/3 [00:07<00:03,  3.72s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.83it/s]
+
+Epoch 94: sampling: 100%|██████████| 3/3 [00:11<00:00,  3.96s/it]
+Epoch 94: sampling: 100%|██████████| 3/3 [00:11<00:00,  3.84s/it]
+I0914 03:29:15.982627 139800530047616 train_nft_sd3.py:5653] Epoch 94 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:04<00:08,  4.46s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:10<00:05,  5.50s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:16<00:00,  5.60s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:16<00:00,  5.47s/it]
+I0914 03:29:32.801739 139800530047616 train_nft_sd3.py:5763] Epoch 94 reward metrics: {'reward_accuracy': 0.9097222089767456, 'reward_geneval': 0.9735243320465088, 'reward_avg': 0.9735243320465088, 'reward_geneval_all': 0.9735243320465088, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0914 03:29:33.474618 139800530047616 train_nft_sd3.py:6511] Advantages mean: 0.2667463366083565 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 94.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Epoch 94.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.98s/it]
+
+Epoch 94.0: training:  67%|██████▋   | 2/3 [00:52<00:26, 26.02s/it]
+
+Epoch 94.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.07s/it]
+Epoch 94.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.05s/it]
+
+Epoch 95: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.42it/s]
+
+Epoch 95: sampling:  33%|███▎      | 1/3 [00:03<00:06,  3.10s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.84it/s]
+
+Epoch 95: sampling:  67%|██████▋   | 2/3 [00:07<00:03,  3.72s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.83it/s]
+
+Epoch 95: sampling: 100%|██████████| 3/3 [00:11<00:00,  3.96s/it]
+Epoch 95: sampling: 100%|██████████| 3/3 [00:11<00:00,  3.83s/it]
+I0914 03:31:03.697098 139800530047616 train_nft_sd3.py:5653] Epoch 95 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.75s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:09<00:04,  4.65s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  4.96s/it]
+Waiting for rewards: 100%|██████████| 3/3 [00:14<00:00,  4.79s/it]
+I0914 03:31:18.551199 139800530047616 train_nft_sd3.py:5763] Epoch 95 reward metrics: {'reward_accuracy': 0.9513888955116272, 'reward_geneval': 0.9552951455116272, 'reward_avg': 0.9552951455116272, 'reward_geneval_all': 0.9552951455116272, 'reward_geneval_clean_count': 576.0, 'reward_geneval_rse_count': 0.0}
+I0914 03:31:19.198716 139800530047616 train_nft_sd3.py:6511] Advantages mean: 0.054159932467674775 train_keep_rate=1.0 signal_scale=1.0000 fanft_lr_scale=1.0000 lr_eff=0.00030000 explore_only=0.0
+
+Epoch 95.0: training:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Epoch 95.0: training:  33%|███▎      | 1/3 [00:25<00:51, 25.97s/it]
+
+Epoch 95.0: training:  67%|██████▋   | 2/3 [00:51<00:25, 26.00s/it]
+
+Epoch 95.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.07s/it]
+Epoch 95.0: training: 100%|██████████| 3/3 [01:18<00:00, 26.05s/it]
+
+Epoch 96: sampling:   0%|          | 0/3 [00:00<?, ?it/s]
+
+Sampling Progress: 100%|██████████| 10/10 [00:02<00:00,  3.41it/s]
+
+Epoch 96: sampling:  33%|███▎      | 1/3 [00:03<00:06,  3.10s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.82it/s]
+
+Epoch 96: sampling:  67%|██████▋   | 2/3 [00:07<00:03,  3.75s/it]
+
+Sampling Progress: 100%|██████████| 10/10 [00:03<00:00,  2.83it/s]
+
+Epoch 96: sampling: 100%|██████████| 3/3 [00:11<00:00,  3.98s/it]
+Epoch 96: sampling: 100%|██████████| 3/3 [00:11<00:00,  3.85s/it]
+I0914 03:32:49.464198 139800530047616 train_nft_sd3.py:5653] Epoch 96 collection: generated_images=576 overhead=1.000x attempts=1 prompt_replacements=0 insensitive_prompts=0 all_blocks_accepted=False bad_blocks_remaining=0
+
+Waiting for rewards:   0%|          | 0/3 [00:00<?, ?it/s]
+Waiting for rewards:  33%|███▎      | 1/3 [00:03<00:07,  3.61s/it]
+Waiting for rewards:  67%|██████▋   | 2/3 [00:09<00:04,  4.72s/it]
