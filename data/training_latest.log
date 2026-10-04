@@ -23,6 +23,8 @@
 [2026-10-03 11:10:25 Asia/Shanghai] Local dependency runner validated: main_nft and main_flow_grpo are dispatched through the required native 4-GPU contract; main_full uses the train contract.
 [2026-10-03 13:09:00 Asia/Shanghai] Hourly inspection found prior interactive sessions reclaimed: E3 GeneEval and OCR were complete on disk; E3 preference retry2 remained partial and was preserved.
 [2026-10-03 13:11:00 Asia/Shanghai] Reward services, training-sync, and local dependency runner restarted; E3 preference resumed as a clean retry3 with offline W&B and both HPSv2/PickScore endpoints healthy.
+[2026-10-04 10:25:00 Asia/Shanghai] Hourly inspection confirmed E1/E2/E4/E9 complete; first E7 A0 launch failed only on a legacy Slurm-allocation guard in v27/train.py.
+[2026-10-04 10:29:00 Asia/Shanghai] Made the Slurm guard opt-in for the current local cluster and relaunched E7_A0 GeneEval/OCR; both 4-GPU NCCL groups initialized, loaded SD3.5M, and entered offline-W&B/remote-reward execution.
 [2026-10-02 20:05:07 PDT] local continuation runner started; waiting for current E3 outputs
 [2026-10-03 11:05:43 Asia/Shanghai] local continuation runner started; waiting for current E3 outputs
 [2026-10-03 11:10:25 Asia/Shanghai] local continuation runner started; waiting for current E3 outputs
@@ -59,3 +61,22 @@
 [2026-10-04 04:07:21 Asia/Shanghai] completed E9_pickscore: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E9_pickscore/output
 [2026-10-04 04:07:21 Asia/Shanghai] started E7_A0_geneval kind=train gpus=[0, 1, 2, 3] pid=1244098 output=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_geneval/output
 [2026-10-04 04:07:21 Asia/Shanghai] started E7_A0_ocr kind=train gpus=[4, 5, 6, 7] pid=1244099 output=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_ocr/output
+[2026-10-04 10:27:44 Asia/Shanghai] local continuation runner started; waiting for current E3 outputs
+[2026-10-04 10:27:44 Asia/Shanghai] E3 GeneEval/OCR/preference complete; starting E1
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E1_geneval: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E1_geneval/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E1_ocr: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E1_ocr/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E1_hpsv2: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E1_hpsv2/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E1_pickscore: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E1_pickscore/output
+[2026-10-04 10:27:44 Asia/Shanghai] E1 complete; starting E2, E4, and E9
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E2_hpsv2: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E2_hpsv2/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E2_pickscore: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E2_pickscore/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E4_geneval: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E4_geneval/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E4_ocr: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E4_ocr/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E4_hpsv2: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E4_hpsv2/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E4_pickscore: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E4_pickscore/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E9_geneval: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E9_geneval/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E9_ocr: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E9_ocr/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E9_hpsv2: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E9_hpsv2/output
+[2026-10-04 10:27:44 Asia/Shanghai] skip completed E9_pickscore: /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E9_pickscore/output
+[2026-10-04 10:27:44 Asia/Shanghai] started E7_A0_geneval kind=train gpus=[0, 1, 2, 3] pid=1298763 output=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_geneval/output
+[2026-10-04 10:27:44 Asia/Shanghai] started E7_A0_ocr kind=train gpus=[4, 5, 6, 7] pid=1298764 output=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_ocr/output
