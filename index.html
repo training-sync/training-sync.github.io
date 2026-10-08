@@ -118,8 +118,8 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-38wnfbk3-0009</span>
-            <span>Data updated: 2026-10-08T20:07:38.235186+08:00</span>
-            <span>Page generated: 2026-10-08 20:07:38</span>
+            <span>Data updated: 2026-10-08T20:12:53.008743+08:00</span>
+            <span>Page generated: 2026-10-08 20:12:53</span>
             <span>wandb zip: 0.0 MB</span>
         </div>
     </div>
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (113 lines)</span>
+            <span class="terminal-title">training_latest.log (115 lines)</span>
         </div>
         <div id="terminal">[2026-09-30 19:50:00 Asia/Shanghai] SD3.5M single-seed experiment package unpacked and local assets resolved.
 [2026-09-30 19:50:00 Asia/Shanghai] Protocol manifest generated: geneval/ocr/hpsv2/pickscore, 6040 JSON artifacts.
@@ -244,6 +244,8 @@
 [2026-10-08 18:04:13 Asia/Shanghai] Infrastructure recovery: E7_A0_pickscore latest complete checkpoint=30 world_size=4; interrupted records preserved at /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_pickscore/output/recovery-evidence/20261008-180324; updates since checkpoint will be recomputed, original W&amp;B identity retained.
 [2026-10-08 18:05:28 Asia/Shanghai] Personal inspection 2026-10-08 18:05 Asia/Shanghai: reward services 18086-18089 healthy; E7_A0_hpsv2 and E7_A0_pickscore restored from full checkpoint-30 with same four-GPU profile and original W&amp;B IDs; both collecting epoch30; eight GPUs active. Next personal write_stdin inspection due approximately 19:05; cloud/server synchronization remains scalar-only, no images or checkpoints.
 [2026-10-08 19:09:49 Asia/Shanghai] Personal hourly inspection at 2026-10-08 19:05:59 Asia/Shanghai: E7_A0_hpsv2/PickScore completed_updates=32, collecting epoch32; all 8 ranks alive, metrics finite; reward services 18086-18089 and scalar sync server healthy. Scalar-only cloud readback verified 324 history rows across 29 run IDs/31 offline segments; 6 missing rows uploaded, no image/checkpoint records. Verification=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/wandb-scalars-only-20261008-190632/verification.json. Next personal write_stdin inspection due 20:06 Asia/Shanghai.
+[2026-10-08 20:09:15 Asia/Shanghai] Personal hourly inspection at 2026-10-08 20:06:17 Asia/Shanghai: E7_A0_hpsv2/PickScore completed_updates=34, training epoch34; all 8 ranks alive, metrics finite, reward services and scalar sync server healthy. Scalar-only cloud readback verified 328 history rows across 29 run IDs/31 offline segments; 4 missing rows uploaded. Sync source refreshed and raw record whitelist verified (no artifact/files/media records). Verification=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/wandb-scalars-only-20261008-200659/verification.json. Next personal write_stdin inspection due 21:06 Asia/Shanghai.
+[2026-10-08 20:11:09 Asia/Shanghai] Telemetry-only correction: RunLogger.log now passes commit=True with its explicit W&amp;B step, fixing a one-event SDK buffering delay for subsequently launched processes. Regression test tests/test_telemetry_commit.py passed (1 passed). Current HPSv2/PickScore processes are not restarted or hot-patched and retain the old buffering behavior; their latest actual metrics remain fully preserved in metrics.jsonl. No numerical/training configuration changed.
 </div>
     </div>
 
