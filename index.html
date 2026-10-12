@@ -118,8 +118,8 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-38wnfbk3-0009</span>
-            <span>Data updated: 2026-10-12T18:49:24.464168+08:00</span>
-            <span>Page generated: 2026-10-12 18:49:24</span>
+            <span>Data updated: 2026-10-12T18:54:33.158246+08:00</span>
+            <span>Page generated: 2026-10-12 18:54:33</span>
             <span>wandb zip: 0.01 MB</span>
         </div>
     </div>
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (12 lines)</span>
+            <span class="terminal-title">training_latest.log (13 lines)</span>
         </div>
         <div id="terminal">SD3.5M single-seed experiments — personal inspections (Asia/Shanghai)
 Cadence: every two hours; run order: materialized DAG, serial controller.
@@ -143,6 +143,7 @@ W&amp;B project: gary_144-univery-of-science-and-technology-of-china/sd35m-rl-ex
 [2026-10-12 14:55:12 Asia/Shanghai] CLOUD/DOWNLOAD READBACK VERIFIED: uploaded four missing scalar rows; initial immediate readback still115 cloud rows, later fresh query119 rows including completed_updates101-108, display name E7_A0_geneval, config epochs300. All32 captured offline segments/661 scalar rows verified; report wandb-scalars-only-20261012-144717/verification.json all_verified=true. Added bounded120-second readback retry (no repeat upload) and captured-source-prefix verification, preventing delayed indexing or later live events from causing a false failure. Source script syntax check passed. Download config now current eight-row export; start-server.sh executed, server PID456685, metadata healthy. ZIP5226 bytes verified byte-for-byte with export, only header/run/history/summary/telemetry records, no media/artifact records or image/checkpoint files. Cloud state failed remains recorded separately from confirmed live local training. Next personal inspection scheduled approximately2026-10-12 16:45:39 Asia/Shanghai.
 [2026-10-12 16:45:53 Asia/Shanghai] PERSONAL 2-HOUR INSPECTION: used write_stdin on controller63058 and observer46010. E7_A0_geneval reached110/300 and returned to training. Controller409005, job409018, torchrun409020, ranks409024-409027 alive. GPUs4-7 94-100%; no log matches for Traceback/OOM/NCCL error/RuntimeError/NaN. Real fixed-manifest eval110 has2,212 local rows; official macro0.6583923454402177, micro0.6491862567811935, reward avg0.788916515973478. Compared to eval100 macro0.7391214225589225 and micro0.7296564195298373, differences -0.0807290771187048 and -0.08047016274864383. Full checkpoint110 verified: complete marker, raw weights, world4, 382 current/old parameter tensors, 382 Adam parameter states/1146 finite optimizer tensors, four RNG pairs, cumulative images126720; checkpoint numerical config matches 300-epoch run except allowed epoch extension. Latest evaluation/curve in download export wandb-scalars-export-20261012-164839/scalar-xc087sfh (11 scalar rows), service PID479622 healthy, ZIP6328 bytes and only current scalar run file.
 [2026-10-12 17:04 Asia/Shanghai] CLOUD READBACK: full32-segment,664-scalar-row audit all_verified=true in wandb-scalars-only-20261012-164902/verification.json; E7_A0_geneval cloud history122 rows with no missing values through eval110. Exported local rows match readback; no image/checkpoint media uploaded. W&amp;B run state remains failed while the corresponding local training process is live; do not interpret cloud status as training completion/failure. Next personal inspection scheduled approximately2026-10-12 18:45:53 Asia/Shanghai.
+[2026-10-12 18:53 Asia/Shanghai] PERSONAL 2-HOUR INSPECTION: polled controller63058 and observer46010 with write_stdin. E7_A0_geneval remains active at114/300 (training epoch114); controller409005, job409018, torchrun409020 and ranks409024-409027 all alive. GPUs4-7 at95-100% utilization. Latest metrics are finite (reward0.9566695601851853, policy_loss2.731498352739223, gradient norm0.036908716163250026); latest complete checkpoint remains110 and no new evaluation has completed. An error scan finds only historical local-run.log traceback from old no-Slurm launch attempts; the current controller/rank processes are healthy and do not use those attempts. Exported current offline run xc087sfh to wandb-scalars-export-20261012-184810/scalar-xc087sfh (15 scalar rows), updated training-sync config.env WANDB_RUN_DIR, restarted service PID502638; /status healthy. Download ZIP is 54,472 bytes with exactly one member run-xc087sfh.wandb (no images/checkpoints). Full scalar-only audit covered32 offline segments; all_verified=true in wandb-scalars-only-20261012-184846/verification.json. Active run source segments have111 and15 local rows, both with zero missing cloud rows; cloud history126 rows, W&amp;B state remains failed and is distinct from live training status. Next personal inspection due approximately2026-10-12 20:53 Asia/Shanghai.
 </div>
     </div>
 
