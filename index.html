@@ -118,8 +118,8 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: hx00-38wnfbk3-0009</span>
-            <span>Data updated: 2026-10-13T11:24:56.133623+08:00</span>
-            <span>Page generated: 2026-10-13 11:24:56</span>
+            <span>Data updated: 2026-10-13T11:30:04.025159+08:00</span>
+            <span>Page generated: 2026-10-13 11:30:04</span>
             <span>wandb zip: 0.02 MB</span>
         </div>
     </div>
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (7 lines)</span>
+            <span class="terminal-title">training_latest.log (8 lines)</span>
         </div>
         <div id="terminal">SD3.5M single-seed experiments — personal inspections (Asia/Shanghai)
 Cadence: every two hours, personally polling controller63058 and observer46010 with write_stdin.
@@ -138,6 +138,7 @@ W&amp;B project: gary_144-univery-of-science-and-technology-of-china/sd35m-rl-ex
 [2026-10-13 09:20 Asia/Shanghai] PERSONAL INSPECTION: polled controller63058 and observer46010; read accumulated observer snapshots as historical evidence, not as prior personal checks. Current active E7_A0_geneval completed_updates140/target300, fixed evaluation140 in progress. Controller409005, job409018, torchrun409020, ranks409024-409027 alive. Latest training reward0.9273726851851853, policy_loss2.697724796736729, gradient_norm0.08419368723129944, finite. Active process stdout resolves to logs/E7_A0_geneval.log, with sampling advancing and no Traceback/OOM/NCCL error/RuntimeError/NaN matches. Checkpoint140 complete marker: raw weights, world_size4, training_state.pt301015898 bytes, lora directory present. Completed fixed evaluations120 and130 both use2212 rows: macro0.6135885450247152/micro0.6017179023508138 at120; macro0.4853384465219572/micro0.4733273056057866 at130. Macro declines from110 (0.6583923454402177); continue prescribed300-update trajectory and record all fixed evaluations. Exported current offline segment43 scalar rows to wandb-scalars-export-20261013-092036/scalar-xc087sfh; cloud full readback pending.
 [2026-10-13 09:27 Asia/Shanghai] CHECKPOINT/CURVE VERIFICATION: checkpoint140 CPU load succeeded with weights_only=True:382 current tensors,382 old-policy tensors,382 Adam parameter states/1146 optimizer tensors; all finite, current/old shapes and dtypes match, four complete CPU/CUDA RNG pairs, cumulative images161280, world_size4, config matches300-update run. Export served by restarted training-sync server; metadata points to today's personal log and43-row scalar export. Download ZIP17414 bytes, sole member run-xc087sfh.wandb, CRC validation passed. Full cloud audit found and uploaded23 missing scalar rows, then fresh readback confirmed active cloud history154 with no missing values. All32 offline segments verified in wandb-scalars-only-20261013-092147/verification.json (all_verified=true). Cloud state failed remains metadata from offline segments; local live process status checked independently. Next personal inspection2026-10-13 11:20 Asia/Shanghai; continue waiting in this active turn.
 [2026-10-13 11:20 Asia/Shanghai] PERSONAL 2-HOUR INSPECTION: remained in active turn and waited to deadline, then used write_stdin on controller63058 and observer46010. E7_A0_geneval reached142/300, phase training, collection epoch142. Same controller/job/torchrun/four rank PIDs alive; GPUs4-7 85-100%. Latest reward0.9636863425925927, policy_loss2.622681082084087, gradient norm0.11580900847911835, epoch wall1690.72s. Active log scan found no Traceback/OOM/NCCL error/timeout/RuntimeError/NaN. Checkpoint140 fixed raw evaluation completed: row_count and actual rows2212, official macro0.6669907183537503, micro0.6564195298372514, reward0.7999547920433996; macro recovered by0.1816522718317931 versus130. Latest complete checkpoint140 was validated this morning. Exported46 scalar rows to wandb-scalars-export-20261013-112050/scalar-xc087sfh and updated sync config. Full cloud verification pending for three new rows. Next personal check2026-10-13 13:20 Asia/Shanghai.
+[2026-10-13 11:26 Asia/Shanghai] CLOUD/DOWNLOAD VERIFIED: full audit32 segments/699 scalar rows all_verified=true in wandb-scalars-only-20261013-112150/verification.json. Current cloud run157 history rows (111 original+46 resumed), missing_indices empty for both source segments, including eval140 and updates141-142. No additional upload needed after the current readback. Restarted training-sync service serves46-row export; metadata paths correct, ZIP18518 bytes, sole run-xc087sfh.wandb member, ZIP CRC check passed. Offline source evidence, images and checkpoints retained locally. Continue active waiting to13:20 personal check.
 </div>
     </div>
 
