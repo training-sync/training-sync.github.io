@@ -118,8 +118,8 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: cce-ig-7fp47jsw-74mui4ik-ebxj7f0q-01</span>
-            <span>Data updated: 2026-10-21T20:58:49.485649+08:00</span>
-            <span>Page generated: 2026-10-21 20:58:49</span>
+            <span>Data updated: 2026-10-21T21:09:11.776945+08:00</span>
+            <span>Page generated: 2026-10-21 21:09:12</span>
             <span>wandb zip: 0.02 MB</span>
         </div>
     </div>
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (43 lines)</span>
+            <span class="terminal-title">training_latest.log (44 lines)</span>
         </div>
         <div id="terminal">SD3.5M container migration and continued experiments (all timestamps Asia/Shanghai)
 Canonical writable volume: machedge-bd-ga-mix. No machedge-ali-sh-mix compatibility link is created.
@@ -174,6 +174,7 @@ Source evidence remains under read-only /lpai/dataset/training-log-wcf/vlog-sd35
 [2026-10-21 17:00 Asia/Shanghai; upload/readback verified ~17:04] PERSONAL TWO-HOURLY INSPECTION: write_stdin49825 quiet/live; controller/job/torchrun/all4 ranks healthy. HPSv2 completed140/300; latest scalar event172 loss3.3594316283/reward35.7960287689. Checkpoint140 exists and its fixed evaluation is in progress at464/512 per rank; GPUs4-7 at99/99/100/100%. Offline snapshot43 rows; only index42/update140 was missing from the cloud. First old SDK sync command hit a W&amp;B API schema bug (`ServerSettingsType` null) and did not update queryable history. Retried the same single-row scalar delta with a narrowly scoped compatibility shim, then cloud readback verified159 history rows and zero missing delta indices. BD-GA sync config now points at wandb-scalars-delta-20261021-170015/scalar-p3qd253j; server1793761 healthy, ZIP13822 bytes, sole member run-p3qd253j.wandb, CRC valid. Remote state now reports finished after syncing the offline segment although local training is active; future same-run deltas must append/resume. No tables/images/checkpoints uploaded. Structured evidence migrations/container-bd-20261016/inspection-20261021-1700.json. Next personal inspection2026-10-21 19:00 Asia/Shanghai.
 [2026-10-21 17:22 Asia/Shanghai] CHECKPOINT/EVAL FOLLOW-UP: write_stdin49825 quiet; controller/job/torchrun/all4 ranks still alive and GPUs4-7 ~99-100%. Checkpoint140 fixed evaluation completed all2048 images (eval reward34.2627036865, elapsed7332.31s, event174). Cloud had159 history rows and lacked only the scalar eval row; exported that one row to wandb-scalars-delta-20261021-172134/scalar-p3qd253j. Retargeted bd-ga config, restarted server1800417; HTTP metadata healthy, ZIP13899 bytes with sole run-p3qd253j.wandb member and valid CRC. Compatibility-shimmed sync succeeded; cloud readback now160 rows, zero missing across all44 captured local scalar rows. Latest checkpoint/evaluation140, training remains active; no images/tables/checkpoints submitted. Structured evidence migrations/container-bd-20261016/inspection-20261021-1722.json. Next personal inspection remains2026-10-21 19:00 Asia/Shanghai.
 [2026-10-21 19:00 Asia/Shanghai; cloud readback verified ~19:04] PERSONAL TWO-HOURLY INSPECTION: write_stdin49825 quiet/live. Controller/job/torchrun/four ranks alive; GPUs4-7 at100/100/97/100%. HPSv2 completed141/300; latest scalar event175 has policy loss3.2833404313 and display-scale reward35.4182588842. Checkpoint/evaluation140 complete; fixed eval reward34.2627036865 over2048 images. Current offline source45 scalar rows, cloud160; only index44/update141 missing. Exported only that row to wandb-scalars-delta-20261021-190223/scalar-p3qd253j. Updated BD-GA config and restarted server1825826; metadata HTTP200, ZIP14213 bytes with only run-p3qd253j.wandb and valid CRC. Old SDK's server-settings introspection workaround applied only to this sync process; cloud readback now161 rows and zero missing across all45 local scalars. Remote state reports finished after offline sync while local training remains active; future deltas append/resume. No tables/images/checkpoints uploaded. Structured evidence migrations/container-bd-20261016/inspection-20261021-1900.json. Next personal inspection2026-10-21 21:00 Asia/Shanghai.
+[2026-10-21 21:00 Asia/Shanghai; cloud readback verified ~21:04] PERSONAL TWO-HOURLY INSPECTION: write_stdin49825 quiet; controller/job/torchrun/all4 ranks alive. Initial snapshot showed rank3 in D state and GPU7 at14%; after upload it returned to Rsl with GPU7 at100%, so the wait was transient. HPSv2 completed144/300; latest event178 loss3.2723449659/reward36.3596234548. Checkpoint/eval140 remain latest complete; next150. Offline snapshot48 scalar rows, cloud161; only indices45-47 (updates142-144) missing. Exported those three scalar rows to wandb-scalars-delta-20261021-210326/scalar-p3qd253j. Updated BD-GA config; server1857199 healthy, metadata HTTP200, ZIP15104 bytes with sole run-p3qd253j.wandb member and valid CRC. Compatibility-shimmed W&amp;B sync completed; cloud readback now164 rows and zero missing across all48 captured local scalar rows. Remote state finished while local trainer remains active. No tables/images/checkpoints uploaded. Structured evidence migrations/container-bd-20261016/inspection-20261021-2100.json. Next personal inspection2026-10-21 23:00 Asia/Shanghai.
 </div>
     </div>
 
