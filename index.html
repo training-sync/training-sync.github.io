@@ -118,8 +118,8 @@
         <h1><span class="status-dot"></span>Training Monitor</h1>
         <div class="meta">
             <span>Host: cce-ig-7fp47jsw-74mui4ik-ebxj7f0q-01</span>
-            <span>Data updated: 2026-10-29T09:11:04.772808+08:00</span>
-            <span>Page generated: 2026-10-29 09:11:05</span>
+            <span>Data updated: 2026-10-29T09:16:25.315958+08:00</span>
+            <span>Page generated: 2026-10-29 09:16:25</span>
             <span>wandb zip: 0.0 MB</span>
         </div>
     </div>
@@ -129,7 +129,7 @@
             <div class="dot dot-r"></div>
             <div class="dot dot-y"></div>
             <div class="dot dot-g"></div>
-            <span class="terminal-title">training_latest.log (35 lines)</span>
+            <span class="terminal-title">training_latest.log (40 lines)</span>
         </div>
         <div id="terminal">2026-10-28 17:34 Asia/Shanghai — Scheduled personal inspection; final checks completed around 17:44.
 Training: E7_A0_hpsv2, W&amp;B run p3qd253j, 294/300 updates; controller, job, torchrun, and all four ranks alive. Latest metric: epoch 293 / event 358, reward_avg 36.2295153, policy_loss 3.2558241, gradient/nft_norm 0.0242945. GPUs 4–7 were at 97%, 100%, 90%, 100% in the final snapshot.
@@ -166,6 +166,11 @@ Training: E7_A0_ocr, W&amp;B run kfqxrx95, 106/300 updates (two more than the pr
 W&amp;B: 35-run audit found missing indices 4 and 5 for the active OCR offline source (6 local rows, prior 115 cloud rows); uploaded scalar-only delta wandb-scalars-only-20261029-064824/scalar-kfqxrx95 (17,102 bytes). Readback: 117 cloud rows, no missing indices, complete source tail (22,970,368 bytes); all 35 runs verified. W&amp;B cloud run state remains failed; no attempt was made to change it. No images or checkpoints uploaded.
 Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the 06:48 scalar delta. Executed start-server.sh; its detached child exited, so server.py is supervised in foreground (PID 646760, session 87426; .server.pid updated). /status and /metadata returned 200. ZIP 4,280 bytes, CRC valid, sole member run-kfqxrx95.wandb.
 Next personal inspection target: 2026-10-29 08:48 Asia/Shanghai.
+2026-10-29 08:48 Asia/Shanghai — This inspection ran late; actual process/GPU snapshot was at 09:08:49 and sync/service verification finished at 09:11:40.
+Training: E7_A0_ocr, W&amp;B run kfqxrx95, 109/300 updates (three more than the 06:48 snapshot). Controller PID 1212198/session 49825, job PID 535388, torchrun PID 535390, and ranks 535394–535397 were alive. Latest metric: epoch 108 / event 130, reward_avg 0.7926007, policy_loss 6.8202577, gradient/nft_norm 3.8343599. GPUs 4–7 were at 89%, 90%, 89%, 89%. Latest evaluation remained checkpoint-100.
+W&amp;B: 35-run audit found missing indices 6–8 for the active OCR offline source (9 local rows, prior 117 cloud rows); uploaded scalar-only delta wandb-scalars-only-20261029-090920/scalar-kfqxrx95 (24,235 bytes). Readback: 120 cloud rows, no missing indices, complete source tail (32,309,248 bytes); all 35 runs verified. Cloud run state remains failed; no state change attempted. No image/checkpoint files were in the uploaded curve delta.
+Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the 09:09 scalar delta. Executed start-server.sh; the detached child exited, so server.py remains supervised in foreground (PID 689055, session 88877; .server.pid updated). /status and /metadata returned 200. ZIP 5,197 bytes, CRC valid, sole member run-kfqxrx95.wandb.
+Next inspection is scheduled two hours after the actual training snapshot: 2026-10-29 11:08 Asia/Shanghai.
 </div>
     </div>
 
