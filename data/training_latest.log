@@ -1,50 +1,46 @@
-2026-10-28 17:34 Asia/Shanghai — Scheduled personal inspection; final checks completed around 17:44.
-Training: E7_A0_hpsv2, W&B run p3qd253j, 294/300 updates; controller, job, torchrun, and all four ranks alive. Latest metric: epoch 293 / event 358, reward_avg 36.2295153, policy_loss 3.2558241, gradient/nft_norm 0.0242945. GPUs 4–7 were at 97%, 100%, 90%, 100% in the final snapshot.
-W&B: audited 34 offline runs in sd35m-rl-exploration-single-seed-verified-curves. Current run had missing scalar indices 211 and 212; scalar-only delta wandb-scalars-only-20261028-173633/scalar-p3qd253j (366132 bytes) synced. A catch-up full audit at 17:42 found the source had grown to 862027776 bytes but still had 213 rows; final readback: 329 cloud rows, no missing indices, complete source tail; all 34 runs verified. Cloud run state still reports failed while local training remains active. No images or checkpoints uploaded.
-Training Sync: config points here for LOG_SOURCE and to the scalar delta for WANDB_RUN_DIR. start-server.sh was executed; its detached child exited in this execution environment, so server.py is supervised in foreground (PID 409075, session 28659; .server.pid updated). /status OK. ZIP 56386 bytes, CRC valid, sole member run-p3qd253j.wandb.
-Next personal inspection: 2026-10-28 19:34 Asia/Shanghai.
-2026-10-28 19:34 Asia/Shanghai — Scheduled personal inspection; final checks completed around 19:40.
-Training: E7_A0_hpsv2, W&B run p3qd253j, 296/300 updates; controller, job, torchrun, and all four ranks alive. Latest metric: epoch 295 / event 360, reward_avg 36.0248902, policy_loss 3.2982241, gradient/nft_norm 0.0144368. GPUs 4–7 were at 89%, 100%, 97%, 100% in the final snapshot.
-W&B: audited 34 offline runs. Missing scalar indices 213 and 214 were uploaded as scalar-only delta wandb-scalars-only-20261028-193437/scalar-p3qd253j (369736 bytes). Readback: 215 local rows, 331 cloud rows, no missing indices, complete source tail; catch-up audit at 19:38 also found no new missing points. Cloud run state still reports failed while local training remains active. No images or checkpoints uploaded.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the new delta. start-server.sh executed; its detached child exited in this execution environment, so server.py is supervised in foreground (PID 445146, session 76415; .server.pid updated). /status OK. ZIP 56923 bytes, CRC valid, sole member run-p3qd253j.wandb.
-Next personal inspection: 2026-10-28 21:34 Asia/Shanghai.
-2026-10-28 21:34 Asia/Shanghai — Scheduled personal inspection actually started around 22:33 (about 59 minutes late); final checks completed around 22:48.
-Training: E7_A0_hpsv2, W&B run p3qd253j, 299/300 updates; controller, job, torchrun, and all four ranks alive. Latest metric: epoch 298 / event 363, reward_avg 36.1393926, policy_loss 3.2620628, gradient/nft_norm 0.0206358. GPUs 4–7 were at 100%, 100%, 99%, 97% in the latest snapshot.
-W&B: audited 34 offline runs. Missing scalar indices 215–217 were uploaded in scalar-only delta wandb-scalars-only-20261028-223508/scalar-p3qd253j (376913 bytes). Final catch-up readback: 218 local rows, 334 cloud rows, no missing indices, complete source tail (881360896 bytes). Cloud run state still reports failed while local training remains active. No images or checkpoints uploaded.
-Training Sync: WANDB_RUN_DIR points to the 22:35 scalar delta; start-server.sh executed and server.py supervised in foreground (PID 494603, session 49622; .server.pid updated). /status OK. ZIP 57753 bytes, CRC valid, sole member run-p3qd253j.wandb.
-Next personal inspection target: 2026-10-29 00:48 Asia/Shanghai.
-2026-10-29 00:48 Asia/Shanghai — Scheduled inspection completed; final service/process snapshot around 01:04.
-Training: E7_A0_hpsv2 completed 300/300; checkpoint-300 evaluation completed on 2048 images (HPSv2 34.1814751, event366). Sequential controller then started E7_A0_ocr at target300, resuming checkpoint-100; run kfqxrx95, job/torchrun/all4 ranks alive. Latest OCR metric still reflects eval checkpoint100 (1018 images; OCR reward 0.0028651). GPUs 4–7 were at 99%, 88%, 100%, 100%.
-W&B: controller's full audit/sync covered 34 offline runs. E7_A0_hpsv2 final readback: 220 local rows, 336 cloud rows, no missing indices, complete source tail, cloud state finished. Final scalar delta wandb-scalars-only-20261029-004745/scalar-p3qd253j (376642 bytes) synced; no images/checkpoints uploaded.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the final HPSv2 scalar delta. start-server.sh executed; server.py supervised in foreground (PID 537978, session 14006; .server.pid updated). /status OK. ZIP 58263 bytes, CRC valid, sole member run-p3qd253j.wandb.
-Next personal inspection target: 2026-10-29 02:48 Asia/Shanghai.
-2026-10-29 02:48 Asia/Shanghai — Scheduled personal inspection; final checks completed around 02:54.
-Training: E7_A0_ocr, W&B run kfqxrx95, 102/300 updates; controller/job/torchrun/all4 ranks alive. Latest metric: epoch 101 / event 123, reward_avg 0.8924104, policy_loss 3.4092271, gradient/nft_norm 0.8665652. GPUs 4–7 were at 100%, 100%, 100%, 99% in the final snapshot.
-W&B: audited 35 offline runs. Current run initially had missing scalar indices 0 and 1; scalar-only delta wandb-scalars-only-20261029-024837/scalar-kfqxrx95 (9915 bytes) synced. A catch-up full audit at 02:51 found 2 local rows, 113 cloud rows, no missing indices, complete source tail (7569408 bytes); all 35 runs verified. Cloud state for this active OCR run still reports failed. No images or checkpoints uploaded.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the OCR scalar delta. start-server.sh executed; server.py supervised in foreground (PID 572971, session 87918; .server.pid updated). /status OK. ZIP 3041 bytes, CRC valid, sole member run-kfqrxrx95.wandb.
-Next personal inspection target: 2026-10-29 04:48 Asia/Shanghai.
-2026-10-29 04:48 Asia/Shanghai — Scheduled inspection completed; training snapshot at 04:48:56, sync service verification at 05:01.
-Training: E7_A0_ocr, W&B run kfqxrx95, 104/300 updates; controller PID 1212198/session 49825, training job PID 535388, torchrun PID 535390 and ranks 535394–535397 were alive at the scheduled snapshot. Latest metric: epoch 103 / event 125, reward_avg 0.7337199, policy_loss 8.9903944, gradient/nft_norm 4.1380709. GPUs 4–7 were at 100%, 100%, 89%, 100%. Latest evaluation/checkpoint remained checkpoint-100; do not infer an evaluation beyond that snapshot.
-W&B: final catch-up scalar audit at 04:53 verified all 35 run records. Current OCR offline run had 4 local rows, 115 cloud rows, no missing indices, complete tail (source 15,597,568 bytes). Cloud state still reports failed although prior scalar readback is complete; state was not changed. Ran the scalar-only uploader; latest delta is wandb-scalars-only-20261029-044931/scalar-kfqxrx95 (run file 13,552 bytes). No images/checkpoints uploaded.
-Training Sync: corrected WANDB_RUN_DIR to the actual scalar-kfqxrx95 directory; LOG_SOURCE remains this progress log. Executed start-server.sh, then supervised server.py in foreground (PID 612668; session 91312; .server.pid updated) because its nohup child exits with the command environment. /status and /metadata returned 200. ZIP was 3,675 bytes, CRC valid, with only run-kfqxrx95.wandb.
-Next personal inspection target: 2026-10-29 06:48 Asia/Shanghai.
-2026-10-29 06:48 Asia/Shanghai — Scheduled inspection; process/GPU snapshot at 06:48:08, curve sync and service verification finished around 06:52.
-Training: E7_A0_ocr, W&B run kfqxrx95, 106/300 updates (two more than the previous inspection). Controller PID 1212198/session 49825, job PID 535388, torchrun PID 535390, and ranks 535394–535397 were alive. Latest metric: epoch 105 / event 127, reward_avg 0.7901713, policy_loss 7.6164849, gradient/nft_norm 5.2077851. GPUs 4–7 were at 100%, 97%, 100%, 100%. Latest evaluation checkpoint remained checkpoint-100; next scheduled checkpoint evaluation is not yet observed.
-W&B: 35-run audit found missing indices 4 and 5 for the active OCR offline source (6 local rows, prior 115 cloud rows); uploaded scalar-only delta wandb-scalars-only-20261029-064824/scalar-kfqxrx95 (17,102 bytes). Readback: 117 cloud rows, no missing indices, complete source tail (22,970,368 bytes); all 35 runs verified. W&B cloud run state remains failed; no attempt was made to change it. No images or checkpoints uploaded.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the 06:48 scalar delta. Executed start-server.sh; its detached child exited, so server.py is supervised in foreground (PID 646760, session 87426; .server.pid updated). /status and /metadata returned 200. ZIP 4,280 bytes, CRC valid, sole member run-kfqxrx95.wandb.
-Next personal inspection target: 2026-10-29 08:48 Asia/Shanghai.
-2026-10-29 08:48 Asia/Shanghai — This inspection ran late; actual process/GPU snapshot was at 09:08:49 and sync/service verification finished at 09:11:40.
-Training: E7_A0_ocr, W&B run kfqxrx95, 109/300 updates (three more than the 06:48 snapshot). Controller PID 1212198/session 49825, job PID 535388, torchrun PID 535390, and ranks 535394–535397 were alive. Latest metric: epoch 108 / event 130, reward_avg 0.7926007, policy_loss 6.8202577, gradient/nft_norm 3.8343599. GPUs 4–7 were at 89%, 90%, 89%, 89%. Latest evaluation remained checkpoint-100.
-W&B: 35-run audit found missing indices 6–8 for the active OCR offline source (9 local rows, prior 117 cloud rows); uploaded scalar-only delta wandb-scalars-only-20261029-090920/scalar-kfqxrx95 (24,235 bytes). Readback: 120 cloud rows, no missing indices, complete source tail (32,309,248 bytes); all 35 runs verified. Cloud run state remains failed; no state change attempted. No image/checkpoint files were in the uploaded curve delta.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the 09:09 scalar delta. Executed start-server.sh; the detached child exited, so server.py remains supervised in foreground (PID 689055, session 88877; .server.pid updated). /status and /metadata returned 200. ZIP 5,197 bytes, CRC valid, sole member run-kfqxrx95.wandb.
-Next inspection is scheduled two hours after the actual training snapshot: 2026-10-29 11:08 Asia/Shanghai.
-2026-10-29 11:08 Asia/Shanghai — Scheduled inspection; actual training/GPU snapshot at 11:08:16 and sync-service verification at 11:11:26.
-Training: E7_A0_ocr, W&B run kfqxrx95, 110/300 updates (one more than the prior snapshot). Controller PID 1212198/session 49825, job PID 535388, torchrun PID 535390, and ranks 535394–535397 were alive. Latest training metric: epoch 109 / event 131, reward_avg 0.7867880, policy_loss 8.9120525, gradient/nft_norm 4.5846025. GPUs 4–7 were at 100%, 100%, 97%, 100%. Checkpoint-110 evaluation completed on 1,018 images: OCR reward 0, CER 1.0, exact-match 0; logged as a poor evaluation result, not a process failure.
-W&B: 35-run audit found missing indices 9–10 for active OCR source (11 local rows, 120 cloud rows); uploaded scalar-only delta wandb-scalars-only-20261029-110841/scalar-kfqxrx95 (23,478 bytes). Readback: 122 cloud rows, no missing indices, complete source tail (40,927,232 bytes); all 35 runs verified. Cloud state remains failed; no state change attempted. No image/checkpoint files in the uploaded curve delta.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the 11:08 scalar delta. Executed start-server.sh; detached child exited, so server.py is supervised in foreground (PID 725757, session 53697; .server.pid updated). /status and /metadata returned 200. ZIP 5,567 bytes, CRC valid, sole member run-kfqxrx95.wandb.
-Next personal inspection target: 2026-10-29 13:08 Asia/Shanghai.
-2026-10-29 13:08 Asia/Shanghai — Scheduled inspection; actual process/GPU snapshot at 13:08:21, sync/service verification at 13:12:07.
-Training: E7_A0_ocr, W&B run kfqxrx95, 112/300 updates (two more than the previous snapshot). Controller PID 1212198/session 49825, job PID 535388, torchrun PID 535390, and ranks 535394–535397 were alive. Latest metric: epoch 111 / event 135, reward_avg 0.7713538, policy_loss 7.3164331, gradient/nft_norm 4.8508788. GPUs 4–7 were at 100%, 100%, 100%, 89%. Latest evaluation remains checkpoint-110; its OCR reward was 0, CER 1.0, exact-match 0.
-W&B: 35-run audit found missing indices 11–12 for active OCR source (13 local rows, 122 cloud rows); uploaded scalar-only delta wandb-scalars-only-20261029-130845/scalar-kfqxrx95 (28,345 bytes). Readback: 124 cloud rows, no missing indices, complete source tail (48,594,944 bytes); all 35 runs verified. Cloud state remains failed; no state change attempted. No image/checkpoint files in the uploaded curve delta.
-Training Sync: config points LOG_SOURCE here and WANDB_RUN_DIR to the 13:08 scalar delta. Executed start-server.sh; detached child exited, so server.py is supervised in foreground (PID 762870, session 56211; .server.pid updated). /status and /metadata returned 200. ZIP 6,135 bytes, CRC valid, sole member run-kfqxrx95.wandb.
-Next personal inspection target: 2026-10-29 15:08 Asia/Shanghai.
+[2026-10-12T10:44:18+08:00] controller started; sequential DAG order; visible training GPUs=4,5,6,7
+[2026-10-12T10:44:18+08:00] verified complete; skip E0_geneval (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] verified complete; skip E0_hpsv2 (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] verified complete; skip E0_ocr (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] verified complete; skip E0_pickscore (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] verified complete; skip E3_geneval (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] verified complete; skip E3_ocr (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] verified complete; skip E3_preference (frozen, epochs=0)
+[2026-10-12T10:44:18+08:00] START E7_A0_geneval: kind=train target_epochs=300 resume=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_geneval/output/checkpoints/checkpoint-100
+[2026-10-16T14:41:02+08:00] controller started; sequential DAG order; visible training GPUs=4,5,6,7
+[2026-10-16T14:41:02+08:00] verified complete; skip E0_geneval (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] verified complete; skip E0_hpsv2 (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] verified complete; skip E0_ocr (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] verified complete; skip E0_pickscore (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] verified complete; skip E3_geneval (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] verified complete; skip E3_ocr (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] verified complete; skip E3_preference (frozen, epochs=0)
+[2026-10-16T14:41:02+08:00] START E7_A0_geneval: kind=train target_epochs=300 resume=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_geneval/output/checkpoints/checkpoint-230
+[2026-10-19T20:58:44+08:00] COMPLETE E7_A0_geneval; target_epochs=300; scalar sync follows
+[2026-10-19T21:07:38+08:00] STOP after E7_A0_geneval: scalar-only W&B sync failed (exit=1); see /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/logs/E7_A0_geneval.log
+[2026-10-19T21:39:01+08:00] controller started; sequential DAG order; visible training GPUs=4,5,6,7
+[2026-10-19T21:39:01+08:00] verified complete; skip E0_geneval (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E0_hpsv2 (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E0_ocr (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E0_pickscore (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E3_geneval (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E3_ocr (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E3_preference (frozen, epochs=0)
+[2026-10-19T21:39:01+08:00] verified complete; skip E7_A0_geneval (train, epochs=300)
+[2026-10-19T21:39:01+08:00] START E7_A0_hpsv2: kind=train target_epochs=300 resume=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_hpsv2/output/checkpoints/checkpoint-100
+[2026-10-29T00:47:44+08:00] COMPLETE E7_A0_hpsv2; target_epochs=300; scalar sync follows
+[2026-10-29T00:56:45+08:00] verified scalar sync complete for E7_A0_hpsv2
+[2026-10-29T00:56:45+08:00] START E7_A0_ocr: kind=train target_epochs=300 resume=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_ocr/output/checkpoints/checkpoint-100
+[2026-10-29T14:16:11+08:00] STOP E7_A0_ocr: exit=1; completion marker/epoch check failed; see /lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/logs/E7_A0_ocr.log
+[2026-10-29T14:19:26+08:00] controller started; sequential DAG order; visible training GPUs=4,5,6,7
+[2026-10-29T14:19:26+08:00] verified complete; skip E0_geneval (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E0_hpsv2 (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E0_ocr (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E0_pickscore (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E3_geneval (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E3_ocr (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E3_preference (frozen, epochs=0)
+[2026-10-29T14:19:26+08:00] verified complete; skip E7_A0_geneval (train, epochs=300)
+[2026-10-29T14:19:26+08:00] verified complete; skip E7_A0_hpsv2 (train, epochs=300)
+[2026-10-29T14:19:26+08:00] verified complete; skip E7_A0_ocr (train, epochs=100)
+[2026-10-29T14:19:26+08:00] START E7_A0_pickscore: kind=train target_epochs=300 resume=/lpai/output/logs/sd35m_exploration_single_seed_20260930/20260930-192903-single-seed/runs/sd35-single-seed/runs/E7_A0_pickscore/output/checkpoints/checkpoint-100
